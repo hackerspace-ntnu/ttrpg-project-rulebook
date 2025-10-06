@@ -1,3 +1,5 @@
+#import "scripts/tables.typ": encounterTable
+
 = Introduction
 In this report, we will explore the
 various factors that influence _fluid
@@ -24,7 +26,7 @@ we don't take action soon!
 #show image: set align(left)
 
 #figure(
-  image("glacier.png", width: 70%, ),
+  image("../data/images/glacier.png", width: 70%, ),
   caption: [
     _Glaciers_ form an important part
     of the earth's climate system.
@@ -69,16 +71,5 @@ various parameters:
 
 == Data Table Example
 
-#let encounterTable(data, dice) = {
-table(
-  columns: 3,
-  table.header(dice, "Result", "Description"),
-  // caption: [data.caption],
-  ..data.effects.keys().enumerate().map(((i, key)) => (
-    [#i],
-    key,
-    data.effects.at(key).description,
-  )).flatten(),
-)}
+#encounterTable(json("../data/tables/encounter_check.json"), "1d6")
 
-#encounterTable(json("encounters.json"), "1d6")
