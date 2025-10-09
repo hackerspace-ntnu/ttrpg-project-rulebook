@@ -1,4 +1,4 @@
-#import "scripts/tables.typ": encounterTable
+#import "../scripts/tables.typ": encounterTable
 
 = Introduction
 In this report, we will explore the
