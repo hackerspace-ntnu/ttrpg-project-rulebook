@@ -7,6 +7,8 @@ dynamics_ in glaciers and how they
 contribute to the formation and
 behaviour of these natural structures.
 
+// ANCHOR: This is an anchor, they come in many different flavours
+
 == Fluid Dynamics in Glaciers
 + The climate
   - Temperature
