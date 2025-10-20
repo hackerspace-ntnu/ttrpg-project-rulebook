@@ -1,3 +1,5 @@
+#import "../scripts/glossary.typ": term, render_glossary, glossary_types
+
 #align(center)[
   #text(size: 24pt, weight: "bold")[Titanslayer Quick Start Guide]
 ]
@@ -37,8 +39,8 @@ those idiots who claimed the first titanslayer)
 <core-rules>
 == Action Rolls
 <action-rolls>
-Titanslayer is primarily played through roleplay, but if players want to do a risky action or avoid danger the #strong[Game Master] (GM) will usually ask them to make an #strong[Action Roll];. 
-The GM secretly decides on a #strong[Difficulty Class] of the roll and tells the player which two #strong[Attribute Dice] they should roll.
+Titanslayer is primarily played through roleplay, but if players want to do a risky action or avoid danger the #strong[Game Master] (GM) will usually ask them to make an #term("Action Roll");. 
+The GM secretly decides on a #term("Difficulty Class") of the roll and tells the player which two #term("Attribute Dice") they should roll.
 The player then rolls two dice, corresponding to the attributes they were told to roll and add the numbers together.
 If they roll equal to or higher than the DC, they succeed.
 
@@ -52,14 +54,12 @@ Player A wants to climb a slick cliff face. \
  - They fall and take a point of damage \
  - The cliff begins to move? Uh-oh.
 
-However, in Titanslayer rolling the same number on both dice is actually a #strong[Critical Roll];, so not all hope is lost!
+However, in Titanslayer rolling the same number on both dice is actually a #term("Critical Roll"), so not all hope is lost!
 
 === Critical Rolls
 <critical-rolls>
-When you roll the same number on both #strong[Attribute Dice] for an
-#strong[Action Roll] it causes a #strong[Critical Roll];. When a
-Critical Roll happens, you roll the highest #strong[Attribute Die] of
-the roll again, and add it to the total.
+When you roll the same number on both #term[Attribute Dice] for an
+#term[Action Roll] it causes a #term("Critical Roll", is_definition: true). When a #term[Critical Roll] happens, you roll the highest #term("Attribute Die", key: "Attribute Dice") of the roll again, and add it to the total.
 
 Continuing our example from earlier: \
 - Player A rolled a crit! \
@@ -68,16 +68,13 @@ Continuing our example from earlier: \
 
 === Boons & Banes
 <boons-banes>
-Certain advantageous or disadvantageous situations can give a roll Boons
-or Banes. Which are stacking conditions that give an extra die starting
-at a d4, increasing in size per stack, that is added or subtracted to
-rolls, respectively.
+Certain advantageous or disadvantageous situations can give a roll #term("Boons", is_definition: true) or #term("Banes", is_definition: true). 
+Which are stacking conditions that give an extra die starting at a d4, increasing in size per stack, that is added or subtracted to rolls, respectively.
 
 Boon(N) denotes N stacks of Boon. E.g. Boon(2) means add a d6 to the
 roll.
 
-Stacks of Boons and Banes cancel each other out, so Boon(3) and Bane(2)
-would result in Boon(1), meaning you'd add a d4 to the roll.
+Stacks of #term[Boons] and #term[Banes] cancel each other out, so Boon(3) and Bane(2)would result in Boon(1), meaning you'd add a d4 to the roll.
 
 #figure(
   align(center)[#table(
@@ -92,37 +89,33 @@ would result in Boon(1), meaning you'd add a d4 to the roll.
 
 === Additional Successes
 <additional-successes>
-You succeed by meeting or beating the DC of an #strong[Action Roll];,
-and you gain an additional #strong[Success] for each 5 you roll above
+You succeed by meeting or beating the DC of an #term[Action Roll];,
+and you gain an additional #term("Success", is_definition: true) for each 5 you roll above
 the DC.
 
-The benefit of a #strong[Success] varies depending on the Action you
+The benefit of a #term[Success] varies depending on the Action you
 were doing. Maybe you find more of the herbs you were searching for? Or
 you hid at just the right time to overhear a secretive conversation?
 
 Some rolls don't follow the rule that each 5 above the DC gives a
-#strong[Success];. Attack Rolls for example instead target an opponent's
-#strong[Damage Thresholds];, giving +1 #strong[Success] for each
+#term[Success]. Attack Rolls for example instead target an opponent's
+#term[Damage Thresholds];, giving +1 #term[Success] for each
 threshold you hit (and then for each +5 after the last threshold).
 
-#strong[Successes] gained when Attacking usually grant +1 damage to the
-Attack, but some unique abilities might give different effects. You
-might for example encounter an electrified shark-jellyfish hybrid that
-stuns its prey --- attacking with a shock that reduces your
-#strong[Action Point] regeneration by 1 for each #strong[Success];,
-instead of dealing damage directly.
+#term("Successes", key: "Success", is_definition: true) gained when Attacking usually grant +1 damage to the Attack, but some unique abilities might give different effects.
+You might for example encounter an electrified shark-jellyfish hybrid that stuns its prey --- attacking with a shock that reduces your #term("Action Point", key: "Action Points") regeneration by 1 for each #term[Success], instead of dealing damage directly.
 
 == Tag Team Rolls
 <tag-team-rolls>
-Once per Shift per character, players may initiate a Tag Team roll.
+Once per #term[Shift] per character, players may initiate a #term("Tag Team Roll", is_definition: true).
 
-To initiate a Tag Team roll, each participant spends 1 Focus in addition to what other resources they would normally spend and makes their respective rolls to construct a pool of die results. To resolve the roll, the players choose 2 dice from the constructed pool, which becomes the result of the roll.
+To initiate a #term[Tag Team Roll], each participant spends 1 Focus in addition to what other resources they would normally spend and makes their respective rolls to construct a pool of die results. To resolve the roll, the players choose 2 dice from the constructed pool, which becomes the result of the roll.
 
-The roll counts as an Action Roll, and any features or modifications that would activate from a roll do so as normal. If multiple characters would trigger the same effect, only one resolves.
+The roll counts as an #term[Action Roll], and any features or modifications that would activate from a roll do so as normal. If multiple characters would trigger the same effect, only one resolves.
 
-The GM can at any point initiate a Tag Team Roll for the party, with no cost to the characters. 
+The GM can at any point initiate a #term[Tag Team Roll] for the party, with no cost to the characters.
 
-Tag Team rolls can be initiated during combat, given that all participants act during the same Phase.
+#term("Tag Team Rolls", key: "Tag Team Roll"). can be initiated during combat, given that all participants act during the same #term[Phase].
 
 
 = Character creation (+ mutations?) - Thomas
@@ -132,12 +125,11 @@ tied to their background and heritage, so the mechanics a player will be
 specializing in is based on who they choose to be.
 
 All characters start with some base stats: \
-Max Strain: 8 \
-Max Focus: 8 \
-Base Movement: 4 Spaces
+Max #term[Strain]: 8 \
+Max #term[Focus]: 8 \
+Base #term[Speed]: 4 Spaces
 
-Each character has 4 attributes. Each attribute is represented by a die
-size d4-d12, mapping to a modifier of 0-4.
+Each character has 4 #term[Attributes]. Each #term("Attribute", key: "Attributes", is_definition: true) is represented by a die of size d4-d12, mapping to a modifier of 0-4.
 
 #figure(
   align(center)[#table(
@@ -145,13 +137,13 @@ size d4-d12, mapping to a modifier of 0-4.
     align: (left,left,left,),
     table.header([Attribute], [Description], [Effect],),
     table.hline(),
-    [Might], [Strength and endurance], [\+ mod to Strain and carrying
+    term("Might", is_definition: true), [Strength and endurance], [\+ mod to Strain and carrying
     capacity],
-    [Agility], [Speed, dexterity, flexibility and balance], [\+ mod to
+    term("Agility", is_definition: true), [Speed, dexterity, flexibility and balance], [\+ mod to
     Speed],
-    [Insight], [Ability to discover and reason about information], [\+
+    term("Insight", is_definition: true), [Ability to discover and reason about information], [\+
     mod to crits, rolls with boon and rolls when flanking],
-    [Presence], [Inner focus and the power to inspire or command], [\+
+    term("Presence", is_definition: true), [Inner focus and the power to inspire or command], [\+
     mod to Focus],
   )]
   , kind: table
@@ -161,8 +153,8 @@ On creation, arrange \[d4, d6, d6, d8\] how you want your character's
 attributes to be.
 
 #strong[Titles];: \
-At creation and after big moments in the campaign, you earn titles.
-Titles are primarily narrative in that they describe your character, and
+At creation and after big moments in the campaign, you earn #term("Titles", is_definition: true).
+#term[Titles] are primarily narrative in that they describe your character, and
 may be referred to at any time by either the player or GM for roleplay
 purposes. Titles provide a static bonus to a roll when invoked, which
 can be done for 1 focus in situations where it makes narrative sense.
@@ -470,3 +462,9 @@ among these actions:
       item, roll either a crafting (Might + Insight) or tinker (Agility
       \+ Insight) roll. Gain 1 + Successes durability or crafting
       progress.
+
+#pagebreak()
+= Glossary
+<glossary>
+\
+#render_glossary()
