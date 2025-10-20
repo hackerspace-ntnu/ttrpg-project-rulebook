@@ -9,20 +9,19 @@
 
 #let term(name, description, type, separator: ": ", is_definition: false, print: true) = {
   // Add to glossary
-  if (is_definition) {
-    context {
-      // let current_page = 
-      let location = here()
-      _state_glossary.update(glossary => {
-        glossary.push((
-          name: name, 
-          description: description,
-          type: type,
-          location: location
-          ))
-          glossary
-      })
-    }
+  context {
+    // let current_page = 
+    let location = here()
+    _state_glossary.update(glossary => {
+      glossary.push((
+        name: name, 
+        description: description,
+        type: type,
+        location: location,
+        is_definition: is_definition,
+        ))
+        glossary
+    })
   }
   if (print) {
     strong(name) + separator + description
@@ -31,15 +30,34 @@
 
 #let render_glossary() = {
   context {
-    let glossary = _state_glossary.final().sorted(key: it => (it.name, it.type))
+    let glossary = _state_glossary.final().fold((:), (acc, entry) => {
+      let key = entry.name + "|" + entry.type
+      let glossary_entry = acc.at(key, default: none)
+      if (glossary_entry == none) {
+        entry.locations = ()
+        entry.locations.push(entry.location)
+        acc.insert(key, entry)
+      } else {
+        // If both are definitions, keep the first one
+        if (not glossary_entry.is_definition and entry.is_definition) {
+          // Replace with definition
+          glossary_entry.description = entry.description
+          glossary_entry.location = entry.location
+          glossary_entry.is_definition = true
+        }
+        glossary_entry.locations.push(entry.location)
+      }
+      acc
+    }).values().sorted(key: it => (it.name, it.type))
 
     for entry in glossary {
-      if (glossary.filter(e => e.name == entry.name).len() > 1) {
-        link(entry.location)[#entry.name (#entry.type): p.#entry.location.page()]
+      let entry_name = if (glossary.filter(e => e.name == entry.name).len() > 1) {
+        entry.name + " (" + entry.type + ")"
+      } else {
+        entry.name
       }
-      else {
-        link(entry.location)[#entry.name: p.#entry.location.page()]
-      }
+      [#entry_name: #entry.locations.dedup(key: p => p.page()).map(p => link(p)[p.#p.page() #entry.locations.len()]).join(", ")]
+
       linebreak()
     }
   }

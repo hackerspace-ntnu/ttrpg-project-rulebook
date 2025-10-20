@@ -87,4 +87,10 @@ various parameters:
 #term("Attack", "To make an attempt to deal damage to an opponent using a weapon or ability.", glossary_types.mechanic, is_definition: true)
 
 #pagebreak()
+#term("Attack", "To make an attempt to deal damage to an opponent using a weapon or ability.", glossary_types.mechanic)
+#term("Action Roll", "A roll made by a player to determine the outcome of an action their character is attempting to perform, typically involving rolling dice and adding relevant modifiers.", glossary_types.mechanic)
+#pagebreak()
+#term("Attack", "To make an attempt to deal damage to an opponent using a weapon or ability.", glossary_types.mechanic)
+
+#pagebreak()
 #render_glossary()
