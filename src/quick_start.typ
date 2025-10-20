@@ -1,37 +1,35 @@
+#align(center)[
+  #text(size: 24pt, weight: "bold")[Titanslayer Quick Start Guide]
+]
 
+#v(8em)
 
+#outline(
+  title: "Table of Contents",
+  indent: auto
+)
 
-= Quick Start Guide
-<quick-start-guide>
+#pagebreak()
+
 = Setting - Jørg
 <setting>
-This game is set after an event called the Collapse, wherein a
-prosperous, highly advanced global civilization was destroyed by
-tremendous creatures, called Titans, emerging from Mana Gateways that
-they were using to power their cities. The destabilization wrought by
-the Collapse to the world dried up the seas and turned the land arid.
-Now water and vegetation is mostly found clustered around Mana Gates,
-where the creatures most twisted by the Mana also roam. Mana is akin to
-radiation, in that it suffuses an area invisibly and causes mutations,
-but Mana mutations are quick and dramatic. Mana also disrupts electric
-currents, rendering conventional technology inoperable. Mana density
-increases in proximity to a Gate or Titan. Due to the danger inherent in
-living in these areas of dense Mana, most of civilization is found in
-the dry lands away from the Gates. A few years ago, within living
-memory, a prophesied being called the Titanslayer managed to actually
-fell one (1) Titan. Now those who delve into the depths of the
-Mana-saturated areas dream of accruing enough power (through beneficial
-mutations, wealth, advanced mana-tech, training and whatever means
-necessary) to fell a second Titan and claim the title of…
+This game is set after an event called the Collapse, wherein a prosperous, highly advanced global civilization was destroyed by tremendous creatures, called Titans, emerging from Mana Gateways that they were using to power their cities.
+The destabilization wrought by the Collapse to the world dried up the seas and turned the land arid.
+Now water and vegetation is mostly found clustered around Mana Gates, where the creatures most twisted by the Mana also roam.
+Mana is akin to radiation, in that it suffuses an area invisibly and causes mutations, but Mana mutations are quick and dramatic.
+Mana also disrupts electric currents, rendering conventional technology inoperable.
+Mana density increases in proximity to a Gate or Titan.
+Due to the danger inherent in living in these areas of dense Mana, most of civilization is found in the dry lands away from the Gates.
+A few years ago, within living memory, a prophesied being called the Titanslayer managed to actually fell one (1) Titan.
+Now those who delve into the depths of the Mana-saturated areas dream of accruing enough power (through beneficial mutations, wealth, advanced mana-tech, training and whatever means necessary) to fell a second Titan and claim the title of…
 
-== Titanslayer
-<titanslayer>
+#align(center)[
+  #text(size: 18pt, weight: "bold", fill: gray)[Titanslayer]
+]
+
 Optional lore expansion (can be excised for pagecount/conciseness): \
-One of the most ardent sponsors of would-be Titanslayers is the
-University of Human Understanding and their world-spanning project to
-catalogue and categorize #emph[everything];, the Understanding. In most
-cities and towns, there will be an agent of the Understanding willing to
-provide payment for bits of knowledge and physical specimens. \
+One of the most ardent sponsors of would-be Titanslayers is the University of Human Understanding and their world-spanning project to catalogue and categorize #emph[everything];, the Understanding. 
+In most cities and towns, there will be an agent of the Understanding willing to provide payment for bits of knowledge and physical specimens. \
 TODO: Expand lore expansion to add a few more factions (Og, Kaleina,
 those idiots who claimed the first titanslayer)
 
@@ -39,31 +37,22 @@ those idiots who claimed the first titanslayer)
 <core-rules>
 == Action Rolls
 <action-rolls>
-Titanslayer is primarily played through roleplay, but if players want to
-do a risky action or avoid danger the #strong[Game Master] (GM) will
-usually ask them to make an #strong[Action Roll];. The GM secretly
-decides on a #strong[Difficulty Class] of the roll and tells the player
-which two #strong[Attribute Dice] they should roll. The player then
-rolls two dice, corresponding to the attributes they were told to roll
-and add the numbers together. If they roll equal to or higher than the
-DC, they succeed.
+Titanslayer is primarily played through roleplay, but if players want to do a risky action or avoid danger the #strong[Game Master] (GM) will usually ask them to make an #strong[Action Roll];. 
+The GM secretly decides on a #strong[Difficulty Class] of the roll and tells the player which two #strong[Attribute Dice] they should roll.
+The player then rolls two dice, corresponding to the attributes they were told to roll and add the numbers together.
+If they roll equal to or higher than the DC, they succeed.
 
 Example: \
 Player A wants to climb a slick cliff face. \
-GM sets a DC of 10 and tells Player A to roll Might and Agility, as they
-fit climbing well. \
-Player A references their character sheet, which says they have a d8
-Might and d6 Agility, and consequently rolls these two dice. \
-They roll a 3 and a 3, totalling 6. \
-This would normally mean they fail the roll, preferably in an
-interesting way, such as:
+- GM sets a DC of 10 and tells Player A to roll Might and Agility, as they fit climbing well. \
+- Player A references their character sheet, which says they have a d8 Might and d6 Agility, and consequently rolls these two dice. \
+- They roll a 3 and a 3, totalling 6. \
+- This would normally mean they fail the roll, preferably in an interesting way, such as:
+ - A rock tumbles loudly, alerting a dangerous beast of their presence \
+ - They fall and take a point of damage \
+ - The cliff begins to move? Uh-oh.
 
-- A rock tumbles loudly, alerting a dangerous beast of their presence \
-- They fall and take a point of damage \
-- The cliff begins to move? Uh-oh.
-
-However, in Titanslayer rolling the same number on both dice is actually
-a #strong[Critical Roll];, so not all hope is lost!
+However, in Titanslayer rolling the same number on both dice is actually a #strong[Critical Roll];, so not all hope is lost!
 
 === Critical Rolls
 <critical-rolls>
@@ -73,11 +62,9 @@ Critical Roll happens, you roll the highest #strong[Attribute Die] of
 the roll again, and add it to the total.
 
 Continuing our example from earlier: \
-Player A rolled a crit! \
-Their highest die was their Might, a d8, so they add another d8 to the
-roll. \
-This time they roll a 4, making their total 3+3+4 = 10, which means they
-succeed the check.
+- Player A rolled a crit! \
+- Their highest die was their Might, a d8, so they add another d8 to the roll. \
+- This time they roll a 4, making their total 3+3+4 = 10, which means they succeed the check.
 
 === Boons & Banes
 <boons-banes>
@@ -254,14 +241,12 @@ hand(s). Drawing from your inventory costs 1 AP. \
 #strong[Charge] your next Action, delaying its activation until the end
 of the next Phase, but granting you Boon(3) on it. You must pick a
 target Space for the Action when picking this option. \
+#strong[Disengage] from a single enemy, preventing your own movement to
+trigger Retaliations from them this phase. \
 #strong[Push] yourself, taking 1 Fatigue in order to perform one of the
 following effects:
-
 - (repeatable +1 cost) 1 Fatigue for Boon(1) \
 - 2 Fatigue to gain 1 AP
-
-#strong[Disengage] from a single enemy, preventing your own movement to
-trigger Retaliations from them this phase
 
 Free Actions, just like regular Actions, are affected by RAP.
 

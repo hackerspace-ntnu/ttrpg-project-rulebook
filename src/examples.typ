@@ -1,4 +1,5 @@
 #import "../scripts/tables.typ": encounterTable
+#import "../scripts/glossary.typ": term, render_glossary, glossary_types
 
 = Introduction
 In this report, we will explore the
@@ -75,3 +76,15 @@ various parameters:
 
 #encounterTable(json("../data/tables/encounter_check.json"), "1d6")
 
+== Terms and Glossary
+
+#term("Action Roll", "A roll made by a player to determine the outcome of an action their character is attempting to perform, typically involving rolling dice and adding relevant modifiers.", glossary_types.mechanic, is_definition: true)
+
+#term("Critical Roll", "A roll where all dice show the same number, allowing the player to roll an additional die of their highest attribute and add it to the total.", glossary_types.mechanic, is_definition: true)
+
+#term("Attack", "An action taken by a character to deal damage to an opponent, usually involving an Action Roll against a Difficulty Class (DC).", glossary_types.action, is_definition: true)
+
+#term("Attack", "To make an attempt to deal damage to an opponent using a weapon or ability.", glossary_types.mechanic, is_definition: true)
+
+#pagebreak()
+#render_glossary()

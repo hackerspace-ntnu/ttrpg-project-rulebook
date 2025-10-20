@@ -1,0 +1,8 @@
+{
+  "Action Roll": {
+    "description": "A roll made by a player to determine the success of a risky action or to avoid danger, using two Attribute Dice against a Difficulty Class set by the Game Master."
+  },
+  "Critical Roll": {
+    "description": "A special type of Action Roll where both dice show the same number, allowing the player to roll an additional die of the highest Attribute used in the roll and add it to their total."
+  }
+}
