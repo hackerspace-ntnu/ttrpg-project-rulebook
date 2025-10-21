@@ -4,6 +4,7 @@
   condition: "condition",
   item: "item",
   faction: "faction",
+  location: "location"
 )
 
 #let _state_glossary = state("glossary", ())
@@ -19,26 +20,36 @@
 /// - key (string): An optional key to use for the term instead of the name, useful for disambiguation.
 #let term(name, description: "", glossary_type: glossary_types.mechanic, separator: "", is_definition: false, print: true, key: none) = {
   // Add to glossary
+  let entry_name = if key != none { key } else { name }
+  if type(entry_name) == content {
+    entry_name = entry_name.text
+  }
   context {
     // let current_page = 
     let location = here()
     _state_glossary.update(glossary => {
-      let entry_name = if key != none { key } else { name }
-      if type(entry_name) == content {
-        entry_name = entry_name.text
-      }
       glossary.push((
         name: entry_name, 
         description: description,
         type: glossary_type,
         location: location,
         is_definition: is_definition,
-        ))
-        glossary
+      ))
+      glossary
     })
   }
+  context {
   if (print) {
-    emph(name) + separator + description
+    let body = emph(name) + separator + description
+    let my_label = label(entry_name + "|" + glossary_type)
+    if (is_definition) {
+      [#body #my_label]
+    } else if (query(my_label).len() > 0) {
+      link(my_label, body)
+    } else {
+      text(body, fill: red)
+    }
+  }
   }
 }
 

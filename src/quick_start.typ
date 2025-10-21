@@ -102,7 +102,7 @@ Some rolls don't follow the rule that each 5 above the DC gives a
 #term[Damage Thresholds];, giving +1 #term[Success] for each
 threshold you hit (and then for each +5 after the last threshold).
 
-#term("Successes", key: "Success", is_definition: true) gained when Attacking usually grant +1 damage to the Attack, but some unique abilities might give different effects.
+#term("Successes", key: "Success") gained when Attacking usually grant +1 damage to the Attack, but some unique abilities might give different effects.
 You might for example encounter an electrified shark-jellyfish hybrid that stuns its prey --- attacking with a shock that reduces your #term("Action Point", key: "Action Points") regeneration by 1 for each #term[Success], instead of dealing damage directly.
 
 == Tag Team Rolls
@@ -266,29 +266,22 @@ lets characters use it. One Action can only Trigger one Reaction.
 
 == Attacks and defense
 <attacks-and-defense>
-An attack is normally rolled by using two Attribute Dice relevant to the
-Weapon used, as well as any other relevant bonuses.
+An attack is normally rolled by using two #term[Attribute Dice] relevant to the #term("Weapon", glossary_type: glossary_types.item) used, as well as any other relevant bonuses.
 
-There are three #strong[damage thresholds] depending on how severe the
-attack roll is, #strong[Evasion];, #strong[Heavy] hit and
-#strong[Brutal] hit. Different characters have different thresholds
-based on their stats.
+There are three #term[Damage Thresholds] that determine the damage dealt; #term[Evasion], #term[Heavy Hit] and #term[Brutal Hit]. 
+Different characters have different thresholds based on their stats as described in the #link(<armor>, "Armor Table").
 
-A roll higher than a creature's evasion is a hit. Rolling above the
-Heavy and Brutal hit thresholds each add +1 success and may trigger
-additional abilities. Every +5 above Brutal hit counts as a +1 success.
-Normally one success means +1 damage, unless replaced with other
-abilities. Certain actions such as #strong[grapple] ignores Heavy and
-Brutal thresholds and targets Evasion directly, therefore using the
-standard +5 rule.
+A roll higher than a creature's evasion is a hit. 
+Rolling above the Heavy and Brutal hit thresholds each add +1 success and may trigger additional abilities. 
+Every +5 above Brutal hit counts as a +1 success. Normally one success means +1 damage, unless replaced with other abilities. 
+Certain actions such as #strong[grapple] ignores Heavy and Brutal thresholds and targets Evasion directly, therefore using the standard +5 rule.
 
 You can #strong[block] damage with armour and weapons with the Durable
 tag. This requires no reaction, and when blocking the equipment takes
 the Strain instead of you, including any excess damage. If the equipment
 goes to 0 HP, it's considered Broken and grants no benefit.
 
-If Armor is Broken, your Evasion remains the same, but your Heavy and
-Brutal Hit thresholds are calculated as if you have no armor.
+If Armor is Broken, your Evasion and Speed remain the same, but your Heavy and Brutal Hit thresholds are calculated as if you have no armor.
 
 Certain effects grant #strong[Guard,] which grants temporary HP that are
 instead reduced when you take damage. Separate effects granting Guard do
@@ -326,9 +319,8 @@ Mutations, and Feats can unlock more options.
 
 === Retaliation Enhancements
 <retaliation-enhancements>
-When Retaliating your options are enhanced based on what items you have
-available in your Quick Draw Inventory. Only one enhancement can be used
-at a time.
+When Retaliating your options are enhanced based on what Weapons you currently wield.
+Only one enhancement can be used at a time.
 
 Light Weapons (enhance): When you Counter you may Step at half range \
 Medium Weapons (enhance): When you Counter you leave an open wound on
@@ -339,22 +331,16 @@ mod / Size difference Spaces
 
 = Equipment - Robin
 <equipment>
-Each character has a Carrying Capacity equal to 5 + Might Mod. Items and
-equipment have an amount of Bulk (usually 1). The total Bulk of all
-items in your Inventory must be less than or equal to your Carrying
-Capacity. If you're carrying more than your Capacity at the end of a
-shift, you get Fatigue equal to the amount of extra Bulk you're carrying
-(total Bulk - Carrying Capacity).
+Each character has a #term("Carrying Capacity", is_definition: true) equal to 5 + Might Mod.
+Items and Equipment have an amount of #term[Bulk] (usually 1).
+If you're carrying more than your #term("Capacity", key: "Carrying Capacity") at the end of a #term[Shift], you get #term[Fatigue] equal to the amount of extra #term[Bulk] you're carrying (total #[Bulk] - #term[Carrying Capacity]).
 
-Each character also has a Quick Draw Inventory with a Capacity of 3,
-which does not contribute to the total Bulk in your regular Inventory.
-Essentially, you get 3 extra Capacity for things like weapons and
-shields that you would want easy access to during combat.
+Each character also has a #term("Quick Draw Inventory", is_definition: true) with a Capacity of 3, which does not contribute to the total #term[Bulk] in your regular Inventory.
+Essentially, you get 3 extra Capacity for things like Weapons and Shields that you would want easy access to during combat.
 
-Finally, each character has a Pocket, where they can fit as many items
-as you can physically write in the box on their character sheet. These
-cannot be things on the Equipment list, but should instead be things
-like a flint and steel, a pocket knife, or a sentimental item.
+Finally, small Items with 0 #term[Bulk] are called #term("Trinkets", is_definition: true), and don't go in a characters normal Inventory.
+Instead, each character has a #term("Pocket", is_definition: true), where they can fit as many #term[Trinkets] as they can physically write in the box on their character sheet.
+These are things like a flint and steel, a pocket knife, a letter, or a sentimental item.
 
 === Equipment
 <equipment>
@@ -368,9 +354,8 @@ like a flint and steel, a pocket knife, or a sentimental item.
     Bulk],
     [Weapon], [1], [],
     [Heavy Weapon], [2], [],
-    [Bandolier], [1], [Can hold up to 3 Daggers/Kunai (which then do not
-    count towards total Bulk), counting as Quick Draw Inventory for the
-    sake of the #strong[Stow] and #strong[Draw] Actions.],
+    [Bandolier], [1], [Can hold up to 3 Weapons with both the Light and Thrown tags (which then do not
+    count towards total Bulk), counting as Quick Draw Inventory for the sake of the #strong[Stow] and #strong[Draw] Actions.],
     [Quiver], [1], [Comes with 20 Arrows, which it can hold],
     [Ration x4], [1], [Food and water],
     [Repair Kit], [1], [Needed for Crafting Checks and Tinker Checks to
@@ -387,6 +372,7 @@ like a flint and steel, a pocket knife, or a sentimental item.
 
 === Armor & Damage Thresholds
 <armor-damage-thresholds>
+// TODO: Add info about Armor Strain, and how damaging/repairing equipment works
 #figure(
   align(center)[#table(
     columns: (18%, 18%, 18%, 18%, 14%, 9%),
@@ -401,27 +387,40 @@ like a flint and steel, a pocket knife, or a sentimental item.
     [Heavy armor], [3], [12], [17], [6], [-1],
   )]
   , kind: table
-  )
+  ) <armor>
 
 \*Beyond Brutal: Every 5 above Brutal counts as +1 damage/success
 
 = Exploration - Jon
 <exploration>
-Most of your time in this game will be spent adventuring in the
-mana-filled wild wastes of \[insert name of landmass\]. The players must
-choose a “Party Caller” that decides what actions the party will take
-when exploring.
+Most of your time in this game will be spent adventuring in the mana-filled wild wastes of . 
 
-Each day spent exploring is divided into six Shifts. Usually, one
-‘exploration activity' takes one Shift to perform. The players can also
-choose to push themselves, achieving two exploration actions per shift
-at the cost of accruing one Fatigue. \
-At the start of each Shift spent inside of a mana zone, the GM will make
-an Encounter Check, which may have both positive and negative effects
-for the party. \
-Explorers will also need to rest. If it has been a full day (6 shifts)
-since the characters last rested, each subsequent shift they do not rest
-will add one fatigue to all PCs.
+Hador
+Hadria
+Geha
+Narak
+Shol
+Tartus
+Narotam
+Nohu
+Nouh
+Sunrise
+Ikeon
+
+
+Retyx
+Xeol
+Xalio
+
+
+The players must choose a “Party Caller” that informs the GM what actions the party will take when exploring.
+Each day spent exploring is divided into six #term("Shifts", is_definition: true).
+Usually, one ‘exploration activity' takes one #term("Shift", key: "Shifts") to perform.
+The players can also choose to Push themselves, achieving two exploration actions per shift at the cost of accruing one #term[Fatigue].
+
+At the start of each #term[Shift] spent inside of a #term("Mana Zone", key: "Mana Zones"), the GM will make an #term("Encounter Check", is_definition: true), which may have both positive and negative effects for the party.
+
+Explorers will also need to sleep. If it has been a full day (6 #term[Shifts]) since the characters last slept, each subsequent shift they do not sleep will add one #term[Fatigue] to all PCs.
 
 The exploration is acted out by charting a path through a hexgrid map.
 Progress is driven by the players deciding what they would like to do
@@ -441,7 +440,7 @@ among these actions:
 - #strong[Hunt]
   - The participating characters all roll a hunting (Agility + Presence)
     check, and success depends on both the danger of the prey they are
-    hunting and the type of terrain. If the amount of successes is lower
+    hunting and the type of terrain. If the amount of successes rolled is above the DC, the party locates the creature they are hunting. If the result is lower than the DC, but higher than the size of the hunting party, you encounter a random creature. If the amount of successes is lower
     than the size of the hunting party, they are ambushed by their prey.
     \
 - #strong[Forage]
@@ -460,8 +459,12 @@ among these actions:
       warning of threats to the party. \
     - 1 RP - #emph[Repair/Craft Item] (repeatable): Depending on the
       item, roll either a crafting (Might + Insight) or tinker (Agility
-      \+ Insight) roll. Gain 1 + Successes durability or crafting
+      \+ Insight) roll. Gain 1 + Successes Strain or crafting
       progress.
+
+#pagebreak()
+= Appendices
+<appendices>
 
 #pagebreak()
 = Glossary
