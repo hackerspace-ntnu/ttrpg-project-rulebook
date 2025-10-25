@@ -80,13 +80,20 @@
       return acc
     }).values().sorted(key: it => (it.name, it.type))
 
-    let current_letter = none
+    let current_letter = ""
     for entry in glossary {
       let entry_name = if (glossary.filter(e => e.name == entry.name).len() > 1) {
         entry.name + " (" + entry.type + ")"
       } else {
         entry.name
       }
+      let first_letter = entry_name.at(0)
+      if (first_letter != current_letter) {
+        current_letter = first_letter
+        heading(outlined: false)[#current_letter]
+      }
+      // Alt render:
+      // #entry_name\ #h(0.64cm)
       [#entry_name: #entry.locations.dedup(key: l => l.page()).map(l => link(l, if l == entry.location { strong([p.#l.page()]) } else { [p.#l.page()] })).join(", ")]
       linebreak()
     }
