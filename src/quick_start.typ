@@ -13,7 +13,7 @@
 
 #pagebreak()
 
-= Setting - Jørg
+= Setting
 <setting>
 This game is set after an event called the Collapse, wherein a prosperous, highly advanced global civilization was destroyed by tremendous creatures, called Titans, emerging from Mana Gateways that they were using to power their cities.
 The destabilization wrought by the Collapse to the world dried up the seas and turned the land arid.
@@ -23,7 +23,7 @@ Mana also disrupts electric currents, rendering conventional technology inoperab
 Mana density increases in proximity to a Gate or Titan.
 Due to the danger inherent in living in these areas of dense Mana, most of civilization is found in the dry lands away from the Gates.
 A few years ago, within living memory, a prophesied being called the Titanslayer managed to actually fell one (1) Titan.
-Now those who delve into the depths of the Mana-saturated areas dream of accruing enough power (through beneficial mutations, wealth, advanced mana-tech, training and whatever means necessary) to fell a second Titan and claim the title of…
+Now those who delve into the depths of the Mana-saturated areas dream of accruing enough power (through beneficial mutations, wealth, advanced mana-tech, training and whatever means necessary) to fell a second Titan and claim the title of . . . 
 
 #align(center)[
   #text(size: 18pt, weight: "bold", fill: gray)[Titanslayer]
@@ -35,7 +35,7 @@ In most cities and towns, there will be an agent of the Understanding willing to
 TODO: Expand lore expansion to add a few more factions (Og, Kaleina,
 those idiots who claimed the first titanslayer)
 
-= Core rules - Sondre
+= Core rules
 <core-rules>
 == Action Rolls
 <action-rolls>
@@ -118,7 +118,7 @@ The GM can at any point initiate a #term[Tag Team Roll] for the party, with no c
 #term("Tag Team Rolls", key: "Tag Team Roll"). can be initiated during combat, given that all participants act during the same #term[Phase].
 
 
-= Character creation (+ mutations?) - Thomas
+= Character creation
 <character-creation-mutations>
 Everyone needs a character in order to play. The stats of the player is
 tied to their background and heritage, so the mechanics a player will be
@@ -152,21 +152,21 @@ Each character has 4 #term[Attributes]. Each #term("Attribute", key: "Attributes
 On creation, arrange \[d4, d6, d6, d8\] how you want your character's
 attributes to be.
 
-#strong[Titles];: \
+== Titles
 At creation and after big moments in the campaign, you earn #term("Titles", is_definition: true).
 #term[Titles] are primarily narrative in that they describe your character, and
 may be referred to at any time by either the player or GM for roleplay
 purposes. Titles provide a static bonus to a roll when invoked, which
 can be done for 1 focus in situations where it makes narrative sense.
 
-#strong[Mutations];: \
-Choose any mutations you'd like from the mutation table
+== Mutations
+Choose any #term("Mutations") you'd like from the mutation table
 (#link("https://docs.google.com/document/d/1zkKA1ifbYqop71Pm5RrK5ofa_Z9V3Yyyje8CdN3MKn4/edit?tab=t.eulwm9krcgii")[document];),
 or make up your own, then notify the GM of your choices. You have 2 free
 mutations, but purely cosmetic costs no slots. For each mutation past
 the first 2, one of your Focus is permanently Corrupted.
 
-#strong[Archetypes:] \
+== Archetypes
 If you're not sure where to start in terms of attributes, weapons,
 armor, and equipment, here are some options.
 
@@ -176,20 +176,24 @@ for your highest Attribute scores. Take 2 Kunai/Daggers (your choice), a
 Longbow, a quiver, and either a bandolier with 3 more Kunai/Daggers or
 Light Armor.
 
+If you want your character to be able to withstand a lot of attacks, you should focus on Might and Insight. Take a Warhammer, Heavy Shield, Boomerang, and Heavy Armor. You may want an extra Boomerang or two. It's important to have a repair kit since this build is intended to block damage using the durability of your armor and shield.
+
+Alternatively, you can focus on dealing damage in melee, in which case Might and Presence are important Attributes. Choose a Greatsword, Sling, and Medium Armor. 
+
 The absolute necessities are a backpack containing a bedroll and 8
 Rations. Feel free to get any other items you want and have space for,
 but consider leaving some room for other items you pick up along the
 way. It's a good idea to make sure at least one person in your party has
 a mess kit, rope, repair kit (the more the better), and torches.
 
-= Combat - Rickard
+= Combat
 <combat>
 == Initiative and action economy
 <initiative-and-action-economy>
 Each round of combat happens in two phases following the Tortoise & Hare
-style of initiative. Players use #strong[Action Points] (AP) to perform
-various actions and can choose to start each turn #strong[rushed] (2 AP,
-acts during first phase) or #strong[methodical] (3 AP, acts during
+style of initiative. Players use #term[Action Points] (AP) to perform
+various actions and can choose to start each turn #term("Rushed", is_definition: true) (2 AP,
+acts during first phase) or #term("Methodical", is_definition: true) (3 AP, acts during
 second phase). Action points are regenerated at the start of the chosen
 phase.
 
@@ -266,7 +270,7 @@ lets characters use it. One Action can only Trigger one Reaction.
 
 == Attacks and defense
 <attacks-and-defense>
-An attack is normally rolled by using two #term[Attribute Dice] relevant to the #term("Weapon", glossary_type: glossary_types.item) used, as well as any other relevant bonuses.
+An attack is normally rolled by using two #term[Attribute Dice] relevant to the #term("Weapon", glossary_type: glossary_types.item) used, as well as any other relevant bonuses. All weapons have a base damage of 1.
 
 There are three #term[Damage Thresholds] that determine the damage dealt; #term[Evasion], #term[Heavy Hit] and #term[Brutal Hit]. 
 Different characters have different thresholds based on their stats as described in the #link(<armor>, "Armor Table").
@@ -322,14 +326,18 @@ Mutations, and Feats can unlock more options.
 When Retaliating your options are enhanced based on what Weapons you currently wield.
 Only one enhancement can be used at a time.
 
-Light Weapons (enhance): When you Counter you may Step at half range \
-Medium Weapons (enhance): When you Counter you leave an open wound on
-the target. If they move before the end of the current phase, they take
-1 damage. \
-Heavy Weapons (enhance): When you Counter you may Push the Attacker MIG
-mod / Size difference Spaces
+Melee Light Weapons: When you Counter you may Step at half range
 
-= Equipment - Robin
+Melee Medium Weapons: When you Counter you leave an open wound on
+the target. If they move before the end of the current phase, they take
+1 damage.
+
+Melee Heavy Weapons: When you Counter you may Push the Attacker MIG
+mod / Size difference Spaces.
+
+Ranged Weapons: 
+
+= Equipment
 <equipment>
 Each character has a #term("Carrying Capacity", is_definition: true) equal to 5 + Might Mod.
 Items and Equipment have an amount of #term[Bulk] (usually 1).
@@ -342,8 +350,8 @@ Finally, small Items with 0 #term[Bulk] are called #term("Trinkets", is_definiti
 Instead, each character has a #term("Pocket", is_definition: true), where they can fit as many #term[Trinkets] as they can physically write in the box on their character sheet.
 These are things like a flint and steel, a pocket knife, a letter, or a sentimental item.
 
-=== Equipment
-<equipment>
+== Equipment List
+<equipment-list>
 #figure(
   align(center)[#table(
     columns: (33.33%, 10%, 56.66%),
@@ -364,13 +372,12 @@ These are things like a flint and steel, a pocket knife, a letter, or a sentimen
     [Mess kit], [1], [Needed for cooking],
     [Bedroll], [1], [Sleeping without doesn't recover Fatigue],
     [Rope (15 meters)], [1], [],
-    [Torches x4], [1], [Burns for 1 Shift, providing Light in a 10 meter
-    radius sphere],
+    [Torches x4], [1], [Burns for 1 Shift, providing Light in a 10 meter radius sphere],
   )]
   , kind: table
   )
 
-=== Armor & Damage Thresholds
+== Armor & Damage Thresholds
 <armor-damage-thresholds>
 // TODO: Add info about Armor Strain, and how damaging/repairing equipment works
 #figure(
@@ -391,7 +398,15 @@ These are things like a flint and steel, a pocket knife, a letter, or a sentimen
 
 \*Beyond Brutal: Every 5 above Brutal counts as +1 damage/success
 
-= Exploration - Jon
+== Weapons
+<weapons>
+A character has one main-hand and one off-hand. You can only hold as many items as you have hands, and some weapons have specific requirements to be used effectively. For example, you can use a Light weapon like a dagger with either hand, but a rapier requres more finesse, so you need to wield it in your main-hand.
+
+Shields count as weapons and can be used to attack, but doing so is less effective than using a regular weapon. Their main purpose is to help you take less damage and absorb blows.
+
+You can see a full list of weapons and their tags in #link(<appendix-a>, "Appendix A")
+
+= Exploration
 <exploration>
 Most of your time in this game will be spent adventuring in the mana-filled wild wastes of . 
 
@@ -411,6 +426,7 @@ Ikeon
 Retyx
 Xeol
 Xalio
+Earthn't
 
 
 The players must choose a “Party Caller” that informs the GM what actions the party will take when exploring.
@@ -418,7 +434,7 @@ Each day spent exploring is divided into six #term("Shifts", is_definition: true
 Usually, one ‘exploration activity' takes one #term("Shift", key: "Shifts") to perform.
 The players can also choose to Push themselves, achieving two exploration actions per shift at the cost of accruing one #term[Fatigue].
 
-At the start of each #term[Shift] spent inside of a #term("Mana Zone", key: "Mana Zones"), the GM will make an #term("Encounter Check", is_definition: true), which may have both positive and negative effects for the party.
+At the start of each #term("Shift", key: "Shifts") spent inside of a #term("Mana Zone", key: "Mana Zones"), the GM will make an #term("Encounter Check", is_definition: true), which may have both positive and negative effects for the party.
 
 Explorers will also need to sleep. If it has been a full day (6 #term[Shifts]) since the characters last slept, each subsequent shift they do not sleep will add one #term[Fatigue] to all PCs.
 
@@ -428,9 +444,7 @@ among these actions:
 
 - #strong[Travel]
   - The party attempts to traverse a hex tile. This will take up two
-    shifts if they are successful. When traversing terrain that is
-    difficult to navigate, the navigator will make a check (Insight +
-    Presence) to determine if the party can stay on course. \
+    shifts if they are successful, but vehicles may shorten this time. When traversing terrain that is difficult to navigate, the navigator will make a check (Insight + Presence) to determine if the party can stay on course. \
 - #strong[Search]
   - The party explores the hex tile they are currently in to look for
     interesting locations. Each member rolls a Search check (Insight +
@@ -457,15 +471,73 @@ among these actions:
     - 1 RP - #emph[Keep Watch];: Roll a single Insight die. If the
       result is higher than the GMs encounter die, receive advance
       warning of threats to the party. \
-    - 1 RP - #emph[Repair/Craft Item] (repeatable): Depending on the
-      item, roll either a crafting (Might + Insight) or tinker (Agility
-      \+ Insight) roll. Gain 1 + Successes Strain or crafting
-      progress.
+    - 1 RP - #emph[Repair Item] (repeatable, requires a #link(<equipment-list>, "Repair Kit")): Choose and item and roll a repair check (Might + Insight). The item clears 1 + Successes Strain.
 
 #pagebreak()
 = Appendices
 <appendices>
 
+== Appendix A: Weapons
+<appendix-a>
+
+=== Weapons
+<weapons-appendix>
+#show figure: set block(breakable: true)
+#set table.cell(breakable: false)
+#figure(align(center)[#table(
+  columns: (20%, 11%, 49%, 20%),
+  align: (left, left, left, left),
+  table.header([], [Roll], [Active\* (1 #term[Focus])], [Tags]),
+  table.hline(),
+  [Stiletto], [Agility + Insight], [Infiltrate:\ Use the target's Evasion as baseline when determining the thresholds for Heavy+ Hits.], [Light],
+  [Kunai], [Agility + Insight], [Swift Strike:\ When you Move, you may make an Attack with this weapon.], [Light\ Thrown(5)],
+  [Dagger], [Agility + Insight], [Dirty Fighting:\ Slice an exposed tendon or muscle, either halving the target's Speed until the end of the round or giving it Bane(1) on its next Attack.], [Light\ Thrown(5)],
+  [Whip], [Agility + Insight], [Wrangle:\ Pull the target adjacent to you if it's smaller than you, or pull youself adjacent to it if it's larger than you. If you're the same size, you choose.], [Light\ Reach(3)],
+  [Sword], [Might + Agility], [Lunge:\ You gain Reach(2) for this Attack\ Parry:\ You gain Guard(1)], [Versatile],
+  [Rapier], [Agility + Presence], [Fencer:\ Step 1 Space without provoking Opportunity Attacks before or after making the Attack Roll.\ \ If you move directly towards the target, gain Boon(1) on the Attack Roll. If you move away from the target, gain 1 Guard, lasting until you move.], [One-handed], 
+  [Rapier], [Agility + Presence], [Fencer:\ Step 1 Space without provoking Opportunity Attacks before or after making the Attack Roll.\ \ If you move directly towards the target, gain Boon(1) on the Attack Roll. If you move away from the target, prepare to counter, allowing you to #term[Retaliate] the next time someone moves into your #term[Threat].], [One-handed], 
+  [Warhammer], [Might + Insight], [Can Opener:\ You may choose to attack the target's armor directly, without giving the target an opportunity to #term[Retaliate].], [Versatile\ Impact(1)],
+  [Spear], [Might + Agility], [Piercing Thrust:\ Your attack pierces all enemies in a line. Each subsequent hit reduces the Attack Roll by 5.], [Versatile\ Reach(2)\ Thrown(5)],
+  [Halberd], [Might + Agility], [Whirlwind:\ Attack all Spaces within half of Reach. Each subsequent hit reduces the attack roll by 5.], [Two-handed\ Reach(2)], 
+  [Greatsword], [Might + Might], [Cleave:\ Attack three connecting spaces within the weapon's range. Each subsequent hit reduces the attack roll by 5.], [Heavy\ Two-handed\ Unwieldy(1)\ Sharp(1)],
+  [Greathammer], [Might + Might], [Push:\ The Attack also pushes the target 1 per success Spaces.], [Heavy\ Two-handed\ Unwieldy(1)\ Sharp(1)],
+  [], [], [], [],
+  [Sling], [Might + Agility], [Ricochet:\ If your Attack hits, it bounces to a secondary target of your choice within half of the weapons range, dealing 1 damage.], [One-handed\ Ranged(8)\ Social Distancing],
+  [Boomerang], [Agility + Insight], [Return:\ At the end of the current Phase the boomerang returns to your hand, dealing 1 damage to each unit it passes through on its way back.], [One-handed\ Thrown(8)],
+  [Shortbow], [Agility + Insight], [Curved Shot:\ You may curve a shot to ignore the Cover of a target.], [Two-handed\ Ranged(10)\ Social Distancing], 
+  [Longbow], [Agility + Insight], [Twin Arrows:\ You may make a single Attack Roll against two targets within the weapon's Range.], [Two-handed\ Ranged(12)\ Social Distancing],
+  [Crossbow], [Agility + Insight], [Piercing Shot:\ Your attack pierces all enemies in a line. Each subsequent hit reduces the Attack Roll by 5.], [Two-handed\ Ranged(10)\ Impact(1)\ Loading(1)],
+  [], [], [], [], 
+  [Light Shield], [], [Block:\ When hit by an attack roll, raise your Damage Thresholds by 2.], [Super Light\ Durable(2)], 
+  [Medium Shield], [Might + Insight], [Blocker:\ When hit by an attack roll, raise your Damage Thresholds by 3.], [Light\ Durable(3)\ Sharp(-1)], 
+  [Heavy Shield], [Might + Insight], [Blockest:\ When hit by an attack roll, raise your Damage Thresholds by 4.], [Light\ Unwieldy(1)\ Durable(4)]
+)])
+\*Active effects modifying an attack must be used before making the Attack Roll.
+
+=== Weapon Tags
+<weapon-tags>
+#figure(align(center)[#table(
+  columns: (30%, 70%),
+  align: (left, left, left, left),
+  table.header([Name], [Effect]),
+  table.hline(),
+  [Light], [Can be wielded in the main- or off-hand.],
+  [Super Light], [Cannot be used to make attacks. Can be wielded in the same hand as a Weapon that isn't two-handed and doesn't have Unwieldy, but that Weapon is treated as Unwieldy(1) without conferring the effect to other Weapons.], 
+  [Super Light], [Cannot be used to make attacks, but leaves your hand open. If in the same hand as another Weapon, you lower the die size of both die for all Attack Rolls made with that weapon by 1. If you can't reduce the die size any further you instead halve the die result.], 
+  [Versatile], [Can be wielded in the main-hand or with two hands. Wielding the Weapon in two hands grants +1 to Attack Rolls made with it.], 
+  [One-handed], [Can be wielded in the main-hand.],
+  [Two-handed], [Must be wielded with two hands.], 
+  [Heavy], [This tag is used for the purposes of Bulk and abilities, such as retaliations, that use the size/weight of a weapon. A weapon with this tag also gains the Two-handed, Unwieldy(1), and Sharp(1) tags.],
+  [Ranged(N)], [Can attack at a range of N. For every Space past N the Attack Roll gains -1.], 
+  [Reach(N)], [You may make Melee Attacks targets within N Spaces with this weapon.], 
+  [Thrown(N)], [Can be thrown to a range of N, landing in the last space before collision. For every Space past N the Attack Roll gains -1.], 
+  [Unwieldy(N)], [Lower the die size of both die for all Weapon Attack Rolls made while this weapon is equipped by N. If you can't reduce the die size any further you instead halve the die result.], 
+  [Durable(N)], [This weapon has N Max Strain.], 
+  [Sharp(N)], [This weapon's base damage increases by N.], 
+  [Impact(N)], [This weapon does +N damage to Armor, Equipment and Guard.],
+  [Social Distancing], [Attacks made with this weapon while in a hostile creature's Threat are made with Bane(1)], 
+  [Loading(N)], [The weapon must be loaded by taking an N AP Action in order to Attack with it. Loading while in a hostile creature's Threat triggers an Opportunity Attack from them.]
+)])
 #pagebreak()
 = Glossary
 <glossary>

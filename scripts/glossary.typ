@@ -61,6 +61,9 @@
       if (key not in acc) {
         entry.locations = ()
         entry.locations.push(entry.location)
+        if (not entry.is_definition) {
+          entry.location = none
+        }
         acc.insert(key, entry)
       } else {
         let glossary_entry = acc.at(key, default: none)
@@ -77,13 +80,14 @@
       return acc
     }).values().sorted(key: it => (it.name, it.type))
 
+    let current_letter = none
     for entry in glossary {
       let entry_name = if (glossary.filter(e => e.name == entry.name).len() > 1) {
         entry.name + " (" + entry.type + ")"
       } else {
         entry.name
       }
-      [#entry_name: #entry.locations.dedup(key: p => p.page()).map(p => link(p, if p == entry.location { strong([p.#p.page()]) } else { [p.#p.page()] })).join(", ")]
+      [#entry_name: #entry.locations.dedup(key: l => l.page()).map(l => link(l, if l == entry.location { strong([p.#l.page()]) } else { [p.#l.page()] })).join(", ")]
       linebreak()
     }
   })

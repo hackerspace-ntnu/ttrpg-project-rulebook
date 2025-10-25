@@ -14,7 +14,7 @@ behaviour of these natural structures.
 + The climate
   - Temperature
   - Precipitation
-+ The topography
++ The topography>
 + The geology
 + The ice properties
   - Viscosity
@@ -24,6 +24,7 @@ behaviour of these natural structures.
 Glaciers as the one shown in
 @glaciers will cease to exist if
 we don't take action soon!
+
 
 #show figure: set align(left)
 #show image: set align(left)
