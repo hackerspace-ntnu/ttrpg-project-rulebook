@@ -27,6 +27,7 @@
   context {
     // let current_page = 
     let location = here()
+    let current_section = query(selector(heading).before(location))
     _state_glossary.update(glossary => {
       glossary.push((
         name: entry_name, 
@@ -34,6 +35,7 @@
         type: glossary_type,
         location: location,
         is_definition: is_definition,
+        section: current_section,
       ))
       glossary
     })
@@ -60,7 +62,7 @@
       let key = entry.name + "|" + entry.type
       if (key not in acc) {
         entry.locations = ()
-        entry.locations.push(entry.location)
+        entry.locations.push((entry.location, entry.section))
         if (not entry.is_definition) {
           entry.location = none
         }
@@ -74,13 +76,13 @@
           glossary_entry.location = entry.location
           glossary_entry.is_definition = true
         }
-        glossary_entry.locations.push(entry.location)
+        glossary_entry.locations.push(( entry.location, entry.section ))
         acc.at(key) = glossary_entry
       }
       return acc
     }).values().sorted(key: it => (it.name, it.type))
 
-    let current_letter = ""
+    let current_letter = none
     for entry in glossary {
       let entry_name = if (glossary.filter(e => e.name == entry.name).len() > 1) {
         entry.name + " (" + entry.type + ")"
@@ -94,7 +96,17 @@
       }
       // Alt render:
       // #entry_name\ #h(0.64cm)
-      [#entry_name: #entry.locations.dedup(key: l => l.page()).map(l => link(l, if l == entry.location { strong([p.#l.page()]) } else { [p.#l.page()] })).join(", ")]
+      [#entry_name: #entry.locations.dedup(
+        key: l => l.at(1)
+      ).dedup(
+        key: l => l.at(0).page()
+      ).map(l => link(l.at(0), 
+        if l.at(0) == entry.location { 
+          strong([p.#(l.at(0).page()-1)]) } 
+        else {
+          [p.#(l.at(0).page()-1)]
+        }
+      )).join(", ")]
       linebreak()
     }
   })
