@@ -1,0 +1,62 @@
+{
+  "Attack": {
+    "description": "#term[Attack] with your main hand weapon.",
+    "cost": 1
+  },
+  "Offhand Attack": {
+    "description": "#term[Offhand Attack] with your offhand weapon.",
+    "cost": 1
+  },
+  "Cast": {
+    "description": "#term[Cast] a spell (varying cost).",
+    "cost": -1
+  },
+  "Help": {
+    "description": "#term[Help] an ally with their next Action Roll (except Help), given that you can meaningfully impact it in the narrative, granting them a Boon(1 + 1 per Success).",
+    "cost": 1
+  },
+  "Shove": {
+    "description": "#term[Shove] a target 1 Space + 1 per success. 2 Spaces of Shove can be traded to knock the target Prone. Targets Evasion.",
+    "cost": 1
+  },
+  "Grapple": {
+    "description": "#term[Grapple] a target, granting a #term[Success] bonus to attacks against the target. Targets Evasion?",
+    "cost": 1
+  },
+  "Ready": {
+    "description": "#term[Ready] an Action, paying its AP cost immediately.",
+    "cost": 1
+  },
+  "Interact": {
+    "description": "#term[Interact] with or #term[Use] an item.",
+    "cost": 1
+  },
+  "Parley": {
+    "description": "#term[Parley] with a target",
+    "cost": 1
+  },
+  "Move": {
+    "description": "#term[Move] up to your Speed.",
+    "cost": 0
+  },
+  "Stow": {
+    "description": "#term[Stow] a Weapon or object held in your hand(s) into your quick draw inventory. Stowing into your inventory costs 1 AP.",
+    "cost": 0
+  },
+  "Draw": {
+    "description": "#term[Draw] a Weapon or object in your quick draw inventory into your hand(s). Drawing from your inventory costs 1 AP.",
+    "cost": 0
+  },
+  "Charge": {
+    "description": "#term[Charge] your next Action, delaying its activation until the end of the next Phase, but granting you Boon(3) on it. You must pick a target Space for the Action when picking this option.",
+    "cost": 0
+  },
+  "Disengage": {
+    "description": "#term[Disengage] from a single enemy, preventing your own movement to trigger Retaliations from them this phase.",
+    "cost": 0
+  },
+  "Push": {
+    "description": "#term[Push] yourself, taking 1 Fatigue in order to perform one of the following effects: - (repeatable +1 cost) 1 Fatigue for Boon(1)  - 2 Fatigue to gain 1 AP",
+    "cost": 0
+  }
+}

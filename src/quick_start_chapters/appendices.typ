@@ -1,5 +1,5 @@
 #import "../../scripts/glossary.typ": term, render_glossary, glossary_types
-
+#import "../../scripts/tables.typ": weaponTagsTable
 = Appendices
 <appendices>
 
@@ -19,8 +19,7 @@
   [Kunai], [Agility + Insight], [Swift Strike:\ When you Move, you may make an Attack with this weapon.], [Light\ Thrown(5)],
   [Dagger], [Agility + Insight], [Dirty Fighting:\ Slice an exposed tendon or muscle, either halving the target's Speed until the end of the round or giving it Bane(1) on its next Attack.], [Light\ Thrown(5)],
   [Whip], [Agility + Insight], [Wrangle:\ Pull the target adjacent to you if it's smaller than you, or pull youself adjacent to it if it's larger than you. If you're the same size, you choose.], [Light\ Reach(3)],
-  [Sword], [Might + Agility], [Lunge:\ You gain Reach(2) for this Attack\ Parry:\ You gain Guard(1)], [Versatile],
-  [Rapier], [Agility + Presence], [Fencer:\ Step 1 Space without provoking Opportunity Attacks before or after making the Attack Roll.\ \ If you move directly towards the target, gain Boon(1) on the Attack Roll. If you move away from the target, gain 1 Guard, lasting until you move.], [One-handed], 
+  [Sword], [Might + Agility], [Lunge:\ You gain Reach(2) for this Attack\ Parry:\ You gain Guard(1)], [Versatile], 
   [Rapier], [Agility + Presence], [Fencer:\ Step 1 Space without provoking Opportunity Attacks before or after making the Attack Roll.\ \ If you move directly towards the target, gain Boon(1) on the Attack Roll. If you move away from the target, prepare to counter, allowing you to #term[Retaliate] the next time someone moves into your #term[Threat].], [One-handed], 
   [Warhammer], [Might + Insight], [Can Opener:\ You may choose to attack the target's armor directly, without giving the target an opportunity to #term[Retaliate].], [Versatile\ Impact(1)],
   [Spear], [Might + Agility], [Piercing Thrust:\ Your attack pierces all enemies in a line. Each subsequent hit reduces the Attack Roll by 5.], [Versatile\ Reach(2)\ Thrown(5)],
@@ -34,7 +33,7 @@
   [Longbow], [Agility + Insight], [Twin Arrows:\ You may make a single Attack Roll against two targets within the weapon's Range.], [Two-handed\ Ranged(12)\ Social Distancing],
   [Crossbow], [Agility + Insight], [Piercing Shot:\ Your attack pierces all enemies in a line. Each subsequent hit reduces the Attack Roll by 5.], [Two-handed\ Ranged(10)\ Impact(1)\ Loading(1)],
   [], [], [], [], 
-  [Light Shield], [], [Block:\ When hit by an attack roll, raise your Damage Thresholds by 2.], [Super Light\ Durable(2)], 
+  [Light Shield], [], [Block:\ When hit by an attack roll, raise your Damage Thresholds by 2.], [Arm Attachment\ Durable(2)], 
   [Medium Shield], [Might + Insight], [Blocker:\ When hit by an attack roll, raise your Damage Thresholds by 3.], [Light\ Durable(3)\ Sharp(-1)], 
   [Heavy Shield], [Might + Insight], [Blockest:\ When hit by an attack roll, raise your Damage Thresholds by 4.], [Light\ Unwieldy(1)\ Durable(4)]
 )])
@@ -42,24 +41,4 @@
 
 === Weapon Tags
 <weapon-tags>
-#figure(align(center)[#table(
-  columns: (30%, 70%),
-  align: (left, left, left, left),
-  table.header([Name], [Effect]),
-  table.hline(),
-  [#term("Light", is_definition: true)], [Can be wielded in the main- or off-hand.],
-  [#term("Super Light", is_definition: true)], [Cannot be used to make attacks, but leaves your hand open. If in the same hand as another Weapon, you lower the die size of both die for all Attack Rolls made with that weapon by 1. If you can't reduce the die size any further you instead halve the die result.],
-  [#term("Versatile", is_definition: true)], [Can be wielded in the main-hand or with two hands. Wielding the Weapon in two hands grants +1 to Attack Rolls made with it.],
-  [#term("One-handed", is_definition: true)], [Can be wielded in the main-hand.],
-  [#term("Two-handed", is_definition: true)], [Must be wielded with two hands.],
-  [#term("Heavy", is_definition: true)], [This tag is used for the purposes of Bulk and abilities, such as retaliations, that use the size/weight of a weapon. A weapon with this tag also gains the Two-handed, Unwieldy(1), and Sharp(1) tags.],
-  [#term("Ranged", is_definition: true)], [Can attack at a range of N. For every Space past N the Attack Roll gains -1.],
-  [#term("Reach", is_definition: true)], [You may make Melee Attacks targets within N Spaces with this weapon.],
-  [#term("Thrown", is_definition: true)], [Can be thrown to a range of N, landing in the last space before collision. For every Space past N the Attack Roll gains -1.],
-  [#term("Unwieldy", is_definition: true)], [Lower the die size of both die for all Weapon Attack Rolls made while this weapon is equipped by N. If you can't reduce the die size any further you instead halve the die result.],
-  [#term("Durable", is_definition: true)], [This weapon has N Max Strain.],
-  [#term("Sharp", is_definition: true)], [This weapon's base damage increases by N.],
-  [#term("Impact", is_definition: true)], [This weapon does +N damage to Armor, Equipment and Guard.],
-  [#term("Social Distancing", is_definition: true)], [Attacks made with this weapon while in a hostile creature's Threat are made with Bane(1)],
-  [#term("Loading", is_definition: true)], [The weapon must be loaded by taking an N AP Action in order to Attack with it. Loading while in a hostile creature's Threat triggers an Opportunity Attack from them.]
-)])
+#weaponTagsTable(json("../../data/terms/weapon_tags.json"))

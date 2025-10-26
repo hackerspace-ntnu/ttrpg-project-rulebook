@@ -1,0 +1,204 @@
+{
+  "weapons": [
+    {
+      "name": "Stiletto",
+      "attributes": ["Agility", "Insight"],
+      "ability": {
+        "name": "Infiltrate",
+        "focusCost": 1,
+        "description": "Use the target's Evasion as baseline when determining the thresholds for Heavy+ Hits."
+      },
+      "tags": ["Light"]
+    },
+    {
+      "name": "Kunai",
+      "attributes": ["Agility", "Insight"],
+      "ability": {
+        "name": "Swift Strike",
+        "focusCost": 1,
+        "description": "When you Move, you may make an Attack with this weapon."
+      },
+      "tags": ["Light", "Thrown(5)"]
+    },
+    {
+      "name": "Dagger",
+      "attributes": ["Agility", "Insight"],
+      "ability": {
+        "name": "Dirty Fighting",
+        "focusCost": 1,
+        "description": "Slice an exposed tendon or muscle, either halving the target's Speed until the end of the round or giving it Bane(1) on its next Attack."
+      },
+      "tags": ["Light", "Thrown(5)"]
+    },
+    {
+      "name": "Whip",
+      "attributes": ["Agility", "Insight"],
+      "ability": {
+        "name": "Wrangle",
+        "focusCost": 1,
+        "description": "Pull the target adjacent to you if it's smaller than you, or pull youself adjacent to it if it's larger than you. If you're the same size, you choose."
+      },
+      "tags": ["Light", "Reach(3)"]
+    },
+    {
+      "name": "Sword",
+      "attributes": ["Might", "Agility"],
+      "ability": {
+        "name": "Lunge/Parry",
+        "focusCost": 1,
+        "description": "Lunge: You gain Reach(2) for this Attack. Parry: You gain Guard(1)"
+      },
+      "tags": ["Versatile"]
+    },
+    {
+      "name": "Rapier",
+      "attributes": ["Agility", "Presence"],
+      "ability": {
+        "name": "Fencer",
+        "focusCost": 1,
+        "description": "Step 1 Space without provoking Opportunity Attacks before or after making the Attack Roll. If you move directly towards the target, gain Boon(1) on the Attack Roll. If you move away from the target, gain 1 Guard, lasting until you move."
+      },
+      "tags": ["One-handed"]
+    },
+    {
+      "name": "Rapier",
+      "attributes": ["Agility", "Presence"],
+      "ability": {
+        "name": "Fencer",
+        "focusCost": 1,
+        "description": "Step 1 Space without provoking Opportunity Attacks before or after making the Attack Roll. If you move directly towards the target, gain Boon(1) on the Attack Roll. If you move away from the target, prepare to counter, allowing you to Retaliate the next time someone moves into your Threat."
+      },
+      "tags": ["One-handed"]
+    },
+    {
+      "name": "Warhammer",
+      "attributes": ["Might", "Insight"],
+      "ability": {
+        "name": "Can Opener",
+        "focusCost": 1,
+        "description": "You may choose to attack the target's armor directly, without giving the target an opportunity to Retaliate."
+      },
+      "tags": ["Versatile", "Impact(1)"]
+    },
+    {
+      "name": "Spear",
+      "attributes": ["Might", "Agility"],
+      "ability": {
+        "name": "Piercing Thrust",
+        "focusCost": 1,
+        "description": "Your attack pierces all enemies in a line. Each subsequent hit reduces the Attack Roll by 5."
+      },
+      "tags": ["Versatile", "Reach(2)", "Thrown(5)"]
+    },
+    {
+      "name": "Halberd",
+      "attributes": ["Might", "Agility"],
+      "ability": {
+        "name": "Whirlwind",
+        "focusCost": 1,
+        "description": "Attack all Spaces within half of Reach. Each subsequent hit reduces the attack roll by 5."
+      },
+      "tags": ["Two-handed", "Reach(2)"]
+    },
+    {
+      "name": "Greatsword",
+      "attributes": ["Might", "Might"],
+      "ability": {
+        "name": "Cleave",
+        "focusCost": 1,
+        "description": "Attack three connecting spaces within the weapon's range. Each subsequent hit reduces the attack roll by 5."
+      },
+      "tags": ["Heavy", "Two-handed", "Unwieldy(1)", "Sharp(1)"]
+    },
+    {
+      "name": "Greathammer",
+      "attributes": ["Might", "Might"],
+      "ability": {
+        "name": "Push",
+        "focusCost": 1,
+        "description": "The Attack also pushes the target 1 per success Spaces."
+      },
+      "tags": ["Heavy", "Two-handed", "Unwieldy(1)", "Sharp(1)"]
+    },
+    {
+      "name": "Sling",
+      "attributes": ["Might", "Agility"],
+      "ability": {
+        "name": "Ricochet",
+        "focusCost": 1,
+        "description": "If your Attack hits, it bounces to a secondary target of your choice within half of the weapons range, dealing 1 damage."
+      },
+      "tags": ["One-handed", "Ranged(8)", "Social Distancing"]
+    },
+    {
+      "name": "Boomerang",
+      "attributes": ["Agility", "Insight"],
+      "ability": {
+        "name": "Return",
+        "focusCost": 1,
+        "description": "At the end of the current Phase the boomerang returns to your hand, dealing 1 damage to each unit it passes through on its way back."
+      },
+      "tags": ["One-handed", "Thrown(8)"]
+    },
+    {
+      "name": "Shortbow",
+      "attributes": ["Agility", "Insight"],
+      "ability": {
+        "name": "Curved Shot",
+        "focusCost": 1,
+        "description": "You may curve a shot to ignore the Cover of a target."
+      },
+      "tags": ["Two-handed", "Ranged(10)", "Social Distancing"]
+    },
+    {
+      "name": "Longbow",
+      "attributes": ["Agility", "Insight"],
+      "ability": {
+        "name": "Twin Arrows",
+        "focusCost": 1,
+        "description": "You may make a single Attack Roll against two targets within the weapon's Range."
+      },
+      "tags": ["Two-handed", "Ranged(12)", "Social Distancing"]
+    },
+    {
+      "name": "Crossbow",
+      "attributes": ["Agility", "Insight"],
+      "ability": {
+        "name": "Piercing Shot",
+        "focusCost": 1,
+        "description": "Your attack pierces all enemies in a line. Each subsequent hit reduces the Attack Roll by 5."
+      },
+      "tags": ["Two-handed", "Ranged(10)", "Impact(1)", "Loading(1)"]
+    },
+    {
+      "name": "Light Shield",
+      "attributes": null,
+      "ability": {
+        "name": "Block",
+        "focusCost": 1,
+        "description": "When hit by an attack roll, raise your Damage Thresholds by 2."
+      },
+      "tags": ["Arm Attachment", "Durable(2)"]
+    },
+    {
+      "name": "Medium Shield",
+      "attributes": ["Might", "Insight"],
+      "ability": {
+        "name": "Blocker",
+        "focusCost": 1,
+        "description": "When hit by an attack roll, raise your Damage Thresholds by 3."
+      },
+      "tags": ["Light", "Durable(3)", "Sharp(-1)"]
+    },
+    {
+      "name": "Heavy Shield",
+      "attributes": ["Might", "Insight"],
+      "ability": {
+        "name": "Blockest",
+        "focusCost": 1,
+        "description": "When hit by an attack roll, raise your Damage Thresholds by 4."
+      },
+      "tags": ["Light", "Unwieldy(1)", "Durable(4)"]
+    }
+  ]
+}
