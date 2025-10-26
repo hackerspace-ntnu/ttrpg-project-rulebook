@@ -41,4 +41,4 @@
 
 === Weapon Tags
 <weapon-tags>
-#weaponTagsTable(json("../../data/terms/weapon_tags.json"))
+#weaponTagsTable(json("../../data/json/weapon_tags.json"))

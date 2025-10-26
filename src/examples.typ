@@ -75,7 +75,7 @@ various parameters:
 
 == Data Table Example
 
-#encounterTable(json("../data/tables/encounter_check.json"), "1d6")
+#encounterTable(json("../data/json/encounter_check.json"), "1d6")
 
 == Terms and Glossary
 
