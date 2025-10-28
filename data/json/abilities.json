@@ -1,191 +1,227 @@
 {
   "Infiltrate": {
     "name": "Infiltrate",
+    "category": "Insight",
+    "tag": "Enhance",
+    "tier": 2,
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "Your next Attack uses the target's Evasion as baseline when determining the thresholds for Heavy+ Hits, defaulting to the 5+ rule.",
     "valid_weapon_tags": ["Light"],
-    "prerequisite_weapon_tags": null,
-    "category": "Insight",
-    "tier": 2
+    "valid_weapon_types": null
   },
   "Swift Strike": {
     "name": "Swift Strike",
+    "category": "Agility",
+    "tag": "Enhance",
+    "tier": 1,
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "When you take the Move action, you may make an Attack with a Light weapon.",
     "valid_weapon_tags": ["Light"],
-    "prerequisite_weapon_tags": null,
-    "category": "Agility",
-    "tier": 1
+    "valid_weapon_types": null
   },
   "Dirty Fighting": {
     "name": "Dirty Fighting",
+    "category": "Agility",
+    "tag": "Enhance",
+    "tier": 1,
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "Your next Attack slices an exposed tendon or muscle on hit, either halving the target's Speed until the end of the round or giving it Bane(1) on its next Attack.",
     "valid_weapon_tags": ["Light"],
-    "prerequisite_weapon_tags": ["Melee"],
-    "category": "Agility",
-    "tier": 1
+    "valid_weapon_types": ["Melee"]
   },
   "Wrangle": {
     "name": "Wrangle",
+    "category": "Weapon",
+    "tag": "Enhance",
+    "tier": 0,
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "Your next Attack pulls the target adjacent to you if it's smaller than you, or pull yourself adjacent to it if it's larger than you. If you're the same size, you choose.",
     "valid_weapon_tags": ["Reach"],
-    "prerequisite_weapon_tags": null,
-    "category": "Weapon",
-    "tier": 0
+    "valid_weapon_types": null
   },
   "Lunge/Parry": {
     "name": "Lunge/Parry",
+    "category": "Insight",
+    "tag": "Enhance",
+    "tier": 1,
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "Lunge: You gain Reach(2) for this Attack. Parry: You gain Guard(1)",
     "valid_weapon_tags": ["Versatile"],
-    "prerequisite_weapon_tags": null,
-    "category": "Insight",
-    "tier": 1
+    "valid_weapon_types": null
   },
   "Well Balanced": {
     "name": "Well Balanced",
+    "category": "General",
+    "tag": "Enhance",
+    "tier": 0,
     "focus_cost": 2,
     "ap_cost": 0,
     "description": "When rolling for your next #term[Attack], you add a third unique Attribute Die to the roll, picking two of the three rolled dice to use.",
     "valid_weapon_tags": ["Versatile", "One-handed"],
-    "prerequisite_weapon_tags": ["Melee"],
-    "category": null,
-    "tier": 0
+    "valid_weapon_types": ["Melee"]
   },
   "Adaptable": {
     "name": "Adaptable",
+    "category": "Insight",
+    "tag": "Enhance",
+    "tier": 1,
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "Until the start of your next turn, you treat a Weapon you're wielding as having one of the following tags, provided the weapon is not already tagged with it: Reach(2), Impact(1), Thrown(5)",
     "valid_weapon_tags": ["Versatile", "One-handed"],
-    "prerequisite_weapon_tags": ["Melee"],
-    "category": "Insight",
-    "tier": 1
+    "valid_weapon_types": ["Melee"]
   },
   "Fencer": {
     "name": "Fencer",
+    "category": "Agility",
+    "tag": "Enhance",
+    "tier": 1,
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "Step 1 Space without provoking Opportunity Attacks before or after making the Attack Roll. If you move directly towards the target, gain Boon(1) on the Attack Roll. If you move away from the target, prepare to counter, allowing you to Retaliate the next time someone moves into your Threat.",
     "valid_weapon_tags": ["One-handed"],
-    "prerequisite_weapon_tags": null,
-    "category": "Agility",
-    "tier": 1
+    "valid_weapon_types": null
   },
   "Can Opener": {
     "name": "Can Opener",
+    "category": "Might",
+    "tag": "Enhance",
+    "tier": 1,
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "You may choose to attack the target's armor directly, without giving the target an opportunity to Retaliate.",
     "valid_weapon_tags": ["Versatile", "Two-handed", "Heavy", "Impact"],
-    "prerequisite_weapon_tags": null,
-    "category": "Might",
-    "tier": 1
+    "valid_weapon_types": null
   },
   "Piercing Thrust": {
     "name": "Piercing Thrust",
+    "category": "Might",
+    "tag": "Enhance",
+    "tier": 1,
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "Your next Attack pierces all enemies in a line, using the same Attack Roll for each target.",
     "valid_weapon_tags": ["Reach"],
-    "prerequisite_weapon_tags": null,
-    "category": "Might",
-    "tier": 1
+    "valid_weapon_types": null
   },
   "Whirlwind": {
     "name": "Whirlwind",
+    "category": "Might",
+    "tag": "Enhance",
+    "tier": 1,
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "Your next Attack hits all Spaces within half of Reach, using the same Attack Roll for each target.",
     "valid_weapon_tags": ["Reach"],
-    "prerequisite_weapon_tags": null,
-    "category": "Might",
-    "tier": 1
+    "valid_weapon_types": null
   },
   "Cleave": {
     "name": "Cleave",
+    "category": "Might",
+    "tag": "Enhance",
+    "tier": 1,
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "Your next Attack hits three connecting spaces within the weapon's range, using the same Attack Roll for each target.",
     "valid_weapon_tags": ["Heavy", "Two-handed"],
-    "prerequisite_weapon_tags": null,
-    "category": "Might",
-    "tier": 1
+    "valid_weapon_types": null
   },
   "Push": {
     "name": "Push",
+    "category": "Might",
+    "tag": "Enhance",
+    "tier": 1,
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "Your next Attack pushes the target 1 per success Spaces.",
     "valid_weapon_tags": ["Heavy", "Two-handed", "Impact"],
-    "prerequisite_weapon_tags": null,
-    "category": "Might",
-    "tier": 1
+    "valid_weapon_types": null
   },
   "Ricochet": {
     "name": "Ricochet",
+    "category": "Agility",
+    "tag": "Enhance",
+    "tier": 1,
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "If your Attack hits, it bounces to a secondary target of your choice within half of the weapons range, dealing 1 damage.",
     "valid_weapon_tags": null,
-    "prerequisite_weapon_tags": ["Ranged"],
-    "category": "Agility",
-    "tier": 1
+    "valid_weapon_types": ["Ranged"]
   },
   "Return": {
     "name": "Return",
+    "category": "Agility",
+    "tag": "Enhance",
+    "tier": 1,
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "At the end of the current Phase the Weapon returns to your hand, dealing 1 damage to each unit it passes through on its way back.",
     "valid_weapon_tags": ["Thrown"],
-    "prerequisite_weapon_tags": null,
-    "category": "Agility",
-    "tier": 1
+    "valid_weapon_types": null
   },
   "Curved Shot": {
     "name": "Curved Shot",
+    "category": "Agility",
+    "tag": "Enhance",
+    "tier": 1,
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "Your next Attack ignores the Cover of a target.",
-    "valid_weapon_tags": ["Ranged"],
-    "prerequisite_weapon_tags": ["Ranged"],
-    "category": "Agility",
-    "tier": 1
+    "valid_weapon_tags": null,
+    "valid_weapon_types": ["Ranged"]
   },
   "Twin Arrows": {
     "name": "Twin Arrows",
+    "category": "Agility",
+    "tag": "Enhance",
+    "tier": 2,
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "Your next Attack is made against two targets within the weapon's Range, using the same Attack Roll.",
-    "valid_weapon_tags": ["Ranged"],
-    "prerequisite_weapon_tags": ["Ranged"],
-    "category": "Agility",
-    "tier": 2
+    "valid_weapon_tags": null,
+    "valid_weapon_types": ["Ranged"]
   },
   "Piercing Shot": {
     "name": "Piercing Shot",
+    "category": "Agility",
+    "tag": "Enhance",
+    "tier": 2,
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "Your attack pierces all enemies in a line, using the same Attack Roll for each target.",
     "valid_weapon_tags": ["Two-handed"],
-    "prerequisite_weapon_tags": ["Ranged"],
-    "category": "Agility",
-    "tier": 2
+    "valid_weapon_types": ["Ranged"]
   },
   "Block": {
     "name": "Block",
+    "category": "Weapon",
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "When hit by an attack roll, raise your Damage Thresholds by an amount equal to the Durable tag of this weapon.",
+    "valid_weapon_tags": ["Durable"],
+    "valid_weapon_types": null
+  },
+  "Double Down": {
+    "name": "Double Down",
+    "category": "General",
+    "focus_cost": 1,
+    "ap_cost": 0,
+    "description": "When you fail a roll you may Double Down, rolling again with a chance of turning failure into success. If this roll the consequences are doubled, and you can not Double Down again.",
     "valid_weapon_tags": null,
-    "prerequisite_weapon_tags": ["Durable"],
-    "category": "Weapon"
+    "valid_weapon_types": null
+  },
+  "": {
+    "name": "Double Down",
+    "category": "General",
+    "focus_cost": 1,
+    "ap_cost": 0,
+    "description": "When you fail a roll you may Double Down, rolling again with a chance of turning failure into success. If this roll the consequences are doubled, and you can not Double Down again.",
+    "valid_weapon_tags": null,
+    "valid_weapon_types": null
   }
 }

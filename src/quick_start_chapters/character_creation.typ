@@ -42,8 +42,9 @@ purposes. Titles provide a static bonus to a roll when invoked, which
 can be done for 1 focus in situations where it makes narrative sense.
 
 == Mutations
+#show link: underline
 Choose any #term("Mutations") you'd like from the mutation table
-(#link("https://docs.google.com/document/d/1zkKA1ifbYqop71Pm5RrK5ofa_Z9V3Yyyje8CdN3MKn4/edit?tab=t.eulwm9krcgii")[document];),
+#link("https://docs.google.com/document/d/1zkKA1ifbYqop71Pm5RrK5ofa_Z9V3Yyyje8CdN3MKn4/edit?tab=t.eulwm9krcgii")[#text(fill: purple)[document]];,
 or make up your own, then notify the GM of your choices. You have 2 free
 mutations, but purely cosmetic costs no slots. For each mutation past
 the first 2, one of your Focus is permanently Corrupted.

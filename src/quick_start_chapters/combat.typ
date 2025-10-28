@@ -4,8 +4,8 @@
 <combat>
 == Initiative and action economy
 <initiative-and-action-economy>
-Each round of combat happens in two phases following the Tortoise & Hare
-style of initiative. Players use #term[Action Points] (AP) to perform
+Each round of combat happens in two #term("Phases", is_definition: true) following the Tortoise & Hare
+style of initiative. Players use #term("Action Points", is_definition: true) (AP) to perform
 various actions and can choose to start each turn #term("Rushed", is_definition: true) (2 AP,
 acts during first phase) or #term("Methodical", is_definition: true) (3 AP, acts during
 second phase). Action points are regenerated at the start of the chosen
@@ -84,9 +84,11 @@ lets characters use it. One Action can only Trigger one Reaction.
 
 == Attacks and defense
 <attacks-and-defense>
-An attack is normally rolled by using two #term[Attribute Dice] relevant to the #term("Weapon", glossary_type: glossary_types.item) used, as well as any other relevant bonuses. All weapons have a base damage of 1.
+An attack is normally rolled by using two #term[Attribute Dice] relevant to the #term("Weapon", glossary_type: glossary_types.item) used, as well as any other relevant bonuses. All weapons have a base damage of 1. Unarmed attacks have a base damage of 0.
 
-There are three #term[Damage Thresholds] that determine the damage dealt; #term[Evasion], #term[Heavy Hit] and #term[Brutal Hit]. 
+Melee weapons usually have a #term("Threat", is_definition: true) of 1, meaning that you can attack things within 1 space of yourself. If you have a free hand, you also have 1 #term[Threat], with which you can make Unarmed Attacks.
+
+There are three #term("Damage Thresholds", is_definition: true) that determine the damage dealt; #term[Evasion], #term[Heavy Hit] and #term[Brutal Hit]. 
 Different characters have different thresholds based on their stats as described in the #link(<armor>, "Armor Table").
 
 A roll higher than a creature's evasion is a hit. 

@@ -1,5 +1,5 @@
 [
-  {
+    {
     "name": "Arm Attachment",
     "description": "Cannot be used to make attacks, but leaves your hand open. If in the same hand as another Weapon, you lower the die size of both die for all Attack Rolls made with that weapon by 1. If you can't reduce the die size any further you instead halve the die result."
   },
@@ -7,9 +7,14 @@
     "name": "Light",
     "description": "Can be wielded in the main- or off-hand."
   },
+      {
+    "name": "Medium",
+    "description": "Standard weapon size",
+    "parameter": null
+  },
   {
-    "name": "Versatile",
-    "description": "Can be wielded in the main-hand or with two hands. Wielding the Weapon in two hands grants +1 to Attack Rolls made with it."
+    "name": "Heavy",
+    "description": "This tag is used for the purposes of Bulk and abilities, such as retaliations, that use the size/weight of a weapon. A weapon with this tag also gains the Two-handed, Unwieldy(1), and Sharp(1) tags."
   },
   {
     "name": "One-handed",
@@ -20,13 +25,13 @@
     "description": "Must be wielded with two hands."
   },
   {
-    "name": "Heavy",
-    "description": "This tag is used for the purposes of Bulk and abilities, such as retaliations, that use the size/weight of a weapon. A weapon with this tag also gains the Two-handed, Unwieldy(1), and Sharp(1) tags."
+    "name": "Versatile",
+    "description": "Can be wielded in the main-hand or with two hands. Wielding the Weapon in two hands grants +1 to Attack Rolls made with it."
   },
   {
-    "name": "Ranged",
-    "description": "Can attack at a range of N. For every Space past N the Attack Roll gains -1.",
-    "parameter": "N"
+    "name": "Melee",
+    "description": "Has a base attack range of 1.",
+    "parameter": null
   },
   {
     "name": "Reach",
@@ -39,9 +44,13 @@
     "parameter": "N"
   },
   {
-    "name": "Unwieldy",
-    "description": "Lower the die size of both die for all Weapon Attack Rolls made while this weapon is equipped by N. If you can't reduce the die size any further you instead halve the die result.",
+    "name": "Ranged",
+    "description": "Can attack at a range of N. For every Space past N the Attack Roll gains -1.",
     "parameter": "N"
+  },
+  {
+    "name": "Social Distancing",
+    "description": "Attacks made with this weapon while in a hostile creature's Threat are made with Bane(1)"
   },
   {
     "name": "Durable",
@@ -59,12 +68,13 @@
     "parameter": "N"
   },
   {
-    "name": "Social Distancing",
-    "description": "Attacks made with this weapon while in a hostile creature's Threat are made with Bane(1)"
-  },
-  {
     "name": "Loading",
     "description": "The weapon must be loaded by taking an N AP Action in order to Attack with it. Loading while in a hostile creature's Threat triggers an Opportunity Attack from them.",
+    "parameter": "N"
+  },
+  {
+    "name": "Unwieldy",
+    "description": "Lower the die size of both die for all Weapon Attack Rolls made while this weapon is equipped by N. If you can't reduce the die size any further you instead halve the die result.",
     "parameter": "N"
   }
 ]

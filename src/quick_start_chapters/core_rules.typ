@@ -4,8 +4,8 @@
 <core-rules>
 == Action Rolls
 <action-rolls>
-Titanslayer is primarily played through roleplay, but if players want to do a risky action or avoid danger the #strong[Game Master] (GM) will usually ask them to make an #term("Action Roll");. 
-The GM secretly decides on a #term("Difficulty Class") of the roll and tells the player which two #term("Attribute Dice") they should roll.
+Titanslayer is primarily played through roleplay, but if players want to do a risky action or avoid danger the #strong[Game Master] (GM) will usually ask them to make an #term("Action Roll", key: "Action Rolls", is_definition: true);. 
+The GM secretly decides on a #term("Difficulty Class", is_definition: true) of the roll and tells the player which two #term("Attribute Dice", is_definition: true) they should roll.
 The player then rolls two dice, corresponding to the attributes they were told to roll and add the numbers together.
 If they roll equal to or higher than the DC, they succeed.
 
@@ -24,7 +24,7 @@ However, in Titanslayer rolling the same number on both dice is actually a #term
 === Critical Rolls
 <critical-rolls>
 When you roll the same number on both #term[Attribute Dice] for an
-#term[Action Roll] it causes a #term("Critical Roll", is_definition: true). When a #term[Critical Roll] happens, you roll the highest #term("Attribute Die", key: "Attribute Dice") of the roll again, and add it to the total.
+#term("Action Roll", key: "Action Rolls") it causes a #term("Critical Roll", is_definition: true). When a #term[Critical Roll] happens, you roll the highest #term("Attribute Die", key: "Attribute Dice") of the roll again, and add it to the total.
 
 Continuing our example from earlier: \
 - Player A rolled a crit! \
@@ -54,7 +54,7 @@ Stacks of #term[Boons] and #term[Banes] cancel each other out, so Boon(3) and Ba
 
 === Additional Successes
 <additional-successes>
-You succeed by meeting or beating the DC of an #term[Action Roll];,
+You succeed by meeting or beating the DC of an #term("Action Roll", key: "Action Rolls");,
 and you gain an additional #term("Success", is_definition: true) for each 5 you roll above
 the DC.
 
@@ -72,12 +72,12 @@ You might for example encounter an electrified shark-jellyfish hybrid that stuns
 
 == Tag Team Rolls
 <tag-team-rolls>
-Once per #term[Shift] per character, players may initiate a #term("Tag Team Roll", is_definition: true).
+Once per #term("Shift", key: "Shifts") per character, players may initiate a #term("Tag Team Roll", is_definition: true).
 
 To initiate a #term[Tag Team Roll], each participant spends 1 Focus in addition to what other resources they would normally spend and makes their respective rolls to construct a pool of die results. To resolve the roll, the players choose 2 dice from the constructed pool, which becomes the result of the roll.
 
-The roll counts as an #term[Action Roll], and any features or modifications that would activate from a roll do so as normal. If multiple characters would trigger the same effect, only one resolves.
+The roll counts as an #term("Action Roll", key: "Action Rolls"), and any features or modifications that would activate from a roll do so as normal. If multiple characters would trigger the same effect, only one resolves.
 
 The GM can at any point initiate a #term[Tag Team Roll] for the party, with no cost to the characters.
 
-#term("Tag Team Rolls", key: "Tag Team Roll"). can be initiated during combat, given that all participants act during the same #term[Phase].
+#term("Tag Team Rolls", key: "Tag Team Roll"). can be initiated during combat, given that all participants act during the same #term("Phase", key: "Phases").

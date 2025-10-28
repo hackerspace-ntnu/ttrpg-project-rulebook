@@ -19,5 +19,4 @@ Now those who delve into the depths of the Mana-saturated areas dream of accruin
 Optional lore expansion (can be excised for pagecount/conciseness): \
 One of the most ardent sponsors of would-be Titanslayers is the University of Human Understanding and their world-spanning project to catalogue and categorize #emph[everything];, the Understanding. 
 In most cities and towns, there will be an agent of the Understanding willing to provide payment for bits of knowledge and physical specimens. \
-TODO: Expand lore expansion to add a few more factions (Og, Kaleina,
-those idiots who claimed the first titanslayer)
+TODO: Expand lore expansion to add a few more factions (Og, Kaleina, those idiots who claimed the first titanslayer)

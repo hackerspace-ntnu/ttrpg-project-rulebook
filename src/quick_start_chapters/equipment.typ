@@ -4,7 +4,7 @@
 <equipment>
 Each character has a #term("Carrying Capacity", is_definition: true) equal to 5 + Might Mod.
 Items and Equipment have an amount of #term[Bulk] (usually 1).
-If you're carrying more than your #term("Capacity", key: "Carrying Capacity") at the end of a #term[Shift], you get #term[Fatigue] equal to the amount of extra #term[Bulk] you're carrying (total #[Bulk] - #term[Carrying Capacity]).
+If you're carrying more than your #term("Capacity", key: "Carrying Capacity") at the end of a #term("Shift", key: "Shifts"), you get #term[Fatigue] equal to the amount of extra #term[Bulk] you're carrying (total #[Bulk] - #term[Carrying Capacity]).
 
 Each character also has a #term("Quick Draw Inventory", is_definition: true) with a Capacity of 3, which does not contribute to the total #term[Bulk] in your regular Inventory.
 Essentially, you get 3 extra Capacity for things like Weapons and Shields that you would want easy access to during combat.
