@@ -4,7 +4,7 @@
 <core-rules>
 == Action Rolls
 <action-rolls>
-Titanslayer is primarily played through roleplay, but if players want to do a risky action or avoid danger the #strong[Game Master] (GM) will usually ask them to make an #term("Action Roll", key: "Action Rolls", is_definition: true);. 
+Titanslayer is primarily played through roleplay, but if players want to do a risky action or avoid danger the #term("Game Master", is_definition: true) (GM) will usually ask them to make an #term("Action Roll", key: "Action Rolls", is_definition: true). 
 The GM secretly decides on a #term("Difficulty Class", is_definition: true) of the roll and tells the player which two #term("Attribute Dice", is_definition: true) they should roll.
 The player then rolls two dice, corresponding to the attributes they were told to roll and add the numbers together.
 If they roll equal to or higher than the DC, they succeed.
@@ -42,6 +42,8 @@ roll.
 Stacks of #term[Boons] and #term[Banes] cancel each other out, so Boon(3) and Bane(2)would result in Boon(1), meaning you'd add a d4 to the roll.
 
 #figure(
+  placement: none,
+  scope: "column",
   align(center)[#table(
     columns: 7,
     align: (left,left,left,left,left,left,left,),

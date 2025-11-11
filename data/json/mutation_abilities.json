@@ -1,0 +1,165 @@
+{
+    "Unsleeping": {
+        "name": "Unsleeping",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "You cannot sleep, you gain no penalties for forgoing sleep. If an ability requires you to sleep to be provoked, taking the Relax and Refocus Rest options in the same rest activates those abilities."
+    },
+    "Ascend": {
+        "name": "Ascend",
+        "category": "Mutation",
+        "tag": "Active",
+        "tier": 2,
+        "focus_cost": 2,
+        "ap_cost": 2,
+        "description": "You fill your Flight Bladder with gas and gain enough lift to go up to 100 meters into the air. Ascending 10 squares per round. You can reduce the amount of gas in the bladder to descend, at a rate of 5 squares per AP. This levitation lets you be transported by wind, but you gain no inherent ability to maneuver in the air except up/down."
+    },
+    "Flammable": {
+        "name": "Flammable",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 2,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "Due to the flammability of the Flight Bladder gas, if your hit points are reduced by fire or heat, the gas ignites, immediately dealing 5 damage to you and everyone within 3 squares of you. Additionally, you cannot use the Ascend ability (and lose any altitude you currently had with it) until you have recovered all Strain you have taken."
+    },
+    "Leap": {
+        "name": "Leap",
+        "category": "Mutation",
+        "tag": "Active",
+        "tier": 1,
+        "focus_cost": 1,
+        "ap_cost": 1,
+        "description": "Choose any point within your Speed and leap there without provoking reactions."
+    },
+    "Glide": {
+        "name": "Glide",
+        "category": "Mutation",
+        "tag": "Active",
+        "tier": 1,
+        "focus_cost": 1,
+        "ap_cost": 0,
+        "description": "While falling, you spread your wings and catch the air. You now descend at a rate of 3 Squares per round until you land, taking no falling damage, and can Move with your Speed to any point that is not further up than your current elevation."
+    },
+    "Lesser Limb": {
+        "name": "Lesser Limb",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "These limbs do not end in hands, and as such are only capable of rudimentary manipulation, such as holding objects and grappling creatures. Multiple Lesser Limbs working in concert can do the work of one equivalent normal hand (all of the limbs from one Mutation that grants this feature for example)"
+    },
+    "Regenerative Feature": {
+        "name": "Regenerative Feature",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 2,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "This Mutation has 2 Strain Capacity and the Durable tag, meaning you can interpose it to defend against an attack. When you sleep, all Strain taken by this feature is cleared."
+    },
+    "Natural Weapon": {
+        "name": "Natural Weapon",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "You gain a weapon that is always equipped and takes no inventory space. The weapon's Roll, Active and Tags is determined by the Mutation that granted this ability."
+    },
+    "Superior Vision": {
+        "name": "Superior Vision",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "[Some ability or other related to sight]"
+    },
+    "Skinsight": {
+        "name": "Skinsight",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "Your skin is your sensory organ for sight, as long as it isn't covered up, you can see what happens in front of it. This ability also allows you to see things that would normally be Invisible."
+    },
+    "Photosynthesis": {
+        "name": "Photosynthesis",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "If you Sleep in direct sunlight, you gain the effects of eating a Ration"
+    },
+    "Faceless": {
+        "name": "Faceless",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "You lose access to the senses of taste and smell, but can still see through photosensitive skin cells and eat by absorbing energy in food through your hands."
+    },
+    "Masked": {
+        "name": "Masked",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 2,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "Whoever wears your mask on their face gains access to your Abilities, and only them."
+    },
+    "Murder Blanket": {
+        "name": "Murder Blanket",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 2,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "You have no bones, and have to Engulf something to eat it. When not under time pressure, you can squeeze through small holes, opening and crevices."
+    },
+    "Engulf": {
+        "name": "Engulf",
+        "category": "Mutation",
+        "tag": "Active",
+        "tier": 1,
+        "focus_cost": 1,
+        "ap_cost": 2,
+        "description": "While grappling a creature, you wrap yourself around them and start digesting. Roll Might + Agility and deal [Successes] damage. The engulfed creature needs to succeed on a Might + Might roll against your Heavy Hit threshold to escape."
+    },
+    "Change Color": {
+        "name": "Change Color",
+        "category": "Mutation",
+        "tag": "Active",
+        "tier": 1,
+        "focus_cost": 1,
+        "ap_cost": 1,
+        "description": "You change the way your skin and hair's color appears. This can be in any colors and any patterns. This ability can confer Boon(1) to stealth rolls."
+    },
+    "Change Skin": {
+        "name": "Change Skin",
+        "category": "Mutation",
+        "tag": "Active",
+        "tier": 1,
+        "focus_cost": 1,
+        "ap_cost": 1,
+        "description": "You change your skin's texture, this can include protrusions up to 10 centimeters. In places where your skin color doesn't matter (such as in lightless environments) this ability can confer Boon(1) to stealth rolls."
+    },
+    "Return to Self": {
+        "name": "Return to Self",
+        "category": "Mutation",
+        "tag": "Active",
+        "tier": 1,
+        "focus_cost": 1,
+        "ap_cost": 2,
+        "description": "You become a version of yourself that is without mutations, you lose access to all of your Mutation Abilities for the duration. This ability lasts for 1 Shift, and can be extended with further Focus use."
+    }
+}
+

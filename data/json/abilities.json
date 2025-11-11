@@ -209,19 +209,80 @@
   "Double Down": {
     "name": "Double Down",
     "category": "General",
+    "tag": "Active",
     "focus_cost": 1,
     "ap_cost": 0,
-    "description": "When you fail a roll you may Double Down, rolling again with a chance of turning failure into success. If this roll the consequences are doubled, and you can not Double Down again.",
-    "valid_weapon_tags": null,
-    "valid_weapon_types": null
+    "description": "When you fail a roll you may Double Down, rolling again with a chance of turning failure into success. If this roll the consequences are doubled, and you can not Double Down again."
   },
-  "": {
-    "name": "Double Down",
-    "category": "General",
+  "Protector": {
+    "name": "Protector",
+    "category": "Presence",
+    "tag": "Passive",
+    "tier": 1,
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": "Enemies have Bane(1) to attack allies within your reach."
+  },
+  "Valiant Aid": {
+    "name": "Valiant Aid",
+    "category": "Agility",
+    "tier": 1,
     "focus_cost": 1,
     "ap_cost": 0,
-    "description": "When you fail a roll you may Double Down, rolling again with a chance of turning failure into success. If this roll the consequences are doubled, and you can not Double Down again.",
-    "valid_weapon_tags": null,
-    "valid_weapon_types": null
+    "description": "You may use the Protect Reaction on allies within your Speed, moving to a space adjacent to them."
+  },
+  "Calculated Risk": {
+    "name": "Calculated Risk",
+    "category": "General",
+    "tag": "Passive",
+    "tier": 1,
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": "When targeted by an attack, you may leave yourself open, giving the attacker Boon(1) on the attack. In return, the attacker is left open, granting all attacks against it Boon(1) until its next Phase."
+  },
+  "Command": {
+    "name": "Command",
+    "category": "Presence",
+    "tag": "Active",
+    "tier": 1,
+    "focus_cost": 1,
+    "ap_cost": 0,
+    "description": "Command an ally to take a 1 AP action, spending 1 Focus instead of the regular cost."
+  },
+  "Quick Thinking": {
+    "name": "Quick Thinking",
+    "category": "Agility",
+    "tag": "Active",
+    "tier": 1,
+    "focus_cost": 1,
+    "ap_cost": 0,
+    "description": "Take an Action before your chosen Phase, paying the normal cost of the Action in addition to the Focus spent on this Ability."
+  },
+  "Tactical Mind": {
+    "name": "Tactical Mind",
+    "category": "Insight",
+    "tag": "Passive",
+    "tier": 1,
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": "When you choose to go methodical, gain 4 AP instead of 3."
+  },
+  "Kratonian": {
+    "name": "Kratonian",
+    "category": "Might",
+    "tag": "Passive",
+    "tier": 4,
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": "You can one-hand two-handed weapons."
+  },
+  "Follow my Lead": {
+    "name": "Follow my Lead",
+    "category": "Presence",
+    "tag": "Active",
+    "tier": 1,
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": "Designate an ally who has chosen to be Methodical, moving them to the Rushed Phase while keeping their original AP."
   }
 }

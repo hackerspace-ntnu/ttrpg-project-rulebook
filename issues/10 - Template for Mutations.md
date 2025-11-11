@@ -9,7 +9,7 @@ Mutations usually come with some visual component, and often give Abilities, whi
 Mutations are written as:
 {
     "name": string,
-    "category"?: string,
+    ?"category": string,
     "abilities": string[],
     "description": string,
     "tier": int,

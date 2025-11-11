@@ -6,10 +6,28 @@ Everyone needs a character in order to play. The stats of the player is
 tied to their background and heritage, so the mechanics a player will be
 specializing in is based on who they choose to be.
 
-All characters start with some base stats: \
+All characters start with some base stats, msot of which are modified by their #term[Attributes]: \
+// TODO: We should decide where to define these things.
 Max #term[Strain]: 8 \
+Max #term[Fatigue]: 4 \
 Max #term[Focus]: 8 \
+#term[Carrying Capacity]: 5 \
 Base #term[Speed]: 4 Spaces
+
+#term("Strain", is_definition: true) is a measure of the physical and mental strain inflicted to a character, acting similar to HP in other games.
+Unlike HP, #term[Strain] goes up when you take damage or suffer some sort of trauma.
+Any damage exceeding your max #term[Strain] is taken as #term[Fatigue], which acts the same but with negative consequences.
+
+Each point of #term("Fatigue", is_definition: true) lowers your max #term[Strain] and #term[Carrying Capacity] by 1.
+If you would take #term[Fatigue] exceeding your maximum, you die.
+
+#term("Focus", is_definition: true) is a measure of your awareness of your surroundings and the state of yourself, and is spent to use certain #term[Abilities] and #term[Actions]. 
+
+#term[Carrying Capacity] is a measure of how much #term[Bulk] you can carry, and is discussed further in the #link(<equipment>, "Equipment section").
+
+#term("Speed", is_definition: true) defines how many #term[Spaces] you can move using a single #term[Move].
+
+== Attributes
 
 Each character has 4 #term[Attributes]. Each #term("Attribute", key: "Attributes", is_definition: true) is represented by a die of size d4-d12, mapping to a modifier of 0-4.
 
@@ -19,8 +37,7 @@ Each character has 4 #term[Attributes]. Each #term("Attribute", key: "Attributes
     align: (left,left,left,),
     table.header([Attribute], [Description], [Effect],),
     table.hline(),
-    term("Might", is_definition: true), [Strength and endurance], [\+ mod to Strain and carrying
-    capacity],
+    term("Might", is_definition: true), [Strength and endurance], [\+ mod to #term[Strain] and #term[Carrying Capacity]],
     term("Agility", is_definition: true), [Speed, dexterity, flexibility and balance], [\+ mod to
     Speed],
     term("Insight", is_definition: true), [Ability to discover and reason about information], [\+
@@ -42,22 +59,19 @@ purposes. Titles provide a static bonus to a roll when invoked, which
 can be done for 1 focus in situations where it makes narrative sense.
 
 == Mutations
+// TODO: Looks like this rule applies for all links after this point in the character creation document, including those to tables or terms. How do we feel about that?
 #show link: underline
-Choose any #term("Mutations") you'd like from the mutation table
+Choose any #term("Mutations", is_definition: true) you'd like from the mutation table
 #link("https://docs.google.com/document/d/1zkKA1ifbYqop71Pm5RrK5ofa_Z9V3Yyyje8CdN3MKn4/edit?tab=t.eulwm9krcgii")[#text(fill: purple)[document]];,
 or make up your own, then notify the GM of your choices. You have 2 free
 mutations, but purely cosmetic costs no slots. For each mutation past
-the first 2, one of your Focus is permanently Corrupted.
+the first 2, one of your #term[Focus] is permanently #term("Corrupted", key: "Corrupted Focus").
 
 == Archetypes
 If you're not sure where to start in terms of attributes, weapons,
 armor, and equipment, here are some options.
 
-If you want to play a character who can move quickly around the
-battlefield and attack at range, Agility and Insight are good choices
-for your highest Attribute scores. Take 2 Kunai/Daggers (your choice), a
-Longbow, a quiver, and either a bandolier with 3 more Kunai/Daggers or
-Light Armor.
+If you want to play a character who can move quickly around the battlefield and attack at range, Agility and Insight are good choices for your highest Attribute scores. Take 2 Kunai/Daggers (your choice), a Longbow, a quiver, and either a bandolier with 3 more Kunai/Daggers or Light Armor.
 
 If you want your character to be able to withstand a lot of attacks, you should focus on Might and Insight. Take a Warhammer, Heavy Shield, Boomerang, and Heavy Armor. You may want an extra Boomerang or two. It's important to have a repair kit since this build is intended to block damage using the durability of your armor and shield.
 
@@ -67,4 +81,4 @@ The absolute necessities are a backpack containing a bedroll and 8
 Rations. Feel free to get any other items you want and have space for,
 but consider leaving some room for other items you pick up along the
 way. It's a good idea to make sure at least one person in your party has
-a mess kit, rope, repair kit (the more the better), and torches.
+a mess kit, rope, repair kit (the more the better), and torches. See the #link(<equipment>, "Equipment") section for more details.

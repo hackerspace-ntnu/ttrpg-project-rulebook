@@ -1,0 +1,128 @@
+{
+    "Sleepless": {
+        "name": "Sleepless",
+        "category": null,
+        "abilities": ["Unsleeping"],
+        "description": "A change in neurochemistry makes you incapable of sleep, and incapable of needing it. After a few days, you'll develop a permanently wearied-looking appearance",
+        "tier": 1
+    },
+    "Flight Bladder": {
+        "name": "Flight Bladder",
+        "category": null,
+        "abilities": ["Flammable", "Ascend"],
+        "description": "You grow an airtight organ similar to a swim bladder, that continually generates a lighter-than-air gas that alllows you to ascend into the air. Be careful though! The gas is flammable, so don't rupture it.",
+        "tier": 2
+    },
+    "Leaping Legs": {
+        "name": "Leaping Legs",
+        "category": null,
+        "abilities": ["Leap"],
+        "description": "Your legs grow stronger, with a natural gear mechanism that allows tremendous leaps. These legs are very much like those of a grasshopper",
+        "tier": 1
+    },
+    "Wings": {
+        "name": "Wings",
+        "category": null,
+        "abilities": ["Glide"],
+        "description": "An additional pair of limbs grows out of your shoulders. They allow you to glide short distances",
+        "tier": 1
+    },
+    "Tentacle Limbs": {
+        "name": "Tentacle Limbs",
+        "category": null,
+        "abilities": ["Lesser Limb"],
+        "description": "1d4 Tentacles grow from the same location, if a limb has been chopped off, the remaining stub is where they grow from, these tentacles act as additional limbs, but can only perform delicate manipulation if they all work together.",
+        "tier": 1
+    },
+    "Prehensile Tendrils": {
+        "name": "Prehensile Tendrils",
+        "category": null,
+        "abilities": ["Lesser Limb", "Regenerative Feature"],
+        "description": "A profusion of long tendrils grow from your torso, they have an incredible ability to heal, growing back even if cut at the base. You have complete control of these Tendrils",
+        "tier": 2
+    },
+    "Regenerative Limbs": {
+        "name": "Regenerative Limbs",
+        "category": null,
+        "abilities": ["Regenerative Feature"],
+        "description": "You gain the ability to heal quickly, each of your limbs gains the Regenerative Feature ability",
+        "tier": 2
+    },
+    "Additional Eyes": {
+        "name": "Additional Eyes",
+        "category": null,
+        "abilities": null,
+        "description": "1d4 additional eyes grow on your body, rolling on the Mutation Location Table (If we implement it) for each",
+        "tier": 0
+    },
+    "Claws": {
+        "name": "Claws",
+        "category": null,
+        "abilities": ["Natural Weapon"],
+        "description": "Your nails elongate, harden and sharpen to become claws. When you gain this mutation, choose Agility + Insight or Might + Agility for the claws' Roll, and one of Infiltrate, Swift Strike and Dirty Fighting for their Active. Additionally they get the Light tag. This mutation doesn't stop you from wielding items, but you cannot attack with Claws while holding or otherwise using that hand.",
+        "tier": 1
+    },
+    "Horn(s)": {
+        "name": "Horn(s)",
+        "category": null,
+        "abilities": ["Natural Weapon"],
+        "description": "You grow a horn (beetle, antlers, goat). The horns use the Roll Might + Presence (Since horns are often used as display structures in addition to being weapons) (I am also amenable to allowing Might + Insight since you're using your noggin). Their Active Ability is Can Opener and the Unwieldy and Zero Handed Tags.",
+        "tier": 1
+    },
+    "Keen Eyes": {
+        "name": "Keen Eyes",
+        "category": null,
+        "abilities": ["Superior Vision"],
+        "description": "Your eyes change (to become catlike, goatlike, wholly black sclera, compound). If you have more than 2 eyes, only one changes in this way",
+        "tier": 1
+    },
+    "Strange Eyes": {
+        "name": "Strange Eyes",
+        "category": null,
+        "abilities": null,
+        "description": "Your eyes change in some way, gaining no additional abilities. (Iris changes color, sclera changes color, pupil changes shape, more or less pupils/irises)",
+        "tier": 0
+    },
+    "No Eyes": {
+        "name": "No Eyes",
+        "category": null,
+        "abilities": ["Skinsight"],
+        "description": "Your eyes vanish, replaced with smooth skin. Your skin gains the power of sight, and any sight-related mutations you have.",
+        "tier": 1
+    },
+    "Plant Person": {
+        "name": "Plant Person",
+        "category": null,
+        "abilities": ["Photosynthesis"],
+        "description": "You gain plantlike growths capable of Photosynthesis, and rootlike structures capable of extracting nutrients from the ground. [I wanted to add Mycelial interface to this, but its abilities overlapped with photosynthesis too much.",
+        "tier": 1
+    },
+    "Mask of Power": {
+        "name": "Mask of Power",
+        "category": null,
+        "abilities": ["Faceless", "Masked"],
+        "description": "You lose your face. All your Abilities crystallize into a hard mask, anyone who wears this mask gains access to all of your Abilities. You can only use your Abilties while wearing your Mask.",
+        "tier": 2
+    },
+    "Coiled-up": {
+        "name": "Coiled-up",
+        "category": null,
+        "abilities": ["Murder Blanket", "Engulf"],
+        "description": "Your anatomy drastically changes. Your stomach dramatically grows and digests your bones. Your skin becomes almost prehensile, and opens up. This makes it so your have to unfurl yourself and engulf the things you want to eat.",
+        "tier": 2
+    },
+    "Minor Shapeshifting": {
+        "name": "Minor Shapeshifting",
+        "category": null,
+        "abilities": ["Color Change", "Change Skin"],
+        "description": "Your chromatophores grow muscles, allowing them to change their apparent color. Muscles in your skin also allows you to change its texture and create protrusions up to 10 centimeters away from where the skin should be. This ability allows very good camouflage abilities.",
+        "tier": 2
+    },
+    "Temporary Unmutation": {
+        "name": "Temporary Unmutation",
+        "category": null,
+        "abilities": ["Return to Self"],
+        "description": "You gain the ability to temporarily shapeshift into an unmutated version of yourself.",
+        "tier": 1
+    }
+}

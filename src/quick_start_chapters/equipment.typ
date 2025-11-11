@@ -3,13 +3,13 @@
 = Equipment
 <equipment>
 Each character has a #term("Carrying Capacity", is_definition: true) equal to 5 + Might Mod.
-Items and Equipment have an amount of #term[Bulk] (usually 1).
-If you're carrying more than your #term("Capacity", key: "Carrying Capacity") at the end of a #term("Shift", key: "Shifts"), you get #term[Fatigue] equal to the amount of extra #term[Bulk] you're carrying (total #[Bulk] - #term[Carrying Capacity]).
+Items and Equipment have an amount of #term("Bulk", is_definition: true) (usually 1).
+If you're carrying more than your #term("Capacity", key: "Carrying Capacity") at the end of a #term("Shift", key: "Shifts"), you get #term[Fatigue] equal to the amount of extra #term[Bulk] you're carrying (total #term[Bulk] - #term[Carrying Capacity]).
 
 Each character also has a #term("Quick Draw Inventory", is_definition: true) with a Capacity of 3, which does not contribute to the total #term[Bulk] in your regular Inventory.
 Essentially, you get 3 extra Capacity for things like Weapons and Shields that you would want easy access to during combat.
 
-Finally, small Items with 0 #term[Bulk] are called #term("Trinkets", is_definition: true), and don't go in a characters normal Inventory.
+Finally, small Items with 0 #term[Bulk] are called #term("Trinkets", is_definition: true), and don't go in a character's normal Inventory.
 Instead, each character has a #term("Pocket", is_definition: true), where they can fit as many #term[Trinkets] as they can physically write in the box on their character sheet.
 These are things like a flint and steel, a pocket knife, a letter, or a sentimental item.
 
@@ -21,21 +21,20 @@ These are things like a flint and steel, a pocket knife, a letter, or a sentimen
     align: (left,left,left,),
     table.header([Item], [Bulk], [Description],),
     table.hline(),
-    [Armor (worn/not worn)], [1+/2+], [Each tier above Light adds +1
-    Bulk],
+    [Armor (worn/not worn)], [1+/2+], [Each tier above Light adds +1 #term[Bulk]],
     [Weapon], [1], [],
     [Heavy Weapon], [2], [],
     [Bandolier], [1], [Can hold up to 3 Weapons with both the Light and Thrown tags (which then do not
-    count towards total Bulk), counting as Quick Draw Inventory for the sake of the #strong[Stow] and #strong[Draw] Actions.],
+    count towards total Bulk), counting as #term[Quick Draw Inventory] for the sake of the #term[Stow] and #term[Draw] Actions.],
     [Quiver], [1], [Comes with 20 Arrows, which it can hold],
     [Ration x4], [1], [Food and water],
     [Repair Kit], [1], [Needed for Crafting Checks and Tinker Checks to
     repair items],
     [Backpack], [1], [Can carry 3 Bulk, max one in use],
     [Mess kit], [1], [Needed for cooking],
-    [Bedroll], [1], [Sleeping without doesn't recover Fatigue],
+    [Bedroll], [1], [Sleeping without doesn't recover #term[Fatigue]],
     [Rope (15 meters)], [1], [],
-    [Torches x4], [1], [Burns for 1 Shift, providing Light in a 10 meter radius sphere],
+    [Torches x4], [1], [Burns for 1 #term("Shift", key: "Shifts"), providing Light in a 10 meter radius sphere],
   )]
   , kind: table
   )
@@ -47,8 +46,9 @@ These are things like a flint and steel, a pocket knife, a letter, or a sentimen
   align(center)[#table(
     columns: (18%, 18%, 18%, 18%, 14%, 9%),
     align: (left,left,left,left,left,left,),
-    table.header([], [Evasion\ + Agility Mod\ + Insight Mod], [Heavy Hit\ +
-      Might Mod\ + Presence Mod], [Brutal Hit\*\ + Might Mod\ + Presence
+    // TODO: I feel that it's most useful for the definitions of these terms to be at the spot where they're calculated and detailed. Does anyone think it should instead be in attacks and defense, where the mechanic is explained?
+    table.header([], [#term("Evasion", is_definition: true) \ + Agility Mod\ + Insight Mod], [#term("Heavy Hit", is_definition: true)\ +
+      Might Mod\ + Presence Mod], [#term("Brutal Hit", is_definition: true)\*\ + Might Mod\ + Presence
       Mod], [Max Strain], [Speed],),
     table.hline(),
     [No armor], [6], [8], [13], [0], [+1],

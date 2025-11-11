@@ -45,7 +45,7 @@
     let body = emph(name) + separator + description
     let my_label = label(entry_name + "|" + glossary_type)
     if (is_definition) {
-      [#body #my_label]
+      [#body#my_label]
     } else if (query(my_label).len() > 0) {
       link(my_label, body)
     } else {
@@ -56,7 +56,7 @@
 }
 
 #let render_glossary() = {
-  columns(2,
+  columns(3,
   context {
     let glossary = _state_glossary.final().fold((:), (acc, entry) => {
       let key = entry.name + "|" + entry.type
@@ -92,7 +92,7 @@
       let first_letter = entry_name.at(0)
       if (first_letter != current_letter) {
         current_letter = first_letter
-        heading(outlined: false)[#current_letter]
+        heading(outlined: false, level: 2)[#current_letter]
       }
       // Alt render:
       // #entry_name\ #h(0.64cm)
