@@ -52,7 +52,7 @@ On creation, arrange \[d4, d6, d6, d8\] how you want your character's
 attributes to be.
 
 == Titles
-At creation and after big moments in the campaign, you earn #term("Titles", is_definition: true).
+At creation, you gain one #term("Title", key: "Titles") from your background. #term("Titles", is_definition: true) can also be earned after big moments in a campaign.
 #term[Titles] are primarily narrative in that they describe your character, and
 may be referred to at any time by either the player or GM for roleplay
 purposes. Titles provide a static bonus to a roll when invoked, which

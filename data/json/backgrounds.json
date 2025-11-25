@@ -1,0 +1,23 @@
+{
+    "[BACKGROUND NAME]": {
+        "name": "[BACKGROUND NAME BUT AGAIN]",
+        "ability": "[THE ABILITY GRANTED BY THE BACKGROUND]",
+        "title": "[THE TITLE GRANTED BY THE BACKGROUND]",
+        "description": "[Some rough description about the background.]"
+    },
+
+    "Scholar": {
+        "name": "Scholar",
+        "ability":"tbd",
+        "title":"Learned One",
+        "description":"You have spent much time absorbing knowledge by reading tomes and consulting wise men."
+    },
+
+    "Child of Og": {
+        "name": "Child of Og",
+        "ability":"Degraded Focus",
+        "title":"Cultist",
+        "description":"The Children of Og are a cult to Titans and Mutation. A strong political force, and downright weird."
+    }
+
+}

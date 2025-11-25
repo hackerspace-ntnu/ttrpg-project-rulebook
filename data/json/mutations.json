@@ -124,5 +124,96 @@
         "abilities": ["Return to Self"],
         "description": "You gain the ability to temporarily shapeshift into an unmutated version of yourself.",
         "tier": 1
+    },
+    "No Reflection": {
+        "name": "No Reflection",
+        "category": null,
+        "abilities": null,
+        "description": "You are no longer reflected in any surface, any non-organic means of seeing you visually also fail (such as cameras, visual spells).",
+        "tier": 0
+    },
+    "Material Weakness": {
+        "name": "Material Weakness",
+        "category": null,
+        "abilities": ["Vulnerability"],
+        "description": "You become particularly vulnerable to (Silver, Iron, Nickel, Wood (d4)). Brief contact with the material causes significant discomfort.",
+        "tier": 0
+    },
+    "Poison Sniffer": {
+        "name": "Poison Sniffer",
+        "category": null,
+        "abilities": ["Detect Danger"],
+        "description": "Your nose becomes particularly sensitive to compounds your body considers poisonous",
+        "tier": 1
+    },
+    "On Fire": {
+        "name": "On Fire",
+        "category": null,
+        "abilities": ["Burning", "Fireproof"],
+        "description": "You are constantly on fire. Tongues of flame lick along your skin, causing you to glow and incinerates most clothing. Through a miracle of modesty, the fires are always most dense around the privates. The fires are most similar to alcohol fires, low temperature, but still dangerous.",
+        "tier": 2
+    },
+    "Untouched by Flame": {
+        "name": "Untouched by Flame",
+        "category": null,
+        "abilities": ["Fireproof"],
+        "description": "A change in your internal chemistry makes it so fire has no hold on you",
+        "tier": 1
+    },
+    "Stiff Tail": {
+        "name": "Stiff Tail",
+        "category": null,
+        "abilities": ["Balanced", "Natural Weapon"],
+        "description": "You grow a tail, strengthened by bony rods, that greatly improves your ability to balance. It can also be used as a bludgeon, rolling with Might+Agility and the active Push.",
+        "tier": 1
+    },
+    "Pretty Tail": {
+        "name": "Pretty Tail",
+        "category": null,
+        "abilities": null,
+        "description": "You grow a tail, this tail is not large or intricate enough to give any additional abilities, but it looks nice.",
+        "tier": 0
+    },
+    "Prehensile Tail": {
+        "name": "Prehensile Tail",
+        "category": null,
+        "abilities": ["Lesser Limb"],
+        "description": "You grow a tail, this tail is agile and under your total control. It is not able to do delicate manipulation on its own, however.",
+        "tier": 1
+    },
+    "Weaponized Tail": {
+        "name": "Weaponized Tail",
+        "category": null,
+        "abilities": ["Natural Weapon"],
+        "description": "You grow a tail, it might be long or whiplike (Agility+Presence, Reach(3), Wrangle), or end in a wicked weapon like Thagomizer spikes or a club (Might+Presence, Impact(1), Cleave)",
+        "tier": 1
+    },
+    "Titanic Attribute": {
+        "name": "Titanic Attribute",
+        "category": null,
+        "abilities": ["Empowered Attribute"],
+        "description": "Your (Might, Agility, Insight, Presence (1d4)) becomes empowered. You might even attain equivalent ability to that of a Titan!",
+        "tier": 3
+    },
+    "Sentient Stomach": {
+        "name": "Sentient Stomach",
+        "category": null,
+        "abilities": ["Passive Hunter"],
+        "description": "Your stomach becomes a small creature, capable of crawling out of your esophagus and hunting for food on its own.",
+        "tier": 1
+    },
+    "Gremlin": {
+        "name": "Gremlin",
+        "category": null,
+        "abilities": ["Slip Through", "Puny"],
+        "description": "You become small and scrappy, able to slip through tight spaces and between the legs of foes.",
+        "tier": 1
+    },
+    "Finned": {
+        "name": "Finned",
+        "category": null,
+        "abilities": ["Extend Fins"],
+        "description": "Your legs and arms develop collapsible rayed fins that can be used to move in the water.",
+        "tier": 1
     }
 }

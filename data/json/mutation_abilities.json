@@ -51,7 +51,7 @@
         "tier": 1,
         "focus_cost": null,
         "ap_cost": null,
-        "description": "These limbs do not end in hands, and as such are only capable of rudimentary manipulation, such as holding objects and grappling creatures. Multiple Lesser Limbs working in concert can do the work of one equivalent normal hand (all of the limbs from one Mutation that grants this feature for example)"
+        "description": "These limbs do not end in hands, and as such are only capable of rudimentary manipulation, such as holding objects and grappling creatures. Multiple Lesser Limbs working in concert can do the work of one equivalent normal hand (all of the limbs from one Mutation that grants multiple of this feature for example."
     },
     "Regenerative Feature": {
         "name": "Regenerative Feature",
@@ -160,6 +160,96 @@
         "focus_cost": 1,
         "ap_cost": 2,
         "description": "You become a version of yourself that is without mutations, you lose access to all of your Mutation Abilities for the duration. This ability lasts for 1 Shift, and can be extended with further Focus use."
+    },
+    "Vulnerability": {
+        "name": "Vulnerability",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 0,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "When you carry an item made from your vulnerability for a Shift, or take damage from an attack with such an item, you take 1 Strain."
+    },
+    "Detect Danger": {
+        "name": "Detect Danger",
+        "category": "Mutation",
+        "tag": "Active",
+        "tier": 1,
+        "focus_cost": 1,
+        "ap_cost": 1,
+        "description": "You attempt to sense a type of dangerous thing in your vicinity (the type of danger determined by your mutation), you learn whether that danger is within the vicinity, and which squares any such dangers are present in."
+    },
+    "Fireproof": {
+        "name": "Fireproof",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "You take no Strain from heat or fire-based sources, you can operate normally in extremely warm temperatures."
+    },
+    "Burning": {
+        "name": "Burning",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 2,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "You give off Light in a 10-meter radius sphere. If a creature touches you, they take 1 Strain from fire. If at the end of your turn you are grappling or holding a creature, they take 1 Strain from fire."
+    },
+    "Balanced": {
+        "name": "Balanced",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "Any effect that would knock you prone or otherwise move you against your will, count all successes as 2 lower."
+    },
+    "Empowered Attribute": {
+        "name": "Empowered Attribute",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 3,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "Your Attribute modifier for an Attribute is permanently increased by 1, as is the maximum for that attribute, such that you could attain a d20 in it."
+    },
+    "Passive Hunter": {
+        "name": "Passive Hunter",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "While engaged in a different activity, something attempts a Hunting check for you, with Boon(2)"
+    },
+    "Puny": {
+        "name": "Puny",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "Your Carrying Capacity is reduced by 1, but your Evasion threshold is increased by 1."
+    },
+    "Slip Through": {
+        "name": "Slip Through",
+        "category": "Mutation",
+        "tag": "Active",
+        "tier": 1,
+        "focus_cost": 2,
+        "ap_cost": 1,
+        "description": "You move your speed, and as part of this move, can slip through a tight space, or the space of a creature, no matter what countermeasures it has prepared. Additionally, this movement does not provoke reactions."
+    },
+    "Extend Fins": {
+        "name": "Extend Fins",
+        "category": "Mutation",
+        "tag": "Active",
+        "tier": 1,
+        "focus_cost": 1,
+        "ap_cost": 2,
+        "description": "You extend or retract your fins. While extended, you can move through water with the same speed you would on land, and suffer no consequences to your physical movement while submerged."
     }
 }
 

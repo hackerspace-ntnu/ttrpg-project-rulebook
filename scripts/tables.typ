@@ -28,3 +28,10 @@ table(
     )).flatten(),
   )
 }
+
+#let mutationsTable(mutations, abilities, tier) = {
+  table(
+    stroke: none,
+    
+  )
+}

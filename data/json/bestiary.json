@@ -1,0 +1,21 @@
+{
+    "creature name": {
+        "name": "creature name",
+        "might": 1,
+        "agility": 2,
+        "insight": 3,
+        "presence": 4,
+        "evasion": 5,
+        "heavy hit": 6,
+        "brutal hit": 7,
+        "speed": 8,
+        "attacks": [
+            {
+                "name": "attack name",
+                "roll": "Might + Agility (d6+d8)",
+                "active ability": null
+            }
+        ],
+        "abilities": ["Focus: This creature has 12 Focus"]
+    }
+}

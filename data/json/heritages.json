@@ -1,0 +1,26 @@
+{
+    "Ogblin": {
+        "name": "Ogblin",
+        "mutations": ["Gremlin"],
+        "title": "Mutophile",
+        "description": "While the Children of Og are widespread across the world and highly varied in what mutations they have, a large enough group always seems to have Ogblins among their number. Stunted creatures with green skin, they are too uniform in their appearance to not be a heritage, yet they seem to arise almost spontaneously. Where do they come from?"
+    },
+    "Verdant": {
+        "name": "Verdant",
+        "mutations": ["Plant Person"],
+        "title": "Green Thumb",
+        "description": "One strange phenomenon born out of Mana Corruption is a convergent evolution, where some plants have started taking on humanoid forms and wandered out to reduce their Mana Exposure. Many of these plantfolk have integrated into society."
+    },
+    "Dust Stalker": {
+        "name": "Dust Stalker",
+        "mutations": ["Keen Eyes", "Claws"],
+        "title": "Wanderer",
+        "description": "Folk with catlike features who have taken to wandering the deserts between towns, many have turned to banditry."
+    },
+    "Latchkey Islander": {
+        "name": "Latchkey Islander",
+        "mutations": ["Finned"],
+        "title": "Seaborn",
+        "description": "Many folk of the Latchkey Isles have developed fins that allow them to swim well even off a ship. Their distinctive fins and propensity for piracy have given them a poor reputation in other lands."
+    }
+}

@@ -284,5 +284,68 @@
     "focus_cost": 0,
     "ap_cost": 0,
     "description": "Designate an ally who has chosen to be Methodical, moving them to the Rushed Phase while keeping their original AP."
+  },
+  "Protectlier": {
+    "name": "Protectlier",
+    "category": "Might",
+    "tag": "Passive",
+    "tier": 1,
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": "When you take the Protect Reaction, you may take the entire chunk of damage, instead of splitting it with the ally you're protecting."
+  },
+  "Back to back": {
+    "name": "Back to back",
+    "category": "General",
+    "tag": "Passive",
+    "tier": 1,
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": "While adjacent to an ally with this ability, neither can be flanked."
+  },
+  "Climber": {
+    "name": "Climber",
+    "category": "Agility",
+    "tag": "Passive",
+    "tier": 1,
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": "Gain Boon(1) on attempts to climb and hold onto vertical surfaces and overhangs."
+  },
+  "Hittable face": {
+    "name": "Hittable face",
+    "category": "Presence",
+    "tag": "Active",
+    "tier": 1,
+    "focus_cost": 1,
+    "ap_cost": 0,
+    "description": "Goad an enemy into trying to attack you instead of an ally."
+  },
+  "Joust": {
+    "name": "Joust",
+    "category": "General",
+    "tag": "Active",
+    "tier": 1,
+    "focus_cost": 1,
+    "ap_cost": 0,
+    "description": "Roll a contested attack roll when passing an enemy, the highest attack resolves and the winner gets an attack of opportunity."
+  },
+  "Degraded focus": {
+    "name": "Degraded focus",
+    "category": "General",
+    "tag": "Passive",
+    "tier": 1,
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": "On spending focus, you may choose to instead corrupt the same amount of focus."
+  },
+  "Batter": {
+    "name": "Batter",
+    "category": "Might",
+    "tag": "Active",
+    "tier": 2,
+    "focus_cost": 1,
+    "ap_cost": 0,
+    "description": "Units taking Knockback within your Threat trigger your Attack of Opportunity. When you Retaliate with this feature, you may add +1 Knockback to the target and redirect the remaining Knockback on the target."
   }
 }

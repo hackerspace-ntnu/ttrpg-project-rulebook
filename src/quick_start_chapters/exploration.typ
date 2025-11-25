@@ -18,6 +18,9 @@ The exploration is acted out by charting a path through a hexgrid map.
 Progress is driven by the players deciding what they would like to do
 among these actions:
 
+// REVIEW: "Mana Zone" isn't an action though?
+- #term("Mana Zone", is_definition: true)
+  - Text \
 - #term("Travel", is_definition: true)
   - The party attempts to traverse a hex tile. This will take up two
     shifts if they are successful, but vehicles may shorten this time. When traversing terrain that is difficult to navigate, the navigator will make a check (Insight + Presence) to determine if the party can stay on course. \
@@ -47,4 +50,4 @@ among these actions:
     - 1 RP - #emph[Keep Watch];: Roll a single Insight die. If the
       result is higher than the GMs encounter die, receive advance
       warning of threats to the party. \
-    - 1 RP - #emph[Repair Item] (repeatable, requires a #link(<equipment-list>, "Repair Kit")): Choose an item and roll a repair check (Might + Insight). The item clears 1 + Successes Strain.
+    - 1 RP - #emph[Repair Item];: (repeatable, requires a #link(<equipment-list>, "Repair Kit")): Choose an item and roll a repair check (Might + Insight). The item clears 1 + Successes Strain.

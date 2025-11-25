@@ -61,7 +61,7 @@ following effects:
 ]
 == Reactions
 <reactions>
-#[Characters can take #term[Reactions] outside of their own #term[Phase], usually at the cost of #term[Focus].
+#[Characters can take #term[Reactions] outside of their own #term("Phase", key: "Phases"), usually at the cost of #term[Focus].
 Each #term[Reaction] has a specific trigger that let characters use it. 
 One #term[Action] can only #term("Trigger", is_definition: true) one #term[Reaction]. 
 A character can perform at most 1 #term[Reaction] in response to any particular #term[Action].

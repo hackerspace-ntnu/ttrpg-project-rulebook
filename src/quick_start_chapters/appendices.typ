@@ -10,7 +10,7 @@
 == Appendix A: Weapons
 <appendix-a>
 
-=== Weaponsse
+=== Weapons
 <weapons-appendix>
 #show figure: set block(breakable: true)
 #set table.cell(breakable: false)
