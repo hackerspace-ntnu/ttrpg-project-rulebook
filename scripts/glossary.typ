@@ -55,6 +55,9 @@
   }
 }
 
+#let boon(n) = term("Boon(" + str(n) + ")", key: "Boons")
+#let bane(n) = term("Bane(" + str(n) + ")", key: "Banes")
+
 #let render_glossary() = {
   columns(3,
   context {

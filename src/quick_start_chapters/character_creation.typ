@@ -61,11 +61,9 @@ can be done for 1 focus in situations where it makes narrative sense.
 == Mutations
 // TODO: Looks like this rule applies for all links after this point in the character creation document, including those to tables or terms. How do we feel about that?
 #show link: underline
-Choose any #term("Mutations", is_definition: true) you'd like from the mutation table
-#link("https://docs.google.com/document/d/1zkKA1ifbYqop71Pm5RrK5ofa_Z9V3Yyyje8CdN3MKn4/edit?tab=t.eulwm9krcgii")[#text(fill: purple)[document]];,
-or make up your own, then notify the GM of your choices. You have 2 free
-mutations, but purely cosmetic costs no slots. For each mutation past
-the first 2, one of your #term[Focus] is permanently #term("Corrupted", key: "Corrupted Focus").
+Choose any #term("Mutations", is_definition: true) you'd like from the #link(<mutation-table>)[Mutation Table] (#link("https://docs.google.com/document/d/1zkKA1ifbYqop71Pm5RrK5ofa_Z9V3Yyyje8CdN3MKn4/edit?tab=t.eulwm9krcgii")[#text(fill: purple)[document]]), or make up your own, then notify the GM of your choices. 
+The first 2 tiers worth of #term[Mutations], are free.
+For each tier past the first 2, one of your #term[Focus] is permanently #term("Corrupted", key: "Corrupted Focus") for each tier of the chosen #term[Mutations].
 
 == Archetypes
 If you're not sure where to start in terms of attributes, weapons,

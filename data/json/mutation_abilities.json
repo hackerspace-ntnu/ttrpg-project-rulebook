@@ -51,7 +51,7 @@
         "tier": 1,
         "focus_cost": null,
         "ap_cost": null,
-        "description": "These limbs do not end in hands, and as such are only capable of rudimentary manipulation, such as holding objects and grappling creatures. Multiple Lesser Limbs working in concert can do the work of one equivalent normal hand (all of the limbs from one Mutation that grants multiple of this feature for example."
+        "description": "These limbs are only capable of rudimentary manipulation, such as holding objects. If you have multiple Lesser Limbs, they can work in concert to do the work of one equivalent normal hand."
     },
     "Regenerative Feature": {
         "name": "Regenerative Feature",
@@ -87,7 +87,7 @@
         "tier": 1,
         "focus_cost": null,
         "ap_cost": null,
-        "description": "Your skin is your sensory organ for sight, as long as it isn't covered up, you can see what happens in front of it. This ability also allows you to see things that would normally be Invisible."
+        "description": "Your skin is a sensory organ for sight. As long as it isn't covered up, you can see what happens in front of it. This ability also allows you to see things that would normally be Invisible."
     },
     "Photosynthesis": {
         "name": "Photosynthesis",

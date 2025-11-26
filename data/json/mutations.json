@@ -76,13 +76,6 @@
         "description": "Your eyes change (to become catlike, goatlike, wholly black sclera, compound). If you have more than 2 eyes, only one changes in this way",
         "tier": 1
     },
-    "Strange Eyes": {
-        "name": "Strange Eyes",
-        "category": null,
-        "abilities": null,
-        "description": "Your eyes change in some way, gaining no additional abilities. (Iris changes color, sclera changes color, pupil changes shape, more or less pupils/irises)",
-        "tier": 0
-    },
     "No Eyes": {
         "name": "No Eyes",
         "category": null,
@@ -167,13 +160,6 @@
         "description": "You grow a tail, strengthened by bony rods, that greatly improves your ability to balance. It can also be used as a bludgeon, rolling with Might+Agility and the active Push.",
         "tier": 1
     },
-    "Pretty Tail": {
-        "name": "Pretty Tail",
-        "category": null,
-        "abilities": null,
-        "description": "You grow a tail, this tail is not large or intricate enough to give any additional abilities, but it looks nice.",
-        "tier": 0
-    },
     "Prehensile Tail": {
         "name": "Prehensile Tail",
         "category": null,
@@ -215,5 +201,12 @@
         "abilities": ["Extend Fins"],
         "description": "Your legs and arms develop collapsible rayed fins that can be used to move in the water.",
         "tier": 1
+    },
+    "Altered Features": {
+        "name": "Altered Features",
+        "category": null,
+        "abilities": null,
+        "description": "Roll 1d3: your body either gains, loses or has a visual feature of it altered. Roll 1d6 to decide the feature: [Tail, Eye, Mouth, Ear, Protrution, Other]. You can decide (or roll for) how many of the feature you get, but they grant no Abilities.",
+        "tier": 0
     }
 }

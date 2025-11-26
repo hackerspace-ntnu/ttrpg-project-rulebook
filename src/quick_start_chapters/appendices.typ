@@ -46,3 +46,20 @@
 === Weapon Tags
 <weapon-tags>
 #weaponTagsTable(json("../../data/json/weapon_tags.json"))
+
+#pagebreak()
+
+== Appendix B: Mutations
+
+=== Mutations
+<mutation-table>
+
+=== Mutation Abilities
+<mutation-abilities>
+
+#pagebreak()
+
+== Appendix C: Abilities
+
+=== Player Abilities
+<player-abilities>
