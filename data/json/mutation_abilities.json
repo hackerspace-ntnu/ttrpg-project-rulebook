@@ -250,6 +250,33 @@
         "focus_cost": 1,
         "ap_cost": 2,
         "description": "You extend or retract your fins. While extended, you can move through water with the same speed you would on land, and suffer no consequences to your physical movement while submerged."
+    },
+    "Fast Traveler": {
+        "name": "Fast Traveler",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "Reduce the amount of shifts you would require to traverse a hex by 1 (to a minimum of 1)"
+    },
+    "Rideable": {
+        "name": "Rideable",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "Another humanoid character can treat you as their steed without incurring penalties for you."
+    },
+    "Heavy Hauler": {
+        "name": "Heavy Hauler",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "Your Carrying Capacity increases by 4"
     }
 }
 

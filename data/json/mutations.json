@@ -208,5 +208,12 @@
         "abilities": null,
         "description": "Roll 1d3: your body either gains, loses or has a visual feature of it altered. Roll 1d6 to decide the feature: [Tail, Eye, Mouth, Ear, Protrution, Other]. You can decide (or roll for) how many of the feature you get, but they grant no Abilities.",
         "tier": 0
+    },
+    "Steed": {
+        "name": "Steed",
+        "category": null,
+        "abilities": ["Fast Traveler", "Rideable", "Heavy Hauler"],
+        "description": "You become capable of crossing the landscape quicker as your legs and endurance increase. Additionally, your physiology subtly shifts in a way that allows another humanoid character to ride you as if you were a mount.",
+        "tier": 2
     }
 }

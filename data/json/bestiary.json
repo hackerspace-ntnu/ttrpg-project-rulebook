@@ -12,10 +12,72 @@
         "attacks": [
             {
                 "name": "attack name",
-                "roll": "Might + Agility (d6+d8)",
-                "active ability": null
+                "roll": "ma [this is a shorthand that would map to Might + Agility (1d6+1d8) in a visual representation]",
+                "tags": ["tag1", "tag2"]
             }
         ],
-        "abilities": ["Focus: This creature has 12 Focus"]
+        "abilities": ["Focus: This creature has 12 Focus [I'm imagining most creatures don't have focus, unless they have abilities that would use so much focus that they could run out in a fight]"]
+    },
+    "Steel-wooled Dragonsheep": {
+        "name": "Steel-wooled Dragonsheep",
+        "might": 1,
+        "agility": 0,
+        "insight": 0,
+        "presence": 1,
+        "evasion": 5,
+        "heavy hit": 11,
+        "brutal hit": 16,
+        "speed": 4,
+        "attacks": [
+            {
+                "name": "Ram",
+                "roll": "mm",
+                "tags": ["Unwieldy (1)", "Impact (1)"]
+            }
+        ],
+        "abilities": ["Push: The Dragonsheep can choose to make the Ram attack also push the target 1 per success Spaces."]
+    },
+    "Tyrannosaurus Avis": {
+        "name": "Tyrannosaurus Avis",
+        "might": 4,
+        "agility": 2,
+        "insight": 2,
+        "presence": 1,
+        "evasion": 10,
+        "heavy hit": 13,
+        "brutal hit": 18,
+        "speed": 6,
+        "attacks": [
+            {
+                "name": "Beak Crush",
+                "roll": "ma",
+                "tags": ["Impact (2)"]
+            },
+            {
+                "name": "Slam",
+                "roll": "mm",
+                "tags": null
+            }
+        ],
+        "abilities": ["Keen Senses: The Tyrannosaurus Avis can track by scent anything within its hex unless countermeasures are taken."]
+    },
+    "Inverted Giraffe": {
+        "name": "Inverted Giraffe",
+        "might": 1,
+        "agility": 2,
+        "insight": 2,
+        "presence": 0,
+        "evasion": 10,
+        "heavy hit": 9,
+        "brutal hit": 14,
+        "speed": 5,
+        "attacks": [
+            {
+                "name": "Headbutt",
+                "roll": "ma",
+                "tags": null
+            }
+        ],
+        "abilities": ["Canopy Climber: While the Inverted Giraffe is climbing in the canopy, it can spend an AP to raise its head, giving it cover"]
     }
 }
