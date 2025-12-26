@@ -88,7 +88,7 @@ An attack is normally rolled by using two #term[Attribute Dice] relevant to the 
 Melee weapons usually have a #term("Threat", is_definition: true) of 1, meaning that you can attack things within 1 space of yourself. If you have a free hand, you can make unarmed attacks with #term[Threat] 1.
 
 There are three #term("Damage Thresholds", is_definition: true) that determine the damage dealt; #term[Evasion], #term[Heavy Hit] and #term[Brutal Hit]. 
-Different characters have different thresholds based on their stats as described in the #link(<armor>, "Armor Table").
+Different characters have different thresholds based on their stats as described in the /*#link(<armor>, "Armor Table")*/ @armor.
 
 A roll higher than a creature's #term[Evasion] is a hit. 
 Rolling above the Heavy and Brutal hit thresholds each add +1 #term[Success] and may trigger additional abilities. 

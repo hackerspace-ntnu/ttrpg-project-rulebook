@@ -45,8 +45,10 @@ Each character has 4 #term[Attributes]. Each #term("Attribute", key: "Attributes
     term("Presence", is_definition: true), [Inner focus and the power to inspire or command], [\+
     mod to Focus],
   )]
+  , supplement: none
+  , caption: [Attribute Table]
   , kind: table
-  )
+  ) <attribute-table>
 
 On creation, arrange \[d4, d6, d6, d8\] how you want your character's
 attributes to be.
@@ -60,8 +62,8 @@ can be done for 1 focus in situations where it makes narrative sense.
 
 == Mutations
 // TODO: Looks like this rule applies for all links after this point in the character creation document, including those to tables or terms. How do we feel about that?
-#show link: underline
-Choose any #term("Mutations", is_definition: true) you'd like from the #link(<mutation-table>)[Mutation Table] (#link("https://docs.google.com/document/d/1zkKA1ifbYqop71Pm5RrK5ofa_Z9V3Yyyje8CdN3MKn4/edit?tab=t.eulwm9krcgii")[#text(fill: purple)[document]]), or make up your own, then notify the GM of your choices. 
+//#show link: underline
+Choose any #term("Mutations", is_definition: true) you'd like from the #link(<mutation-table>)[Mutation Table] (#link("https://docs.google.com/document/d/1zkKA1ifbYqop71Pm5RrK5ofa_Z9V3Yyyje8CdN3MKn4/edit?tab=t.eulwm9krcgii")[#text(fill: purple)[#underline[document]]]), or make up your own, then notify the GM of your choices. 
 The first 2 tiers worth of #term[Mutations], are free.
 For each tier past the first 2, one of your #term[Focus] is permanently #term("Corrupted", key: "Corrupted Focus") for each tier of the chosen #term[Mutations].
 
@@ -79,4 +81,4 @@ The absolute necessities are a backpack containing a bedroll and 8
 Rations. Feel free to get any other items you want and have space for,
 but consider leaving some room for other items you pick up along the
 way. It's a good idea to make sure at least one person in your party has
-a mess kit, rope, repair kit (the more the better), and torches. See the #link(<equipment>, "Equipment") section for more details.
+a mess kit, rope, repair kit (the more the better), and torches. See the @equipment section for more details. 

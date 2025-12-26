@@ -13,8 +13,8 @@ Finally, small Items with 0 #term[Bulk] are called #term("Trinkets", is_definiti
 Instead, each character has a #term("Pocket", is_definition: true), where they can fit as many #term[Trinkets] as they can physically write in the box on their character sheet.
 These are things like a flint and steel, a pocket knife, a letter, or a sentimental item.
 
-== Equipment List
-<equipment-list>
+// == Equipment List
+// <equipment-list>
 #figure(
   align(center)[#table(
     columns: (33.33%, 10%, 56.66%),
@@ -36,8 +36,9 @@ These are things like a flint and steel, a pocket knife, a letter, or a sentimen
     [Rope (15 meters)], [1], [],
     [Torches x4], [1], [Burns for 1 #term("Shift", key: "Shifts"), providing Light in a 10 meter radius sphere],
   )]
+  , caption: [== Equipment List]
   , kind: table
-  )
+  ) <equipment-list>
 
 == Armor & Damage Thresholds
 <armor-damage-thresholds>
@@ -55,11 +56,11 @@ These are things like a flint and steel, a pocket knife, a letter, or a sentimen
     [Light armor], [5], [9], [14], [2], [],
     [Medium armor], [4], [10], [15], [4], [],
     [Heavy armor], [3], [12], [17], [6], [-1],
+    table.cell(colspan: 6, stroke: none)[\*Beyond Brutal: Every 5 above Brutal counts as +1 damage/success]
   )]
+  , caption: [#heading(outlined: false, level: 2)[Armor & Damage Thresholds]]
   , kind: table
   ) <armor>
-
-\*Beyond Brutal: Every 5 above Brutal counts as +1 damage/success
 
 == Weapons
 <weapons>
@@ -67,4 +68,4 @@ A character has one main-hand and one off-hand. You can only hold as many items 
 
 Shields count as weapons and can be used to attack, but doing so is less effective than using a regular weapon. Their main purpose is to help you take less damage and absorb blows.
 
-You can see a full list of weapons and their tags in #link(<appendix-a>, "Appendix A")
+You can see a full list of weapons and their tags in /*#link(<appendix-a>, "Appendix A")*/ @appendix-a[Appendix A].
