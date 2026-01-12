@@ -2,8 +2,8 @@
 
 # ideas
 
-Steel-wooled Dragonsheep - (I originally called it dragon-tailed sheep, but it’s fine). Mostly normal sheep with slightly larger horns, a fat scaly tail and rough reflective wool akin to steel wool. Maybe their colloquial name is Dragonsheep, but their official name in the Understanding 
-Mountainback - Huge carnivorous deer with calcified growth on their back that acts as a shell and looks like a boulderis Dragon-tailed Sheep?
+Steel-wooled Dragonsheep - (I originally called it dragon-tailed sheep, but it’s fine). Mostly normal sheep with slightly larger horns, a fat scaly tail and rough reflective wool akin to steel wool. Maybe their colloquial name is Dragonsheep, but their official name in the Understanding is Dragon-tailed Sheep?
+Mountainback - Huge carnivorous deer with calcified growth on their back that acts as a shell and looks like a boulder
 Tyrannosaurus Avis - A bird that convergently mutated into a similar body plan as the apex theropods, with a large crushing beak and tiny vestigial flightless wings.
 Big Bugs
 Bug with a big ass
@@ -32,6 +32,7 @@ Drones have wings and live where the Queen used to have wings, drones have poten
 When a drone first hatches it will eat the Queen’s wings to make room for itself underneath the exoskeleton 
 Queen can let its drones out by opening the part of the shell where its wings used to be
 Holes in the face of the Queen can be used to issue orders to the drones, which sounds like a flute. When running at full speed a discordant sound is made by the holes, agitating the drones to attack whatever prey the Queen is running towards.
+
 Syllix
 Blind monster that senses mana in the area.
 Essentially blind to creatures with little mana.
