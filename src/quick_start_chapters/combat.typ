@@ -1,67 +1,56 @@
-#import "../../scripts/glossary.typ": term, render_glossary, glossary_types
+#import "../../scripts/glossary.typ": term, render_glossary, glossary_types, boon, roll
 
 = Combat
 <combat>
 == Initiative and action economy
 <initiative-and-action-economy>
-#[Each round of combat happens in two #term("Phases", is_definition: true) following the Tortoise & Hare
+Each round of combat happens in two #term("Phases", is_definition: true) following the Tortoise & Hare
 style of initiative. Players use #term("Action Points", is_definition: true) (AP) to perform
 various actions and can choose to start each turn #term("Rushed", is_definition: true) (2 AP,
 acts during first phase) or #term("Methodical", is_definition: true) (3 AP, acts during
 second phase). Action points are regenerated at the start of the chosen
 phase.
 
-At max #term[Strain] you gain the #term("Dying", is_definition: true) condition, where any additional damage reduces max AP by 1. If your max AP is 0, you die.]
+At max #term[Strain] you gain the #term("Dying", is_definition: true) condition, where any additional damage reduces max AP by 1. If your max AP is 0, you die.
 
 == Actions
 <actions>
-#[If nothing else is specified, an Action costs 1 AP to use. Actions (and
-Free Actions) are subject to the #term("Repeated Action Penalty", is_definition: true) (RAP),
-which means every subsequent use of the same Action in your Phase costs 1
-additional AP.
+If nothing else is specified, an Action costs 1 AP to use. Actions (and
+Free Actions) are subject to the #term("Repeated Action Penalty", is_definition: true) (RAP), which means every subsequent use of the same Action in your Phase costs 1 additional AP.
+
+Active #term("Abilities") each count as their own Actions, and thus do not stack RAP.
 
 // TODO: Should all the actions be terms? Also, should Action, Free Action, etc. be terms in and of themselves?
-#term("Attack", is_definition: true) with your main hand weapon. \
-#term("Offhand Attack", is_definition: true) with your offhand weapon. Can be taken directly
-after an Attack misses, potentially negating the opponent's Retaliation
-chance, or granting them another. \
-#term("Cast", is_definition: true) a spell (varying cost). \
-#term("Help", is_definition: true) an ally with their next Action Roll (except Help), given
-that you can meaningfully impact it in the narrative, granting them a
-Boon(1 + 1 per Success). \
-#term("Shove", is_definition: true) a target 1 Space + 1 per success. 2 Spaces of Shove can
-be traded to knock the target Prone. Targets Evasion. \
-#term("Grapple", is_definition: true) a target, granting a +\[Success\] bonus to attacks
-against the target. Targets Evasion? \
+#term("Attack", is_definition: true) with a #term("Weapon", key: "Weapons") or #term("Cast", is_definition: true) a #term("Spell", key: "Spells") \
+// #term("Activate", is_definition: true) a #term("Mutation Ability", key: "Mutations") \
+#term("Help", is_definition: true) an ally with their next Action Roll (except Help), given that you can meaningfully impact it in the narrative, granting them a #boon("1 + 1 per Success"). \
+#term("Brawl", is_definition: true) with a target, making a #roll[Might][Insight] choosing either #term[Grapple] or #term[Shove] \
+- #term("Grapple", is_definition: true) a target, limiting their movement and granting #boon("Success") to the first Attack against the target. Targets Evasion. \
+- #term("Shove", is_definition: true) a target 1 Space + 1 per #term("Success", key: "Successes"). 2 Spaces of Shove can be traded to knock the target Prone. Targets Evasion. \
 #term("Ready", is_definition: true) an Action, paying its AP cost immediately. \
-#term("Interact", is_definition: true) with or #term("Use", is_definition: true) an item. \
-#term("Parley", is_definition: true) with a target.
-]
-== Free Actions
-<free-actions>
-#[Free Actions are 0 AP actions you can take on your turn. Do note that
-Free Actions are affected by #term("RAP", key: "Repeated Action Penalty"), so taking the same Free Action
-multiple times will end up costing AP.
+#term("Interact", is_definition: true) with or #term("Use", is_definition: true) an item, or #term("Parley", is_definition: true) with a target.
 
+
+=== 0 AP Actions
 #term("Move", is_definition: true) up to your Speed. \
-#term("Stow", is_definition: true) a Weapon or object held in your hand(s) into your quick
-draw inventory. Stowing into your inventory costs 1 AP. \
-#term("Draw", is_definition: true) a Weapon or object in your quick draw inventory into your
-hand(s). Drawing from your inventory costs 1 AP. \
-#term("Charge", is_definition: true) your next Action, delaying its activation until the end
-of the next Phase, but granting you Boon(3) on it. You must pick a
-target Space for the Action when picking this option. \
-#term("Disengage", is_definition: true) from a single enemy, preventing your own movement to
-trigger Retaliations from them this phase. \
+#term("Disengage", is_definition: true) from a single enemy, preventing your own movement from triggering Retaliations from them this phase. \
+#term("Stow/Draw", is_definition: true) the Weapons or objects held in your hands to/from your #term[Quick Draw Inventory]. You can both Stow and Draw with a single activation of this Action. +1 AP to Stow/Draw to/from Inventory. 
+
+== Static Actions
+<static-actions>
+#term("Static Actions", is_definition: true) are #term[Actions] you can take on your turn that are not affected by #term("RAP", key: "Repeated Action Penalty").
+
+0 AP: #term("Charge", is_definition: true) your next Action, delaying its activation until the end of the next Phase, but granting you #boon(3) on it. You must pick a target Space for the Action when picking this option. \
 // TODO: We still need to fix Fatigue, so this action may change anyway, but I think it's also worded weirdly.
-#term("Push", is_definition: true) yourself, taking #term[Fatigue] in order to perform one of the
+0 AP: #term("Push", is_definition: true) yourself, taking #term[Fatigue] in order to perform one of the
 following effects:
 - (repeatable +1 cost) 1 Fatigue for Boon(1) \
 - 2 Fatigue to gain 1 AP
-]
+
+
 == Reactions
 <reactions>
-#[Characters can take #term[Reactions] outside of their own #term("Phase", key: "Phases"), usually at the cost of #term[Focus].
+Characters can take #term[Reactions] outside of their own #term("Phase", key: "Phases"), usually at the cost of #term[Focus].
 Each #term[Reaction] has a specific trigger that let characters use it. 
 One #term[Action] can only #term("Trigger", is_definition: true) one #term[Reaction]. 
 A character can perform at most 1 #term[Reaction] in response to any particular #term[Action].
@@ -80,7 +69,7 @@ A character can perform at most 1 #term[Reaction] in response to any particular 
   )]
   , kind: table
   )
-]
+
 == Attacks and defense
 <attacks-and-defense>
 An attack is normally rolled by using two #term[Attribute Dice] relevant to the weapon used, as well as any other relevant bonuses. All weapons have a base damage of 1. Unarmed attacks have a base damage of 0. When you take damage, increase your #term[Strain] by that amount.

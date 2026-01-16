@@ -25,7 +25,7 @@ These are things like a flint and steel, a pocket knife, a letter, or a sentimen
     [Weapon], [1], [],
     [Heavy Weapon], [2], [],
     [Bandolier], [1], [Can hold up to 3 Weapons with both the Light and Thrown tags (which then do not
-    count towards total Bulk), counting as #term[Quick Draw Inventory] for the sake of the #term[Stow] and #term[Draw] Actions.],
+    count towards total Bulk), counting as #term[Quick Draw Inventory] for the sake of the #term[Stow/Draw] Action.],
     [Quiver], [1], [Comes with 20 Arrows, which it can hold],
     [Ration x4], [1], [Food and water],
     [Repair Kit], [1], [Needed for Crafting Checks and Tinker Checks to
