@@ -1,4 +1,4 @@
-#import "../../scripts/glossary.typ": term, render_glossary, glossary_types
+#import "../../scripts/glossary.typ": term, render_glossary, glossary_types, boon
 
 = Character creation
 <character-creation-mutations>
@@ -8,11 +8,11 @@ specializing in is based on who they choose to be.
 
 All characters start with some base stats, msot of which are modified by their #term[Attributes]: \
 // TODO: We should decide where to define these things.
-Max #term[Strain]: 8 \
+Max #term[Strain]: 7 \
 Max #term[Fatigue]: 4 \
-Max #term[Focus]: 8 \
-#term[Carrying Capacity]: 5 \
-Base #term[Speed]: 4 Spaces
+Max #term[Focus]: 7 \
+#term[Carrying Capacity]: 4 \
+Base #term[Speed]: 3 Spaces
 
 #term("Strain", is_definition: true) is a measure of the physical and mental strain inflicted to a character, acting similar to HP in other games.
 Unlike HP, #term[Strain] goes up when you take damage or suffer some sort of trauma.
@@ -54,11 +54,11 @@ On creation, arrange \[d4, d6, d6, d8\] how you want your character's
 attributes to be.
 
 == Titles
-At creation, you gain one #term("Title", key: "Titles") from your background. #term("Titles", is_definition: true) can also be earned after big moments in a campaign.
-#term[Titles] are primarily narrative in that they describe your character, and
-may be referred to at any time by either the player or GM for roleplay
-purposes. Titles provide a static bonus to a roll when invoked, which
-can be done for 1 focus in situations where it makes narrative sense.
+The #term("Background", key: "Backgrounds") and #term("Heritage", key: "Heritages") you choose at character creation can be used as #term[Titles].
+#term[Titles] are primarily narrative in that they describe your character, and may be referred to at any time by either the player or GM for roleplay purposes, granting #boon("") when invoked.
+Certain #term("Titles", is_definition: true) can also be earned after big moments in a campaign.
+
+
 
 == Mutations
 // TODO: Looks like this rule applies for all links after this point in the character creation document, including those to tables or terms. How do we feel about that?

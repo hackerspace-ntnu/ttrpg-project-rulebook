@@ -5,7 +5,7 @@
   },
   {
     "name": "Light",
-    "description": "Can be wielded in the main- or off-hand."
+    "description": "Can be wielded in the main- or off-hand. The first Attack made with this weapon each Round will not count for RAP."
   },
       {
     "name": "Medium",

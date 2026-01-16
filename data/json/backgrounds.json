@@ -9,7 +9,7 @@
     "Scholar": {
         "name": "Scholar",
         "ability":"tbd",
-        "title":"Learned One",
+        "title":"Scholar",
         "description":"You have spent much time absorbing knowledge by reading tomes and consulting wise men."
     },
 
@@ -17,7 +17,7 @@
         "name": "Child of Og",
         "ability":"Degraded Focus",
         "title":"Cultist",
-        "description":"The Children of Og are a cult to Titans and Mutation. A strong political force, and downright weird."
+        "description":"The Children of Og is a Titan-worshipping cults that believes Mutations perfect beings. A strong political force, and downright weird."
     }
 
 }

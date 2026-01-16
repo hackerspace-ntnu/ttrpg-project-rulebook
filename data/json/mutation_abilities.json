@@ -165,10 +165,10 @@
         "name": "Vulnerability",
         "category": "Mutation",
         "tag": "Passive",
-        "tier": 0,
+        "tier": 1,
         "focus_cost": null,
         "ap_cost": null,
-        "description": "When you carry an item made from your vulnerability for a Shift, or take damage from an attack with such an item, you take 1 Strain."
+        "description": "You can sense when items made of or containing your Vulnerability is nearby. If you carry an item made from your vulnerability for a Shift, or take Damage from an attack with such an item, you take 1 Strain that cannot be reduced in any way."
     },
     "Detect Danger": {
         "name": "Detect Danger",
