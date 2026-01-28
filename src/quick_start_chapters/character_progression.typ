@@ -18,18 +18,18 @@ You gain #term("Experience Points", is_definition: true) (XP) through a number o
  - Acting in line with your character traits
 
 When you reach certain XP thresholds, you're able to raise one of your #term[Attributes] by 1, and freely gain 1 #term("Ability", key: "Abilities") you qualify for.
-The amount of XP needed scales with the total of your #term[Attribute Modifiers], and equals $2^(mod "total")$.
+The amount of XP needed scales with the total of your #term[Attribute Modifiers], and equals $2^(mod "total"-4)$.
 
 #table(
   columns: 2,
   align: (left, left),
   table.header([Attribute Mod total], [XP threshold]),
   table.hline(),
-  [4], [16],
-  [5], [32],
-  [6], [64],
-  [7], [128],
-  [8], [256]
+  [8], [16],
+  [9], [32],
+  [10], [64],
+  [11], [128],
+  [12], [256]
 )
 
 == Scrap

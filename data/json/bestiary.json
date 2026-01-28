@@ -20,10 +20,10 @@
     },
     "Steel-wooled Dragonsheep": {
         "name": "Steel-wooled Dragonsheep",
-        "might": 1,
-        "agility": 0,
-        "insight": 0,
-        "presence": 1,
+        "might": 2,
+        "agility": 1,
+        "insight": 1,
+        "presence": 2,
         "evasion": 5,
         "heavy hit": 11,
         "brutal hit": 16,
@@ -39,10 +39,10 @@
     },
     "Tyrannosaurus Avis": {
         "name": "Tyrannosaurus Avis",
-        "might": 4,
-        "agility": 2,
-        "insight": 2,
-        "presence": 1,
+        "might": 5,
+        "agility": 3,
+        "insight": 3,
+        "presence": 2,
         "evasion": 10,
         "heavy hit": 13,
         "brutal hit": 18,
@@ -63,10 +63,10 @@
     },
     "Inverted Giraffe": {
         "name": "Inverted Giraffe",
-        "might": 1,
-        "agility": 2,
-        "insight": 2,
-        "presence": 0,
+        "might": 2,
+        "agility": 3,
+        "insight": 3,
+        "presence": 1,
         "evasion": 10,
         "heavy hit": 9,
         "brutal hit": 14,
@@ -79,5 +79,25 @@
             }
         ],
         "abilities": ["Canopy Climber: While the Inverted Giraffe is climbing in the canopy, it can spend an AP to raise its head, giving it cover"]
+    },
+
+        "j": {
+        "name": "the j",
+        "might": 1,
+        "agility": 2,
+        "insight": 3,
+        "presence": 4,
+        "evasion": 5,
+        "heavy hit": 6,
+        "brutal hit": 7,
+        "speed": 8,
+        "attacks": [
+            {
+                "name": "attack name",
+                "roll": "ma [this is a shorthand that would map to Might + Agility (1d6+1d8) in a visual representation]",
+                "tags": ["tag1", "tag2"]
+            }
+        ],
+        "abilities": ["Focus: This creature has 12 Focus [I'm imagining most creatures don't have focus, unless they have abilities that would use so much focus that they could run out in a fight]"]
     }
 }

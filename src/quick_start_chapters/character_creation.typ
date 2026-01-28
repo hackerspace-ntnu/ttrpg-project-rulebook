@@ -6,7 +6,7 @@ Everyone needs a character in order to play. The stats of the player is
 tied to their background and heritage, so the mechanics a player will be
 specializing in is based on who they choose to be.
 
-All characters start with some base stats, msot of which are modified by their #term[Attributes]: \
+All characters start with some base stats, most of which are modified by their #term[Attributes]: \
 // TODO: We should decide where to define these things.
 Max #term[Strain]: 7 \
 Max #term[Fatigue]: 4 \
@@ -29,7 +29,7 @@ If you would take #term[Fatigue] exceeding your maximum, you die.
 
 == Attributes
 
-Each character has 4 #term[Attributes]. Each #term("Attribute", key: "Attributes", is_definition: true) is represented by a die of size d4-d12, mapping to a modifier of 0-4.
+Each character has 4 #term[Attributes]. Each #term("Attribute", key: "Attributes", is_definition: true) is represented by a die of size d4-d12, mapping to a modifier of 1-5.
 
 #figure(
   align(center)[#table(
@@ -40,8 +40,7 @@ Each character has 4 #term[Attributes]. Each #term("Attribute", key: "Attributes
     term("Might", is_definition: true), [Strength and endurance], [\+ mod to #term[Strain] and #term[Carrying Capacity]],
     term("Agility", is_definition: true), [Speed, dexterity, flexibility and balance], [\+ mod to
     Speed],
-    term("Insight", is_definition: true), [Ability to discover and reason about information], [\+
-    mod to crits, rolls with boon and rolls when flanking],
+    term("Insight", is_definition: true), [Ability to discover and reason about information], [\Boon dice can never roll lower than your Insight mod],
     term("Presence", is_definition: true), [Inner focus and the power to inspire or command], [\+
     mod to Focus],
   )]

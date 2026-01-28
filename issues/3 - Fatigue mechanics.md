@@ -1,5 +1,5 @@
 # Discussion 
-
+No Fatigue
 
 ## Pasted from notes
 In addition to limiting recoverable HP, each point of Fatigue also gives -1 Carrying Capacity.

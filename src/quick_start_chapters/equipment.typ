@@ -2,7 +2,7 @@
 
 = Equipment
 <equipment>
-Each character has a #term("Carrying Capacity", is_definition: true) equal to 5 + Might Mod.
+Each character has a #term("Carrying Capacity", is_definition: true) equal to 4 + Might Mod.
 Items and Equipment have an amount of #term("Bulk", is_definition: true) (usually 1).
 If you're carrying more than your #term("Capacity", key: "Carrying Capacity") at the end of a #term("Shift", key: "Shifts"), you get #term[Fatigue] equal to the amount of extra #term[Bulk] you're carrying (total #term[Bulk] - #term[Carrying Capacity]).
 
@@ -52,10 +52,10 @@ These are things like a flint and steel, a pocket knife, a letter, or a sentimen
       Might Mod\ + Presence Mod], [#term("Brutal Hit", is_definition: true)\*\ + Might Mod\ + Presence
       Mod], [Max Strain], [Speed],),
     table.hline(),
-    [No armor], [6], [8], [13], [0], [+1],
-    [Light armor], [5], [9], [14], [2], [],
-    [Medium armor], [4], [10], [15], [4], [],
-    [Heavy armor], [3], [12], [17], [6], [-1],
+    [No armor], [2], [6], [11], [0], [+1],
+    [Light armor], [3], [7], [12], [2], [],
+    [Medium armor], [2], [8], [13], [4], [],
+    [Heavy armor], [1], [10], [15], [6], [-1],
     table.cell(colspan: 6, stroke: none)[\*Beyond Brutal: Every 5 above Brutal counts as +1 damage/success]
   )]
   , caption: [#heading(outlined: false, level: 2)[Armor & Damage Thresholds]]

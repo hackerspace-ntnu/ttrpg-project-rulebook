@@ -18,7 +18,7 @@ At max #term[Strain] you gain the #term("Dying", is_definition: true) condition,
 If nothing else is specified, an Action costs 1 AP to use. Actions (and
 Free Actions) are subject to the #term("Repeated Action Penalty", is_definition: true) (RAP), which means every subsequent use of the same Action in your Phase costs 1 additional AP.
 
-Active #term("Abilities") each count as their own Actions, and thus do not stack RAP.
+If an #term("Ability", key: "Abilities") doesn't specify an Action to use, it doesn't stack RAP.
 
 // TODO: Should all the actions be terms? Also, should Action, Free Action, etc. be terms in and of themselves?
 #term("Attack", is_definition: true) with a #term("Weapon", key: "Weapons") or #term("Cast", is_definition: true) a #term("Spell", key: "Spells") \

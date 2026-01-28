@@ -6,8 +6,8 @@ Most of your time in this game will be spent adventuring in the mana-filled wild
 
 The players must choose a “Party Caller” that informs the GM what actions the party will take when exploring.
 Each day spent exploring is divided into six #term("Shifts", is_definition: true).
-Usually, one ‘exploration activity' takes one #term("Shift", key: "Shifts") to perform.
-The players can also choose to Push themselves, achieving two exploration actions per shift at the cost of accruing one #term[Fatigue].
+Usually, one 'exploration activity' takes one #term("Shift", key: "Shifts") to perform.
+The players can also choose to Push themselves, achieving two exploration actions per shift at the cost of taking 2 #term[Strain].
 
 // TODO: Need to define Mana Zones.
 At the start of each #term("Shift", key: "Shifts") spent inside of a #term("Mana Zone", key: "Mana Zones"), the GM will make an #term("Encounter Check", is_definition: true), which may have both positive and negative effects for the party.
@@ -43,8 +43,7 @@ among these actions:
 - #term("Rest", is_definition: true)
   - The party settle down to take a rest. Each player receives 2 Rest
     Points they can use to take the following actions:
-    - 2 RP - #emph[Sleep] (once per day): Clear 1 fatigue, then gain the
-      bonuses of #emph[Relax] and #emph[Refocus] \
+    - 2 RP - #emph[Sleep] (once per day): Clear 1 #term("Wound", key: "Wounds"), then gain the bonuses of #emph[Relax] and #emph[Refocus] \
     - 1 RP - #emph[Relax];: Clear half of your strain. \
     - 1 RP - #emph[Refocus];: Recover half of your expended focus. \
     - 1 RP - #emph[Keep Watch];: Roll a single Insight die. If the
