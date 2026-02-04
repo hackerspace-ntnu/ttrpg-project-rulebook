@@ -2,24 +2,17 @@
 
 = Character creation
 <character-creation-mutations>
-Everyone needs a character in order to play. The stats of the player is
-tied to their background and heritage, so the mechanics a player will be
-specializing in is based on who they choose to be.
+Everyone needs a character in order to play. A character in Titanslayer consists of their #term[Attributes], determining what dice they roll for checks\; their #term("Background", key: "Backgrounds"), defining the character's life until they became a #term("Hunter", key: "Hunters")\; their #term("Heritage", key: "Heritages"), which describes their lineage and inherent #term[Mutations]\; and their #term[Equipment], which they discover, craft, and purchase on their journey.
 
 All characters start with some base stats, most of which are modified by their #term[Attributes]: \
 // TODO: We should decide where to define these things.
 Max #term[Strain]: 7 \
-Max #term[Fatigue]: 4 \
 Max #term[Focus]: 7 \
 #term[Carrying Capacity]: 4 \
 Base #term[Speed]: 3 Spaces
 
 #term("Strain", is_definition: true) is a measure of the physical and mental strain inflicted to a character, acting similar to HP in other games.
 Unlike HP, #term[Strain] goes up when you take damage or suffer some sort of trauma.
-Any damage exceeding your max #term[Strain] is taken as #term[Fatigue], which acts the same but with negative consequences.
-
-Each point of #term("Fatigue", is_definition: true) lowers your max #term[Strain] and #term[Carrying Capacity] by 1.
-If you would take #term[Fatigue] exceeding your maximum, you die.
 
 #term("Focus", is_definition: true) is a measure of your awareness of your surroundings and the state of yourself, and is spent to use certain #term[Abilities] and #term[Actions]. 
 
@@ -52,11 +45,14 @@ Each character has 4 #term[Attributes]. Each #term("Attribute", key: "Attributes
 On creation, arrange \[d4, d6, d6, d8\] how you want your character's
 attributes to be.
 
-== Titles
-The #term("Background", key: "Backgrounds") and #term("Heritage", key: "Heritages") you choose at character creation can be used as #term[Titles].
-#term[Titles] are primarily narrative in that they describe your character, and may be referred to at any time by either the player or GM for roleplay purposes, granting #boon("") when invoked.
-Certain #term("Titles", is_definition: true) can also be earned after big moments in a campaign.
+== Heritages
+#term("Heritage", key: "Heritages", is_definition: true) define the lineage of your character, and comes with #term[Mutations] that your character starts with.
 
+
+== Backgrounds
+#term("Backgrounds", is_definition: true) describe what your character has been doing before venturing into the wilds as a #term("Hunter", key: "Hunters").
+Each #term("Background", key: "Backgrounds") can be invoked for non-combat rolls to gain #boon(1) on the roll, given it makes sense for it to help in the narrative.
+Furthermore, you gain a single tier 1 #term("Ability", key: "Abilities") of the #term("Attribute", key: "Attributes") denoted by your #term("Background", key: "Backgrounds").
 
 
 == Mutations

@@ -41,11 +41,11 @@ If an #term("Ability", key: "Abilities") doesn't specify an Action to use, it do
 #term("Static Actions", is_definition: true) are #term[Actions] you can take on your turn that are not affected by #term("RAP", key: "Repeated Action Penalty").
 
 0 AP: #term("Charge", is_definition: true) your next Action, delaying its activation until the end of the next Phase, but granting you #boon(3) on it. You must pick a target Space for the Action when picking this option. \
-// TODO: We still need to fix Fatigue, so this action may change anyway, but I think it's also worded weirdly.
-0 AP: #term("Push", is_definition: true) yourself, taking #term[Fatigue] in order to perform one of the
+// TODO: Worded weirdly
+0 AP: #term("Push", is_definition: true) yourself, taking #term[Strain] in order to perform one of the
 following effects:
-- (repeatable +1 cost) 1 Fatigue for Boon(1) \
-- 2 Fatigue to gain 1 AP
+- (repeatable +1 cost) 1 Strain for Boon(1) \
+- 2 Strain to gain 1 AP
 
 
 == Reactions
@@ -141,3 +141,10 @@ Melee Heavy Weapons: When you Counter you may Push the Attacker MIG
 mod / Size difference Spaces.
 
 Ranged Weapons: 
+
+== Wounds & Dying
+Any damage exceeding your max #term[Strain] causes you to take a #term("Wound", key: "Wounds").
+When taking a #term("Wound", key: "Wounds"), you roll a single d8.
+If the result is under the number of Wounds your have character has, they die.
+Otherwise, they clear Strain equal to the result and lose 1 AP next time they act.
+

@@ -4,7 +4,7 @@
 <equipment>
 Each character has a #term("Carrying Capacity", is_definition: true) equal to 4 + Might Mod.
 Items and Equipment have an amount of #term("Bulk", is_definition: true) (usually 1).
-If you're carrying more than your #term("Capacity", key: "Carrying Capacity") at the end of a #term("Shift", key: "Shifts"), you get #term[Fatigue] equal to the amount of extra #term[Bulk] you're carrying (total #term[Bulk] - #term[Carrying Capacity]).
+If you're carrying more than your #term("Capacity", key: "Carrying Capacity") at the end of a #term("Shift", key: "Shifts"), you mark #term[Strain] equal to the amount of extra #term[Bulk] you're carrying (total #term[Bulk] - #term[Carrying Capacity]).
 
 Each character also has a #term("Quick Draw Inventory", is_definition: true) with a Capacity of 3, which does not contribute to the total #term[Bulk] in your regular Inventory.
 Essentially, you get 3 extra Capacity for things like Weapons and Shields that you would want easy access to during combat.
@@ -32,7 +32,7 @@ These are things like a flint and steel, a pocket knife, a letter, or a sentimen
     repair items],
     [Backpack], [1], [Can carry 3 Bulk, max one in use],
     [Mess kit], [1], [Needed for cooking],
-    [Bedroll], [1], [Sleeping without doesn't recover #term[Fatigue]],
+    [Bedroll], [1], [Sleeping without doesn't recover #term[Wounds]],
     [Rope (15 meters)], [1], [],
     [Torches x4], [1], [Burns for 1 #term("Shift", key: "Shifts"), providing Light in a 10 meter radius sphere],
   )]

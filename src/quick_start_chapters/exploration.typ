@@ -12,7 +12,8 @@ The players can also choose to Push themselves, achieving two exploration action
 // TODO: Need to define Mana Zones.
 At the start of each #term("Shift", key: "Shifts") spent inside of a #term("Mana Zone", key: "Mana Zones"), the GM will make an #term("Encounter Check", is_definition: true), which may have both positive and negative effects for the party.
 
-Explorers will also need to sleep. If it has been a full day (6 #term[Shifts]) since the characters last slept, each subsequent shift they do not sleep will add one #term[Fatigue] to all PCs.
+Explorers will also need to sleep. 
+At the end of each day (6 #term[Shifts]), any character that did not sleep lose 2 #term[Strain].
 
 The exploration is acted out by charting a path through a hexgrid map.
 Progress is driven by the players deciding what they would like to do

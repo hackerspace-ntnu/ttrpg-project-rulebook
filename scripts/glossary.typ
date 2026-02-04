@@ -59,7 +59,7 @@
 #let bane(n) = term(if n != "" {"Bane(" + str(n) + ")"} else {"Bane"}, key: "Banes")
 // #let boon(n) = term("Boon(" + str(n) + ")", key: "Boons")
 // #let bane(n) = term("Bane(" + str(n) + ")", key: "Banes")
-#let roll(a1, a2) = [#term(a1) #term(a2) #term("Roll", key: "Action Roll")]
+#let roll(a1, a2) = [#term(a1) #term(a2) #term("Roll", key: "Action Rolls")]
 
 #let render_glossary() = {
   columns(3,

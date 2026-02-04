@@ -1,23 +1,56 @@
 {
     "[BACKGROUND NAME]": {
         "name": "[BACKGROUND NAME BUT AGAIN]",
-        "ability": "[THE ABILITY GRANTED BY THE BACKGROUND]",
-        "title": "[THE TITLE GRANTED BY THE BACKGROUND]",
+        "ability_attribute": "[THE ATTRIBUTE TIED TO THE ABILITY GRANTED BY THE BACKGROUND]",
+        "triggers": "[SCENARIOS WHERE TITLE APPLIES]",
         "description": "[Some rough description about the background.]"
     },
-
     "Scholar": {
         "name": "Scholar",
-        "ability":"tbd",
-        "title":"Scholar",
+        "ability_attribute":"",
+        "triggers": "Deciphering old texts, ",
         "description":"You have spent much time absorbing knowledge by reading tomes and consulting wise men."
     },
-
     "Child of Og": {
         "name": "Child of Og",
-        "ability":"Degraded Focus",
-        "title":"Cultist",
+        "ability_attribute":"Degraded Focus",
+        "triggers": "",
         "description":"The Children of Og is a Titan-worshipping cults that believes Mutations perfect beings. A strong political force, and downright weird."
+    },
+    "Artificer": {
+        "name": "Artificer",
+        "ability_attribute": "",
+        "triggers": "Tinker with or identify mana tech",
+        "description": ""
+    },
+    "Botanist": {
+        "name": "Botanist",
+        "ability_attribute": "",
+        "triggers": "Grow and identify plants",
+        "description": ""
+    },
+    "Merchant": {
+        "name": "Merchant",
+        "ability_attribute": "",
+        "triggers": "",
+        "description": ""
+    },
+    "Cartographer": {
+        "name": "Cartographer",
+        "ability_attribute": "",
+        "triggers": "Creating and reading maps, navigation",
+        "description": ""
+    },
+    "Sailor": {
+        "name": "Sailor",
+        "ability_attribute": "",
+        "triggers": "",
+        "description": ""
+    },
+    "Urchin": {
+        "name": "Urchin",
+        "ability_attribute": "",
+        "triggers": "",
+        "description": ""
     }
-
 }

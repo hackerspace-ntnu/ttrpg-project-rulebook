@@ -1,0 +1,72 @@
+{
+    "NAME": {
+        "name": "[NAME]",
+        "description": "[PLANT VISUAL, SMELL, etc.]",
+        "abilities": "[SPECIAL EFFECTS. DO YOU CLEAR STRAIN FROM EATING IT? DOES IT SHOCK YOU WHEN YOU GET CLOSE?]"
+    },
+    "Invisibile Mushroom": {
+        "name": "Invisible Mushroom",
+        "description": "A Mushroom that's invisible.",
+        "abilities": "Deals [number] damage by direct contact."
+    },
+    "Floating Tree": {
+        "name": "Floating Tree",
+        "description": "A tree that drifts upwards as it grows, taking it's roots with it.",
+        "abilities": "It floats, but is tethered to the ground by it's roots."
+    },
+    "Juvnile Floating Tree Shoot": {
+        "name": "Juvnile Floating Tree Shoot",
+        "description": "A scrawny, twisting tree without leaves and with long roots. Edible, green shoots grow on the branches.",
+        "abilities": "[1d6] rations per small tree. Eating them causes the consumer to start floating upwards at a rate of 1 squares per turn for an hour. [something something difficulty check to stop this idk]"
+    },
+    "Boomshroom": {
+        "name": "Boomshroom",
+        "description": "A really un-suspicious looking mushroom. (needs more description)",
+        "abilities": "Will explode, dealing [number] damage (radius?)."
+    },
+    "Gravefruit": {
+        "name": "Gravefruit",
+        "description": "A round, black fruit with a slight earthy aftertaste.",
+        "abilities": "Will slowly absorb whoever eats it into the ground."
+    },
+    "Vigorberry": {
+        "name": "Vigorberry",
+        "description": "Golden berries that appear to have a slight glow",
+        "abilities": "[1d4?] rations. [Effect]"
+    },
+    "Swordroot": {
+        "name": "Swordroot",
+        "description": "Weirdly sword-shaped plant roots, originating from a plant with rust-red leaves.",
+        "abilities": "Can be used as arming swords as well as [1d4?] rations per root."
+    },
+    "Spice Leaves": {
+        "name": "Spice leaves",
+        "description": "Leafeý-looking herbs with a really spicy taste.",
+        "abilities": "Can be used to add spice to food. Do ot eat a handful at once."
+    },
+    "": {
+        "name": "",
+        "description": "",
+        "abilities": ""
+    },
+    "": {
+        "name": "",
+        "description": "",
+        "abilities": ""
+    },
+    "": {
+        "name": "",
+        "description": "",
+        "abilities": ""
+    },
+    "": {
+        "name": "",
+        "description": "",
+        "abilities": ""
+    },
+    "": {
+        "name": "",
+        "description": "",
+        "abilities": ""
+    }
+}

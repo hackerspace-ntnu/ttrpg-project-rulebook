@@ -356,5 +356,14 @@
     "focus_cost": 0,
     "ap_cost": 0,
     "description": "Gain 1 additional AP for this Round, but gain 1 less AP for the next Round."
+  },
+  "High Stakes": {
+    "name": "High stakes",
+    "category": "General",
+    "tag": "Active",
+    "tier": 2,
+    "focus_cost": 1,
+    "ap_cost": 0,
+    "description": "Gain an amount of Boon equal to the number of Wounds you have on the next roll."
   }
 }

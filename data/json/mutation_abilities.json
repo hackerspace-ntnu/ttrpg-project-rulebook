@@ -247,8 +247,8 @@
         "category": "Mutation",
         "tag": "Active",
         "tier": 1,
-        "focus_cost": 1,
-        "ap_cost": 2,
+        "focus_cost": 0,
+        "ap_cost": 1,
         "description": "You extend or retract your fins. While extended, you can move through water with the same speed you would on land, and suffer no consequences to your physical movement while submerged."
     },
     "Fast Traveler": {
