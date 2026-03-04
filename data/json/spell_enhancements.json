@@ -1,0 +1,73 @@
+{
+  "name": {
+    "name": "name",
+    "tag": "[Damage | AOE | Range | Special]",
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": "[Enhancement effect]",
+    "repeatable": "[Optional, number describes max repeats, -1 for no max]"
+  },
+  "Splash": {
+    "name": "Splash",
+    "tag": "AOE",
+    "focus_cost": 1,
+    "ap_cost": 0,
+    "description": "The spell splashes into a Cone 2 behind the struck target, dealing Reduced 1 damage to all targets within. If the damaging effect was a Summoned object, it shatters."
+  },
+  "Hurl": {
+    "name": "Hurl",
+    "tag": "Range",
+    "focus_cost": 0,
+    "ap_cost": 1,
+    "description": "The spell gains 5 Range"
+  },
+  "Expand": {
+    "name": "Expand",
+    "tag": "AOE",
+    "focus_cost": 0,
+    "ap_cost": 1,
+    "description": "The spell's AOE increases by 1"
+  },
+  "Chain": {
+    "name": "Chain",
+    "tag": "Special",
+    "focus_cost": 1,
+    "ap_cost": 0,
+    "description": "The spell targets another creature within range, repeating for as long as it doesn't target the same character twice."
+  },
+  "Invigorate": {
+    "name": "Invigorate",
+    "tag": "Special",
+    "focus_cost": 1,
+    "ap_cost": 0,
+    "description": "Allies hit by the spell ignore its original effect and instead gain +2 Speed until the end of the Round"
+  },
+  "Duplicate": {
+    "name": "Duplicate",
+    "tag": "Special",
+    "focus_cost": 1,
+    "ap_cost": 1,
+    "description": "You may choose an additional target for the Spell. You must pay for and apply Spell Enhancements seperately for this instance of the Spell."
+  },
+  "Distant Spell": {
+    "name": "Distant Spell",
+    "tag": "Range",
+    "focus_cost": 1,
+    "ap_cost": 0,
+    "description": "The spell's origin can be within 5 Spaces"
+  },
+  "Sustain": {
+    "name": "Sustain",
+    "tag": "Special",
+    "focus_cost": 0,
+    "ap_cost": 1,
+    "description": "The spell's duration increases by 1 tier."
+  },
+  "": {
+    "name": "",
+    "tag": "",
+    "focus_cost": 0,
+    "ap_cost": 1,
+    "description": "The spell"
+  }
+}

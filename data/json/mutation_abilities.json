@@ -1,13 +1,4 @@
 {
-    "Unsleeping": {
-        "name": "Unsleeping",
-        "category": "Mutation",
-        "tag": "Passive",
-        "tier": 1,
-        "focus_cost": null,
-        "ap_cost": null,
-        "description": "You cannot sleep, you gain no penalties for forgoing sleep. If an ability requires you to sleep to be provoked, taking the Relax and Refocus Rest options in the same rest activates those abilities."
-    },
     "Ascend": {
         "name": "Ascend",
         "category": "Mutation",
@@ -16,6 +7,105 @@
         "focus_cost": 2,
         "ap_cost": 2,
         "description": "You fill your Flight Bladder with gas and gain enough lift to go up to 100 meters into the air. Ascending 10 squares per round. You can reduce the amount of gas in the bladder to descend, at a rate of 5 squares per AP. This levitation lets you be transported by wind, but you gain no inherent ability to maneuver in the air except up/down."
+    },
+    "Balanced": {
+        "name": "Balanced",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "Any effect that would knock you prone or otherwise move you against your will, count all successes as 2 lower."
+    },
+    "Burning": {
+        "name": "Burning",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 2,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "You give off Light in a 10-meter radius sphere. If a creature touches you, they take 1 Strain from fire. If at the end of your turn you are grappling or holding a creature, they take 1 Strain from fire."
+    },
+    "Change Skin": {
+        "name": "Change Skin",
+        "category": "Mutation",
+        "tag": "Active",
+        "tier": 1,
+        "focus_cost": 1,
+        "ap_cost": 1,
+        "description": "You change your skin's texture, this can include protrusions up to 10 centimeters. In places where your skin color doesn't matter (such as in lightless environments) this ability can confer Boon(1) to stealth rolls."
+    },
+    "Color Change": {
+        "name": "Color Change",
+        "category": "Mutation",
+        "tag": "Active",
+        "tier": 1,
+        "focus_cost": 1,
+        "ap_cost": 1,
+        "description": "You change the way your skin and hair's color appears. This can be in any colors and any patterns. This ability can confer Boon(1) to stealth rolls."
+    },
+    "Detect Danger": {
+        "name": "Detect Danger",
+        "category": "Mutation",
+        "tag": "Active",
+        "tier": 1,
+        "focus_cost": 1,
+        "ap_cost": 1,
+        "description": "You attempt to sense a type of dangerous thing in your vicinity (the type of danger determined by your mutation), you learn whether that danger is within the vicinity, and which squares any such dangers are present in."
+    },
+    "Empowered Attribute": {
+        "name": "Empowered Attribute",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 3,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "Your Attribute modifier for an Attribute is permanently increased by 1, as is the maximum for that attribute, such that you could attain a d20 in it."
+    },
+    "Engulf": {
+        "name": "Engulf",
+        "category": "Mutation",
+        "tag": "Active",
+        "tier": 1,
+        "focus_cost": 1,
+        "ap_cost": 2,
+        "description": "While grappling a creature, you wrap yourself around them and start digesting. Roll Might + Agility and deal [Successes] damage. The engulfed creature needs to succeed on a Might + Might roll against your Heavy Hit threshold to escape."
+    },
+    "Extend Fins": {
+        "name": "Extend Fins",
+        "category": "Mutation",
+        "tag": "Active",
+        "tier": 1,
+        "focus_cost": 0,
+        "ap_cost": 1,
+        "description": "You extend or retract your fins. While extended, you can move through water with the same speed you would on land, and suffer no consequences to your physical movement while submerged."
+    },
+    "Faceless": {
+        "name": "Faceless",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "You lose access to the senses of taste and smell, but can still see through photosensitive skin cells and eat by absorbing energy in food through your hands."
+    },
+    "Fast Traveler": {
+        "name": "Fast Traveler",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "Reduce the amount of shifts you would require to traverse a hex by 1 (to a minimum of 1)"
+    },
+    "Fireproof": {
+        "name": "Fireproof",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "You take no Strain from heat or fire-based sources, you can operate normally in extremely warm temperatures."
     },
     "Flammable": {
         "name": "Flammable",
@@ -26,15 +116,6 @@
         "ap_cost": null,
         "description": "Due to the flammability of the Flight Bladder gas, if your hit points are reduced by fire or heat, the gas ignites, immediately dealing 5 damage to you and everyone within 3 squares of you. Additionally, you cannot use the Ascend ability (and lose any altitude you currently had with it) until you have recovered all Strain you have taken."
     },
-    "Leap": {
-        "name": "Leap",
-        "category": "Mutation",
-        "tag": "Active",
-        "tier": 1,
-        "focus_cost": 1,
-        "ap_cost": 1,
-        "description": "Choose any point within your Speed and leap there without provoking reactions."
-    },
     "Glide": {
         "name": "Glide",
         "category": "Mutation",
@@ -44,6 +125,24 @@
         "ap_cost": 0,
         "description": "While falling, you spread your wings and catch the air. You now descend at a rate of 3 Squares per round until you land, taking no falling damage, and can Move with your Speed to any point that is not further up than your current elevation."
     },
+    "Heavy Hauler": {
+        "name": "Heavy Hauler",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "Your Carrying Capacity increases by 4"
+    },
+    "Leap": {
+        "name": "Leap",
+        "category": "Mutation",
+        "tag": "Active",
+        "tier": 1,
+        "focus_cost": 1,
+        "ap_cost": 1,
+        "description": "Choose any point within your Speed and leap there without provoking reactions."
+    },
     "Lesser Limb": {
         "name": "Lesser Limb",
         "category": "Mutation",
@@ -52,60 +151,6 @@
         "focus_cost": null,
         "ap_cost": null,
         "description": "These limbs are only capable of rudimentary manipulation, such as holding objects. If you have multiple Lesser Limbs, they can work in concert to do the work of one equivalent normal hand."
-    },
-    "Regenerative Feature": {
-        "name": "Regenerative Feature",
-        "category": "Mutation",
-        "tag": "Passive",
-        "tier": 2,
-        "focus_cost": null,
-        "ap_cost": null,
-        "description": "This Mutation has 2 Strain Capacity and the Durable tag, meaning you can interpose it to defend against an attack. When you sleep, all Strain taken by this feature is cleared."
-    },
-    "Natural Weapon": {
-        "name": "Natural Weapon",
-        "category": "Mutation",
-        "tag": "Passive",
-        "tier": 1,
-        "focus_cost": null,
-        "ap_cost": null,
-        "description": "You gain a weapon that is always equipped and takes no inventory space. The weapon's Roll, Active and Tags is determined by the Mutation that granted this ability."
-    },
-    "Superior Vision": {
-        "name": "Superior Vision",
-        "category": "Mutation",
-        "tag": "Passive",
-        "tier": 1,
-        "focus_cost": null,
-        "ap_cost": null,
-        "description": "[Some ability or other related to sight]"
-    },
-    "Skinsight": {
-        "name": "Skinsight",
-        "category": "Mutation",
-        "tag": "Passive",
-        "tier": 1,
-        "focus_cost": null,
-        "ap_cost": null,
-        "description": "Your skin is a sensory organ for sight. As long as it isn't covered up, you can see what happens in front of it. This ability also allows you to see things that would normally be Invisible."
-    },
-    "Photosynthesis": {
-        "name": "Photosynthesis",
-        "category": "Mutation",
-        "tag": "Passive",
-        "tier": 1,
-        "focus_cost": null,
-        "ap_cost": null,
-        "description": "If you Sleep in direct sunlight, you gain the effects of eating a Ration"
-    },
-    "Faceless": {
-        "name": "Faceless",
-        "category": "Mutation",
-        "tag": "Passive",
-        "tier": 1,
-        "focus_cost": null,
-        "ap_cost": null,
-        "description": "You lose access to the senses of taste and smell, but can still see through photosensitive skin cells and eat by absorbing energy in food through your hands."
     },
     "Masked": {
         "name": "Masked",
@@ -125,95 +170,14 @@
         "ap_cost": null,
         "description": "You have no bones, and have to Engulf something to eat it. When not under time pressure, you can squeeze through small holes, opening and crevices."
     },
-    "Engulf": {
-        "name": "Engulf",
-        "category": "Mutation",
-        "tag": "Active",
-        "tier": 1,
-        "focus_cost": 1,
-        "ap_cost": 2,
-        "description": "While grappling a creature, you wrap yourself around them and start digesting. Roll Might + Agility and deal [Successes] damage. The engulfed creature needs to succeed on a Might + Might roll against your Heavy Hit threshold to escape."
-    },
-    "Change Color": {
-        "name": "Change Color",
-        "category": "Mutation",
-        "tag": "Active",
-        "tier": 1,
-        "focus_cost": 1,
-        "ap_cost": 1,
-        "description": "You change the way your skin and hair's color appears. This can be in any colors and any patterns. This ability can confer Boon(1) to stealth rolls."
-    },
-    "Change Skin": {
-        "name": "Change Skin",
-        "category": "Mutation",
-        "tag": "Active",
-        "tier": 1,
-        "focus_cost": 1,
-        "ap_cost": 1,
-        "description": "You change your skin's texture, this can include protrusions up to 10 centimeters. In places where your skin color doesn't matter (such as in lightless environments) this ability can confer Boon(1) to stealth rolls."
-    },
-    "Return to Self": {
-        "name": "Return to Self",
-        "category": "Mutation",
-        "tag": "Active",
-        "tier": 1,
-        "focus_cost": 1,
-        "ap_cost": 2,
-        "description": "You become a version of yourself that is without mutations, you lose access to all of your Mutation Abilities for the duration. This ability lasts for 1 Shift, and can be extended with further Focus use."
-    },
-    "Vulnerability": {
-        "name": "Vulnerability",
+    "Natural Weapon": {
+        "name": "Natural Weapon",
         "category": "Mutation",
         "tag": "Passive",
         "tier": 1,
         "focus_cost": null,
         "ap_cost": null,
-        "description": "You can sense when items made of or containing your Vulnerability is nearby. If you carry an item made from your vulnerability for a Shift, or take Damage from an attack with such an item, you take 1 Strain that cannot be reduced in any way."
-    },
-    "Detect Danger": {
-        "name": "Detect Danger",
-        "category": "Mutation",
-        "tag": "Active",
-        "tier": 1,
-        "focus_cost": 1,
-        "ap_cost": 1,
-        "description": "You attempt to sense a type of dangerous thing in your vicinity (the type of danger determined by your mutation), you learn whether that danger is within the vicinity, and which squares any such dangers are present in."
-    },
-    "Fireproof": {
-        "name": "Fireproof",
-        "category": "Mutation",
-        "tag": "Passive",
-        "tier": 1,
-        "focus_cost": null,
-        "ap_cost": null,
-        "description": "You take no Strain from heat or fire-based sources, you can operate normally in extremely warm temperatures."
-    },
-    "Burning": {
-        "name": "Burning",
-        "category": "Mutation",
-        "tag": "Passive",
-        "tier": 2,
-        "focus_cost": null,
-        "ap_cost": null,
-        "description": "You give off Light in a 10-meter radius sphere. If a creature touches you, they take 1 Strain from fire. If at the end of your turn you are grappling or holding a creature, they take 1 Strain from fire."
-    },
-    "Balanced": {
-        "name": "Balanced",
-        "category": "Mutation",
-        "tag": "Passive",
-        "tier": 1,
-        "focus_cost": null,
-        "ap_cost": null,
-        "description": "Any effect that would knock you prone or otherwise move you against your will, count all successes as 2 lower."
-    },
-    "Empowered Attribute": {
-        "name": "Empowered Attribute",
-        "category": "Mutation",
-        "tag": "Passive",
-        "tier": 3,
-        "focus_cost": null,
-        "ap_cost": null,
-        "description": "Your Attribute modifier for an Attribute is permanently increased by 1, as is the maximum for that attribute, such that you could attain a d20 in it."
+        "description": "You gain a weapon that is always equipped and takes no inventory space. The weapon's Roll, Active and Tags is determined by the Mutation that granted this ability."
     },
     "Passive Hunter": {
         "name": "Passive Hunter",
@@ -224,6 +188,15 @@
         "ap_cost": null,
         "description": "While engaged in a different activity, something attempts a Hunting check for you, with Boon(2)"
     },
+    "Photosynthesis": {
+        "name": "Photosynthesis",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "If you Sleep in direct sunlight, you gain the effects of eating a Ration"
+    },
     "Puny": {
         "name": "Puny",
         "category": "Mutation",
@@ -233,32 +206,23 @@
         "ap_cost": null,
         "description": "Your Carrying Capacity is reduced by 1, but your Evasion threshold is increased by 1."
     },
-    "Slip Through": {
-        "name": "Slip Through",
-        "category": "Mutation",
-        "tag": "Active",
-        "tier": 1,
-        "focus_cost": 2,
-        "ap_cost": 1,
-        "description": "You move your speed, and as part of this move, can slip through a tight space, or the space of a creature, no matter what countermeasures it has prepared. Additionally, this movement does not provoke reactions."
-    },
-    "Extend Fins": {
-        "name": "Extend Fins",
-        "category": "Mutation",
-        "tag": "Active",
-        "tier": 1,
-        "focus_cost": 0,
-        "ap_cost": 1,
-        "description": "You extend or retract your fins. While extended, you can move through water with the same speed you would on land, and suffer no consequences to your physical movement while submerged."
-    },
-    "Fast Traveler": {
-        "name": "Fast Traveler",
+    "Regenerative Feature": {
+        "name": "Regenerative Feature",
         "category": "Mutation",
         "tag": "Passive",
-        "tier": 1,
+        "tier": 2,
         "focus_cost": null,
         "ap_cost": null,
-        "description": "Reduce the amount of shifts you would require to traverse a hex by 1 (to a minimum of 1)"
+        "description": "This Mutation has 2 Strain Capacity and the Durable tag, meaning you can interpose it to defend against an attack. When you sleep, all Strain taken by this feature is cleared."
+    },
+    "Return to Self": {
+        "name": "Return to Self",
+        "category": "Mutation",
+        "tag": "Active",
+        "tier": 1,
+        "focus_cost": 1,
+        "ap_cost": 2,
+        "description": "You become a version of yourself that is without mutations, you lose access to all of your Mutation Abilities for the duration. This ability lasts for 1 Shift, and can be extended with further Focus use."
     },
     "Rideable": {
         "name": "Rideable",
@@ -269,14 +233,51 @@
         "ap_cost": null,
         "description": "Another humanoid character can treat you as their steed without incurring penalties for you."
     },
-    "Heavy Hauler": {
-        "name": "Heavy Hauler",
+    "Skinsight": {
+        "name": "Skinsight",
         "category": "Mutation",
         "tag": "Passive",
         "tier": 1,
         "focus_cost": null,
         "ap_cost": null,
-        "description": "Your Carrying Capacity increases by 4"
+        "description": "Your skin is a sensory organ for sight. As long as it isn't covered up, you can see what happens in front of it. This ability also allows you to see things that would normally be Invisible."
+    },
+    "Slip Through": {
+        "name": "Slip Through",
+        "category": "Mutation",
+        "tag": "Active",
+        "tier": 1,
+        "focus_cost": 2,
+        "ap_cost": 1,
+        "description": "You move your speed, and as part of this move, can slip through a tight space, or the space of a creature, no matter what countermeasures it has prepared. Additionally, this movement does not provoke reactions."
+    },
+    "Superior Vision": {
+        "name": "Superior Vision",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "[Some ability or other related to sight]"
+    },
+    "Unsleeping": {
+        "name": "Unsleeping",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "You cannot sleep, you gain no penalties for forgoing sleep. If an ability requires you to sleep to be provoked, taking the Relax and Refocus Rest options in the same rest activates those abilities."
+    },
+    "Vulnerability": {
+        "name": "Vulnerability",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "You can sense when items made of or containing your Vulnerability is nearby. If you carry an item made from your vulnerability for a Shift, or take Damage from an attack with such an item, you take 1 Strain that cannot be reduced in any way."
     }
+
 }
 

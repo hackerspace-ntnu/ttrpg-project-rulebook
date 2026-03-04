@@ -44,15 +44,15 @@
         "description": "Leafeý-looking herbs with a really spicy taste.",
         "abilities": "Can be used to add spice to food. Do ot eat a handful at once."
     },
-    "": {
-        "name": "",
-        "description": "",
-        "abilities": ""
+    "Macpalxochitl": {
+        "name": "Macpalxochitl",
+        "description": "Freaky arm trees.",
+        "abilities": "Hostile. Will attempt to drag you into their mouth at the core of the tree."
     },
-    "": {
-        "name": "",
-        "description": "",
-        "abilities": ""
+    "Crystalbloom": {
+        "name": "Crystalbloom",
+        "description": "Term for a family of vegetation stretching from flowers to trees featuring sharp crystal seeds.",
+        "abilities": "Can confer crystalblight: a disease that makes more seeds grow as crystal protrusions in the body"
     },
     "": {
         "name": "",

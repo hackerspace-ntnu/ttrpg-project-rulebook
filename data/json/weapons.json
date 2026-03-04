@@ -1,70 +1,10 @@
 {
   "weapons": [
     {
-      "name": "Stiletto",
-      "attributes": ["Agility", "Insight"],
-      "ability": "Infiltrate",
-      "tags": ["Light"]
-    },
-    {
-      "name": "Kunai",
-      "attributes": ["Agility", "Insight"],
-      "ability": "Swift Strike",
-      "tags": ["Light", "Thrown(5)"]
-    },
-    {
       "name": "Dagger",
       "attributes": ["Agility", "Insight"],
       "ability": "Dirty Fighting",
       "tags": ["Light", "Thrown(5)"]
-    },
-    {
-      "name": "Whip",
-      "attributes": ["Agility", "Insight"],
-      "ability": "Wrangle",
-      "tags": ["Light", "Reach(3)"]
-    },
-    {
-      "name": "Sword",
-      "attributes": ["Might", "Agility"],
-      "ability": "Lunge/Parry",
-      "tags": ["Versatile"]
-    },
-    {
-      "name": "Rapier",
-      "attributes": ["Agility", "Presence"],
-      "ability": "Fencer",
-      "tags": ["One-handed"]
-    },
-    {
-      "name": "Rapier",
-      "attributes": ["Agility", "Presence"],
-      "ability": "Fencer",
-      "tags": ["One-handed"]
-    },
-    {
-      "name": "Warhammer",
-      "attributes": ["Might", "Insight"],
-      "ability": "Can Opener",
-      "tags": ["Versatile", "Impact(1)"]
-    },
-    {
-      "name": "Spear",
-      "attributes": ["Might", "Agility"],
-      "ability": "Piercing Thrust",
-      "tags": ["Versatile", "Reach(2)", "Thrown(5)"]
-    },
-    {
-      "name": "Halberd",
-      "attributes": ["Might", "Agility"],
-      "ability": "Whirlwind",
-      "tags": ["Two-handed", "Reach(2)"]
-    },
-    {
-      "name": "Greatsword",
-      "attributes": ["Might", "Might"],
-      "ability": "Cleave",
-      "tags": ["Heavy", "Two-handed", "Unwieldy(1)", "Sharp(1)"]
     },
     {
       "name": "Greathammer",
@@ -73,10 +13,58 @@
       "tags": ["Heavy", "Two-handed", "Unwieldy(1)", "Sharp(1)"]
     },
     {
-      "name": "Sling",
+      "name": "Greatsword",
+      "attributes": ["Might", "Might"],
+      "ability": "Cleave",
+      "tags": ["Heavy", "Two-handed", "Unwieldy(1)", "Sharp(1)"]
+    },
+    {
+      "name": "Halberd",
       "attributes": ["Might", "Agility"],
-      "ability": "Ricochet",
-      "tags": ["One-handed", "Ranged(8)", "Social Distancing"]
+      "ability": "Whirlwind",
+      "tags": ["Two-handed", "Reach(2)"]
+    },
+    {
+      "name": "Kunai",
+      "attributes": ["Agility", "Insight"],
+      "ability": "Swift Strike",
+      "tags": ["Light", "Thrown(5)"]
+    },
+    {
+      "name": "Rapier",
+      "attributes": ["Agility", "Presence"],
+      "ability": "Fencer",
+      "tags": ["One-handed"]
+    },
+    {
+      "name": "Stiletto",
+      "attributes": ["Agility", "Insight"],
+      "ability": "Infiltrate",
+      "tags": ["Light"]
+    },
+    {
+      "name": "Spear",
+      "attributes": ["Might", "Agility"],
+      "ability": "Piercing Thrust",
+      "tags": ["Versatile", "Reach(2)", "Thrown(5)"]
+    },
+    {
+      "name": "Sword",
+      "attributes": ["Might", "Agility"],
+      "ability": "Lunge/Parry",
+      "tags": ["Versatile"]
+    },
+    {
+      "name": "Warhammer",
+      "attributes": ["Might", "Insight"],
+      "ability": "Can Opener",
+      "tags": ["Versatile", "Impact(1)"]
+    },
+    {
+      "name": "Whip",
+      "attributes": ["Agility", "Insight"],
+      "ability": "Wrangle",
+      "tags": ["Light", "Reach(3)"]
     },
     {
       "name": "Boomerang",
@@ -85,10 +73,10 @@
       "tags": ["One-handed", "Thrown(8)"]
     },
     {
-      "name": "Shortbow",
+      "name": "Crossbow",
       "attributes": ["Agility", "Insight"],
-      "ability": "Curved Shot",
-      "tags": ["Two-handed", "Ranged(10)", "Social Distancing"]
+      "ability": "Piercing Shot",
+      "tags": ["Two-handed", "Ranged(10)", "Impact(1)", "Loading(1)"]
     },
     {
       "name": "Longbow",
@@ -97,10 +85,16 @@
       "tags": ["Two-handed", "Ranged(12)", "Social Distancing"]
     },
     {
-      "name": "Crossbow",
+      "name": "Shortbow",
       "attributes": ["Agility", "Insight"],
-      "ability": "Piercing Shot",
-      "tags": ["Two-handed", "Ranged(10)", "Impact(1)", "Loading(1)"]
+      "ability": "Curved Shot",
+      "tags": ["Two-handed", "Ranged(10)", "Social Distancing"]
+    },
+    {
+      "name": "Sling",
+      "attributes": ["Might", "Agility"],
+      "ability": "Ricochet",
+      "tags": ["One-handed", "Ranged(8)", "Social Distancing"]
     },
     {
       "name": "Light Shield",
@@ -111,13 +105,13 @@
     {
       "name": "Medium Shield",
       "attributes": ["Might", "Insight"],
-      "ability": "Blocker",
+      "ability": "Block",
       "tags": ["Light", "Durable(3)", "Sharp(-1)"]
     },
     {
       "name": "Heavy Shield",
       "attributes": ["Might", "Insight"],
-      "ability": "Blockest",
+      "ability": "Block",
       "tags": ["Light", "Unwieldy(1)", "Durable(4)"]
     }
   ]

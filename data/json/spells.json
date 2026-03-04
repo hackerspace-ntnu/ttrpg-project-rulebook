@@ -1,0 +1,127 @@
+{
+  "": {
+    "name": "",
+    "tags": ["Damage", "Enhance", "Summon", "Utility", "Buff", "Debuff"],
+    "tier": 1,
+    "focus_cost": 1,
+    "ap_cost": 1,
+    "duration": "[Instantenous | End of Phase | 1 Round | Scene | Persistent]",
+    "target": "[Self | Creature | Object | Space]",
+    "range": 5,
+    "aoe": 0,
+    "aoe_type": ["Cube", "Cone", "Line", "Sphere", "Cylinder", "Emanation" ],
+    "description": "[Spell effect]",
+    "enhancements": [
+        "[Name of spell enhancement]"
+    ]
+  },
+  "Acid Arrow": {
+    "name": "Acid Arrow",
+    "tag": ["Damage", "Debuff"],
+    "tier": 1,
+    "focus_cost": 1,
+    "ap_cost": 1,
+    "duration": "Instantanous",
+    "target": "Creature",
+    "range": 5,
+    "description": "You conjure an arrow of acid and hurl it at the target, dealing 1 Damage and 1 Durability Damage. Additional Successes increase both Damage and Durability Damage",
+    "enhancements": [
+        "Splash",
+        "Hurl"
+    ]
+  },
+  "Shock": {
+    "name": "Shock",
+    "tag": ["Damage", "Debuff"],
+    "tier": 1,
+    "focus_cost": 1,
+    "ap_cost": 1,
+    "duration": "Instantanous",
+    "target": "Creature",
+    "range": 3,
+    "description": "A target within range is struck by electricity, taking 1 Damage and making their next 0 AP Action cost 1 AP.",
+    "enhancements": [
+        "Chain",
+        "Invigorate"
+    ]
+  },
+  "Scald": {
+    "name": "Scald",
+    "tag": ["Damage", "Debuff"],
+    "tier": 1,
+    "focus_cost": 1,
+    "ap_cost": 1,
+    "duration": "Instantanous",
+    "target": "Creature",
+    "range": 5,
+    "aoe": 1,
+    "aoe_type": "Sphere",
+    "description": "Choose a Space within range. All creatures in the affected area take 1 Damage and are Exposed(1)",
+    "enhancements": [
+        "Expand",
+        "Hurl"
+    ]
+  },
+  "Flash Freeze": {
+    "name": "Flash Freeze",
+    "tag": ["Damage", "Debuff"],
+    "tier": 1,
+    "focus_cost": 1,
+    "ap_cost": 1,
+    "duration": "Instantanous",
+    "target": "Point",
+    "range": 5,
+    "aoe": 1,
+    "aoe_type": "Sphere",
+    "description": "Choose a Space within range. All creatures in the affected area take 1 Damage and are Slowed(2). Water in the area Freezes.",
+    "enhancements": [
+        "Expand",
+        "Hurl"
+    ]
+  },
+  "Gust": {
+    "name": "Gust",
+    "tag": ["Utility", "Summon"],
+    "tier": 1,
+    "focus_cost": 1,
+    "ap_cost": 1,
+    "duration": "Instantanous",
+    "target": "Space",
+    "range": 5,
+    "description": "Summon a sudden gust of wind that immediately despawns. Creatures in the area are Vertical Pushed 2 Spaces. Additional Successes increase the Push distance by 1 Space.",
+    "enhancements": [
+        "Sustain"
+    ]
+  },
+  "Motivate Earth": {
+    "name": "Motivate Earth",
+    "tag": ["Damage", "Summon", "Utility"],
+    "tier": 1,
+    "focus_cost": 1,
+    "ap_cost": 1,
+    "duration": "Persistent",
+    "target": "Self",
+    "range": 5,
+    "aoe_type": "Cube",
+    "aoe": 1,
+    "description": "You summon a Size 1 rock in a Space on the ground below or within 1 Space of yourself. You may then launch it in a line along the ground to a Space within range, stopping when it collides, dealing 1 Damage and Pushing the target 1 Space. Creatures on top of the boulder move with it.\nIf a suitable Boulder is within Range of this spell, you can hurl it with this spell for 1 less Focus.",
+    "enhancements": [
+        "Hurl",
+        "Expand",
+        "Distant Spell",
+        "Splash"
+    ]
+  },
+  "": {
+    "name": "",
+    "tag": "",
+    "tier": 1,
+    "focus_cost": 1,
+    "ap_cost": 1,
+    "range": 5,
+    "description": "",
+    "enhancements": [
+        ""
+    ]
+  }
+}

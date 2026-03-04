@@ -34,12 +34,12 @@
   },
   "Wrangle": {
     "name": "Wrangle",
-    "category": "Weapon",
+    "category": "Insight",
     "tag": "Enhance",
     "tier": 1,
     "focus_cost": 1,
     "ap_cost": 0,
-    "description": "Your next Attack pulls the target adjacent to you if it's smaller than you, or pull yourself adjacent to it if it's larger than you. If you're the same size, you choose.",
+    "description": "Your next Melee Attack pulls the target adjacent to you if it's smaller than you, or pull yourself adjacent to it if it's larger than you. If you're the same size, you choose.",
     "valid_weapon_tags": ["Reach"],
     "valid_weapon_types": null
   },

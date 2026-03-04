@@ -76,4 +76,4 @@ The absolute necessities are a backpack containing a bedroll and 8
 Rations. Feel free to get any other items you want and have space for,
 but consider leaving some room for other items you pick up along the
 way. It's a good idea to make sure at least one person in your party has
-a mess kit, rope, repair kit (the more the better), and torches. See the @equipment section for more details. 
+a mess kit, rope, repair kit (the more the better), and torches. See the #link(<equipment>, "Equipment section") section for more details. 

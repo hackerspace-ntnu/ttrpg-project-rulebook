@@ -4,29 +4,32 @@
     "description": "Cannot be used to make attacks, but leaves your hand open. If in the same hand as another Weapon, you lower the die size of both die for all Attack Rolls made with that weapon by 1. If you can't reduce the die size any further you instead halve the die result."
   },
   {
-    "name": "Light",
-    "description": "Can be wielded in the main- or off-hand. The first Attack made with this weapon each Round will not count for RAP."
-  },
-      {
-    "name": "Medium",
-    "description": "Standard weapon size",
-    "parameter": null
+    "name": "Durable",
+    "description": "This weapon has N Max Strain.",
+    "parameter": "N"
   },
   {
     "name": "Heavy",
     "description": "This tag is used for the purposes of Bulk and abilities, such as retaliations, that use the size/weight of a weapon. A weapon with this tag also gains the Two-handed, Unwieldy(1), and Sharp(1) tags."
   },
   {
-    "name": "One-handed",
-    "description": "Must be wielded in the main-hand."
+    "name": "Impact",
+    "description": "This weapon does +N damage to Armor, Equipment and Guard.",
+    "parameter": "N"
   },
   {
-    "name": "Two-handed",
-    "description": "Must be wielded with two hands."
+    "name": "Light",
+    "description": "Can be wielded in the main- or off-hand. The first Attack made with this weapon each Round will not count for RAP."
   },
   {
-    "name": "Versatile",
-    "description": "Can be wielded in the main-hand or with two hands. Wielding the Weapon in two hands grants +1 to Attack Rolls made with it."
+    "name": "Loading",
+    "description": "The weapon must be loaded by taking an N AP Action in order to Attack with it. Loading while in a hostile creature's Threat triggers an Opportunity Attack from them.",
+    "parameter": "N"
+  },
+  {
+    "name": "Medium",
+    "description": "Standard weapon size",
+    "parameter": null
   },
   {
     "name": "Melee",
@@ -34,14 +37,8 @@
     "parameter": null
   },
   {
-    "name": "Reach",
-    "description": "You may make Melee Attacks targets within N Spaces with this weapon.",
-    "parameter": "N"
-  },
-  {
-    "name": "Thrown",
-    "description": "Can be thrown to a range of N, landing in the last space before collision. For every Space past N the Attack Roll gains -1.",
-    "parameter": "N"
+    "name": "One-handed",
+    "description": "Must be wielded in the main-hand."
   },
   {
     "name": "Ranged",
@@ -49,12 +46,8 @@
     "parameter": "N"
   },
   {
-    "name": "Social Distancing",
-    "description": "Attacks made with this weapon while in a hostile creature's Threat are made with Bane(1)"
-  },
-  {
-    "name": "Durable",
-    "description": "This weapon has N Max Strain.",
+    "name": "Reach",
+    "description": "You may make Melee Attacks targets within N Spaces with this weapon.",
     "parameter": "N"
   },
   {
@@ -63,18 +56,25 @@
     "parameter": "N"
   },
   {
-    "name": "Impact",
-    "description": "This weapon does +N damage to Armor, Equipment and Guard.",
+    "name": "Social Distancing",
+    "description": "Attacks made with this weapon while in a hostile creature's Threat are made with Bane(1)"
+  },
+  {
+    "name": "Thrown",
+    "description": "Can be thrown to a range of N, landing in the last space before collision. For every Space past N the Attack Roll gains -1.",
     "parameter": "N"
   },
   {
-    "name": "Loading",
-    "description": "The weapon must be loaded by taking an N AP Action in order to Attack with it. Loading while in a hostile creature's Threat triggers an Opportunity Attack from them.",
-    "parameter": "N"
+    "name": "Two-handed",
+    "description": "Must be wielded with two hands."
   },
   {
     "name": "Unwieldy",
     "description": "Lower the die size of both die for all Weapon Attack Rolls made while this weapon is equipped by N. If you can't reduce the die size any further you instead halve the die result.",
     "parameter": "N"
+  },
+  {
+    "name": "Versatile",
+    "description": "Can be wielded in the main-hand or with two hands. Wielding the Weapon in two hands grants +1 to Attack Rolls made with it."
   }
 ]

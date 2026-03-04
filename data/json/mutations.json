@@ -1,9 +1,37 @@
 {
-    "Sleepless": {
-        "name": "Sleepless",
+    "Additional Eyes": {
+        "name": "Additional Eyes",
         "category": null,
-        "abilities": ["Unsleeping"],
-        "description": "A change in neurochemistry makes you incapable of sleep, and incapable of needing it. After a few days, you'll develop a permanently wearied-looking appearance",
+        "abilities": null,
+        "description": "1d4 additional eyes grow on your body, rolling on the Mutation Location Table (If we implement it) for each",
+        "tier": 1
+    },
+    "Altered Features": {
+        "name": "Altered Features",
+        "category": null,
+        "abilities": null,
+        "description": "Roll 1d3: your body either gains, loses or has a visual feature of it altered. Roll 1d6 to decide the feature: [Tail, Eye, Mouth, Ear, Protrusion, Other]. You can decide (or roll for) how many of the feature you get, but they grant no Abilities.",
+        "tier": 1
+    },
+    "Claws": {
+        "name": "Claws",
+        "category": null,
+        "abilities": ["Natural Weapon"],
+        "description": "Your nails elongate, harden and sharpen to become claws. When you gain this mutation, choose Agility + Insight or Might + Agility for the claws' Roll, and one of Infiltrate, Swift Strike and Dirty Fighting for their Active. Additionally they get the Light tag. This mutation doesn't stop you from wielding items, but you cannot attack with Claws while holding or otherwise using that hand.",
+        "tier": 2
+    },
+    "Coiled-up": {
+        "name": "Coiled-up",
+        "category": null,
+        "abilities": ["Murder Blanket", "Engulf"],
+        "description": "Your anatomy drastically changes. Your stomach dramatically grows and digests your bones. Your skin becomes almost prehensile, and opens up. This makes it so your have to unfurl yourself and engulf the things you want to eat.",
+        "tier": 3
+    },
+    "Finned": {
+        "name": "Finned",
+        "category": null,
+        "abilities": ["Extend Fins"],
+        "description": "Your legs and arms develop collapsible rayed fins that can be used to move in the water.",
         "tier": 2
     },
     "Flight Bladder": {
@@ -13,53 +41,11 @@
         "description": "You grow an airtight organ similar to a swim bladder, that continually generates a lighter-than-air gas that alllows you to ascend into the air. Be careful though! The gas is flammable, so don't rupture it.",
         "tier": 3
     },
-    "Leaping Legs": {
-        "name": "Leaping Legs",
+    "Gremlin": {
+        "name": "Gremlin",
         "category": null,
-        "abilities": ["Leap"],
-        "description": "Your legs grow stronger, with a natural gear mechanism that allows tremendous leaps. These legs are very much like those of a grasshopper",
-        "tier": 2
-    },
-    "Wings": {
-        "name": "Wings",
-        "category": null,
-        "abilities": ["Glide"],
-        "description": "An additional pair of limbs grows out of your shoulders. They allow you to glide short distances",
-        "tier": 2
-    },
-    "Tentacle Limbs": {
-        "name": "Tentacle Limbs",
-        "category": null,
-        "abilities": ["Lesser Limb"],
-        "description": "1d4 Tentacles grow from the same location, if a limb has been chopped off, the remaining stub is where they grow from, these tentacles act as additional limbs, but can only perform delicate manipulation if they all work together.",
-        "tier": 2
-    },
-    "Prehensile Tendrils": {
-        "name": "Prehensile Tendrils",
-        "category": null,
-        "abilities": ["Lesser Limb", "Regenerative Feature"],
-        "description": "A profusion of long tendrils grow from your torso, they have an incredible ability to heal, growing back even if cut at the base. You have complete control of these Tendrils",
-        "tier": 3
-    },
-    "Regenerative Limbs": {
-        "name": "Regenerative Limbs",
-        "category": null,
-        "abilities": ["Regenerative Feature"],
-        "description": "You gain the ability to heal quickly, each of your limbs gains the Regenerative Feature ability",
-        "tier": 3
-    },
-    "Additional Eyes": {
-        "name": "Additional Eyes",
-        "category": null,
-        "abilities": null,
-        "description": "1d4 additional eyes grow on your body, rolling on the Mutation Location Table (If we implement it) for each",
-        "tier": 1
-    },
-    "Claws": {
-        "name": "Claws",
-        "category": null,
-        "abilities": ["Natural Weapon"],
-        "description": "Your nails elongate, harden and sharpen to become claws. When you gain this mutation, choose Agility + Insight or Might + Agility for the claws' Roll, and one of Infiltrate, Swift Strike and Dirty Fighting for their Active. Additionally they get the Light tag. This mutation doesn't stop you from wielding items, but you cannot attack with Claws while holding or otherwise using that hand.",
+        "abilities": ["Slip Through", "Puny"],
+        "description": "You become small and scrappy, able to slip through tight spaces and between the legs of foes.",
         "tier": 2
     },
     "Horn(s)": {
@@ -76,18 +62,11 @@
         "description": "Your eyes change (to become catlike, goatlike, wholly black sclera, compound). If you have more than 2 eyes, only one changes in this way",
         "tier": 2
     },
-    "No Eyes": {
-        "name": "No Eyes",
+    "Leaping Legs": {
+        "name": "Leaping Legs",
         "category": null,
-        "abilities": ["Skinsight"],
-        "description": "Your eyes vanish, replaced with smooth skin. Your skin gains the power of sight, and any sight-related mutations you have.",
-        "tier": 2
-    },
-    "Plant Person": {
-        "name": "Plant Person",
-        "category": null,
-        "abilities": ["Photosynthesis"],
-        "description": "You gain plantlike growths capable of Photosynthesis, and rootlike structures capable of extracting nutrients from the ground. [I wanted to add Mycelial interface to this, but its abilities overlapped with photosynthesis too much.",
+        "abilities": ["Leap"],
+        "description": "Your legs grow stronger, with a natural gear mechanism that allows tremendous leaps. These legs are very much like those of a grasshopper",
         "tier": 2
     },
     "Mask of Power": {
@@ -97,12 +76,12 @@
         "description": "You lose your face. All your Abilities crystallize into a hard mask, anyone who wears this mask gains access to all of your Abilities. You can only use your Abilties while wearing your Mask.",
         "tier": 3
     },
-    "Coiled-up": {
-        "name": "Coiled-up",
+    "Material Weakness": {
+        "name": "Material Weakness",
         "category": null,
-        "abilities": ["Murder Blanket", "Engulf"],
-        "description": "Your anatomy drastically changes. Your stomach dramatically grows and digests your bones. Your skin becomes almost prehensile, and opens up. This makes it so your have to unfurl yourself and engulf the things you want to eat.",
-        "tier": 3
+        "abilities": ["Vulnerability"],
+        "description": "You become particularly vulnerable to (Silver, Iron, Nickel, Wood (d4)). Brief contact with the material causes significant discomfort.",
+        "tier": 1
     },
     "Minor Shapeshifting": {
         "name": "Minor Shapeshifting",
@@ -111,11 +90,11 @@
         "description": "Your chromatophores grow muscles, allowing them to change their apparent color. Muscles in your skin also allows you to change its texture and create protrusions up to 10 centimeters away from where the skin should be. This ability allows very good camouflage abilities.",
         "tier": 3
     },
-    "Temporary Unmutation": {
-        "name": "Temporary Unmutation",
+    "No Eyes": {
+        "name": "No Eyes",
         "category": null,
-        "abilities": ["Return to Self"],
-        "description": "You gain the ability to temporarily shapeshift into an unmutated version of yourself.",
+        "abilities": ["Skinsight"],
+        "description": "Your eyes vanish, replaced with smooth skin. Your skin gains the power of sight, and any sight-related mutations you have.",
         "tier": 2
     },
     "No Reflection": {
@@ -125,20 +104,6 @@
         "description": "You are no longer reflected in any surface, any non-organic means of seeing you visually also fail (such as cameras, visual spells).",
         "tier": 1
     },
-    "Material Weakness": {
-        "name": "Material Weakness",
-        "category": null,
-        "abilities": ["Vulnerability"],
-        "description": "You become particularly vulnerable to (Silver, Iron, Nickel, Wood (d4)). Brief contact with the material causes significant discomfort.",
-        "tier": 1
-    },
-    "Poison Sniffer": {
-        "name": "Poison Sniffer",
-        "category": null,
-        "abilities": ["Detect Danger"],
-        "description": "Your nose becomes particularly sensitive to compounds your body considers poisonous",
-        "tier": 2
-    },
     "On Fire": {
         "name": "On Fire",
         "category": null,
@@ -146,18 +111,18 @@
         "description": "You are constantly on fire. Tongues of flame lick along your skin, causing you to glow and incinerates most clothing. Through a miracle of modesty, the fires are always most dense around the privates. The fires are most similar to alcohol fires, low temperature, but still dangerous.",
         "tier": 3
     },
-    "Untouched by Flame": {
-        "name": "Untouched by Flame",
+    "Plant Person": {
+        "name": "Plant Person",
         "category": null,
-        "abilities": ["Fireproof"],
-        "description": "A change in your internal chemistry makes it so fire has no hold on you",
+        "abilities": ["Photosynthesis"],
+        "description": "You gain plantlike growths capable of Photosynthesis, and rootlike structures capable of extracting nutrients from the ground. [I wanted to add Mycelial interface to this, but its abilities overlapped with photosynthesis too much.",
         "tier": 2
     },
-    "Stiff Tail": {
-        "name": "Stiff Tail",
+    "Poison Sniffer": {
+        "name": "Poison Sniffer",
         "category": null,
-        "abilities": ["Balanced", "Natural Weapon"],
-        "description": "You grow a tail, strengthened by bony rods, that greatly improves your ability to balance. It can also be used as a bludgeon, rolling with Might+Agility and the active Push.",
+        "abilities": ["Detect Danger"],
+        "description": "Your nose becomes particularly sensitive to compounds your body considers poisonous",
         "tier": 2
     },
     "Prehensile Tail": {
@@ -167,11 +132,60 @@
         "description": "You grow a tail, this tail is agile and under your total control. It is not able to do delicate manipulation on its own, however.",
         "tier": 2
     },
-    "Weaponized Tail": {
-        "name": "Weaponized Tail",
+    "Prehensile Tendrils": {
+        "name": "Prehensile Tendrils",
         "category": null,
-        "abilities": ["Natural Weapon"],
-        "description": "You grow a tail, it might be long or whiplike (Agility+Presence, Reach(3), Wrangle), or end in a wicked weapon like Thagomizer spikes or a club (Might+Presence, Impact(1), Cleave)",
+        "abilities": ["Lesser Limb", "Regenerative Feature"],
+        "description": "A profusion of long tendrils grow from your torso, they have an incredible ability to heal, growing back even if cut at the base. You have complete control of these Tendrils",
+        "tier": 3
+    },
+    "Regenerative Limbs": {
+        "name": "Regenerative Limbs",
+        "category": null,
+        "abilities": ["Regenerative Feature"],
+        "description": "You gain the ability to heal quickly, each of your limbs gains the Regenerative Feature ability",
+        "tier": 3
+    },
+    "Sentient Stomach": {
+        "name": "Sentient Stomach",
+        "category": null,
+        "abilities": ["Passive Hunter"],
+        "description": "Your stomach becomes a small creature, capable of crawling out of your esophagus and hunting for food on its own.",
+        "tier": 2
+    },
+    "Sleepless": {
+        "name": "Sleepless",
+        "category": null,
+        "abilities": ["Unsleeping"],
+        "description": "A change in neurochemistry makes you incapable of sleep, and incapable of needing it. After a few days, you'll develop a permanently wearied-looking appearance",
+        "tier": 2
+    },
+    "Steed": {
+        "name": "Steed",
+        "category": null,
+        "abilities": ["Fast Traveler", "Rideable", "Heavy Hauler"],
+        "description": "You become capable of crossing the landscape quicker as your legs and endurance increase. Additionally, your physiology subtly shifts in a way that allows another humanoid character to ride you as if you were a mount.",
+        "tier": 3
+    },
+    "Stiff Tail": {
+        "name": "Stiff Tail",
+        "category": null,
+        "abilities": ["Balanced", "Natural Weapon"],
+        "description": "You grow a tail, strengthened by bony rods, that greatly improves your ability to balance. It can also be used as a bludgeon, rolling with Might+Agility and the active Push.",
+        "tier": 2
+    },
+    "Temporary Unmutation": {
+        "name": "Temporary Unmutation",
+        "category": null,
+        "abilities": ["Return to Self"],
+        "description": "You gain the ability to temporarily shapeshift into an unmutated version of yourself.",
+        "tier": 2
+    },
+    "Tentacle Limbs": {
+        "name": "Tentacle Limbs",
+        "category": null,
+        "abilities": ["Lesser Limb"],
+        "description": "1d4 Tentacles grow from the same location, if a limb has been chopped off, the remaining stub is where they grow from, these tentacles act as additional limbs, but can only perform delicate manipulation if they all work together.",
         "tier": 2
     },
     "Titanic Attribute": {
@@ -181,39 +195,25 @@
         "description": "Your (Might, Agility, Insight, Presence (1d4)) becomes empowered. You might even attain equivalent ability to that of a Titan!",
         "tier": 4
     },
-    "Sentient Stomach": {
-        "name": "Sentient Stomach",
+    "Untouched by Flame": {
+        "name": "Untouched by Flame",
         "category": null,
-        "abilities": ["Passive Hunter"],
-        "description": "Your stomach becomes a small creature, capable of crawling out of your esophagus and hunting for food on its own.",
+        "abilities": ["Fireproof"],
+        "description": "A change in your internal chemistry makes it so fire has no hold on you",
         "tier": 2
     },
-    "Gremlin": {
-        "name": "Gremlin",
+    "Weaponized Tail": {
+        "name": "Weaponized Tail",
         "category": null,
-        "abilities": ["Slip Through", "Puny"],
-        "description": "You become small and scrappy, able to slip through tight spaces and between the legs of foes.",
+        "abilities": ["Natural Weapon"],
+        "description": "You grow a tail, it might be long or whiplike (Agility+Presence, Reach(3), Wrangle), or end in a wicked weapon like Thagomizer spikes or a club (Might+Presence, Impact(1), Cleave)",
         "tier": 2
     },
-    "Finned": {
-        "name": "Finned",
+    "Wings": {
+        "name": "Wings",
         "category": null,
-        "abilities": ["Extend Fins"],
-        "description": "Your legs and arms develop collapsible rayed fins that can be used to move in the water.",
+        "abilities": ["Glide"],
+        "description": "An additional pair of limbs grows out of your shoulders. They allow you to glide short distances",
         "tier": 2
-    },
-    "Altered Features": {
-        "name": "Altered Features",
-        "category": null,
-        "abilities": null,
-        "description": "Roll 1d3: your body either gains, loses or has a visual feature of it altered. Roll 1d6 to decide the feature: [Tail, Eye, Mouth, Ear, Protrution, Other]. You can decide (or roll for) how many of the feature you get, but they grant no Abilities.",
-        "tier": 1
-    },
-    "Steed": {
-        "name": "Steed",
-        "category": null,
-        "abilities": ["Fast Traveler", "Rideable", "Heavy Hauler"],
-        "description": "You become capable of crossing the landscape quicker as your legs and endurance increase. Additionally, your physiology subtly shifts in a way that allows another humanoid character to ride you as if you were a mount.",
-        "tier": 3
     }
 }
