@@ -40,7 +40,7 @@ Each character has 4 #term[Attributes]. Each #term("Attribute", key: "Attributes
   , supplement: none
   , caption: [Attribute Table]
   , kind: table
-  ) <attribute-table>
+) <attribute-table>
 
 On creation, arrange \[d4, d6, d6, d8\] how you want your character's
 attributes to be.

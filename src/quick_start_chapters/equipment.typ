@@ -40,14 +40,10 @@ These are things like a flint and steel, a pocket knife, a letter, or a sentimen
   , kind: table
   ) <equipment-list>
 
-== Armor & Damage Thresholds
-<armor-damage-thresholds>
-// TODO: Add info about Armor Strain, and how damaging/repairing equipment works
 #figure(
   align(center)[#table(
     columns: (18%, 18%, 18%, 18%, 14%, 9%),
     align: (left,left,left,left,left,left,),
-    // TODO: I feel that it's most useful for the definitions of these terms to be at the spot where they're calculated and detailed. Does anyone think it should instead be in attacks and defense, where the mechanic is explained?
     table.header([], [#term("Evasion", is_definition: true) \ + Agility Mod\ + Insight Mod], [#term("Heavy Hit", is_definition: true)\ +
       Might Mod\ + Presence Mod], [#term("Brutal Hit", is_definition: true)\*\ + Might Mod\ + Presence
       Mod], [Max Strain], [Speed],),
@@ -58,9 +54,9 @@ These are things like a flint and steel, a pocket knife, a letter, or a sentimen
     [Heavy armor], [1], [10], [15], [6], [-1],
     table.cell(colspan: 6, stroke: none)[\*Beyond Brutal: Every 5 above Brutal counts as +1 damage/success]
   )]
-  , caption: [#heading(outlined: false, level: 2)[Armor & Damage Thresholds]]
+  , caption: [== Armor & Damage Thresholds]
   , kind: table
-  ) <armor>
+  ) <armor-damage-thresholds>
 
 == Weapons
 <weapons>

@@ -64,3 +64,39 @@ Boomshroom -  shroom that go boom
 Finished(?)
 
 Those freaky arm trees from the oneshot that Sondre needs to elaborate more on
+
+Large lizard with gemstones protruding out of its back
+
+
+Crystalline centipede-like creature that moves like a Jacob's ladder toy
+Consumes prey by trapping them between its joints?
+
+Large antlions spitting (acid or superheated sand?)
+
+Antlion Eater: A really, really big anteater with 
+
+Crystalline creatures that "build" themselves by breaking themselves open and inserting prey in the holes, that are slowly converted to the same type of crystalline material.
+If pieces break off they can forcibly reattach them by slamming them to their body, as the heat generated from the impact briefly melts the material, effectively gluing the parts together.
+
+Drov'kith
+
+Kinda struggling to put into words what I'm imagining, so here's a few different descriptors:
+- Scaled bat-like creatures, but with a slender snake-like body
+- Snake-like lizard with wings spanning from its front arms
+- A human child-sized wyvern without the poison stinger
+
+Froghemoth
+
+Airborne jellyfish
+- Near floating islands?
+
+Multi-armed shark that crawls along the ground and walls like a spider
+
+Tartus
+- Hellish turtle (from Tartarus)
+- Has a shell of volcanic rock and magma flowing in the cracks
+
+Large metal snails
+- Scaly-foot gastropod, but large
+
+

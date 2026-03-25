@@ -1,6 +1,10 @@
 {
     "creature name": {
         "name": "creature name",
+        "description": "small and cute",
+        "strain": 8,
+        "armor_strain": 0,
+        "size": 1,
         "might": 1,
         "agility": 2,
         "insight": 3,
@@ -16,10 +20,20 @@
                 "tags": ["tag1", "tag2"]
             }
         ],
-        "abilities": ["Focus: This creature has 12 Focus [I'm imagining most creatures don't have focus, unless they have abilities that would use so much focus that they could run out in a fight]"]
+        "abilities": ["Focus: This creature has 12 Focus [I'm imagining most creatures don't have focus, unless they have abilities that would use so much focus that they could run out in a fight]"],
+        "spells": [{
+            "name": "",
+            "overrides": {
+                "enhancements": []
+            }
+        }]
     },
     "Steel-wooled Dragonsheep": {
         "name": "Steel-wooled Dragonsheep",
+        "description": "Sheep with a strong, silvery wool reminiscent of steel wool and a large lizardlike tail. They are quite docile, if more heavily armored than their ancient ancestors.",
+        "strain": 5,
+        "armor_strain": 3,
+        "size": 1,
         "might": 2,
         "agility": 1,
         "insight": 1,
@@ -32,13 +46,18 @@
             {
                 "name": "Ram",
                 "roll": "mm",
-                "tags": ["Unwieldy (1)", "Impact (1)"]
+                "tags": ["Unwieldy (1)", "Impact (1)", "Push (1)"]
             }
         ],
-        "abilities": ["Push: The Dragonsheep can choose to make the Ram attack also push the target 1 per success Spaces."]
+        "abilities": [],
+        "spells": []
     },
     "Tyrannosaurus Avis": {
         "name": "Tyrannosaurus Avis",
+        "description": "Massive flightless birds with powerful crushing beaks. Convergently evolved to be similar in build to the Tyrannosaurus Rex of old.",
+        "strain": 20,
+        "armor_strain": 0,
+        "size": 3,
         "might": 5,
         "agility": 3,
         "insight": 3,
@@ -59,10 +78,15 @@
                 "tags": null
             }
         ],
-        "abilities": ["Keen Senses: The Tyrannosaurus Avis can track by scent anything within its hex unless countermeasures are taken."]
+        "abilities": ["Keen Senses"],
+        "spells": []
     },
     "Inverted Giraffe": {
         "name": "Inverted Giraffe",
+        "description": "Extremely skilled climbers that roam the canopies of trees, stretching their long necks down to the undergrowth to forage, but retracting them up into the canopy to be safe from terrestrial predators.",
+        "strain": 8,
+        "armor_strain": 0,
+        "size": 2,
         "might": 2,
         "agility": 3,
         "insight": 3,
@@ -78,11 +102,137 @@
                 "tags": null
             }
         ],
-        "abilities": ["Canopy Climber: While the Inverted Giraffe is climbing in the canopy, it can spend an AP to raise its head, giving it cover"]
+        "abilities": ["Canopy Camouflage", "Climber"],
+        "spells": []
     },
-
-        "j": {
+    "Myrmex": {
+        "name": "Myrmex",
+        "description": "Giant antlion",
+        "strain": 0,
+        "armor_strain": 0,
+        "size": 2,
+        "might": 1,
+        "agility": 2,
+        "insight": 3,
+        "presence": 4,
+        "evasion": 5,
+        "heavy hit": 6,
+        "brutal hit": 7,
+        "speed": 1,
+        "attacks": [
+            {
+                "name": "Sand spit",
+                "roll": "mi",
+                "tags": ["Loading (1)", "Impact (1)"]
+            },
+            {
+                "name": "Bite",
+                "roll": "ma",
+                "tags": null
+            }
+        ],
+        "abilities":
+        [
+            "Burrow: Can burrow into the ground with its head sticking out"
+        ],
+        "spells": []
+    },
+    "Xolotl": {
+        "name": "Xolotl",
+        "description": "Giant Quetzalcoatl",
+        "strain": 38,
+        "armor_strain": 0,
+        "size": 4,
+        "might": 4,
+        "agility": 3,
+        "insight": 5,
+        "presence": 6,
+        "evasion": 5,
+        "heavy hit": 6,
+        "brutal hit": 7,
+        "speed": 8,
+        "attacks": [
+            
+        ],
+        "abilities": [""],
+        "spells": [
+            {
+                "name": "Shock",
+                "overrides": {
+                    "enhancements": ["Chain"]
+                }
+            },
+            {
+                "name": "Scald",
+                "overrides": {
+                    "enhancements": [],
+                    "aoe": 3
+                }
+            }
+        ]
+    },
+    "Mountainback": {
+        "name": "Mountainback",
+        "description": "Large deer with massive calcified growths that resemble large boulders on their backs",
+        "strain": 10,
+        "armor_strain": 6,
+        "size": 1,
+        "might": 3,
+        "agility": 1,
+        "insight": 1,
+        "presence": 3,
+        "evasion": 3,
+        "heavy hit": 16,
+        "brutal hit": 21,
+        "speed": 4,
+        "attacks": [
+            {
+                "name": "Bite",
+                "roll": "ma",
+                "tags": null
+            },
+            {
+                "name": "Ram",
+                "roll": "mm",
+                "tags": ["Unwieldy (1)", "Impact (1)", "Push (1)"]
+            }
+        ],
+        "abilities": null,
+        "spells": []
+    },
+    "The creature": {
+        "name": "The creature",
+        "description": "Large scaled jerboa-like creature with jagged carnivorous teeth and long lanky forearms ending in mantis claws",
+        "strain": 10,
+        "armor_strain": 6,
+        "size": 1,
+        "might": 1,
+        "agility": 2,
+        "insight": 3,
+        "presence": 4,
+        "evasion": 5,
+        "heavy hit": 6,
+        "brutal hit": 7,
+        "speed": 8,
+        "attacks": [
+            {
+                "name": "Punch",
+                "roll": "ma",
+                "tags": ["Melee"]
+            }
+        ],
+        "abilities":
+        [
+            "Grapple"
+        ],
+        "spells": []
+    },
+    "j": {
         "name": "the j",
+        "description": "",
+        "strain": 0,
+        "armor_strain": 0,
+        "size": 1,
         "might": 1,
         "agility": 2,
         "insight": 3,
@@ -98,6 +248,7 @@
                 "tags": ["tag1", "tag2"]
             }
         ],
-        "abilities": ["Focus: This creature has 12 Focus [I'm imagining most creatures don't have focus, unless they have abilities that would use so much focus that they could run out in a fight]"]
+        "abilities": ["Focus: This creature has 12 Focus [I'm imagining most creatures don't have focus, unless they have abilities that would use so much focus that they could run out in a fight]"],
+        "spells": []
     }
 }

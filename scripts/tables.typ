@@ -21,12 +21,13 @@ table(
     table.header([Name], [Roll], [Active\* (1 #term[Focus])], [Tags]),
     table.hline(),
     ..data.weapons.map((entry) => {
-    let ability = abilities.at(entry.ability)
+    let ability = abilities.at(entry.ability, default: none)
     (
       entry.name,
       if (entry.attributes == none) {}
       else {entry.attributes.join(" + ")},
-      ability.name + ":\n" + ability.description,
+      if (ability == none) {}
+      else {ability.name + ":\n" + ability.description},
       if (entry.tags == none) {}
       else {entry.tags.join("\n")},
     )}).flatten(),

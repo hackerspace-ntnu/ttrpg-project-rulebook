@@ -1,12 +1,14 @@
 {
   "": {
     "name": "",
-    "tags": ["Damage", "Enhance", "Summon", "Utility", "Buff", "Debuff"],
+    "tags": ["Damage", "Summon", "Utility", "Buff", "Debuff", "Healing"],
     "tier": 1,
     "focus_cost": 1,
     "ap_cost": 1,
-    "duration": "[Instantenous | End of Phase | 1 Round | Scene | Persistent]",
+    "duration": "[Instantenous | End of Phase | 1 Round | Scene | Shift | Persistent ]",
     "target": "[Self | Creature | Object | Space]",
+    "roll_type": "[Attack | Evasion (+5 rule) | Hit (ignores Evasion) | DC]",
+    "roll_dc": 5,
     "range": 5,
     "aoe": 0,
     "aoe_type": ["Cube", "Cone", "Line", "Sphere", "Cylinder", "Emanation" ],
@@ -23,11 +25,13 @@
     "ap_cost": 1,
     "duration": "Instantanous",
     "target": "Creature",
+    "roll_type": "Attack",
     "range": 5,
     "description": "You conjure an arrow of acid and hurl it at the target, dealing 1 Damage and 1 Durability Damage. Additional Successes increase both Damage and Durability Damage",
     "enhancements": [
         "Splash",
-        "Hurl"
+        "Hurl",
+        "Duplicate"
     ]
   },
   "Shock": {
@@ -38,6 +42,7 @@
     "ap_cost": 1,
     "duration": "Instantanous",
     "target": "Creature",
+    "roll_type": "Attack",
     "range": 3,
     "description": "A target within range is struck by electricity, taking 1 Damage and making their next 0 AP Action cost 1 AP.",
     "enhancements": [
@@ -53,6 +58,7 @@
     "ap_cost": 1,
     "duration": "Instantanous",
     "target": "Creature",
+    "roll_type": "Hit",
     "range": 5,
     "aoe": 1,
     "aoe_type": "Sphere",
@@ -70,6 +76,7 @@
     "ap_cost": 1,
     "duration": "Instantanous",
     "target": "Point",
+    "roll_type": "Hit",
     "range": 5,
     "aoe": 1,
     "aoe_type": "Sphere",
@@ -87,6 +94,7 @@
     "ap_cost": 1,
     "duration": "Instantanous",
     "target": "Space",
+    "roll_type": "",
     "range": 5,
     "description": "Summon a sudden gust of wind that immediately despawns. Creatures in the area are Vertical Pushed 2 Spaces. Additional Successes increase the Push distance by 1 Space.",
     "enhancements": [
@@ -101,27 +109,137 @@
     "ap_cost": 1,
     "duration": "Persistent",
     "target": "Self",
+    "roll_type": "Attack",
     "range": 5,
     "aoe_type": "Cube",
     "aoe": 1,
-    "description": "You summon a Size 1 rock in a Space on the ground below or within 1 Space of yourself. You may then launch it in a line along the ground to a Space within range, stopping when it collides, dealing 1 Damage and Pushing the target 1 Space. Creatures on top of the boulder move with it.\nIf a suitable Boulder is within Range of this spell, you can hurl it with this spell for 1 less Focus.",
+    "description": "You summon a Size 1 rock in a Space on the ground below or within 1 Space of yourself. You may then launch it in a line along the ground to a Space within range, stopping when it collides, dealing 1 Damage on hit and Pushing the target 1 Space. Creatures on top of the boulder move with it.\nIf a suitable Boulder is within Range of this spell, you can hurl it with this spell for 1 less Focus.",
     "enhancements": [
         "Hurl",
         "Expand",
-        "Distant Spell",
+        "Distant Origin",
         "Splash"
     ]
   },
-  "": {
-    "name": "",
-    "tag": "",
+  "Mend": {
+    "name": "Mend",
+    "tag": ["Healing"],
+    "tier": 1,
+    "focus_cost": 2,
+    "ap_cost": 1,
+    "duration": "Instantanous",
+    "target": "Creature",
+    "roll_type": "DC",
+    "roll_dc": 5,
+    "range": 0,
+    "description": "Reconstruct the previous state of the targets, letting them clear 1 Strain. Every Success grants +1 healing.",
+    "enhancements": [
+        "Hurl",
+        "Splash"
+    ]
+  },
+  "Control Water": {
+    "name": "Control Water",
+    "tag": ["Utility"],
     "tier": 1,
     "focus_cost": 1,
     "ap_cost": 1,
+    "duration": "Shift",
+    "target": "Space",
+    "aoe_type": "Cube",
+    "aoe": 3,
     "range": 5,
-    "description": "",
+    "description": "Gain full control of all water and water-like substances not inside a living creature (arguing with GM is encouraged) in a 3x3x3 spaces large cube.",
+    "enhancements": [
+        "Expand",
+        "Sustain",
+        "Hurl"
+    ]
+  },
+  "Improvised Protection Pod": {
+    "name": "Improvised Protection Pod",
+    "tag": ["Utility"],
+    "tier": 1,
+    "focus_cost": 2,
+    "ap_cost": 1,
+    "duration": "Until next hit or one Scene",
+    "target": "Self",
+    "range": 0,
+    "description": "Encase yourself in a brittle shell made up of random detritus on the ground around you. Ignore the next instance of damage you would take, but while the shell is up you cannot move.",
     "enhancements": [
         ""
+    ]
+  },
+    "Bestow Mutation": {
+    "name": "Bestow Mutation",
+    "tag": ["Buff"],
+    "tier": 2,
+    "focus_cost": 3,
+    "ap_cost": 2,
+    "duration": "Shift",
+    "target": "Creature",
+    "roll_type": "DC",
+    "roll_dc": 5,
+    "range": 5,
+    "description": "You temporarily mutate a target to become more like you, roll a spellcasting check, the amount of successes determines the maximum tier of your own mutations you can choose. Choose one mutation, the target is afflicted with that mutation for the duration.",
+    "enhancements": [
+        "Duplicate",
+        "Sustain"
+    ]
+  },
+  "Dread Obelisk": {
+    "name": "Dread Obelisk",
+    "tags": ["Utility"],
+    "tier": 1,
+    "focus_cost": 1,
+    "ap_cost": 1,
+    "duration": "Shift",
+    "target": "Space",
+    "range": 10,
+    "aoe": 1,
+    "aoe_type": ["Cylinder"],
+    "description": "An obelisk of dark stone rises from the ground, to a height of 4 Spaces. creatures in the space rise with it.",
+    "enhancements": [
+        "Expand",
+        "[If we add a fear effect, make an enhancement that lets it inflict fear effects]"
+    ]
+  },
+  "Increase Gravity": {
+    "name": "Increase Gravity",
+    "tags": ["Debuff"],
+    "tier": 1,
+    "focus_cost": 1,
+    "ap_cost": 1,
+    "duration": "1 Round",
+    "target": "Space",
+    "roll_type": "DC",
+    "roll_dc": 5,
+    "range": 5,
+    "aoe": 3,
+    "aoe_type": ["Cylinder"],
+    "description": "Creatures fully in the area has 1 less Speed, 1 more Stability, and take 1 extra falling damage. Additional Successes increase all effects by 1.",
+    "enhancements": [
+        "Expand",
+        "Invert"
+    ]
+  },
+  "Inferno": {
+    "name": "Inferno",
+    "tags": ["Damage"],
+    "tier": 1,
+    "focus_cost": 1,
+    "ap_cost": 1,
+    "duration": "Instantenous",
+    "target": "Space",
+    "roll_type": "Attack",
+    "aoe": 2,
+    "aoe_type": "Emanation",
+    "description": "A fire ravages a space within range, dealing 1 damage.",
+    "enhancements": [
+        "Distant Origin",
+        "Expand",
+        "Splash",
+        "Hurl"
     ]
   }
 }

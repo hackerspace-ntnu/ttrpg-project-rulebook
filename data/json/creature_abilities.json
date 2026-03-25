@@ -1,0 +1,42 @@
+{
+  "": {
+    "name": "",
+    "tags": ["Damage", "Summon", "Utility", "Buff", "Debuff", "Healing", "Active", "Passive"],
+    "tier": 1,
+    "ap_cost": 1,
+    "duration": "[Instantenous | End of Phase | 1 Round | Scene | Shift | Persistent ]",
+    "target": "[Self | Creature | Object | Space]",
+    "roll_type": "[Attack | Evasion (+5 rule) | Hit (ignores Evasion) | DC]",
+    "roll_dc": 5,
+    "range": 5,
+    "aoe": 0,
+    "aoe_type": ["Cube", "Cone", "Line", "Sphere", "Cylinder", "Emanation" ],
+    "description": "[Ability effect]"
+  },
+  "Keen Senses": {
+    "name": "Keen Senses",
+    "tags": ["Passive"],
+    "tier": 1,
+    "description": "The creature can track by scent anything within its hex unless countermeasures are taken."
+  },
+  "Canopy Camouflage": {
+    "name": "Canopy Camouflage",
+    "tags": ["Passive"],
+    "tier": 1,
+    "description": "While in the canopy, the creature has Cover (1)"
+  },
+  "": {
+    "name": "",
+    "tags": ["Damage", "Summon", "Utility", "Buff", "Debuff", "Healing", "Active", "Passive"],
+    "tier": 1,
+    "ap_cost": 1,
+    "duration": "[Instantenous | End of Phase | 1 Round | Scene | Shift | Persistent ]",
+    "target": "[Self | Creature | Object | Space]",
+    "roll_type": "[Attack | Evasion (+5 rule) | Hit (ignores Evasion) | DC]",
+    "roll_dc": 5,
+    "range": 5,
+    "aoe": 0,
+    "aoe_type": ["Cube", "Cone", "Line", "Sphere", "Cylinder", "Emanation" ],
+    "description": "[Ability effect]"
+  }
+}

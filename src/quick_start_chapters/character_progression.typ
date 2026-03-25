@@ -10,12 +10,12 @@ In the end, you'll likely have to brave the corrupted wilds if you want your cha
 
 == Experience Points
 You gain #term("Experience Points", is_definition: true) (XP) through a number of triggers that can each count once per in-game day:
- - Defeating a strong foe
- - Solving a puzzle
- - Exploring a hidden area
- - Completing a quest
- - Solve a conflict without attacking
- - Acting in line with your character traits
+ - Defeat a strong foe
+ - Solve a puzzle
+ - Explore a hidden area
+ - Complete a quest
+ - Resolve a conflict nonviolently
+ - Act in line with your character traits
 
 When you reach certain XP thresholds, you're able to raise one of your #term[Attributes] by 1, and freely gain 1 #term("Ability", key: "Abilities") you qualify for.
 The amount of XP needed scales with the total of your #term[Attribute Modifiers], and equals $2^(mod "total"-4)$.

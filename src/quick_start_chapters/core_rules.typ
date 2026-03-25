@@ -39,7 +39,7 @@ Which are stacking conditions that give an extra die starting at a d4, increasin
 Boon(N) denotes N stacks of Boon. E.g. Boon(2) means add a d6 to the
 roll.
 
-Stacks of #term[Boons] and #term[Banes] cancel each other out, so Boon(3) and Bane(2)would result in Boon(1), meaning you'd add a d4 to the roll.
+Stacks of #term[Boons] and #term[Banes] cancel each other out, so Boon(3) and Bane(2) would result in Boon(1), meaning you'd add a d4 to the roll.
 
 #figure(
   placement: none,

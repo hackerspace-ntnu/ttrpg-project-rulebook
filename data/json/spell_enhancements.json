@@ -33,7 +33,7 @@
     "tag": "Special",
     "focus_cost": 1,
     "ap_cost": 0,
-    "description": "The spell targets another creature within range, repeating for as long as it doesn't target the same character twice."
+    "description": "The spell targets another creature within range, measured from the last target, repeating for as long as it doesn't target the same character twice."
   },
   "Invigorate": {
     "name": "Invigorate",
@@ -49,8 +49,8 @@
     "ap_cost": 1,
     "description": "You may choose an additional target for the Spell. You must pay for and apply Spell Enhancements seperately for this instance of the Spell."
   },
-  "Distant Spell": {
-    "name": "Distant Spell",
+  "Distant Origin": {
+    "name": "Distant Origin",
     "tag": "Range",
     "focus_cost": 1,
     "ap_cost": 0,
@@ -62,6 +62,13 @@
     "focus_cost": 0,
     "ap_cost": 1,
     "description": "The spell's duration increases by 1 tier."
+  },
+  "Invert": {
+    "name": "Invert",
+    "tag": "Special",
+    "focus_cost": 1,
+    "ap_cost": 0,
+    "description": "The spell does the opposite of its usual effect. Additional Successes count for the spell's new effects."
   },
   "": {
     "name": "",

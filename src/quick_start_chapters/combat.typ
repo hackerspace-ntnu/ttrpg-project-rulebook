@@ -25,7 +25,7 @@ If an #term("Ability", key: "Abilities") doesn't specify an Action to use, it do
 // #term("Activate", is_definition: true) a #term("Mutation Ability", key: "Mutations") \
 #term("Help", is_definition: true) an ally with their next Action Roll (except Help), given that you can meaningfully impact it in the narrative, granting them a #boon("1 + 1 per Success"). \
 #term("Brawl", is_definition: true) with a target, making a #roll[Might][Insight] choosing either #term[Grapple] or #term[Shove] \
-- #term("Grapple", is_definition: true) a target, limiting their movement and granting #boon("Success") to the first Attack against the target. Targets Evasion. \
+- #term("Grapple", is_definition: true) a target, inflicting #term("Grappled") and granting #boon("Success") to the first Attack against the target. Targets Evasion. \
 - #term("Shove", is_definition: true) a target 1 Space + 1 per #term("Success", key: "Successes"). 2 Spaces of Shove can be traded to knock the target Prone. Targets Evasion. \
 #term("Ready", is_definition: true) an Action, paying its AP cost immediately. \
 #term("Interact", is_definition: true) with or #term("Use", is_definition: true) an item, or #term("Parley", is_definition: true) with a target.
@@ -77,17 +77,17 @@ An attack is normally rolled by using two #term[Attribute Dice] relevant to the 
 Melee weapons usually have a #term("Threat", is_definition: true) of 1, meaning that you can attack things within 1 space of yourself. If you have a free hand, you can make unarmed attacks with #term[Threat] 1.
 
 There are three #term("Damage Thresholds", is_definition: true) that determine the damage dealt; #term[Evasion], #term[Heavy Hit] and #term[Brutal Hit]. 
-Different characters have different thresholds based on their stats as described in the /*#link(<armor>, "Armor Table")*/ @armor.
+Different characters have different thresholds based on their stats as described in the /*#link(<armor>, "Armor Table")*/ @armor-damage-thresholds.
 
 A roll higher than a creature's #term[Evasion] is a hit. 
 Rolling above the Heavy and Brutal hit thresholds each add +1 #term[Success] and may trigger additional abilities. 
-Every +5 above Brutal hit counts as a +1 success. Normally one success means +1 damage, unless replaced with other abilities. 
+Every +5 above Brutal hit counts as a +1 success. Normally each #term[Success] means +1 #term[Strain], unless replaced with other abilities. 
 Certain actions such as #term[Grapple] ignore #term("Heavy", key: "Heavy Hit") and #term("Brutal", key: "Brutal Hit") thresholds and target Evasion directly, therefore using the standard +5 rule.
 
-You can #term("Block", is_definition: true) damage with armour and weapons with the Durable
+You can #term("Block", is_definition: true) #term[Strain] with armor and weapons with the Durable
 tag. This requires no reaction, and when blocking the equipment takes
-the Strain instead of you, including any excess damage. If the equipment
-goes to 0 HP, it's considered Broken and grants no benefit.
+the Strain as #term[Wear] instead of you, including any excess damage. If the equipment
+takes #term[Wear] exceeding its max #term[Wear], it's considered Broken and grants no benefit.
 
 If Armor is Broken, your Evasion and Speed remain the same, but your Heavy and Brutal Hit thresholds are calculated as if you have no armor.
 

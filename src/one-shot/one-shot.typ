@@ -95,21 +95,7 @@ Large (scaled?) jerboa-like creature with jagged carnivorous teeth and long lank
 Giant Quetzalcoatl infused with (lightning? fire?)
 
 === Other beasts
-Crystalline centipede-like creature that moves like a Jacob's ladder toy
-Consumes prey by trapping them between its joints?
-
-Large antlions spitting (acid or superheated sand?)
-
-Antlion Eater: A really, really big anteater with 
-
-Crystalline creatures that "build" themselves by breaking themselves open and inserting prey in the holes, that are slowly converted to the same type of crystalline material.
-If pieces break off they can forcibly reattach them by slamming them to their body, as the heat generated from the impact briefly melts the material, effectively gluing the parts together.
-
-Drov'kith
-
-Kinda struggling to put into words what I'm imagining, so here's a few different descriptors:
-- Scaled bat-like creatures, but with a slender snake-like body
-- Snake-like lizard with wings spanning from its front arms
-- A human child-sized wyvern without the poison stinger
+Moved to creatures issue
 
 
+stick

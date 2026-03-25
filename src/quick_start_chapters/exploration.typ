@@ -2,26 +2,29 @@
 
 = Exploration
 <exploration>
-Most of your time in this game will be spent adventuring in the mana-filled wild wastes of Makkeo.
+== Mana Zones
+Most of your time in this game will be spent adventuring in the mana-filled wild wastes of #term[Makkeo].
 
+The main brunt of interesting locations to explore that haven't already been picked clean by previous explorers are #term("Mana Zones", is_definition: true). #term[Mana Gates] create large fields of dense Mana that allow water to be retained by the ecosystem and cause drastic mutations in all life. #term[Mana Zones] are several days of travel across and fraught with danger, but also opportunity.
+
+At the start of each #term("Shift", key: "Shifts") spent inside of a #term("Mana Zone", key: "Mana Zones"), the GM will make an #term("Encounter Check", is_definition: true), which may have both positive and negative effects for the party.
+
+== Shifts
+A day is divided into 6 Shifts, with one activity in Exploration mode usually taking one Shift. During a Shift, the party can as a group decide to push themselves, each marking 2 Strain to perform an additional #term("Exploration Activity", key: "Exploration Activities"). 
+
+Explorers need rest. If a day's worth of Shifts has passed since the party last used the Rest Activity, they will mark 2 Strain at the end of each Shift. Similarly, at the end of each day, if a character has not consumed a ration, they mark 2 Strain for each day gone without food.
+
+
+== Exploration Activities
 The players must choose a “Party Caller” that informs the GM what actions the party will take when exploring.
 Each day spent exploring is divided into six #term("Shifts", is_definition: true).
 Usually, one 'exploration activity' takes one #term("Shift", key: "Shifts") to perform.
 The players can also choose to Push themselves, achieving two exploration actions per shift at the cost of taking 2 #term[Strain].
 
-// TODO: Need to define Mana Zones.
-At the start of each #term("Shift", key: "Shifts") spent inside of a #term("Mana Zone", key: "Mana Zones"), the GM will make an #term("Encounter Check", is_definition: true), which may have both positive and negative effects for the party.
-
-Explorers will also need to sleep. 
-At the end of each day (6 #term[Shifts]), any character that did not sleep lose 2 #term[Strain].
-
 The exploration is acted out by charting a path through a hexgrid map.
 Progress is driven by the players deciding what they would like to do
 among these actions:
 
-// REVIEW: "Mana Zone" isn't an action though?
-- #term("Mana Zone", is_definition: true)
-  - Text \
 - #term("Travel", is_definition: true)
   - The party attempts to traverse a hex tile. This will take up two
     shifts if they are successful, but vehicles may shorten this time. When traversing terrain that is difficult to navigate, the navigator will make a check (Insight + Presence) to determine if the party can stay on course. \

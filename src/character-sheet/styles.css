@@ -1,0 +1,317 @@
+/** For screen preview **/
+@media screen {
+  body {
+    background: #404040;
+  }
+  .sheet {
+    background: #eeeeee;
+    box-shadow: 0 0.5mm 2mm rgba(0, 0, 0, 0.3);
+    margin: 5mm auto;
+  }
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-header {
+  padding-top: 5px;
+}
+
+body {
+  font-family: Dungeon, Gabriola, Papyrus, Arial, sans-serif;
+  font-size: medium;
+  color: #282828;
+  line-height: 1.1;
+  margin: 0.5cm;
+}
+
+input {
+  border: 1px solid transparent;
+  border-bottom: 1px solid gray;
+  background-color: transparent;
+  font-family: Dungeon, Gabriola, Papyrus, Arial, sans-serif;
+}
+#damage input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  align-content: center;
+  justify-content: center;
+  font-size: large;
+  padding: 0.31rem;
+  border: 0.25px solid black;
+  border-radius: 0.5rem;
+  margin-inline: 1px;
+}
+input[type="checkbox"]:checked {
+  background-color: #282828;
+}
+textarea {
+  font-family: Dungeon, Gabriola, Papyrus, Arial, sans-serif;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* th, td {
+  padding: 5px;
+  text-align: center;
+} */
+.gray {
+  color: gray;
+}
+.minipage {
+  display: inline-block;
+  vertical-align: top;
+}
+.minipage-large {
+  width: 55%;
+}
+.minipage-larger {
+  width: 80%;
+}
+.minipage-half {
+  width: 50%;
+}
+.minipage-quarter {
+  width: 25%;
+}
+.minipage-small {
+  width: 20%;
+}
+.minipage-smaller {
+  width: 16%;
+}
+.minipage-smallest {
+  width: 10%;
+}
+.minipage-medium {
+  width: 39%;
+}
+.text-center {
+  text-align: center;
+}
+.distributer {
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+}
+.distributer > div {
+  vertical-align: top;
+  display: inline-block;
+}
+
+#character-info * {
+  padding-block: 0;
+  margin-block: 0;
+}
+
+#ability-scores {
+  border-bottom: 1px solid #000000;
+  padding: 5px;
+  table-layout: fixed;
+}
+
+#ability-scores tr td {
+  border-right: 1px solid #000000;
+  border-left: 1px solid #000000;
+  width: 25%;
+  min-width: 25%;
+  max-width: 25%;
+  text-align: center;
+}
+
+.centered-input input {
+  text-align: center;
+}
+
+#damage-thresholds-container {
+  margin-top: 10px;
+  border-top: 1px solid #000000;
+}
+
+#damage-thresholds {
+  padding-top: 0;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+#damage-thresholds tr td {
+  border-right: 1px solid #000000;
+  border-left: 1px solid #000000;
+  /* width: 10%; */
+  padding: 5px 5px 0 5px;
+}
+
+#beyond-container,
+#guard-container {
+  font-family: Arial, sans-serif;
+}
+#beyond-container *,
+#guard-container * {
+  font-family: Gabriola, Dungeon, Papyrus, Arial, sans-serif;
+}
+
+#weapons {
+  table-layout: fixed;
+}
+
+#weapons td {
+  padding: 5px 0 0 0;
+  margin: 5px 0 0 0;
+}
+
+#weapons div {
+  padding-right: 5px;
+  margin-right: 5px;
+}
+
+#weapons input[type="text"] {
+  width: 100%;
+}
+
+.list-table tr,
+.list-table td {
+  border: 0;
+  padding: 5px 0 0 0;
+  margin: 5px 0 0 0;
+  padding-inline: 0px;
+}
+
+.wide-input input {
+  margin-inline: 0;
+  padding-inline: 0;
+  /* height: 100%; */
+  width: 100%;
+}
+
+#scars-table tr td:nth-child(1),
+#title-table tr td:nth-child(1) {
+  padding-inline: 5px;
+}
+
+#scars-table tr td:nth-child(2),
+#title-table tr td:nth-child(2) {
+  padding-right: 5px;
+  width: 20px;
+}
+#hit-mods tr td:nth-child(1) {
+  padding-right: 5px;
+}
+#hit-mods tr:nth-child(1) td:nth-child(2),
+#hit-mods tr:nth-child(2) td:nth-child(2) {
+  padding-inline: 5px;
+  width: 20px;
+}
+#hit-mods tr:nth-child(1),
+#hit-mods tr:nth-child(2) {
+  border-inline: 1px solid gray;
+}
+.input-offset input {
+  margin-left: -1px;
+}
+#inventory tr td:nth-child(2) {
+  padding-left: 2.5px;
+}
+#inventory tr td:nth-child(1) {
+  padding-right: 2.5px;
+}
+#abilities tr td {
+  padding-inline: 2.5px;
+  text-align: center;
+}
+
+#abilities input[type="text"] {
+  width: 90%;
+}
+
+#stance-table {
+  padding-left: 5px;
+  margin-left: 5px;
+}
+
+#stance-table tr td {
+  padding-block: 5px;
+  padding-right: 5px;
+  font-weight: bolder;
+}
+
+.stances {
+  border: 1px solid #232323;
+  border-right: 0;
+  padding-block: 10px;
+}
+
+#currency-table td {
+  border: 0;
+  padding: 2px 0 0 0;
+  margin: 0 0 0 0;
+  padding-inline: 0px;
+}
+
+#currency-table tr td:nth-child(1) input {
+  width: 45px;
+}
+#currency-table tr td:nth-child(2) input {
+  width: 30px;
+  text-align: right;
+}
+
+#currency-table tr td:nth-child(2) {
+  padding-left: 5px;
+}
+
+#limitedTextarea {
+  resize: none;
+  overflow: hidden;
+  white-space: pre-wrap; /* Preserve whitespace and wrap text */
+  word-wrap: break-word; /* Break long words */
+  background-color: transparent;
+  /* border: double; */
+}
+
+.ring-part {
+  cursor: pointer;
+  fill: #eeeeee; /* Default color */
+  stroke: #282828;
+  stroke-width: 1px;
+}
+/* svg .ring-part:nth-last-child(-n+6) {
+  stroke: orange;
+} */
+svg .ring-part:nth-last-child(-n + 3) {
+  stroke: grey;
+}
+.ring-part.active {
+  fill: #282828; /* Toggled color */
+}
+.triangle-checkbox {
+  display: inline-block;
+  width: fit-content;
+  height: 16px;
+  cursor: pointer;
+  position: relative;
+  padding-inline: 1px;
+  margin-bottom: -10px;
+}
+.triangles,
+.triangles * {
+  max-height: 16px !important;
+}
+.triangle-checkbox polygon {
+  fill: #eee;
+  stroke: #232323;
+  stroke-width: 1.2px;
+}
+.triangle-checkbox:nth-last-child(-n + 3) polygon {
+  stroke: grey;
+}
+.triangle-checkbox input[type="checkbox"] {
+  display: none;
+}
+.triangle-checkbox input[type="checkbox"]:checked + svg polygon {
+  fill: #232323;
+}
