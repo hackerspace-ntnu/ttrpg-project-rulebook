@@ -1,10 +1,12 @@
+// TODO: Make an enum to make code suggestions leaner?  
 #let glossary_types = (
   mechanic: "mechanic",
   action: "action",
   condition: "condition",
   item: "item",
   faction: "faction",
-  location: "location"
+  location: "location",
+  character: "character",
 )
 
 #let _state_glossary = state("glossary", ())
