@@ -75,8 +75,7 @@
         acc.insert(key, entry)
       } else {
         let glossary_entry = acc.at(key, default: none)
-        // If both are definitions, keep the first one
-        if (not glossary_entry.is_definition and entry.is_definition) {
+        if (entry.is_definition) {
           // Replace with definition
           glossary_entry.description = entry.description
           glossary_entry.location = entry.location
@@ -102,17 +101,15 @@
       }
       // Alt render:
       // #entry_name\ #h(0.64cm)
-      [#entry_name: #entry.locations.dedup(
-        key: l => l.at(1)
-      ).dedup(
-        key: l => l.at(0).page()
-      ).map(l => link(l.at(0), 
-        if l.at(0) == entry.location { 
-          strong([p.#(l.at(0).page()-1)]) } 
-        else {
-          [p.#(l.at(0).page()-1)]
-        }
-      )).join(", ")]
+      if (entry.location != none) {
+        [#entry_name: #link(entry.location, [p.#(entry.location.page()-1)])]
+      } else {
+        [! #entry_name: #entry.locations.dedup(
+          key: l => l.at(1)
+        ).dedup(
+          key: l => l.at(0).page()
+        ).map(l => link(l.at(0), [p.#(l.at(0).page()-1)])).join(", ")]
+      }
       linebreak()
     }
   })

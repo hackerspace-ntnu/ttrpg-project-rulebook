@@ -5,7 +5,7 @@
             "evasion": 2,
             "heavy hit": 6,
             "brutal hit": 11,
-            "strain": 0,
+            "durability": 0,
             "description": "+1 speed",
             "modifiers": {
                 "speed": 1
@@ -16,7 +16,7 @@
             "evasion": 3,
             "heavy hit": 7,
             "brutal hit": 12,
-            "strain": 2,
+            "durability": 2,
             "description": null
         },
         {
@@ -24,7 +24,7 @@
             "evasion": 2,
             "heavy hit": 8,
             "brutal hit": 13,
-            "strain": 4,
+            "durability": 4,
             "description": null
         },
         {
@@ -32,7 +32,7 @@
             "evasion": 1,
             "heavy hit": 10,
             "brutal hit": 15,
-            "strain": 6,
+            "durability": 6,
             "description": "-1 speed",
             "modifiers": {
                 "speed": -1
@@ -43,8 +43,8 @@
             "evasion": 3,
             "heavy hit": 7,
             "brutal hit": 12,
-            "strain": 2,
-            "description": "+1 speed. Any entity either grappling or being grappled by the wearer of this armor will take 1 strain at the start of their turn.",
+            "durability": 2,
+            "description": "+1 speed. Any entity either grappling or being grappled by the wearer of this armor will take 1 durability at the start of their turn.",
             "modifiers": {
                 "speed": 1
             }
@@ -54,15 +54,15 @@
             "evasion": 2,
             "heavy hit": 8,
             "brutal hit": 13,
-            "strain": 4,
-            "description": "Living armor that can't be repaired like normal armor. Will repair itself for 1 strain when the wearer rolls for Saturation."
+            "durability": 4,
+            "description": "Living armor that can't be repaired like normal armor. Will repair itself for 1 durability when the wearer rolls for Saturation. As a living being it dies when broken and can't be revived."
         },
         {
             "name": "Magnet armor",
             "evasion": 1,
             "heavy hit": 10,
             "brutal hit": 15,
-            "strain": 6,
+            "durability": 6,
             "description": "-1 speed. Covered in magnets that nullify the effects of external mana saturation. Wearer has Bane(2) when rolling for spellcasting.",
             "modifiers": {
                 "speed": -1

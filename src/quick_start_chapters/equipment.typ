@@ -3,8 +3,8 @@
 = Equipment
 <equipment>
 Each character has a #term("Carrying Capacity", is_definition: true) equal to 4 + Might Mod.
-Items and Equipment have an amount of #term("Bulk", is_definition: true) (usually 1).
-If you're carrying more than your #term("Capacity", key: "Carrying Capacity") at the end of a #term("Shift", key: "Shifts"), you mark #term[Strain] equal to the amount of extra #term[Bulk] you're carrying (total #term[Bulk] - #term[Carrying Capacity]).
+Items and #term("Equipment", is_definition: true) have an amount of #term("Bulk", is_definition: true) (usually 1).
+If you're carrying more than your #term("Capacity", key: "Carrying Capacity") at the end of a #term("Shift", key: "Shifts"), you lose #term[Grit] equal to the amount of extra #term[Bulk] you're carrying (total #term[Bulk] - #term[Carrying Capacity]).
 
 Each character also has a #term("Quick Draw Inventory", is_definition: true) with a Capacity of 3, which does not contribute to the total #term[Bulk] in your regular Inventory.
 Essentially, you get 3 extra Capacity for things like Weapons and Shields that you would want easy access to during combat.
@@ -46,7 +46,7 @@ These are things like a flint and steel, a pocket knife, a letter, or a sentimen
     align: (left,left,left,left,left,left,),
     table.header([], [#term("Evasion", is_definition: true) \ + Agility Mod\ + Insight Mod], [#term("Heavy Hit", is_definition: true)\ +
       Might Mod\ + Presence Mod], [#term("Brutal Hit", is_definition: true)\*\ + Might Mod\ + Presence
-      Mod], [Max Strain], [Speed],),
+      Mod], [Max Grit], [Speed],),
     table.hline(),
     [No armor], [2], [6], [11], [0], [+1],
     [Light armor], [3], [7], [12], [2], [],

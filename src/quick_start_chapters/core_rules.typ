@@ -27,7 +27,7 @@ When you roll the same number on both #term[Attribute Dice] for an
 #term("Action Roll", key: "Action Rolls") it causes a #term("Critical Roll", is_definition: true). When a #term[Critical Roll] happens, you roll the highest #term("Attribute Die", key: "Attribute Dice") of the roll again, and add it to the total.
 
 Continuing our example from earlier: \
-- Player A rolled a crit! \
+- Player A rolled 3 on both dice for a crit! \
 - Their highest die was their Might, a d8, so they add another d8 to the roll. \
 - This time they roll a 4, making their total 3+3+4 = 10, which means they succeed the check.
 

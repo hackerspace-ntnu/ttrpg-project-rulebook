@@ -24,7 +24,7 @@
         "tier": 2,
         "focus_cost": null,
         "ap_cost": null,
-        "description": "You give off Light in a 10-meter radius sphere. If a creature touches you, they take 1 Strain from fire. If at the end of your turn you are grappling or holding a creature, they take 1 Strain from fire."
+        "description": "You give off Light in a 10-meter radius sphere. If a creature touches you, they lose 1 Grit from fire. If at the end of your turn you are grappling or holding a creature, they lose 1 Grit from fire."
     },
     "Change Skin": {
         "name": "Change Skin",
@@ -105,7 +105,7 @@
         "tier": 1,
         "focus_cost": null,
         "ap_cost": null,
-        "description": "You take no Strain from heat or fire-based sources, you can operate normally in extremely warm temperatures."
+        "description": "You lose no Grit from heat or fire-based sources, you can operate normally in extremely warm temperatures."
     },
     "Flammable": {
         "name": "Flammable",
@@ -114,7 +114,7 @@
         "tier": 2,
         "focus_cost": null,
         "ap_cost": null,
-        "description": "Due to the flammability of the Flight Bladder gas, if your hit points are reduced by fire or heat, the gas ignites, immediately dealing 5 damage to you and everyone within 3 squares of you. Additionally, you cannot use the Ascend ability (and lose any altitude you currently had with it) until you have recovered all Strain you have taken."
+        "description": "Due to the flammability of the Flight Bladder gas, if your hit points are reduced by fire or heat, the gas ignites, immediately dealing 5 damage to you and everyone within 3 squares of you. Additionally, you cannot use the Ascend ability (and lose any altitude you currently had with it) until you have recovered all Grit."
     },
     "Glide": {
         "name": "Glide",
@@ -213,7 +213,7 @@
         "tier": 2,
         "focus_cost": null,
         "ap_cost": null,
-        "description": "This Mutation has 2 Strain Capacity and the Durable tag, meaning you can interpose it to defend against an attack. When you sleep, all Strain taken by this feature is cleared."
+        "description": "This Mutation has 2 Grit and the Durable tag, meaning you can interpose it to defend against an attack. When you sleep, all Grit lost by this feature is cleared."
     },
     "Return to Self": {
         "name": "Return to Self",
@@ -276,7 +276,16 @@
         "tier": 1,
         "focus_cost": null,
         "ap_cost": null,
-        "description": "You can sense when items made of or containing your Vulnerability is nearby. If you carry an item made from your vulnerability for a Shift, or take Damage from an attack with such an item, you take 1 Strain that cannot be reduced in any way."
+        "description": "You can sense when items made of or containing your Vulnerability is nearby. If you carry an item made from your vulnerability for a Shift, or take Damage from an attack with such an item, you lose 1 Grit that cannot be reduced in any way."
+    },
+    "Rooted": {
+        "name": "Rooted",
+        "category": "Mutation",
+        "tag": "Active",
+        "tier": 1,
+        "focus_cost": 1,
+        "ap_cost": 0,
+        "description": "You are rooted into the ground; halting movement from all sources."
     }
 
 }

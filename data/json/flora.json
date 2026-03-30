@@ -2,7 +2,7 @@
     "NAME": {
         "name": "[NAME]",
         "description": "[PLANT VISUAL, SMELL, etc.]",
-        "abilities": "[SPECIAL EFFECTS. DO YOU CLEAR STRAIN FROM EATING IT? DOES IT SHOCK YOU WHEN YOU GET CLOSE?]"
+        "abilities": "[SPECIAL EFFECTS. DO YOU GAIN GRIT FROM EATING IT? DOES IT SHOCK YOU WHEN YOU GET CLOSE?]"
     },
     "Invisibile Mushroom": {
         "name": "Invisible Mushroom",
@@ -22,7 +22,7 @@
     "Boomshroom": {
         "name": "Boomshroom",
         "description": "A really un-suspicious looking mushroom. (needs more description)",
-        "abilities": "Will explode, dealing [number] damage (radius?)."
+        "abilities": "Will explode, dealing [number] damage (radius?). Can be picked on successful foraging check, but will explode if fail."
     },
     "Gravefruit": {
         "name": "Gravefruit",
@@ -53,16 +53,6 @@
         "name": "Crystalbloom",
         "description": "Term for a family of vegetation stretching from flowers to trees featuring sharp crystal seeds.",
         "abilities": "Can confer crystalblight: a disease that makes more seeds grow as crystal protrusions in the body"
-    },
-    "": {
-        "name": "",
-        "description": "",
-        "abilities": ""
-    },
-    "": {
-        "name": "",
-        "description": "",
-        "abilities": ""
     },
     "": {
         "name": "",

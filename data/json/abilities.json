@@ -72,7 +72,7 @@
     "tier": 2,
     "focus_cost": 1,
     "ap_cost": 0,
-    "description": "Until the start of your next turn, you treat a Weapon you're wielding as having one of the following tags, provided the weapon is not already tagged with it: Reach(2), Impact(1), Thrown(5)",
+    "description": "Until the start of your next turn, you treat a Weapon you're wielding as having one of the following tags, provided the weapon is not already tagged with it: Reach(2), Crush(1), Thrown(5)",
     "valid_weapon_tags": ["Versatile", "One-handed"],
     "valid_weapon_types": ["Melee"]
   },
@@ -95,7 +95,7 @@
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "You may choose to attack the target's armor directly, without giving the target an opportunity to Retaliate.",
-    "valid_weapon_tags": ["Versatile", "Two-handed", "Heavy", "Impact"],
+    "valid_weapon_tags": ["Versatile", "Two-handed", "Heavy", "Crush"],
     "valid_weapon_types": null
   },
   "Piercing Thrust": {
@@ -127,7 +127,7 @@
     "tier": 2,
     "focus_cost": 1,
     "ap_cost": 0,
-    "description": "If your Attack hits, it bounces to a secondary target of your choice within half of the weapons range, dealing 1 damage.",
+    "description": "If your Attack hits, it bounces to a secondary target of your choice within half of the weapon's range, dealing 1 damage.",
     "valid_weapon_tags": null,
     "valid_weapon_types": ["Ranged"]
   },

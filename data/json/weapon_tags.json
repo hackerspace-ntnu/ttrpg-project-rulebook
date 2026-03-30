@@ -5,7 +5,7 @@
   },
   {
     "name": "Durable",
-    "description": "This weapon has N Max Strain.",
+    "description": "This weapon has N Max Grit.",
     "parameter": "N"
   },
   {
@@ -13,7 +13,7 @@
     "description": "This tag is used for the purposes of Bulk and abilities, such as retaliations, that use the size/weight of a weapon. A weapon with this tag also gains the Two-handed, Unwieldy(1), and Sharp(1) tags."
   },
   {
-    "name": "Impact",
+    "name": "Crush",
     "description": "This weapon does +N damage to Armor, Equipment and Guard.",
     "parameter": "N"
   },
@@ -76,5 +76,10 @@
   {
     "name": "Versatile",
     "description": "Can be wielded in the main-hand or with two hands. Wielding the Weapon in two hands grants +1 to Attack Rolls made with it."
+  },
+  {
+    "name": "Impact",
+    "description": "When hitting with this weapon, the attack deals N Knockback",
+    "parameter": "N"
   }
 ]

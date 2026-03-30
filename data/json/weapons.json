@@ -9,7 +9,7 @@
     {
       "name": "Greathammer",
       "attributes": ["Might", "Might"],
-      "ability": "Push",
+      "ability": "Impact",
       "tags": ["Heavy", "Two-handed", "Unwieldy(1)", "Sharp(1)"]
     },
     {
@@ -58,7 +58,7 @@
       "name": "Warhammer",
       "attributes": ["Might", "Insight"],
       "ability": "Can Opener",
-      "tags": ["Versatile", "Impact(1)"]
+      "tags": ["Versatile", "Crush(1)"]
     },
     {
       "name": "Whip",
@@ -76,7 +76,7 @@
       "name": "Crossbow",
       "attributes": ["Agility", "Insight"],
       "ability": "Piercing Shot",
-      "tags": ["Two-handed", "Ranged(10)", "Impact(1)", "Loading(1)"]
+      "tags": ["Two-handed", "Ranged(10)", "Crush(1)", "Loading(1)"]
     },
     {
       "name": "Longbow",

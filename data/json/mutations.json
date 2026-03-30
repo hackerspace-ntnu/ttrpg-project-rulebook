@@ -206,7 +206,7 @@
         "name": "Weaponized Tail",
         "category": null,
         "abilities": ["Natural Weapon"],
-        "description": "You grow a tail, it might be long or whiplike (Agility+Presence, Reach(3), Wrangle), or end in a wicked weapon like Thagomizer spikes or a club (Might+Presence, Impact(1), Cleave)",
+        "description": "You grow a tail, it might be long or whiplike (Agility+Presence, Reach(3), Wrangle), or end in a wicked weapon like Thagomizer spikes or a club (Might+Presence, Crush(1), Cleave)",
         "tier": 2
     },
     "Wings": {
@@ -214,6 +214,13 @@
         "category": null,
         "abilities": ["Glide"],
         "description": "An additional pair of limbs grows out of your shoulders. They allow you to glide short distances",
+        "tier": 2
+    },
+    "Rootfeet": {
+        "name": "Rootfeet",
+        "category": null,
+        "abilities": ["Rooted"],
+        "description": "Your feet grow woody spurts that can root you into the ground.",
         "tier": 2
     }
 }

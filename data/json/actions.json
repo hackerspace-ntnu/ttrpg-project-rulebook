@@ -56,7 +56,7 @@
     "cost": 0
   },
   "Push": {
-    "description": "#term[Push] yourself, taking Strain in order to perform one of the following effects: - (repeatable +1 cost) 1 Strain for Boon(1)  - 2 Strain to gain 1 AP",
+    "description": "#term[Push] yourself, spending Grit in order to perform one of the following effects: - (repeatable +1 cost) 1 Grit for Boon(1)  - 2 Grit to gain 1 AP",
     "cost": 0
   }
 }

@@ -132,7 +132,7 @@
     "roll_type": "DC",
     "roll_dc": 5,
     "range": 0,
-    "description": "Reconstruct the previous state of the targets, letting them clear 1 Strain. Every Success grants +1 healing.",
+    "description": "Reconstruct the previous state of the targets, letting them regain 1 Grit. Every Success grants +1 healing.",
     "enhancements": [
         "Hurl",
         "Splash"

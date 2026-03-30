@@ -60,13 +60,13 @@
   ],
   "Pusher": [
     {
-      "name": "Push",
+      "name": "Forceful",
       "category": "Might",
       "tag": "Passive",
       "focus_cost": 0,
       "ap_cost": 0,
       "description": "When you hit with an Attack, you may use up to 3 Focus to Push the targets that many Spaces.",
-      "valid_weapon_tags": ["Heavy", "Two-handed", "Impact"],
+      "valid_weapon_tags": ["Heavy", "Two-handed", "Crush"],
       "valid_weapon_types": null
     },
     {

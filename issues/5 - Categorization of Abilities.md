@@ -12,7 +12,7 @@ All Abilities are tagged as either Enhance, Active, or Passive.
 All Abilities can be limited based on the following properties:
 - Weapon Type (Melee/Ranged)
 - Weapon Size (Light/Medium/Heavy and Arm Attachment(?))
-- Weapon Tags (Reach, Impact, Thrown, etc.)
+- Weapon Tags (Reach, Crush, Thrown, etc.)
 - Attribute 
   - For Weapon Abilities: one of the dice rolled by the Weapon must match the Attribute
   - For Player Abilities: The Player's Attribute Mod for the given Attribute must be equal to or higher than the Tier of the Ability

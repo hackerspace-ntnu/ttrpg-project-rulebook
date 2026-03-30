@@ -11,8 +11,6 @@ acts during first phase) or #term("Methodical", is_definition: true) (3 AP, acts
 second phase). Action points are regenerated at the start of the chosen
 phase.
 
-At max #term[Strain] you gain the #term("Dying", is_definition: true) condition, where any additional damage reduces max AP by 1. If your max AP is 0, you die.
-
 == Actions
 <actions>
 If nothing else is specified, an Action costs 1 AP to use. Actions (and
@@ -42,10 +40,10 @@ If an #term("Ability", key: "Abilities") doesn't specify an Action to use, it do
 
 0 AP: #term("Charge", is_definition: true) your next Action, delaying its activation until the end of the next Phase, but granting you #boon(3) on it. You must pick a target Space for the Action when picking this option. \
 // TODO: Worded weirdly
-0 AP: #term("Push", is_definition: true) yourself, taking #term[Strain] in order to perform one of the
+0 AP: #term("Push", is_definition: true) yourself, spending #term[Grit] in order to perform one of the
 following effects:
-- (repeatable +1 cost) 1 Strain for Boon(1) \
-- 2 Strain to gain 1 AP
+- (repeatable +1 cost) 1 Grit for Boon(1) \
+- 2 Grit to gain 1 AP
 
 
 == Reactions
@@ -72,7 +70,7 @@ A character can perform at most 1 #term[Reaction] in response to any particular 
 
 == Attacks and defense
 <attacks-and-defense>
-An attack is normally rolled by using two #term[Attribute Dice] relevant to the weapon used, as well as any other relevant bonuses. All weapons have a base damage of 1. Unarmed attacks have a base damage of 0. When you take damage, increase your #term[Strain] by that amount.
+An attack is normally rolled by using two #term[Attribute Dice] relevant to the weapon used, as well as any other relevant bonuses. All weapons have a base damage of 1. Unarmed attacks have a base damage of 0. Damage is dealt to your #term[Grit].
 
 Melee weapons usually have a #term("Threat", is_definition: true) of 1, meaning that you can attack things within 1 space of yourself. If you have a free hand, you can make unarmed attacks with #term[Threat] 1.
 
@@ -81,20 +79,17 @@ Different characters have different thresholds based on their stats as described
 
 A roll higher than a creature's #term[Evasion] is a hit. 
 Rolling above the Heavy and Brutal hit thresholds each add +1 #term[Success] and may trigger additional abilities. 
-Every +5 above Brutal hit counts as a +1 success. Normally each #term[Success] means +1 #term[Strain], unless replaced with other abilities. 
+Every +5 above Brutal hit counts as a +1 success. Normally each #term[Success] means +1 #term[Damage], unless replaced with other abilities. 
 Certain actions such as #term[Grapple] ignore #term("Heavy", key: "Heavy Hit") and #term("Brutal", key: "Brutal Hit") thresholds and target Evasion directly, therefore using the standard +5 rule.
 
-You can #term("Block", is_definition: true) #term[Strain] with armor and weapons with the Durable
-tag. This requires no reaction, and when blocking the equipment takes
-the Strain as #term[Wear] instead of you, including any excess damage. If the equipment
-takes #term[Wear] exceeding its max #term[Wear], it's considered Broken and grants no benefit.
+You can #term("Block", is_definition: true) #term[Damage] with armor and weapons with the Durable tag.
+This requires no reaction, and when blocking the equipment takes the full #term[Damage] to its #term[Durability], including any excess damage. 
+If the equipment's #term[Durability] reaches 0, it's considered #term[Broken].
 
-If Armor is Broken, your Evasion and Speed remain the same, but your Heavy and Brutal Hit thresholds are calculated as if you have no armor.
+If Armor is #term("Broken", is_definition: true) your Evasion and Speed remain the same, but your Heavy and Brutal Hit thresholds are calculated as if you have no armor.
 
-// TODO: Need to be reworded to not use HP.
-Certain effects grant #term("Guard", is_definition: true), which grants temporary HP that are
-instead reduced when you take damage. Separate effects granting Guard do
-not stack.
+Certain effects grant #term("Guard", is_definition: true), which grants temporary #term[Grit] that are instead reduced when you take damage.
+Separate effects granting Guard do not stack.
 
 == Retaliations
 <retaliations>
@@ -143,8 +138,6 @@ mod / Size difference Spaces.
 Ranged Weapons: 
 
 == Wounds & Dying
-Any damage exceeding your max #term[Strain] causes you to take a #term("Wound", key: "Wounds").
-When taking a #term("Wound", key: "Wounds"), you roll a single d8.
-If the result is under the number of Wounds your have character has, they die.
-Otherwise, they clear Strain equal to the result and lose 1 AP next time they act.
+At 0 #term[Grit] you gain a #term("Wound", key: "Wounds", is_definition: true) and roll 1d8. If the result is under the number of #term[Wounds] they have, they die. 
+Otherwise, they regain #term[Grit] equal to the result and lose 1 AP next round for each point of damage exceeding 0 #term[Grit].
 

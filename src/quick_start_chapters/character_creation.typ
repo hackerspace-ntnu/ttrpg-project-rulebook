@@ -6,13 +6,12 @@ Everyone needs a character in order to play. A character in Titanslayer consists
 
 All characters start with some base stats, most of which are modified by their #term[Attributes]: \
 // TODO: We should decide where to define these things.
-Max #term[Strain]: 7 \
+Max #term[Grit]: 7 \
 Max #term[Focus]: 7 \
 #term[Carrying Capacity]: 4 \
 Base #term[Speed]: 3 Spaces
 
-#term("Strain", is_definition: true) is a measure of the physical and mental strain inflicted to a character, acting similar to HP in other games.
-Unlike HP, #term[Strain] goes up when you take damage or suffer some sort of trauma.
+#term("Grit", is_definition: true) is a measure of the physical and mental strain a character can withstand, acting similar to HP in other games.
 
 #term("Focus", is_definition: true) is a measure of your awareness of your surroundings and the state of yourself, and is spent to use certain #term[Abilities] and #term[Actions]. 
 
@@ -21,8 +20,7 @@ Unlike HP, #term[Strain] goes up when you take damage or suffer some sort of tra
 #term("Speed", is_definition: true) defines how many #term[Spaces] you can move using a single #term[Move].
 
 == Attributes
-
-Each character has 4 #term[Attributes]. Each #term("Attribute", key: "Attributes", is_definition: true) is represented by a die of size d4-d12, mapping to a modifier of 1-5.
+Each character has 4 #term("Attributes", is_definition: true) that are represented by a die of size d4-d12, mapping to a modifier of 1-5.
 
 #figure(
   align(center)[#table(
@@ -30,7 +28,7 @@ Each character has 4 #term[Attributes]. Each #term("Attribute", key: "Attributes
     align: (left,left,left,),
     table.header([Attribute], [Description], [Effect],),
     table.hline(),
-    term("Might", is_definition: true), [Strength and endurance], [\+ mod to #term[Strain] and #term[Carrying Capacity]],
+    term("Might", is_definition: true), [Strength and endurance], [\+ mod to #term[Grit] and #term[Carrying Capacity]],
     term("Agility", is_definition: true), [Speed, dexterity, flexibility and balance], [\+ mod to
     Speed],
     term("Insight", is_definition: true), [Ability to discover and reason about information], [\Boon dice can never roll lower than your Insight mod],
