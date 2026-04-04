@@ -2,7 +2,7 @@
 
 = Character creation
 <character-creation-mutations>
-Everyone needs a character in order to play. A character in Titanslayer consists of their #term[Attributes], determining what dice they roll for checks\; their #term("Background", key: "Backgrounds"), defining the character's life until they became a #term("Hunter", key: "Hunters")\; their #term("Heritage", key: "Heritages"), which describes their lineage and inherent #term[Mutations]\; and their #term[Equipment], which they discover, craft, and purchase on their journey.
+Everyone needs a character in order to play. A character in Titanslayer consists of their #term[Attributes], determining what dice they roll for checks\; their #term("Background", key: "Backgrounds"), defining the character's life until they became a #term("Hunter", key: "Hunters", glossary_type: glossary_types.faction)\; their #term("Heritage", key: "Heritages"), which describes their lineage and inherent #term[Mutations]\; and their #term[Equipment], which they discover, craft, and purchase on their journey.
 
 All characters start with some base stats, most of which are modified by their #term[Attributes]: \
 // TODO: We should decide where to define these things.

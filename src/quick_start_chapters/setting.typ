@@ -21,8 +21,8 @@ However, #term("Sanctuary", glossary_type: glossary_types.location)’s research
 
 The influence of #term("Sanctuary", glossary_type: glossary_types.location) can be felt to this day.
 #term[Mana Tech] gathered from its ruins is highly valued, and many of the major factions in today's landscape has their roots in the once great city.
-\
-// TODO: indent each 
+
+#colbreak()
 #term("The Understanding", is_definition: true, glossary_type: glossary_types.faction) and #term("The Council of Kaleina", is_definition: true, glossary_type: glossary_types.faction) both attempt to make sense of the world they live in through their own means.
 \
 #term("The Children of Og", is_definition: true, glossary_type: glossary_types.faction) worship #term[Titans] as deities come to transform the world, and expose themselves to mana to get closer to true enlightenment.
@@ -35,10 +35,10 @@ Largely split into smaller independent groups, #term("Hunters", glossary_type: g
 
 But #term("Hunters", glossary_type: glossary_types.faction) bring more than just resources back from the Mana Zones, they bring hope.
 The people of #term[Makkeo] has long clung onto the belief that if they could slay the #term[Titans] and close the #term[Mana Gates], the world would return to how it once was.
-And after many years, a #term("Hunter", glossary_type: glossary_types.faction, key: "Hunters") by the name of #term("[First Tianslayer]", glossary_type: glossary_types.character) managed to fell the first #term("Titan", key: "Titans"), bringing hope to both #term("[Titanslayer Religion]", glossary_type: glossary_types.faction) and the people of #term[Makkeo], marking the start of their resistance against the #term("Titan", key: "Titans") threat.
+And after many years, a #term("Hunter", glossary_type: glossary_types.faction, key: "Hunters") by the name of #term("[First Titanslayer]", glossary_type: glossary_types.character, is_definition: true) managed to fell the first #term("Titan", key: "Titans"), bringing hope to both #term("[Titanslayer Religion]", glossary_type: glossary_types.faction) and the people of #term[Makkeo], marking the start of their resistance against the #term("Titan", key: "Titans") threat.
 
 Now two decades have passed, and though some progress has been made against the #term[Mana Gates], no more #term[Titans] have fallen.
-#term("[First Tianslayer]", glossary_type: glossary_types.character) is growing old, casting #term("[Titanslayer Religion]", glossary_type: glossary_types.faction) into a crisis of faith as doubt of their prophecy spreads.
+#term("[First Titanslayer]", glossary_type: glossary_types.character) is growing old, casting #term("[Titanslayer Religion]", glossary_type: glossary_types.faction) into a crisis of faith as doubt of their prophecy spreads.
 Most of those who delve into the depths of the Mana-saturated areas do so out of need or duty, but some still dream of accruing enough power to one day fell a second #term("Titan", key: "Titans") and claim the title of . . .
 
 #align(center)[
