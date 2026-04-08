@@ -17,10 +17,10 @@ Base #term[Speed]: 3 Spaces
 
 #term[Carrying Capacity] is a measure of how much #term[Bulk] you can carry, and is discussed further in the #link(<equipment>, "Equipment section").
 
-#term("Speed", is_definition: true) defines how many #term[Spaces] you can move using a single #term[Move].
+#term("Speed", is_definition: true) defines how many #term[Spaces] you can move using a single #term[Move], with #term("Spaces", is_definition: true) being an abstract unit of distance used in combat.
 
 == Attributes
-Each character has 4 #term("Attributes", is_definition: true) that are represented by a die of size d4-d12, mapping to a modifier of 1-5.
+Each character has 4 #term("Attributes", is_definition: true) that are represented by a die of size d4-d12, mapping to an #term("Attribute Modifiers", is_definition: true) of 1-5.
 
 #figure(
   align(center)[#table(
@@ -48,7 +48,7 @@ attributes to be.
 
 
 == Backgrounds
-#term("Backgrounds", is_definition: true) describe what your character has been doing before venturing into the wilds as a #term("Hunter", key: "Hunters").
+#term("Backgrounds", is_definition: true) describe what your character has been doing before venturing into the wilds as a #term("Hunter", key: "Hunters", glossary_type: glossary_types.faction).
 Each #term("Background", key: "Backgrounds") can be invoked for non-combat rolls to gain #boon(1) on the roll, given it makes sense for it to help in the narrative.
 Furthermore, you gain a single tier 1 #term("Ability", key: "Abilities") of the #term("Attribute", key: "Attributes") denoted by your #term("Background", key: "Backgrounds").
 

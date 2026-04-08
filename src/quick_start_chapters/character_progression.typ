@@ -51,8 +51,30 @@ If you fail the check, you instead #term[Mutate].
 When you #term("Mutate", is_definition: true), you roll on the #link(<mutation-table>)[Mutation Table] to determine what #term("Mutation", key: "Mutations") you get.
 Unless otherwise specified, you may choose where on your body the #term("Mutation", key: "Mutations") apparates, and what it looks like.
 
-After #term("Mutating", key: "Mutate") you permanently #term("Corrupted", key: "Corrupted Focus") an amount of #term[Focus] equal to the tier of the #term("Mutation", key: "Mutations"), then clear any #term[Saturated Focus]
+After #term("Mutating", key: "Mutate") you permanently #term("Corrupt", key: "Corrupted Focus") an amount of #term[Focus] equal to the tier of the #term("Mutation", key: "Mutations"), then clear any #term[Saturated Focus] you have.
 If all your #term[Focus] is #term("Corrupted", key: "Corrupted Focus") after mutating, you immediately turn into an #term("Aberrant", key: "Aberrants") and lose control of your character.
 
 == Abilities
+#term("Abilities", is_definition: true) are special features that give you new options for combat, exploration, and roleplay.
+There are three different types of #term[Abilities] you can gain, each with their own unique method of acquisition:
+- Spending #term("Scrap", key: "Scrap") to learn an #term("Studied Ability", key: "Studied Abilities") from an NPC or institution that offers it.
+- Gaining enough #term("Experience Points", key: "Experience Points") to increase one of your #term[Attributes], which allows you to freely gain one #term("Core Ability", key: "Core Abilities") you qualify for.
+- Gaining a #term("Mutation", key: "Mutations") that grants you an #term("Ability", key: "Abilities").
+
+=== Studied Abilities
+#term("Studied Abilities", is_definition: true) are #term[Abilities] that you can learn from NPCs or institutions in exchange for #term[Scrap].
+They are usually more specialized than #term("Core Abilities", key: "Core Abilities"), and can be related to specific weapons, playstyles, or even specific pieces of equipment.
+
+#term[Studied Abilities] come in packets of 3 tiered abilities, with each ability in a packet being centered around the same theme or playstyle.
+To unlock the next tier of abilities in the packet, you must have already gained the previous tier.
+
+=== Core Abilities
+#term("Core Abilities", is_definition: true) are #term[Abilities] that are tied to your #term[Attributes], and are gained when you increase them through hitting #term("Experience Points", key: "Experience Points") thresholds.
+When gaining a #term("Core Ability", key: "Core Abilities"), you can choose one corresponding to any #term("Attribute", key: "Attributes"), though you must qualify for it.
+
+To qualify for a #term("Core Ability", key: "Core Abilities"), your #term("Attribute Modifier", key: "Attribute Modifiers") for the relevant stat must be equal to or higher than its tier.
+
+=== Mutation Abilities
+#term("Mutation Abilities", is_definition: true) are #term[Abilities] that are granted by #term[Mutations] you gain through #term("Mutating", key: "Mutate") after failing a #term("Saturation Check", key: "Saturation Checks").
+These are usually quite powerful, but come with the cost of permanently #term("Corrupting", key: "Corrupted Focus") your #term[Focus] and the gradual loss of your humanity.
 

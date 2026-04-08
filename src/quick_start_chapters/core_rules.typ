@@ -5,8 +5,8 @@
 == Action Rolls
 <action-rolls>
 Titanslayer is primarily played through roleplay, but if players want to do a risky action or avoid danger the #term("Game Master", is_definition: true) (GM) will usually ask them to make an #term("Action Roll", key: "Action Rolls", is_definition: true). 
-The GM secretly decides on a #term("Difficulty Class", is_definition: true) of the roll and tells the player which two #term("Attribute Dice", is_definition: true) they should roll.
-The player then rolls two dice, corresponding to the attributes they were told to roll and add the numbers together.
+The GM decides on a #term("Difficulty Class", is_definition: true) of the roll and tells the player which two #term("Attribute Dice", is_definition: true) they should roll.
+The player then roll the two dice corresponding to those attributes and add the numbers together.
 If they roll equal to or higher than the DC, they succeed.
 
 Example: \
@@ -69,17 +69,19 @@ Some rolls don't follow the rule that each 5 above the DC gives a
 #term[Damage Thresholds];, giving +1 #term[Success] for each
 threshold you hit (and then for each +5 after the last threshold).
 
-#term("Successes", key: "Success") gained when Attacking usually grant +1 damage to the Attack, but some unique abilities might give different effects.
-You might for example encounter an electrified shark-jellyfish hybrid that stuns its prey --- attacking with a shock that reduces your #term("Action Point", key: "Action Points") regeneration by 1 for each #term[Success], instead of dealing damage directly.
+#term("Successes", key: "Success") gained when Attacking usually grant +1 damage to the Attack, but abilities can cause other unique effects.
+You might for example encounter an electrified shark-jellyfish hybrid that stuns its prey --- attacking with a shock that reduces your #term("Action Point", key: "Action Points") regeneration by 1 for each #term[Success].
 
 == Tag Team Rolls
 <tag-team-rolls>
 Once per #term("Shift", key: "Shifts") per character, players may initiate a #term("Tag Team Roll", is_definition: true).
 
-To initiate a #term[Tag Team Roll], each participant spends 1 Focus in addition to what other resources they would normally spend and makes their respective rolls to construct a pool of die results. To resolve the roll, the players choose 2 dice from the constructed pool, which becomes the result of the roll.
+Each participant spends 1 #term[Focus] in addition to what other resources they would normally spend and makes their respective rolls to construct a pool of die results.
+To resolve the roll, the players choose 2 dice from the constructed pool, which becomes the result of the roll.
 
-The roll counts as an #term("Action Roll", key: "Action Rolls"), and any features or modifications that would activate from a roll do so as normal. If multiple characters would trigger the same effect, only one resolves.
+This counts as an #term("Action Roll", key: "Action Rolls"), triggering any features or modifications that would activate as normal.
+If multiple characters would trigger the same effect, only one resolves.
 
-The GM can at any point initiate a #term[Tag Team Roll] for the party, with no cost to the characters.
+The GM can at any point initiate a #term[Tag Team Roll] for the party, at no cost for the characters involved.
 
-#term("Tag Team Rolls", key: "Tag Team Roll"). can be initiated during combat, given that all participants act during the same #term("Phase", key: "Phases").
+During combat, all participants of a #term("Tag Team Roll", key: "Tag Team Roll") must act during the same #term("Phase", key: "Phases").
