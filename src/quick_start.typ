@@ -82,7 +82,7 @@
 #show ref: strong
 
 // Bringing in all of the chapters
-#include "quick_start_chapters/setting.typ"
+#include "quick_start_chapters/makkeo.typ"
 #pagebreak()
 #include "quick_start_chapters/core_rules.typ"
 #pagebreak()
@@ -95,6 +95,8 @@
 #include "quick_start_chapters/equipment.typ"
 #pagebreak()
 #include "quick_start_chapters/exploration.typ"
+#pagebreak()
+#include "quick_start_chapters/setting.typ"
 #pagebreak()
 
 // Changing the styling for the appendices and onwards

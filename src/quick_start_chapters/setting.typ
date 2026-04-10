@@ -2,69 +2,68 @@
 
 = Setting
 <setting>
-A millenia ago a group of scientists on the planet #term("Makkeo", is_definition: true) discovered an alternate energy source, connecting their world to another through #term("Mana Gates", is_definition: true).
-Though incompatible with existing technology due to its disruption of magnetic fields, the seemingly infinite energy source propelled the people of #term[Makkeo] into a new techological revolution.
-That is, until the #term[Mana Gates] brought something else with them.
+// Should probably limit the "known world" to a single continent or less, and also limit the factions to certain regions within said continent
 
-The first #term("Titan", key: "Titans", is_definition: true) emerged decades after #term[Mana Gates] had been widely adopted, but within a year a dozen more came, each bringing a city or more down with them.
-Mana concentration spiked to levels where #term[Mana Gates] manifested on their own, marking the beginning of #term("The Collapse", is_definition: true).
-The mana in the air caused creatures to mutate uncontrollably and neutralized #term[Makkeo]'s magnetic fields, rendering the planet defenseless against the sun's radiation.
+== History
+// Just the biggest events that most people in the modern day would know about
 
-The destabilization wrought by #term[The Collapse] to the world dried up the seas and turned the land arid.
-#term("Mana Zones"), with #term[Mana Gates] and #term[Titans] at their center plague the lands, but also act as oases of water and corrupted plant life.
-In addition to the hostile vegetation, creatures twisted by Mana known as #term("Abberations", is_definition: true) also roam these zones.
+=== The Collapse
 
-Due to the danger inherent in living in these areas of dense Mana, most of civilization is found in the dry wastes away from the Gates.
-None of these were greater than #term("Sanctuary", is_definition: true, glossary_type: glossary_types.location), a frontier in mana research and the last major bastion of humanity.
-With research facilities spread around the land, #term("Sanctuary", glossary_type: glossary_types.location) laid the foundation of #term("Mana Tech", is_definition: true) capable of wounding #term[Titans].
-However, #term("Sanctuary", glossary_type: glossary_types.location)’s research on mana ultimately lead to its downfall, as the dense mana of the growing metropolis attracted both #term[Aberrants] and #term[Titanspawn] alike.
+=== Sanctuary's Founding
 
-The influence of #term("Sanctuary", glossary_type: glossary_types.location) can be felt to this day.
-#term[Mana Tech] gathered from its ruins is highly valued, and many of the major factions in today's landscape has their roots in the once great city.
+=== [Second Moon] Darkens
 
-#colbreak()
-#term("The Understanding", is_definition: true, glossary_type: glossary_types.faction) and #term("The Council of Kaleina", is_definition: true, glossary_type: glossary_types.faction) both attempt to make sense of the world they live in through their own means.
-\
-#term("The Children of Og", is_definition: true, glossary_type: glossary_types.faction) worship #term[Titans] as deities come to transform the world, and expose themselves to mana to get closer to true enlightenment.
-\
-#term("[Titanslayer Religion]", is_definition: true, glossary_type: glossary_types.faction) are at odds with #term("The Children of Og", glossary_type: glossary_types.faction) in their search of #term("The Titanslayer", is_definition: true), a being prophesized to liberate the world from the looming threat of #term[Titans].
+=== Destruction of Sanctuary
 
-One of the most important vestiges of #term("Sanctuary", glossary_type: glossary_types.location) are the #term("Hunters", is_definition: true, glossary_type: glossary_types.faction).
-The name given to those brave enough to risk their lives in the danger-infested Mana Zones for the resources necessary for the pockets of civilization to survive.
-Largely split into smaller independent groups, #term("Hunters", glossary_type: glossary_types.faction) often find themselves taking on requests from the various factions, though they are not beholden to any of them.
+=== First Titan Falls
 
-But #term("Hunters", glossary_type: glossary_types.faction) bring more than just resources back from the Mana Zones, they bring hope.
-The people of #term[Makkeo] has long clung onto the belief that if they could slay the #term[Titans] and close the #term[Mana Gates], the world would return to how it once was.
-And after many years, a #term("Hunter", glossary_type: glossary_types.faction, key: "Hunters") by the name of #term("[First Titanslayer]", glossary_type: glossary_types.character, is_definition: true) managed to fell the first #term("Titan", key: "Titans"), bringing hope to both #term("[Titanslayer Religion]", glossary_type: glossary_types.faction) and the people of #term[Makkeo], marking the start of their resistance against the #term("Titan", key: "Titans") threat.
+=== Exploration of Sanctuary
 
-Now two decades have passed, and though some progress has been made against the #term[Mana Gates], no more #term[Titans] have fallen.
-#term("[First Titanslayer]", glossary_type: glossary_types.character) is growing old, casting #term("[Titanslayer Religion]", glossary_type: glossary_types.faction) into a crisis of faith as doubt of their prophecy spreads.
-Most of those who delve into the depths of the Mana-saturated areas do so out of need or duty, but some still dream of accruing enough power to one day fell a second #term("Titan", key: "Titans") and claim the title of . . .
+=== The Crowning
+// I'd fully forgot that a Titan died here. Will probably have to reconcile a bit with the Ahadi and The Titanslayer stuff.
 
-#align(center)[
-  #text(size: 18pt, weight: "bold", fill: gray)[Titanslayer]
-]
 
-// TODO: Should more worldbuilding be in a separate chapter later in the document?
-#pagebreak()
 == Factions
 
 === Hunters
+// Not really a faction, but fits well here?
 
 === The Council of Kaleina
+#term("The Council of Kaleina", is_definition: true, glossary_type: glossary_types.faction) is a group of scholars and scientists dedicated to understanding the nature of the world through research and experimentation.
+Researching and recording all kinds of mutated plants and their uses, they have the most comprehensive knowledge of the flora in the world, and their cloistered members are often sought after for their expertise in concocting medicines and poisons alike. 
 
-=== The University of Human Understanding
+Specializing in the study of plants, they often attract #term("Verdants", glossary_type: glossary_types.character) who seek to understand more of themselves.
+
+=== The Understanding
+#term("The Understanding", glossary_type: glossary_types.faction, is_definition: true) is one of the oldest active factions, with roots in a #term("Sanctuary", glossary_type: glossary_types.location) establishment known as #term("The University of Human Curiosity", is_definition: true, glossary_type: glossary_types.faction).
+Their core missions consist of the categorization and reconstruction of #term[Mana Tech], and the dissemination of knowledge from #term("Sanctuary", glossary_type: glossary_types.location).
+
+Where the Council of Kaleina seeks to understand how the world itself is affected by mana, #term("The University of Human Understanding", is_definition: true, glossary_type: glossary_types.faction) seeks ways to utilize said mana for the betterment of humanity.
 
 === The Children of Og
+#term("The Children of Og", is_definition: true, glossary_type: glossary_types.faction) worship the Titans as deities, awaiting the day that the primordial titan Og will touch the world and transform it into a paradise.
+Believing that learning to live with mutations is necessary in this world, they are often found in #term[Mana Zones], exposing themselves to mana in order to get closer to true enlightenment.
 
-=== [Titanslayer Religion]
+Although their radical beliefs and practices often put them at odds with other factions, their embrace of heavily mutated people set them apart as a safe haven for those feared and shunned by society.
 
-=== [2 branches of the moon religion?]
+=== The Ahadi
+// Ahadi is the Swahili word for "promise"
+The #term("Ahadi", is_definition: true, glossary_type: glossary_types.faction) are at odds with #term("The Children of Og", glossary_type: glossary_types.faction) in their search of #term("The Titanslayer", is_definition: true), a being prophesized to liberate the world from the looming threat of #term[Titans].
 
+Although they celebrated #term("Kwanza Fajiri", glossary_type: glossary_types.character, key: "Kwanza Fajiri") as the prophesized savior of their religion when she felled the first #term("Titan", key: "Titans") nearly 30 years ago, the lack of progress since her victory has cast doubt on their prophecy and put them into a crisis of faith.
 
+=== [The moon religion(s)?]
+// Split into two variants (Engelbrecht's militaristic one and a more peaceful one)
+
+=== [Latchkey Island Pirates]
 
 == People
+=== Kwanza Fajiri - The Titanslayer
+// Kwanza Fajiri is composed of the Swahili words for "first" (kwanza) and "dawn" (alfajiri)
+#term("Kwanza Fajiri", is_definition: true, glossary_type: glossary_types.character) is the first and only known Hunter to have slain a Titan, a great feat that has shaped most of her soon to be 60 years on #term("Makkeo"). 
+The #term("Ahadi", glossary_type: glossary_types.faction) gifted her the surname Fajiri, meaning dawn, as the prophesized savior of their religion.
 
+// Having experienced people sacrificing themselves for her sake for decades with litte progress, I imagine she's not particularly fond of neither her title nor her surname, often insisting "just Kwanza"
 
 
 == Creatures
@@ -74,4 +73,8 @@ Most of those who delve into the depths of the Mana-saturated areas do so out of
 
 === Titanspawn
 
-
+== Locations
+=== Sanctuary
+=== Sudden Mountain
+=== Latchkey Island
+=== Prey's End
