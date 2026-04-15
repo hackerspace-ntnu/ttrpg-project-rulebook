@@ -107,17 +107,17 @@
     },
     "Myrmex": {
         "name": "Myrmex",
-        "description": "Giant antlion",
-        "grit": 0,
+        "description": "Giant antlion. Can use the burrow ability to become stationary and get the Sand spit attack.",
+        "grit": 8,
         "durability": 0,
-        "size": 2,
-        "might": 1,
-        "agility": 2,
+        "size": 1,
+        "might": 2,
+        "agility": 1,
         "insight": 3,
-        "presence": 4,
-        "evasion": 5,
-        "heavy hit": 6,
-        "brutal hit": 7,
+        "presence": 1,
+        "evasion": 8,
+        "heavy hit": 13,
+        "brutal hit": 21,
         "speed": 1,
         "attacks": [
             {
@@ -133,7 +133,7 @@
         ],
         "abilities":
         [
-            "Burrow: Can burrow into the ground with its head sticking out"
+            "Burrow"
         ],
         "spells": []
     },
@@ -168,6 +168,9 @@
                     "enhancements": [],
                     "aoe": 3
                 }
+            },
+            {
+                "name": "Inferno"
             }
         ]
     },
@@ -203,13 +206,13 @@
     "The creature": {
         "name": "The creature",
         "description": "Large scaled jerboa-like creature with jagged carnivorous teeth and long lanky forearms ending in mantis claws",
-        "grit": 10,
+        "grit": 22,
         "durability": 6,
         "size": 1,
-        "might": 1,
-        "agility": 2,
+        "might": 2,
+        "agility": 4,
         "insight": 3,
-        "presence": 5,
+        "presence": 4,
         "evasion": 8,
         "heavy hit": 13,
         "brutal hit": 21,
@@ -228,7 +231,8 @@
         ],
         "abilities":
         [
-            "Grapple"
+            "Grapple",
+            "Leaper"
         ],
         "spells": []
     },
@@ -272,9 +276,33 @@
         "speed": 8,
         "attacks": [
             {
-                "name": "a",
-                "roll": "ma [this is a shorthand that would map to Might + Agility (1d6+1d8) in a visual representation]",
+                "name": "End Bart",
+                "roll": "pp [this is a shorthand that would map to Might + Agility (1d6+1d8) in a visual representation]",
                 "tags": ["tag1", "tag2"]
+            }
+        ],
+        "abilities": ["a"],
+        "spells": []
+    },
+        "Trombonautilus": {
+        "name": "Trombonautilus",
+        "description": "Looks like a weirdly shaped Nautilus. Releases soundwaves when startled or threathened, not too dissimilar to a trombone.",
+        "grit": 0,
+        "durability": 0,
+        "size": 1,
+        "might": 1,
+        "agility": 2,
+        "insight": 3,
+        "presence": 4,
+        "evasion": 5,
+        "heavy hit": 6,
+        "brutal hit": 7,
+        "speed": 8,
+        "attacks": [
+            {
+                "name": "Doot",
+                "roll": " [this is a shorthand that would map to Might + Agility (1d6+1d8) in a visual representation]",
+                "tags": ["Cone(40)"]
             }
         ],
         "abilities": ["a"],

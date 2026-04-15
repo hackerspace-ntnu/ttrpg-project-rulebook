@@ -54,7 +54,7 @@
     "tag": "Range",
     "focus_cost": 1,
     "ap_cost": 0,
-    "description": "The spell's origin can be within 5 Spaces"
+    "description": "The spell's origin can be within 5 Spaces."
   },
   "Sustain": {
     "name": "Sustain",
@@ -69,6 +69,13 @@
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "The spell does the opposite of its usual effect. Additional Successes count for the spell's new effects."
+  },
+  "Empower": {
+    "name": "Empower",
+    "tag": "Damage",
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": "You take 1 Damage in order to treat the spell as if it had 1 more Success. If the spell would miss or fail, this has no effect."
   },
   "": {
     "name": "",

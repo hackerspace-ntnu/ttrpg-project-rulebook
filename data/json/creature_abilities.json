@@ -24,6 +24,18 @@
     "tags": ["Passive"],
     "tier": 1,
     "description": "While in the canopy, the creature has Cover (1)"
+  }, 
+  "Leaper": {
+    "name": "Leaper",
+    "tags": ["Active"],
+    "tier": 1,
+    "description": "The creature can spend 1 AP to Jump twice its Speed, without provoking Retaliations"
+  },
+  "Burrow": {
+    "name": "Burrow",
+    "tags": ["Active"],
+    "tier": 1,
+    "description": "The creature has a Burrowing Speed equal to their Walking Speed"
   },
   "": {
     "name": "",

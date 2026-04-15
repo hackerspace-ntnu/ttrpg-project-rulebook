@@ -141,7 +141,7 @@
         "tier": 1,
         "focus_cost": 1,
         "ap_cost": 1,
-        "description": "Choose any point within your Speed and leap there without provoking reactions."
+        "description": "Spend 1 AP to Jump twice your Speed, without provoking Retaliations."
     },
     "Lesser Limb": {
         "name": "Lesser Limb",
@@ -195,7 +195,7 @@
         "tier": 1,
         "focus_cost": null,
         "ap_cost": null,
-        "description": "If you Sleep in direct sunlight, you gain the effects of eating a Ration"
+        "description": "If you Rest in direct sunlight, you gain the effects of eating a Ration"
     },
     "Puny": {
         "name": "Puny",

@@ -62,7 +62,7 @@ among these actions:
 To make an #term("Encounter Check", key: "Encounter Checks", is_definition: true) the GM rolls 2d8, with a 1 on either die meaning the Party will stumble upon the hex's Location, and an 8 on either die meaning an Encounter happens. 
 To determine the exact Encounter or Location, the GM consults the hex's roll tables.
 
-If the #term("Encounter Check", key: "Encounter Checks") crits (same number on both dice), the follwing happens:
+If the #term("Encounter Check", key: "Encounter Checks") crits (same number on both dice), the following happens:
 - A #term("Mana Surge", key: "Mana Surges") of intensity equal to the dice value occurs
 - The GM rolls the #term("Encounter Check", key: "Encounter Checks") again, adding whatever effects it causes to the result
 

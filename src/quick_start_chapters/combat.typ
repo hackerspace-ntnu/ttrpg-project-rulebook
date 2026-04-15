@@ -66,7 +66,7 @@ A character can perform at most 1 #term[Reaction] in response to any particular 
     attack], [The attack roll counts for both of you, but the damage taken is halved.], // TODO: Does this mean that the attack roll is applied to the protector's damage thresholds separately, meaning that one character could take more damage than the other?
   )]
   , kind: table
-  )
+)
 
 == Attacks and defense
 <attacks-and-defense>

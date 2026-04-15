@@ -35,17 +35,119 @@ Potential express by boat from the lake to the hunting grounds \
 
 = Setting
 == Environment
-=== Desert
+=== Salt Flats
+
+#figure(
+  align(center)[#table(
+    columns: (8%, 35%, 35%),
+    align: (right,left,left,),
+    table.header([1d8], [Encounter], [Location]),
+    table.hline(),
+    [1], [Creature or event], [Location],
+    [2], [a], [a],
+  )], kind: table
+)
+
+// #encounterTable("1d2", {
+//   "test": {
+//     "description": "a"
+//   }
+// })
+
+=== Gravel Plains
+#figure(
+  align(center)[#table(
+    columns: (8%, 35%, 35%),
+    align: (right,left,left,),
+    table.header([1d8], [Encounter], [Location]),
+    table.hline(),
+    [1], [Creature or event], [Location],
+    [2], [a], [a],
+  )], kind: table
+)
+
+
+=== Dunes
 Quicksand
 Sandstorm
+Sand flounders
 
-=== Desert ground with large plantlife bursting through
+#figure(
+  align(center)[#table(
+    columns: (8%, 35%, 35%),
+    align: (right,left,left,),
+    table.header([1d8], [Encounter], [Location]),
+    table.hline(),
+    [1], [Creature or event], [Location],
+    [2], [a], [a],
+  )], kind: table
+)
 
-=== Jungle, denser closer to hunting grounds
+
+=== Badlands
+#figure(
+  align(center)[#table(
+    columns: (8%, 35%, 35%),
+    align: (right,left,left,),
+    table.header([1d8], [Encounter], [Location]),
+    table.hline(),
+    [1], [Creature or event], [Location],
+    [2], [a], [a],
+  )], kind: table
+)
+
+
+=== Canyons
+#figure(
+  align(center)[#table(
+    columns: (8%, 35%, 35%),
+    align: (right,left,left,),
+    table.header([1d8], [Encounter], [Location]),
+    table.hline(),
+    [1], [Creature or event], [Location],
+    [2], [a], [a],
+  )], kind: table
+)
+
+
+=== Petrified Forest
+#figure(
+  align(center)[#table(
+    columns: (8%, 35%, 35%),
+    align: (right,left,left,),
+    table.header([1d8], [Encounter], [Location]),
+    table.hline(),
+    [1], [Creature or event], [Location],
+    [2], [a], [a],
+  )], kind: table
+)
+
+
 === Mesas
-=== Mesas with trees sticking horizontally out of the sides?
-=== Canyons?
-=== Canyons with trees?
+The creature (TM) is there somewhere
+#figure(
+  align(center)[#table(
+    columns: (8%, 35%, 35%),
+    align: (right,left,left,),
+    table.header([1d8], [Encounter], [Location]),
+    table.hline(),
+    [1], [Creature or event], [Location],
+    [2], [a], [a],
+  )], kind: table
+)
+
+=== Yardangs
+#figure(
+  align(center)[#table(
+    columns: (8%, 35%, 35%),
+    align: (right,left,left,),
+    table.header([1d8], [Encounter], [Location]),
+    table.hline(),
+    [1], [Creature or event], [Location],
+    [2], [a], [a],
+  )], kind: table
+)
+
 
 === The green mountains/mesas (because of jade, which is related to quetzalcoatl)
 - The Green Mesas?
@@ -70,6 +172,7 @@ Make sure the players find something cool/useful so they're not disappointed.
 
 
 == Big tree with ruins on them
+Baobab tree
 Visible from the lake
 Big tree suddenly grew below a village and carried several houses with it on the way up
 New world - mana tech can be found here
@@ -85,6 +188,7 @@ maybe denser growth
 Larger area where the beast normally hunts prey
 Cave used as a lair by the beast, could be ambushed here
 
+Mesa 
 
 
 == Creatures
@@ -98,4 +202,5 @@ Giant Quetzalcoatl infused with (lightning? fire?)
 Moved to creatures issue
 
 
-stick
+stick 
+bug

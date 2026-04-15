@@ -135,7 +135,8 @@
     "description": "Reconstruct the previous state of the targets, letting them regain 1 Grit. Every Success grants +1 healing.",
     "enhancements": [
         "Hurl",
-        "Splash"
+        "Splash",
+        "Empower"
     ]
   },
   "Control Water": {
@@ -238,8 +239,8 @@
     "enhancements": [
         "Distant Origin",
         "Expand",
-        "Splash",
-        "Hurl"
+        "Hurl",
+        "Empower"
     ]
   }
 }
