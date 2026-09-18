@@ -37,18 +37,13 @@
     "tier": 1,
     "description": "The creature has a Burrowing Speed equal to their Walking Speed"
   },
-  "": {
-    "name": "",
-    "tags": ["Damage", "Summon", "Utility", "Buff", "Debuff", "Healing", "Active", "Passive"],
+  "Envelop": {
+    "name": "Envelop",
+    "tags": ["Passive"],
     "tier": 1,
-    "ap_cost": 1,
-    "duration": "[Instantenous | End of Phase | 1 Round | Scene | Shift | Persistent ]",
-    "target": "[Self | Creature | Object | Space]",
-    "roll_type": "[Attack | Evasion (+5 rule) | Hit (ignores Evasion) | DC]",
-    "roll_dc": 5,
-    "range": 5,
-    "aoe": 0,
-    "aoe_type": ["Cube", "Cone", "Line", "Sphere", "Cylinder", "Emanation" ],
-    "description": "[Ability effect]"
+    "ap_cost": 0,
+    "duration": "Persistent",
+    "target": "Self",
+    "description": "The creature's size is unwrapped linked segments, which moves following the head of the creature. Each segment has 1/3rd the Grit of the creature, and destroying a segment will split the creature, rendering the back part inert. If the creature ever fully envelops a target, the creature can instantly make an Attack against the target with Boon(3)."
   }
 }

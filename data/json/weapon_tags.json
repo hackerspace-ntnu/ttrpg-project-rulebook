@@ -1,5 +1,5 @@
 [
-    {
+  {
     "name": "Arm Attachment",
     "description": "Cannot be used to make attacks, but leaves your hand open. If in the same hand as another Weapon, you lower the die size of both die for all Attack Rolls made with that weapon by 1. If you can't reduce the die size any further you instead halve the die result."
   },
@@ -81,5 +81,9 @@
     "name": "Impact",
     "description": "When hitting with this weapon, the attack deals N Knockback",
     "parameter": "N"
+  },
+  {
+    "name": "Infiltrator",
+    "description": "This weapon ignores Armor"
   }
 ]

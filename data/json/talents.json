@@ -25,6 +25,84 @@
       "description": "Gain an amount of Boon equal to the number of Wounds you have on the next roll."
     }
   ],
+  "Commander": [
+    {
+      "name": "Charge!",
+      "category": "Presence",
+      "tag": "Active",
+      "focus_cost": 0,
+      "ap_cost": 1,
+      "description": "Designate a point on the battlefield. Command an ally to Move towards that point for free, without proviking Retaliations."
+    },
+    {
+      "name": "Hold!",
+      "category": "Presence",
+      "tag": "Active",
+      "focus_cost": 0,
+      "ap_cost": 1,
+      "description": "Designate an ally. Any Attack Actions made against the ally until the start of their next Phase will have Bane(1).You can now spend additional AP to have your Commander Abilities affect more allies, with a max total AP limit of 2. Each ally must receive the same exact command."
+    },
+    {
+      "name": "Strike!",
+      "category": "Presence",
+      "tag": "Active",
+      "focus_cost": 0,
+      "ap_cost": 1,
+      "description": "Designate a target. Command an ally to take a 1 AP Attack Action against the target for free. You can now spend additional AP to have your Commander Abilities affect more allies, with a max total AP limit equal to your Presence Mod (minimum of 2). Each ally must receive the same exact command."
+    }
+  ],
+  "Gambler": [
+    {
+      "name": "Double Down",
+      "category": "General",
+      "tag": "Active",
+      "focus_cost": 1,
+      "ap_cost": 0,
+      "description": "When you fail a roll you may Double Down, rolling again with a chance of turning failure into success. If this roll fails the consequences are doubled, and you can not Double Down again."
+    },
+    {
+      "name": "Calculated Risk",
+      "category": "General",
+      "tag": "Active",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "When targeted by an attack, you may leave yourself open, giving the attacker Boon(1) on the attack. In return, the attacker is left open, granting all attacks against it Boon(1) until its next Phase."
+    },
+    {
+      "name": "Greater Counter",
+      "category": "General",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "If you're granted the opportunity to Retaliate in response to an Attack with Boon made against you, you may Retaliate twice."
+    }
+  ],
+  "Oracle": [
+    {
+      "name": "",
+      "category": "",
+      "tag": "",
+      "focus_cost": 1,
+      "ap_cost": 0,
+      "description": "."
+    },
+    {
+      "name": "Prescient Planner",
+      "category": "General",
+      "tag": "Active",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "You may spend Scrap while in the field to have retroactively purchased something useful. This ability is useable an amount of times equal to your Presence mod per Hunt."
+    },
+    {
+      "name": "Far Seer",
+      "category": "Presence",
+      "tag": "Active",
+      "focus_cost": 2,
+      "ap_cost": 0,
+      "description": "You're able to cast your vision over long distances. Roll your Presence die, and choose a hex within a number of steps of the number rolled. You learn the Hex's terrain type as well as either the Hex's location or highest threat creature."
+    }
+  ],
   "Protector": [
     {
       "name": "Protectlier",
@@ -33,14 +111,6 @@
       "focus_cost": 0,
       "ap_cost": 0,
       "description": "When you take the Protect Reaction, you may take the entire chunk of damage, instead of splitting it with the ally you're protecting."
-    },
-    {
-      "name": "Back to back",
-      "category": "General",
-      "tag": "Passive",
-      "focus_cost": 0,
-      "ap_cost": 0,
-      "description": "While adjacent to an ally with this ability, neither can be flanked."
     },
     {
       "name": "Valiant Aid",
@@ -129,7 +199,7 @@
       "tag": "Active",
       "focus_cost": 1,
       "ap_cost": 0,
-      "description": "Take an Action before your chosen Phase, paying the normal cost of the Action in addition to the Focus spent on this Ability."
+      "description": "Take an Action outside your chosen Phase, paying the normal cost of the Action in addition to the Focus spent on this Ability."
     },
     {
       "name": "Tactical Mind",
@@ -145,7 +215,33 @@
       "tag": "Active",
       "focus_cost": 0,
       "ap_cost": 0,
-      "description": "Gain 1 additional AP for this Round, but gain 1 less AP for the next Round."
+      "description": "Gain 1 additional AP for this Round, but gain 1 less AP for the next Round. Cannot be used two rounds in a row."
+    }
+  ],
+  "Team Player": [
+    {
+      "name": "Back to back",
+      "category": "General",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "While adjacent to an ally, neither you nor they can be flanked."
+    },
+    {
+      "name": "None Left Behind",
+      "category": "General",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "You count as Adjacent to Allies within 2 Spaces for the sake of your own Abilities that rquire adjacency."
+    },
+    {
+      "name": "Tag Team Tycoon",
+      "category": "General",
+      "tag": "Active",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "Once per day, you may initiate an extra Tag Team with any adjacent allies."
     }
   ]
 }

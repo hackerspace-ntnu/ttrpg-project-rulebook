@@ -46,7 +46,7 @@ These are things like a flint and steel, a pocket knife, a letter, or a sentimen
     align: (left,left,left,left,left,left,),
     table.header([], [#term("Evasion", is_definition: true) \ + Agility Mod\ + Insight Mod], [#term("Heavy Hit", is_definition: true)\ +
       Might Mod\ + Presence Mod], [#term("Brutal Hit", is_definition: true)\*\ + Might Mod\ + Presence
-      Mod], [Max Grit], [Speed],),
+      Mod], [Durability], [Speed],),
     table.hline(),
     [No armor], [2], [6], [11], [0], [+1],
     [Light armor], [3], [7], [12], [2], [],

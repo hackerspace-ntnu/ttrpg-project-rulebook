@@ -32,8 +32,7 @@ Each character has 4 #term("Attributes", is_definition: true) that are represent
     term("Agility", is_definition: true), [Speed, dexterity, flexibility and balance], [\+ mod to
     Speed],
     term("Insight", is_definition: true), [Ability to discover and reason about information], [\Boon dice can never roll lower than your Insight mod],
-    term("Presence", is_definition: true), [Inner focus and the power to inspire or command], [\+
-    mod to Focus],
+    term("Presence", is_definition: true), [Inner focus and the power to inspire or command], [\+ mod to Focus],
   )]
   , supplement: none
   , caption: [Attribute Table]
@@ -41,7 +40,7 @@ Each character has 4 #term("Attributes", is_definition: true) that are represent
 ) <attribute-table>
 
 On creation, arrange \[d4, d6, d6, d8\] how you want your character's
-attributes to be.
+attributes to be. Then you gain a #term("Core Ability", key: "Core Abilities") for your highest #term("Attribute", key: "Attributes").
 
 == Heritages
 #term("Heritage", key: "Heritages", is_definition: true) define the lineage of your character, and comes with #term[Mutations] that your character starts with.
@@ -49,16 +48,16 @@ attributes to be.
 
 == Backgrounds
 #term("Backgrounds", is_definition: true) describe what your character has been doing before venturing into the wilds as a #term("Hunter", key: "Hunters", glossary_type: glossary_types.faction).
-Each #term("Background", key: "Backgrounds") can be invoked for non-combat rolls to gain #boon(1) on the roll, given it makes sense for it to help in the narrative.
-Furthermore, you gain a single tier 1 #term("Ability", key: "Abilities") of the #term("Attribute", key: "Attributes") denoted by your #term("Background", key: "Backgrounds").
+#term("Backgrounds") can be invoked for non-combat rolls to gain #boon(1) on the roll, given it makes sense for it to help in the narrative.
 
+Furthermore, when choosing your #term("Background", key: "Backgrounds") you gain a single tier 1 #term("Ability", key: "Abilities") of the #term("Attribute", key: "Attributes") denoted by your #term("Background", key: "Backgrounds").
 
 == Mutations
 // TODO: Looks like this rule applies for all links after this point in the character creation document, including those to tables or terms. How do we feel about that?
 //#show link: underline
 Choose any #term("Mutations", is_definition: true) you'd like from the #link(<mutation-table>)[Mutation Table] (#link("https://docs.google.com/document/d/1zkKA1ifbYqop71Pm5RrK5ofa_Z9V3Yyyje8CdN3MKn4/edit?tab=t.eulwm9krcgii")[#text(fill: purple)[#underline[document]]]), or make up your own, then notify the GM of your choices. 
-The first 2 tiers worth of #term[Mutations], are free.
-For each tier past the first 2, one of your #term[Focus] is permanently #term("Corrupted", key: "Corrupted Focus") for each tier of the chosen #term[Mutations].
+But power comes at a cost.
+One of your #term[Focus] is permanently #term("Corrupted", key: "Corrupted Focus") for each tier of the chosen #term[Mutations].
 
 == Archetypes
 If you're not sure where to start in terms of attributes, weapons,

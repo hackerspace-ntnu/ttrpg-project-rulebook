@@ -29,10 +29,10 @@ Largely split into smaller independent groups, #term("Hunters", glossary_type: g
 
 But #term("Hunters", glossary_type: glossary_types.faction) bring more than just resources back from the Mana Zones, they bring hope.
 The people of #term[Makkeo] has long clung onto the belief that if they could slay the #term[Titans] and close the #term[Mana Gates], the world would return to how it once was.
-And after many years, a #term("Hunter", glossary_type: glossary_types.faction, key: "Hunters") by the name of #term("Kwanza", glossary_type: glossary_types.character, key: "Kwanza Fajiri") managed to fell the first #term("Titan", key: "Titans"), bringing hope to both the #term("Ahadi", glossary_type: glossary_types.faction) and the people of #term[Makkeo], marking the start of their resistance against the #term("Titan", key: "Titans") threat.
+And after many years, a #term("Hunter", glossary_type: glossary_types.faction, key: "Hunters") by the name of #term("Sorin", glossary_type: glossary_types.character, key: "Sorin Fajiri") managed to fell the first #term("Titan", key: "Titans"), bringing hope to both the #term("Ahadi", glossary_type: glossary_types.faction) and the people of #term[Makkeo], marking the start of their resistance against the #term("Titan", key: "Titans") threat.
 
 Now two decades have passed, and though some progress has been made against the #term[Mana Gates], no more #term[Titans] have fallen.
-#term("Kwanza", glossary_type: glossary_types.character, key: "Kwanza Fajiri") is growing old, casting the #term("Ahadi", glossary_type: glossary_types.faction) into a crisis of faith as doubt of their prophecy spreads.
+#term("Sorin", glossary_type: glossary_types.character, key: "Sorin Fajiri") is growing old, casting the #term("Ahadi", glossary_type: glossary_types.faction) into a crisis of faith as doubt of their prophecy spreads.
 Most of those who delve into the depths of the Mana-saturated areas do so out of need or duty, but some still dream of accruing enough power to one day fell a second #term("Titan", key: "Titans") and claim the title of . . .
 
 #align(center)[

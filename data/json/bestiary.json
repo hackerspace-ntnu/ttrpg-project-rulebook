@@ -17,10 +17,13 @@
             {
                 "name": "attack name",
                 "roll": "ma [this is a shorthand that would map to Might + Agility (1d6+1d8) in a visual representation]",
-                "tags": ["tag1", "tag2"]
+                "tags": ["tag1", "tag2"],
+                "aoe_type": "",
+                "aoe_size": 1,
+                "description": ""
             }
         ],
-        "abilities": ["Focus: This creature has 12 Focus [I'm imagining most creatures don't have focus, unless they have abilities that would use so much focus that they could run out in a fight]"],
+        "abilities": [],
         "spells": [{
             "name": "",
             "overrides": {
@@ -55,7 +58,7 @@
     "Tyrannosaurus Avis": {
         "name": "Tyrannosaurus Avis",
         "description": "Massive flightless birds with powerful crushing beaks. Convergently evolved to be similar in build to the Tyrannosaurus Rex of old.",
-        "grit": 20,
+        "grit": 24,
         "durability": 0,
         "size": 3,
         "might": 5,
@@ -84,7 +87,7 @@
     "Inverted Giraffe": {
         "name": "Inverted Giraffe",
         "description": "Extremely skilled climbers that roam the canopies of trees, stretching their long necks down to the undergrowth to forage, but retracting them up into the canopy to be safe from terrestrial predators.",
-        "grit": 8,
+        "grit": 10,
         "durability": 0,
         "size": 2,
         "might": 2,
@@ -107,7 +110,7 @@
     },
     "Myrmex": {
         "name": "Myrmex",
-        "description": "Giant antlion. Can use the burrow ability to become stationary and get the Sand spit attack.",
+        "description": "Giant antlion. Has to be partially in the ground and stationary to use the sand spit attack.",
         "grit": 8,
         "durability": 0,
         "size": 1,
@@ -123,7 +126,7 @@
             {
                 "name": "Sand spit",
                 "roll": "mi",
-                "tags": ["Loading (1)", "Crush (1)"]
+                "tags": ["Loading (1)", "Crush (1)", "Ranged (10)"]
             },
             {
                 "name": "Bite",
@@ -139,8 +142,8 @@
     },
     "Xolotl": {
         "name": "Xolotl",
-        "description": "Giant Quetzalcoatl",
-        "grit": 38,
+        "description": "Titan - Giant Quetzalcoatl",
+        "grit": 44,
         "durability": 0,
         "size": 4,
         "might": 4,
@@ -203,9 +206,9 @@
         "abilities": null,
         "spells": []
     },
-    "The creature": {
-        "name": "The creature",
-        "description": "Large scaled jerboa-like creature with jagged carnivorous teeth and long lanky forearms ending in mantis claws",
+    "Olento": {
+        "name": "Olento",
+        "description": "Finnish for 'the creature'. Large scaled jerboa-like creature with jagged carnivorous teeth and long lanky forearms ending in mantis claws",
         "grit": 22,
         "durability": 6,
         "size": 1,
@@ -238,8 +241,8 @@
     },
     "Blemmye": {
         "name": "Blemmye",
-        "description": "",
-        "grit": 0,
+        "description": "This entity resembles a human sans a head and sports its facial features on its chest.",
+        "grit": 14,
         "durability": 0,
         "size": 1,
         "might": 1,
@@ -252,13 +255,18 @@
         "speed": 8,
         "attacks": [
             {
-                "name": "headbutt",
-                "roll": "presence [this is a shorthand that would map to Might + Agility (1d6+1d8) in a visual representation]",
-                "tags": ["tag1", "tag2"]
+                "name": "Headbutt",
+                "roll": "ma",
+                "tags": ["tag2"]
             }
         ],
-        "abilities": ["This entity resembles a human sans a head and sports its facial features on its chest."],
-        "spells": []
+        "abilities": [],
+        "spells": [{
+            "name": "Steal Mutation"
+        },{
+            "name": "Psychic Blast",
+            "tags": "Loading(2)"
+        }]
     },
         "BARTENDER": {
         "name": "BARTENDER",
@@ -284,7 +292,7 @@
         "abilities": ["a"],
         "spells": []
     },
-        "Trombonautilus": {
+    "Trombonautilus": {
         "name": "Trombonautilus",
         "description": "Looks like a weirdly shaped Nautilus. Releases soundwaves when startled or threathened, not too dissimilar to a trombone.",
         "grit": 0,
@@ -302,10 +310,179 @@
             {
                 "name": "Doot",
                 "roll": " [this is a shorthand that would map to Might + Agility (1d6+1d8) in a visual representation]",
-                "tags": ["Cone(40)"]
+                "tags": ["Cone(40)", "Infiltrator"],
+                "description": ""
             }
         ],
         "abilities": ["a"],
+        "spells": []
+    },
+    "Redoxic Salt Tortoise": {
+        "name": "Redoxic Salt Tortoise",
+        "description": "A giant pale tortoise with salt crystals on its back. Lives in areas of high salt concentration, which it uses to fuel a number of its abilities.",
+        "grit": 16,
+        "durability": 6,
+        "size": 2,
+        "might": 4,
+        "agility": 1,
+        "insight": 2,
+        "presence": 3,
+        "evasion": 4,
+        "heavy hit": 17,
+        "brutal hit": 22,
+        "speed": 3,
+        "attacks": [
+            {
+                "name": "Bite",
+                "roll": "ma",
+                "tags": ["Melee", "Sharp(1)", "Reach(2)"]
+            },
+            {
+                "name": "Tail Swipe",
+                "roll": "mi",
+                "tags": ["Melee"],
+                "aoe_type": "Swipe",
+                "aoe_size": 3
+            }
+        ],
+        "abilities": [""],
+        "spells": [{
+            "name": "Discharge",
+            "overrides": {
+                "enhancements": [
+                    "Expand"
+                ]
+            }
+        }]
+    },
+    "Rustacean": {
+        "name": "Rustacean",
+        "description": "Crab like creature whose shell is made out of heavily oxidized iron. The orangy color kind of makes it reminiscent of its ancestors of old. Has excellent memory retention and never forgets!",
+        "grit": 12,
+        "durability": 6,
+        "size": 1,
+        "might": 2,
+        "agility": 2,
+        "insight": 4,
+        "presence": 1,
+        "evasion": 1,
+        "heavy hit": 10,
+        "brutal hit": 15,
+        "speed": 4,
+        "attacks": [
+            {
+                "name": "Pincer crush",
+                "roll": "mi",
+                "tags": ["Melee", "Crush(1)"]
+            }
+        ],
+        "abilities": ["Can rust any equipment or object made out of iron that it touches. This counts as dealing 2 damage."],
+        "spells": []
+    },
+    "Angler Phish": {
+        "name": "Angler Phish",
+        "description": "Fish that lies near water edges and will attempt to hook in nearby land creatures. Reverse fishing.",
+        "grit": 12,
+        "durability": 0,
+        "size": 1,
+        "might": 1,
+        "agility": 1,
+        "insight": 3,
+        "presence": 4,
+        "evasion": 5,
+        "heavy hit": 6,
+        "brutal hit": 7,
+        "speed": 4,
+        "attacks": [
+            {
+                "name": "Reverse Fishing",
+                "roll": "ip",
+                "tags": ["Ranged (10)"]
+            },
+            {
+                "name": "Crunch",
+                "roll": "mp",
+                "tags": ["Sharp (2)"]
+            }
+        ],
+        "abilities": ["Wrangle", "Social Distancing"],
+        "spells": []
+    },
+    "Troutbuchet": {
+        "name": "Troutbuchet",
+        "description": "Fish that will float up to the water surface and use its trebuchet-like tail to fling water at bystanders",
+        "grit": 8,
+        "durability": 0,
+        "size": 1,
+        "might": 1,
+        "agility": 2,
+        "insight": 2,
+        "presence": 2,
+        "evasion": 2,
+        "heavy hit": 6,
+        "brutal hit": 11,
+        "speed": 4,
+        "attacks": [
+            {
+                "name": "Water fling",
+                "roll": "ai",
+                "tags": ["Loading (1), Ranged (10)"]
+            }
+        ],
+        "abilities": [""],
+        "spells": []
+    },
+    "Antlion Eater": {
+        "name": "Antlion Eater",
+        "description": "Huge ant eater looking beaaaast. Likes to snack on myrmices, and is mostly non-hostile to people unless provoked.",
+        "grit": 16,
+        "durability": 0,
+        "size": 3,
+        "might": 4,
+        "agility": 1,
+        "insight": 2,
+        "presence": 2,
+        "evasion": 2,
+        "heavy hit": 6,
+        "brutal hit": 11,
+        "speed": 3,
+        "attacks": [
+            {
+                "name": "",
+                "roll": "",
+                "tags": [""]
+            }
+        ],
+        "abilities": [""],
+        "spells": []
+    },
+    "Crystal Python": {
+        "name": "Crystal Python",
+        "description": "Huge Python with crystal protrusions instead of normal scales.",
+        "grit": 16,
+        "durability": 0,
+        "size": 3,
+        "might": 3,
+        "agility": 3,
+        "insight": 1,
+        "presence": 2,
+        "evasion": 2,
+        "heavy hit": 6,
+        "brutal hit": 11,
+        "speed": 5,
+        "attacks": [
+            {
+                "name": "Crush",
+                "roll": "ma",
+                "tags": ["Crush(1)"]
+            },
+            {
+                "name": "Bite",
+                "roll": "ai",
+                "tags": [""]
+            }
+        ],
+        "abilities": ["Envelop"],
         "spells": []
     }
 }

@@ -69,6 +69,13 @@
         "description": "Your legs grow stronger, with a natural gear mechanism that allows tremendous leaps. These legs are very much like those of a grasshopper",
         "tier": 2
     },
+    "Marsupial Pouch": {
+        "name": "Marsupial Pouch",
+        "category": null,
+        "abilities": ["Deep Pockets"],
+        "description": "You develop a deep fleshy crevice of skin on your stomach.",
+        "tier": 1
+    },
     "Mask of Power": {
         "name": "Mask of Power",
         "category": null,
@@ -222,5 +229,12 @@
         "abilities": ["Rooted"],
         "description": "Your feet grow woody spurts that can root you into the ground.",
         "tier": 2
+    },
+    "Pure": {
+        "name": "Pure",
+        "category": "Heritage",
+        "abilities": ["Clear Mind", "Clear Mind"],
+        "description": "A rare breed in in world, your lineage has somehow avoided mutations over the years.",
+        "tier": 0
     }
 }

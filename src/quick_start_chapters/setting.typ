@@ -50,7 +50,7 @@ Although their radical beliefs and practices often put them at odds with other f
 // Ahadi is the Swahili word for "promise"
 The #term("Ahadi", is_definition: true, glossary_type: glossary_types.faction) are at odds with #term("The Children of Og", glossary_type: glossary_types.faction) in their search of #term("The Titanslayer", is_definition: true), a being prophesized to liberate the world from the looming threat of #term[Titans].
 
-Although they celebrated #term("Kwanza Fajiri", glossary_type: glossary_types.character, key: "Kwanza Fajiri") as the prophesized savior of their religion when she felled the first #term("Titan", key: "Titans") nearly 30 years ago, the lack of progress since her victory has cast doubt on their prophecy and put them into a crisis of faith.
+Although they celebrated #term("Sorin Fajiri", glossary_type: glossary_types.character, key: "Sorin Fajiri") as the prophesized savior of their religion when she felled the first #term("Titan", key: "Titans") nearly 30 years ago, the lack of progress since her victory has cast doubt on their prophecy and put them into a crisis of faith.
 
 === [The moon religion(s)?]
 // Split into two variants (Engelbrecht's militaristic one and a more peaceful one)
@@ -58,12 +58,12 @@ Although they celebrated #term("Kwanza Fajiri", glossary_type: glossary_types.ch
 === [Latchkey Island Pirates]
 
 == People
-=== Kwanza Fajiri - The Titanslayer
-// Kwanza Fajiri is composed of the Swahili words for "first" (kwanza) and "dawn" (alfajiri)
-#term("Kwanza Fajiri", is_definition: true, glossary_type: glossary_types.character) is the first and only known Hunter to have slain a Titan, a great feat that has shaped most of her soon to be 60 years on #term("Makkeo"). 
+=== Sorin Fajiri - The Titanslayer
+// Sorin Fajiri is composed of the Japanese name Sorin (so = first, rin = bell/chime) and Swahili word for "dawn" (alfajiri)
+#term("Sorin Fajiri", is_definition: true, glossary_type: glossary_types.character) is the first and only known Hunter to have slain a Titan, a great feat that has shaped most of her soon to be 60 years on #term("Makkeo"). 
 The #term("Ahadi", glossary_type: glossary_types.faction) gifted her the surname Fajiri, meaning dawn, as the prophesized savior of their religion.
 
-// Having experienced people sacrificing themselves for her sake for decades with litte progress, I imagine she's not particularly fond of neither her title nor her surname, often insisting "just Kwanza"
+// Having experienced people sacrificing themselves for her sake for decades with litte progress, I imagine she's not particularly fond of neither her title nor her surname, often insisting "just Sorin"
 
 
 == Creatures

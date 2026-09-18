@@ -1,4 +1,9 @@
+# Creature Grit Calculation
+Max Grit = ([sum of stats + size] - 4) * 2
 
+Alternative = ([sum of stats + size] - 5) * 2 + Might
+Alternative = (Might + Size - 1) * 2 + [sum of rest of stats] - 3
+Alternative = (Might + Size - 1) * 3 + [sum of rest of stats] - 5
 
 # ideas
 
@@ -15,7 +20,6 @@ Cube - Geometry given form, aquatic and lives like mola molas
 Terran Octopus - Octopus with long arms instead of tentacles
 Mermaids - https://i.redd.it/i8o4nmmx7fm01.png 
 Animals with the wrong teeth
-Terran flounder - Large, hides under sand to snatch victims
 Reverse mosquitoes - Large creatures that pump you full of a fluid to make you go pop
 Literally flying fish
 Sarlach or giant antlions
@@ -71,14 +75,8 @@ Large lizard with gemstones protruding out of its back
 Crystalline centipede-like creature that moves like a Jacob's ladder toy
 Consumes prey by trapping them between its joints?
 
-Large antlions spitting (acid or superheated sand?)
-
-Antlion Eater: A really, really big anteater with 
-
 Crystalline creatures that "build" themselves by breaking themselves open and inserting prey in the holes, that are slowly converted to the same type of crystalline material.
 If pieces break off they can forcibly reattach them by slamming them to their body, as the heat generated from the impact briefly melts the material, effectively gluing the parts together.
-
-Drov'kith
 
 Kinda struggling to put into words what I'm imagining, so here's a few different descriptors:
 - Scaled bat-like creatures, but with a slender snake-like body
@@ -99,4 +97,18 @@ Tartus
 Large metal snails
 - Scaly-foot gastropod, but large
 
+## Titans
+### [...] The Diseased
+A titan suffering from some sort of disease that's tearing it apart.
+Information on the disease is extremely valuable, as transferring it to other Titans could be a major step towards liberation.
 
+
+## Abilities
+### Salt-based attacks
+Sodium Shotgun: Shoot pellets of sodium which explode upon contact with blood. Deals +1 damage on Heavy+ hits.
+
+Dehydrate: Reduces Focus by the same amount as damage dealt?
+
+Hydrochloric Spout: A spray of hydrochloric acid in a cone. Deals +1 damage to armor.
+
+Electrolytic Shock: Emanation of electricity, bypasses armor.

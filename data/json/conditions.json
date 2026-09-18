@@ -1,0 +1,11 @@
+{
+    "Grappled": {
+        "name": "Grappled",
+        "description": "",
+        "parameter": "N"
+    },
+    "Prone": {
+        "name": "Prone",
+        "description": "Prone creatures must spend twice as much Speed to move and Melee attacks against them has Boon(1). A Prone creature can use the Move action to remove the condition if their speed is more than 0."
+    }
+}

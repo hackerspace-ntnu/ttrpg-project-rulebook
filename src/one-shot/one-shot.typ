@@ -43,16 +43,10 @@ Potential express by boat from the lake to the hunting grounds \
     align: (right,left,left,),
     table.header([1d8], [Encounter], [Location]),
     table.hline(),
-    [1], [Creature or event], [Location],
+    [1], [1d4 - 2 Redoxic Salt Tortoise], [Location],
     [2], [a], [a],
   )], kind: table
 )
-
-// #encounterTable("1d2", {
-//   "test": {
-//     "description": "a"
-//   }
-// })
 
 === Gravel Plains
 #figure(
@@ -61,7 +55,7 @@ Potential express by boat from the lake to the hunting grounds \
     align: (right,left,left,),
     table.header([1d8], [Encounter], [Location]),
     table.hline(),
-    [1], [Creature or event], [Location],
+    [1], [2d6 Steel Wooled Sheep], [Location],
     [2], [a], [a],
   )], kind: table
 )
@@ -69,8 +63,6 @@ Potential express by boat from the lake to the hunting grounds \
 
 === Dunes
 Quicksand
-Sandstorm
-Sand flounders
 
 #figure(
   align(center)[#table(
@@ -78,8 +70,11 @@ Sand flounders
     align: (right,left,left,),
     table.header([1d8], [Encounter], [Location]),
     table.hline(),
-    [1], [Creature or event], [Location],
-    [2], [a], [a],
+    [1], [1d4 + 1 Sand Flounders], [Buried ruins],
+    [2], [Sandstorm], [],
+    [3], [2d4 Myrmex], [],
+    [4], [1d4 Myrmex + 1d4-2 Antlion Eater (attacking Myrmex)], [],
+    [4], [1d4-3 Antlion Eater], [],
   )], kind: table
 )
 
@@ -91,7 +86,7 @@ Sand flounders
     align: (right,left,left,),
     table.header([1d8], [Encounter], [Location]),
     table.hline(),
-    [1], [Creature or event], [Location],
+    [1], [Rustacean], [Location],
     [2], [a], [a],
   )], kind: table
 )
@@ -104,8 +99,8 @@ Sand flounders
     align: (right,left,left,),
     table.header([1d8], [Encounter], [Location]),
     table.hline(),
-    [1], [Creature or event], [Location],
-    [2], [a], [a],
+    [1], [1d4-2 Tyrannosaurus Avis (not cooperating)], [Climbable wall],
+    [2], [A Time Vulture latches on to a party member. It will leave if the character enters a particularly dangerous area.], [Sheltered cave],
   )], kind: table
 )
 
@@ -117,8 +112,8 @@ Sand flounders
     align: (right,left,left,),
     table.header([1d8], [Encounter], [Location]),
     table.hline(),
-    [1], [Creature or event], [Location],
-    [2], [a], [a],
+    [1], [1d4 - 1 Mountainback], [Maze],
+    [2], [1 Crystal Python], [a],
   )], kind: table
 )
 
@@ -137,14 +132,17 @@ The creature (TM) is there somewhere
 )
 
 === Yardangs
+No need to roll for navigation, as the yardangs provide very clear indication of direction.
+If the part wants to cross the direction of the Yardangs, they do so at half movement speed.
+
 #figure(
   align(center)[#table(
     columns: (8%, 35%, 35%),
     align: (right,left,left,),
     table.header([1d8], [Encounter], [Location]),
     table.hline(),
-    [1], [Creature or event], [Location],
-    [2], [a], [a],
+    [1], [1d4-2 Blemmye], [Location],
+    [2], [1 Crystal Python], [a],
   )], kind: table
 )
 
@@ -152,7 +150,29 @@ The creature (TM) is there somewhere
 === The green mountains/mesas (because of jade, which is related to quetzalcoatl)
 - The Green Mesas?
 
+#figure(
+  align(center)[#table(
+    columns: (8%, 35%, 35%),
+    align: (right,left,left,),
+    table.header([1d8], [Encounter], [Location]),
+    table.hline(),
+    [1], [1d4 Inverted Giraffe], [Location],
+    [2], [a], [a],
+  )], kind: table
+)
 
+=== Lake and rivers
+#figure(
+  align(center)[#table(
+    columns: (8%, 35%, 35%),
+    align: (right,left,left,),
+    table.header([1d8], [Encounter], [Location]),
+    table.hline(),
+    [1], [1d4-1 Angler Phish], [Location],
+    [2], [1d6 Troutbuchet], [a],
+    [3], [1 Trombonautilus], [],
+  )], kind: table
+)
 
 
 = Points of Interest
@@ -189,6 +209,12 @@ Larger area where the beast normally hunts prey
 Cave used as a lair by the beast, could be ambushed here
 
 Mesa 
+
+== Maze
+The group has to solve a physical maze where the amount of navigation skills in the group determines the difficulty of the maze.
+Use a sheet of paper that overlays the maze with a cutout that represents the parts the party is able to see, which is moved by everyone like a lens on a ouija board.
+Encounter some desperate person who has become lost in this stone forest, and will probably die if not given food and water. 
+Maybe they're a member of the nomadic lake people. 
 
 
 == Creatures

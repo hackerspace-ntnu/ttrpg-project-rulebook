@@ -184,32 +184,6 @@
     "valid_weapon_tags": ["Durable"],
     "valid_weapon_types": null
   },
-  "Double Down": {
-    "name": "Double Down",
-    "category": "General",
-    "tag": "Active",
-    "focus_cost": 1,
-    "ap_cost": 0,
-    "description": "When you fail a roll you may Double Down, rolling again with a chance of turning failure into success. If this roll the consequences are doubled, and you can not Double Down again."
-  },
-  "Calculated Risk": {
-    "name": "Calculated Risk",
-    "category": "General",
-    "tag": "Passive",
-    "tier": 2,
-    "focus_cost": 0,
-    "ap_cost": 0,
-    "description": "When targeted by an attack, you may leave yourself open, giving the attacker Boon(1) on the attack. In return, the attacker is left open, granting all attacks against it Boon(1) until its next Phase."
-  },
-  "Command": {
-    "name": "Command",
-    "category": "Presence",
-    "tag": "Active",
-    "tier": 2,
-    "focus_cost": 1,
-    "ap_cost": 0,
-    "description": "Command an ally to take a 1 AP action, spending 1 Focus instead of the regular cost."
-  },
   "Kratonian": {
     "name": "Kratonian",
     "category": "Might",
@@ -253,24 +227,7 @@
     "tier": 2,
     "focus_cost": 0,
     "ap_cost": 0,
-    "description": "On spending Focus, you may choose to instead corrupt the same amount of Focus."
-  },
-  "Creative Accounting": {
-    "name": "Creative Accounting",
-    "category": "Insight",
-    "tag": "Active",
-    "tier": 3,
-    "focus_cost": 0,
-    "ap_cost": 0,
-    "description": "Gain 1 additional AP for this Round, but gain 1 less AP for the next Round."
-  },
-  "Prescient Planner": {
-    "name": "Prescient Planner",
-    "category": "General",
-    "tag": "Active",
-    "focus_cost": 0,
-    "ap_cost": 0,
-    "description": "Once per excursion, can spend Scrap while in the field to have retroactively purchased something useful."
+    "description": "On spending Focus, you may choose to instead saturate the same amount of Focus."
   },
   "Swift Forager": {
     "name": "Swift Forager",
@@ -282,7 +239,7 @@
   },
   "Sails": {
     "name": "Sails",
-    "category": "General",
+    "category": "Vehicle",
     "tag": "Passive",
     "focus_cost": 0,
     "ap_cost": 0,
@@ -290,7 +247,7 @@
   },
   "Radar": {
     "name": "Radar",
-    "category": "General",
+    "category": "Vehicle",
     "tag": "Active",
     "focus_cost": 1,
     "ap_cost": 0,
@@ -298,7 +255,7 @@
   },
   "Offroad Driver": {
     "name": "Offroad Driver",
-    "category": "General",
+    "category": "Vehicle",
     "tag": "Passive",
     "focus_cost": 0,
     "ap_cost": 0,
@@ -339,15 +296,6 @@
     "ap_cost": 0,
     "description": "Get advantage when rolling for mana saturation."
   },
-  "Far Seer": {
-    "name": "Far Seer",
-    "category": "General",
-    "tag": "Passive",
-    "tier": 1,
-    "focus_cost": 0,
-    "ap_cost": 0,
-    "description": "You can see the terrain in adjacent hexes if you're in a high place."
-  },
   "Flat Earther": {
     "name": "Flat Earther",
     "category": "General",
@@ -382,7 +330,7 @@
     "tier": 1,
     "focus_cost": 0,
     "ap_cost": 0,
-    "description": "You have a certain way with words, and as such tend to lie better. Gain Boon(10) at lie checks"
+    "description": "You have a certain way with words, and as such tend to lie better. Gain Boon(1) at lie checks"
   },
   "Secret Contact": {
     "name": "Secret Contact",

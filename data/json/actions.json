@@ -20,7 +20,7 @@
     "cost": 1
   },
   "Grapple": {
-    "description": "#term[Grapple] a target, granting a #term[Success] bonus to attacks against the target. Targets Evasion?",
+    "description": "#term[Grapple] a target, granting a #term("Success", key: "Successes") bonus to attacks against the target. Targets Evasion?",
     "cost": 1
   },
   "Ready": {

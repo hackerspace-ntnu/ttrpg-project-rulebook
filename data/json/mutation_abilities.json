@@ -44,6 +44,15 @@
         "ap_cost": 1,
         "description": "You change the way your skin and hair's color appears. This can be in any colors and any patterns. This ability can confer Boon(1) to stealth rolls."
     },
+    "Deep Pockets": {
+        "name": "Deep Pockets",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 1,
+        "focus_cost": null,
+        "ap_cost": null,
+        "description": "You have an extra Pocket space in your Character Sheet."
+    },
     "Detect Danger": {
         "name": "Detect Danger",
         "category": "Mutation",
@@ -286,7 +295,15 @@
         "focus_cost": 1,
         "ap_cost": 0,
         "description": "You are rooted into the ground; halting movement from all sources."
+    },
+    "Clear Mind": {
+        "name": "Clear Mind",
+        "category": "Mutation",
+        "tag": "Passive",
+        "tier": 0,
+        "focus_cost": 0,
+        "ap_cost": 0,
+        "description": "Once per Hunt you may mark this ability in place of using a Focus. If you would Corrupt a point of Focus, you may lose this Ability instead."
     }
-
 }
 

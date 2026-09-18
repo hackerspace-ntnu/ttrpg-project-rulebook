@@ -11,7 +11,7 @@
     "roll_dc": 5,
     "range": 5,
     "aoe": 0,
-    "aoe_type": ["Cube", "Cone", "Line", "Sphere", "Cylinder", "Emanation" ],
+    "aoe_type": ["Cube", "Cone", "Line", "Sphere", "Cylinder", "Emanation", "Swipe" ],
     "description": "[Spell effect]",
     "enhancements": [
         "[Name of spell enhancement]"
@@ -48,6 +48,24 @@
     "enhancements": [
         "Chain",
         "Invigorate"
+    ]
+  },
+  "Discharge": {
+    "name": "Discharge",
+    "tag": ["Damage", "Debuff"],
+    "tier": 1,
+    "focus_cost": 1,
+    "ap_cost": 2,
+    "duration": "Instantanous",
+    "target": "Self",
+    "roll_type": "Hit",
+    "range": 0,
+    "aoe": 1,
+    "aoe_type": "Emanation",
+    "description": "All targets within range are struck by electricity, taking 1 Damage, Shocking them until the end of the Phase. While Shocked, any creature's Evasion is halved.",
+    "enhancements": [
+      "Expand",
+      "Empower"
     ]
   },
   "Scald": {
@@ -188,6 +206,22 @@
         "Sustain"
     ]
   },
+    "Claim Mutation": {
+    "name": "Claim Mutation",
+    "tag": ["Debuff"],
+    "tier": 2,
+    "focus_cost": 3,
+    "ap_cost": 2,
+    "duration": "Shift",
+    "target": "Creature",
+    "roll_type": "Hit",
+    "range": 5,
+    "description": "You temporarily claim the mutation of another as your own. Determine randomly which mutation you steal, limited amongst mutations of Tier =< Successes",
+    "enhancements": [
+        "Duplicate",
+        "Sustain"
+    ]
+  },
   "Dread Obelisk": {
     "name": "Dread Obelisk",
     "tags": ["Utility"],
@@ -241,6 +275,21 @@
         "Expand",
         "Hurl",
         "Empower"
+    ]
+  },
+  "Psychic Blast": {
+    "name": "Psychic Blast",
+    "tags": ["Damage"],
+    "tier": 3,
+    "focus_cost": 3,
+    "ap_cost": 1,
+    "duration": "Instantenous",
+    "target": "Creature",
+    "roll_type": "Hit",
+    "range": 5,
+    "description": "0 Damage, ignores Armor, Impact(Damage Total)",
+    "enhancements": [
+        "[Name of spell enhancement]"
     ]
   }
 }

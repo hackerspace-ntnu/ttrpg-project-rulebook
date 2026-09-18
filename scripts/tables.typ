@@ -52,7 +52,7 @@ table(
       return true
     }
     else {
-      return tier == entry.category
+      return tier == entry.tier
     }
   }).sorted(key: it => (it.tier))
   columns(2,
@@ -84,6 +84,47 @@ table(
           linebreak()
         }
       }
+    })
+  }))
+}
+
+#let abilitiesTable(abilities, tier: none) = {
+  let entries = abilities.values().filter((entry) => {
+    if (tier == none) {
+      return true
+    }
+    else {
+      return tier == entry.tier
+    }
+  }).sorted
+  (key: it => {
+    if (it.category == "General") {
+      return "A"
+    }
+    else {
+      return it.category
+    }
+  }).sorted(key: it => it.at("tier", 0)).sorted(
+    key: it => (it.name)
+  )
+  columns(2,
+  gutter: 3em,
+  block(
+  for entry in entries {
+    block(
+      breakable: false,
+      fill: "#d7ebfa",
+      inset: (x: 1em, y: 1.2em),
+      radius: 1em,
+      {strong(entry.name) + "(" + str(entry.category) + ")" + h(1fr) + "Tier: " + str(entry.tier)
+      linebreak()
+      if (entry.category == none) {}
+      else {
+        entry.category 
+        linebreak()
+      }
+      entry.description
+      linebreak()
     })
   }))
 }

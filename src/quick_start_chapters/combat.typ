@@ -13,45 +13,47 @@ phase.
 
 == Actions
 <actions>
-If nothing else is specified, an Action costs 1 AP to use. Actions (and
-Free Actions) are subject to the #term("Repeated Action Penalty", is_definition: true) (RAP), which means every subsequent use of the same Action in your Phase costs 1 additional AP.
+If nothing else is specified, an #term("Action", is_definition: true, key: "Actions") costs 1 AP to use. 
+#term[Actions] divided into 5 categories: 
+- #term[Attack Actions]
+- #term[Move Actions]
+- #term[Utility Actions]
+- #term[Item Actions]
+- #term[Free Actions]
 
-If an #term("Ability", key: "Abilities") doesn't specify an Action to use, it doesn't stack RAP.
+The first 4 #term("Action Categories", is_definition: true) are subject to the #term("Repeated Action Penalty", is_definition: true) (RAP), which means every subsequent use of the same category in your Phase costs 1 additional AP.
 
-// TODO: Should all the actions be terms? Also, should Action, Free Action, etc. be terms in and of themselves?
-#term("Attack", is_definition: true) with a #term("Weapon", key: "Weapons") or #term("Cast", is_definition: true) a #term("Spell", key: "Spells") \
-// #term("Activate", is_definition: true) a #term("Mutation Ability", key: "Mutations") \
-#term("Help", is_definition: true) an ally with their next Action Roll (except Help), given that you can meaningfully impact it in the narrative, granting them a #boon("1 + 1 per Success"). \
-#term("Brawl", is_definition: true) with a target, making a #roll[Might][Insight] choosing either #term[Grapple] or #term[Shove] \
+If an #term("Ability", key: "Abilities") doesn't specify an #term("Action Category", key: "Action Categories") to use, it doesn't stack RAP.
+
+=== Attack Actions
+// TODO: Should all the actions be terms?
+#term("", key: "Attack Actions", is_definition: true)1 AP: #term("Attack", is_definition: true) with a #term("Weapon", key: "Weapons"). \
+Variable AP: #term("Cast", is_definition: true) a #term("Spell", key: "Spells").
+
+=== Move Actions
+#term("", key: "Move Actions", is_definition: true)0 AP: #term("Move", is_definition: true) up to your Speed. \
+0 AP: #term("Disengage", is_definition: true) from a single enemy, preventing your own movement from triggering Retaliations from them this phase. \
+
+=== Utility Actions
+#term("", key: "Utility Actions", is_definition: true)1 AP: #term("Parley", is_definition: true) with a target. \
+1 AP: #term("Brawl", is_definition: true) with a target, making a #roll[Might][Insight] choosing either #term[Grapple] or #term[Shove]. \
 - #term("Grapple", is_definition: true) a target, inflicting #term("Grappled") and granting #boon("Success") to the first Attack against the target. Targets Evasion. \
-- #term("Shove", is_definition: true) a target 1 Space + 1 per #term("Success", key: "Successes"). 2 Spaces of Shove can be traded to knock the target Prone. Targets Evasion. \
-#term("Ready", is_definition: true) an Action, paying its AP cost immediately. \
-#term("Interact", is_definition: true) with or #term("Use", is_definition: true) an item, or #term("Parley", is_definition: true) with a target.
+- #term("Shove", is_definition: true) a target 1 Space + 1 per #term("Success", key: "Successes"). 2 Spaces of Shove can be traded to knock the target Prone. Targets Evasion. 
 
+=== Item Actions
+#term("", key: "Item Actions", is_definition: true)0 AP: #term("Stow/Draw", is_definition: true) the Weapons or objects held in your hands to/from your #term[Quick Draw Inventory]. You can both Stow and Draw with a single activation of this Action. +1 AP to Stow to or Draw from #term[Inventory].\
+1 AP: #term("Interact", is_definition: true) with or #term("Use", is_definition: true) an item. \
+ 
+=== Free Actions
+<free-actions>
+#term("Free Actions", is_definition: true) are #term[Actions] you can take on your turn that are not affected by #term("RAP", key: "Repeated Action Penalty"), but each action can only be taken once.
 
-=== 0 AP Actions
-#term("Move", is_definition: true) up to your Speed. \
-#term("Disengage", is_definition: true) from a single enemy, preventing your own movement from triggering Retaliations from them this phase. \
-#term("Stow/Draw", is_definition: true) the Weapons or objects held in your hands to/from your #term[Quick Draw Inventory]. You can both Stow and Draw with a single activation of this Action. +1 AP to Stow/Draw to/from Inventory. 
-
-== Static Actions
-<static-actions>
-#term("Static Actions", is_definition: true) are #term[Actions] you can take on your turn that are not affected by #term("RAP", key: "Repeated Action Penalty").
-
-0 AP: #term("Charge", is_definition: true) your next Action, delaying its activation until the end of the next Phase, but granting you #boon(3) on it. You must pick a target Space for the Action when picking this option. \
+0 AP: #term("Charge", is_definition: true) your next Action, delaying its activation until the end of the next Enemy Phase, but granting you #boon(3) on it. You must pick a target Space for the Action when picking this option. \
 // TODO: Worded weirdly
 0 AP: #term("Push", is_definition: true) yourself, spending #term[Grit] in order to perform one of the
 following effects:
-- (repeatable +1 cost) 1 Grit for Boon(1) \
+- 1 Grit for Boon(1) \
 - 2 Grit to gain 1 AP
-
-
-== Reactions
-<reactions>
-Characters can take #term[Reactions] outside of their own #term("Phase", key: "Phases"), usually at the cost of #term[Focus].
-Each #term[Reaction] has a specific trigger that let characters use it. 
-One #term[Action] can only #term("Trigger", is_definition: true) one #term[Reaction]. 
-A character can perform at most 1 #term[Reaction] in response to any particular #term[Action].
 
 #figure(
   align(center)[#table(
@@ -60,13 +62,22 @@ A character can perform at most 1 #term[Reaction] in response to any particular 
     table.header([Name], [Cost], [Trigger\*], [Effect],),
     table.hline(),
     [Opportunity Attack], [1 Focus], [When target moves carelessly from
-    a Space in your #term[Threat]], [Take a Basic Attack\*\* action.],
-    [Activate Readied Action], [\-], [Custom], [Custom],
+    a Space in your #term[Threat]], [Use the Counter #term("Retaliation", key: "Retaliations") against the target.],
+    // [Activate Readied Action], [\-], [Custom], [Custom],
     [Protect], [1 Focus], [When an adjacent target is hit by an
-    attack], [The attack roll counts for both of you, but the damage taken is halved.], // TODO: Does this mean that the attack roll is applied to the protector's damage thresholds separately, meaning that one character could take more damage than the other?
+    Attack], [The attack roll counts for both of you, but the damage taken is halved.], // TODO: Does this mean that the attack roll is applied to the protector's damage thresholds separately, meaning that one character could take more damage than the other?
+    [Retaliate], [0 Focus], [You take 0 Damage or Conditions from a roll against your #term[Damage Thresholds]]
   )]
   , kind: table
 )
+
+== Reactions
+<reactions>
+Characters can take #term("Reactions", is_definition: true) outside of their own #term("Phase", key: "Phases"), usually at the cost of #term[Focus].
+- Each #term("Reaction", key: "Reactions") has a specific trigger for when it can be used. 
+- One #term("Action", key: "Actions") can only #term("Trigger", is_definition: true) one #term("Reaction", key: "Reactions") per character. 
+- A character can perform at most 1 #term("Reaction", key: "Reactions") in response to any particular #term("Action", key: "Actions").
+
 
 == Attacks and defense
 <attacks-and-defense>
@@ -78,8 +89,8 @@ There are three #term("Damage Thresholds", is_definition: true) that determine t
 Different characters have different thresholds based on their stats as described in the /*#link(<armor>, "Armor Table")*/ @armor-damage-thresholds.
 
 A roll higher than a creature's #term[Evasion] is a hit. 
-Rolling above the Heavy and Brutal hit thresholds each add +1 #term[Success] and may trigger additional abilities. 
-Every +5 above Brutal hit counts as a +1 success. Normally each #term[Success] means +1 #term[Damage], unless replaced with other abilities. 
+Rolling above the Heavy and Brutal hit thresholds each add +1 #term("Success", key: "Successes") and may trigger additional abilities. 
+Every +5 above Brutal hit counts as a +1 success. Normally each #term("Success", key: "Successes") means +1 #term[Damage], unless replaced with other abilities. 
 Certain actions such as #term[Grapple] ignore #term("Heavy", key: "Heavy Hit") and #term("Brutal", key: "Brutal Hit") thresholds and target Evasion directly, therefore using the standard +5 rule.
 
 You can #term("Block", is_definition: true) #term[Damage] with armor and weapons with the Durable tag.
@@ -97,8 +108,7 @@ If you take 0 Damage from an Attack, whether by Evading, Blocking, or
 other means, or if you have #term[Guard] remaining after it, you may Retaliate.
 Retaliation effects happen automatically with no roll needed.
 
-Below is a list of standard Retaliations, but certain Weapons,
-Mutations, and Feats can unlock more options.
+Below is a list of standard #term("Retaliations", is_definition: true), but certain Weapons, Mutations, and Feats can unlock more options.
 
 #figure(
   align(center)[#table(
@@ -108,8 +118,8 @@ Mutations, and Feats can unlock more options.
     table.hline(),
     [Step], [], [Step 1 + AGI mod Spaces without provoking opportunity
     attacks],
-    [Guard], [], [Gain 1 #term[Guard] until the start of your next acting
-    #term("Phase", key: "Phases")],
+    // [Guard], [], [Gain 1 #term[Guard] until the start of your next acting
+    // #term("Phase", key: "Phases")],
     [Counter], [Targeted by attack within #term[Threat] range], [Deal 1 damage
     to the Attacker],
     [Parry], [Targeted by attack within #term[Threat] range while wielding a
@@ -139,5 +149,7 @@ Ranged Weapons:
 
 == Wounds & Dying
 At 0 #term[Grit] you gain a #term("Wound", key: "Wounds", is_definition: true) and roll 1d8. If the result is under the number of #term[Wounds] they have, they die. 
-Otherwise, they regain #term[Grit] equal to the result and lose 1 AP next round for each point of damage exceeding 0 #term[Grit].
+Otherwise they lose 1 AP next #term("Round", key: "Rounds") for each point of #term[Damage] exceeding 0 #term[Grit], and regain #term[Grit] equal to the result of the roll.
 
+== Conditions
+// TODO: Parse conditions.json

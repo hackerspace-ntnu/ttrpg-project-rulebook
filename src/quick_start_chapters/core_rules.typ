@@ -57,20 +57,20 @@ Stacks of #term[Boons] and #term[Banes] cancel each other out, so Boon(3) and Ba
 === Additional Successes
 <additional-successes>
 You succeed by meeting or beating the DC of an #term("Action Roll", key: "Action Rolls");,
-and you gain an additional #term("Success", is_definition: true) for each 5 you roll above
+and you gain an additional #term("Success", is_definition: true, key: "Successes") for each 5 you roll above
 the DC.
 
-The benefit of a #term[Success] varies depending on the Action you
+The benefit of a #term("Success", key: "Successes") varies depending on the Action you
 were doing. Maybe you find more of the herbs you were searching for? Or
 you hid at just the right time to overhear a secretive conversation?
 
 Some rolls don't follow the rule that each 5 above the DC gives a
-#term[Success]. Attack Rolls for example instead target an opponent's
-#term[Damage Thresholds];, giving +1 #term[Success] for each
+#term("Success", key: "Successes"). Attack Rolls for example instead target an opponent's
+#term[Damage Thresholds];, giving +1 #term("Success", key: "Successes") for each
 threshold you hit (and then for each +5 after the last threshold).
 
-#term("Successes", key: "Success") gained when Attacking usually grant +1 damage to the Attack, but abilities can cause other unique effects.
-You might for example encounter an electrified shark-jellyfish hybrid that stuns its prey --- attacking with a shock that reduces your #term("Action Point", key: "Action Points") regeneration by 1 for each #term[Success].
+#term("Successes") gained when Attacking usually grant +1 damage to the Attack, but abilities can cause other unique effects.
+You might for example encounter an electrified shark-jellyfish hybrid that stuns its prey --- attacking with a shock that reduces your #term("Action Point", key: "Action Points") regeneration by 1 for each #term("Success", key: "Successes").
 
 == Tag Team Rolls
 <tag-team-rolls>
