@@ -6,9 +6,9 @@ Everyone needs a character in order to play. A character in Titanslayer consists
 
 All characters start with some base stats, most of which are modified by their #term[Attributes]: \
 // TODO: We should decide where to define these things.
-Max #term[Grit]: 7 \
-Max #term[Focus]: 7 \
-#term[Carrying Capacity]: 4 \
+Base #term[Grit]: 7 \
+Base #term[Focus]: 7 \
+Base #term[Carrying Capacity]: 4 \
 Base #term[Speed]: 3 Spaces
 
 #term("Grit", is_definition: true) is a measure of the physical and mental strain a character can withstand, acting similar to HP in other games.
