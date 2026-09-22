@@ -210,32 +210,35 @@
         "name": "Olento",
         "description": "Finnish for 'the creature'. Large scaled jerboa-like creature with jagged carnivorous teeth and long lanky forearms ending in mantis claws",
         "grit": 22,
-        "durability": 6,
+        "durability": 0,
         "size": 1,
         "might": 2,
         "agility": 4,
         "insight": 3,
         "presence": 4,
-        "evasion": 8,
-        "heavy hit": 13,
-        "brutal hit": 21,
+        "evasion": 9,
+        "heavy hit": 12,
+        "brutal hit": 17,
         "speed": 8,
         "attacks": [
             {
-                "name": "Punch",
+                "name": "Dropkick",
                 "roll": "ma",
                 "tags": ["Melee", "Knockback(2)"]
             },
             {
                 "name": "Slice",
-                "roll": "ma",
-                "tags": ["Melee", "Crush(1)"]
+                "roll": "ai",
+                "tags": ["Melee", "Crush(1)", "Light"]
             }
         ],
         "abilities":
         [
             "Grapple",
-            "Leaper"
+            "Leaper",
+            "Infiltrate",
+            "Swift Strike",
+            "Dirty Fighting"
         ],
         "spells": []
     },
@@ -466,9 +469,9 @@
         "agility": 3,
         "insight": 1,
         "presence": 2,
-        "evasion": 2,
-        "heavy hit": 6,
-        "brutal hit": 11,
+        "evasion": 7,
+        "heavy hit": 12,
+        "brutal hit": 17,
         "speed": 5,
         "attacks": [
             {

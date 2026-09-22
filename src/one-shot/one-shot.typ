@@ -70,7 +70,7 @@ Quicksand
     align: (right,left,left,),
     table.header([1d8], [Encounter], [Location]),
     table.hline(),
-    [1], [1d4 + 1 Sand Flounders], [Buried ruins],
+    [1], [1d4 + 1 Sand Flounders], [Buried ruins of an Old World school],
     [2], [Sandstorm], [],
     [3], [2d4 Myrmex], [],
     [4], [1d4 Myrmex + 1d4-2 Antlion Eater (attacking Myrmex)], [],
@@ -86,7 +86,7 @@ Quicksand
     align: (right,left,left,),
     table.header([1d8], [Encounter], [Location]),
     table.hline(),
-    [1], [Rustacean], [Location],
+    [1], [Rustacean], [Giant Fossil],
     [2], [a], [a],
   )], kind: table
 )

@@ -44,6 +44,6 @@
     "ap_cost": 0,
     "duration": "Persistent",
     "target": "Self",
-    "description": "The creature's size is unwrapped linked segments, which moves following the head of the creature. Each segment has 1/3rd the Grit of the creature, and destroying a segment will split the creature, rendering the back part inert. If the creature ever fully envelops a target, the creature can instantly make an Attack against the target with Boon(3)."
+    "description": "The creature's size is unwrapped linked segments, which moves following the head of the creature. Each segment has 1/3rd the Grit of the creature. Bringing a segment to 0 Grit will reduce the creature's Speed by 1, and destroying a segment by bringing it to negative its maximum Grit will split the creature, rendering the back part inert. If the creature ever fully envelops a target, the creature can instantly make an Attack against the target with Boon(2)."
   }
 }

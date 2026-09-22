@@ -14,7 +14,7 @@ At the start of each #term("Shift", key: "Shifts") spent inside of a #term("Mana
 == Shifts
 A day is divided into 6 #term[Shift], with one activity in Exploration mode usually taking one  #term("Shift", key: "Shifts").
 
-Explorers need rest. If a day's worth of #term("Shift", key: "Shifts") has passed since the party last used the Rest Activity, they will lose 2 #term[Grit] at the end of each #term[Shift].
+Explorers need rest. If a day's worth of #term("Shift", key: "Shifts") has passed since a character last used the Sleep Activity, they will lose 2 #term[Grit] at the end of each #term[Shift].
 Similarly, at the end of each day, if a character has not consumed a ration, they lose 2 #term[Grit] for each day gone without food.
 
 
@@ -33,7 +33,7 @@ among these actions:
     shifts if they are successful, but vehicles may shorten this time. When traversing terrain that is difficult to navigate, the navigator will make a check (Insight + Presence) to determine if the party can stay on course. \
 - #term("Search", is_definition: true)
   - The party explores the hex tile they are currently in to look for
-    interesting locations. Each member rolls a Search check (Insight +
+    interesting locations. Each member rolls a Search check (Might +
     Insight). If enough cumulative successes are rolled, the party finds
     a location. This check is made easier if the players have a vague
     idea of where it is. \
@@ -44,8 +44,8 @@ among these actions:
     than the size of the hunting party, they are ambushed by their prey.
     \
 - #term("Forage", is_definition: true)
-  - All participating characters roll forage (Intelligence +
-    Intelligence) checks, and the DC depends on how bountiful the
+  - All participating characters roll forage (Might +
+    Insight) checks, and the DC depends on how bountiful the
     targeted area is. \
 - #term("Rest", is_definition: true)
   - The party settle down to take a rest. Each player receives 2 Rest

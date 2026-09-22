@@ -193,15 +193,6 @@
     "ap_cost": 0,
     "description": "You can one-hand two-handed weapons."
   },
-  "Climber": {
-    "name": "Climber",
-    "category": "Agility",
-    "tag": "Passive",
-    "tier": 2,
-    "focus_cost": 0,
-    "ap_cost": 0,
-    "description": "Gain Boon(1) on attempts to climb and hold onto vertical surfaces and overhangs."
-  },
   "Hittable face": {
     "name": "Hittable face",
     "category": "Presence",
@@ -261,15 +252,6 @@
     "ap_cost": 0,
     "description": "No drawbacks from using suboptimal vehicle in difficult terrain."
   },
-  "Cat Fall": {
-    "name": "Cat Fall",
-    "category": "Agility",
-    "tag": "Passive",
-    "tier": 1,
-    "focus_cost": 0,
-    "ap_cost": 0,
-    "description": "Fall damage is halved."
-  },
   "Dubious Knowledge": {
     "name": "Dubious Knowledge",
     "category": "Insight",
@@ -314,8 +296,8 @@
     "ap_cost": 0,
     "description": "You barter away goods at a higher price, and acquire them at a discount. Get Boon(1) when trying to haggle."
   },
-  "Forget i Said That": {
-    "name": "Forget i Said That",
+  "Forget I Said That": {
+    "name": "Forget I Said That",
     "category": "Presence",
     "tag": "Active",
     "tier": 2,

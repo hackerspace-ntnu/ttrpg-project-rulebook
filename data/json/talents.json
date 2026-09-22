@@ -3,7 +3,7 @@
     {
       "name": "Reckless",
       "category": "General",
-      "tag": "Enhance",
+      "tag": "Active",
       "focus_cost": 0,
       "ap_cost": 0,
       "description": "Any Melee Attacks you make until the end of the Phase gain Boon(1), but all Attacks against you have Boon(1) until the end of the next Enemy Phase."
@@ -19,10 +19,36 @@
     {
       "name": "High Stakes",
       "category": "General",
-      "tag": "Active",
+      "tag": "Enhance",
       "focus_cost": 1,
       "ap_cost": 0,
       "description": "Gain an amount of Boon equal to the number of Wounds you have on the next roll."
+    }
+  ],
+  "Climber": [
+    {
+      "name": "Strong Fingers",
+      "category": "Might",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "You gain Boon(1) on checks to Climb and hold onto objects."
+    },
+    {
+      "name": "Cat Fall",
+      "category": "Agility",
+      "tag": "Active",
+      "focus_cost": 1,
+      "ap_cost": 0,
+      "description": "As a Reaction when you fall, you may roll your Agility die and reduce the fall damage by the number rolled."
+    },
+    {
+      "name": "Wall Run",
+      "category": "Agility",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "On a successful Climb check, you may move your full Speed along the surface."
     }
   ],
   "Commander": [
@@ -40,7 +66,7 @@
       "tag": "Active",
       "focus_cost": 0,
       "ap_cost": 1,
-      "description": "Designate an ally. Any Attack Actions made against the ally until the start of their next Phase will have Bane(1).You can now spend additional AP to have your Commander Abilities affect more allies, with a max total AP limit of 2. Each ally must receive the same exact command."
+      "description": "Designate an ally. Any Attack Actions made against the ally until the start of their next Phase will have Bane(1). You can now spend additional AP to have your Commander Abilities affect more allies, with a max total AP limit of 2. Each ally must receive the same exact command."
     },
     {
       "name": "Strike!",
@@ -115,6 +141,7 @@
     {
       "name": "Valiant Aid",
       "category": "Agility",
+      "tag": "Reaction",
       "focus_cost": 1,
       "ap_cost": 0,
       "description": "You may use the Protect Reaction on allies within your Speed, moving to a space adjacent to them."
@@ -125,7 +152,7 @@
       "tag": "Passive",
       "focus_cost": 0,
       "ap_cost": 0,
-      "description": "Enemies have Bane(1) to attack allies within your reach."
+      "description": "Enemies have Bane(1) to attack allies within your Reach."
     }
   ],
   "Pusher": [
