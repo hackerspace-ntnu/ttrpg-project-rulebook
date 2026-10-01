@@ -25,6 +25,38 @@
       "description": "Gain an amount of Boon equal to the number of Wounds you have on the next roll."
     }
   ],
+  "Bladeslinger": [
+    {
+      "name": "Swift Strike",
+      "category": "Agility",
+      "tag": "Active",
+      "focus_cost": 1,
+      "ap_cost": 0,
+      "description": "When you take the Move action, you may make an Attack with a Light weapon from your starting location.",
+      "valid_weapon_tags": ["Light"],
+      "valid_weapon_types": null
+    },
+    {
+      "name": "Return",
+      "category": "Agility",
+      "tag": "Enhance",
+      "focus_cost": 1,
+      "ap_cost": 0,
+      "description": "At the end of the current Phase the Weapon returns to your hand, dealing 1 damage to each unit it passes through on its way back.",
+      "valid_weapon_tags": ["Thrown"],
+      "valid_weapon_types": null
+    },
+    {
+      "name": "Random Bullshit Go!",
+      "category": "Agility",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "You may treat all Light weapons as if they have Thrown(5). If the weapon already has Thrown, its range increases by 3.",
+      "valid_weapon_tags": ["Light"],
+      "valid_weapon_types": null
+    }
+  ],
   "Climber": [
     {
       "name": "Strong Fingers",
@@ -103,18 +135,68 @@
       "description": "If you're granted the opportunity to Retaliate in response to an Attack with Boon made against you, you may Retaliate twice."
     }
   ],
-  "Oracle": [
+  "Tank Buster": [
     {
-      "name": "",
-      "category": "",
-      "tag": "",
-      "focus_cost": 1,
+      "name": "Crusher",
+      "category": "Might",
+      "tag": "Passive",
+      "focus_cost": 0,
       "ap_cost": 0,
-      "description": "."
+      "description": "Whenever you deal damage to Armor with a compatible Weapon, deal 1 extra Damage",
+      "valid_weapon_tags": ["Two-handed", "Heavy", "Crush"],
+      "valid_weapon_types": null
     },
     {
-      "name": "Prescient Planner",
+      "name": "Can Opener",
+      "category": "Might",
+      "tag": "Enhance",
+      "focus_cost": 1,
+      "ap_cost": 0,
+      "description": "You Attack the target's Armor directly, without giving the target an opportunity to Retaliate provided you don't miss.",
+      "valid_weapon_tags": ["Two-handed", "Heavy", "Crush"],
+      "valid_weapon_types": null
+    },
+    {
+      "name": "Guard Breaker",
+      "category": "Might",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "When you break a target's Armor, you may immediately make a free Attack against them.",
+      "valid_weapon_tags": ["Two-handed", "Heavy", "Crush"],
+      "valid_weapon_types": null
+    }
+  ],
+  "Corruptor": [
+    {
+      "name": "Degraded Focus",
       "category": "General",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "When you're about to spend Focus, you may choose to instead Saturate the same amount of Focus."
+    },
+    {
+      "name": "Empowered Focus",
+      "category": "General",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "Whenever you spend Corrupted Focus as part of an Action, you gain Boon on the Action equal to the amount of Corrupted Focus spent."
+    },
+    {
+      "name": "Controlled Corruption",
+      "category": "General",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "When you fail a Saturation Roll, you only Corrupt half the amount of Focus you normally would. This does not affect the tier of the gained Mutation."
+    }
+  ],
+  "Oracle": [
+    {
+      "name": "Prescient Planner",
+      "category": "Presence",
       "tag": "Active",
       "focus_cost": 0,
       "ap_cost": 0,
@@ -127,6 +209,14 @@
       "focus_cost": 2,
       "ap_cost": 0,
       "description": "You're able to cast your vision over long distances. Roll your Presence die, and choose a hex within a number of steps of the number rolled. You learn the Hex's terrain type as well as either the Hex's location or highest threat creature."
+    },
+    {
+      "name": "Pathfinder",
+      "category": "Presence",
+      "tag": "Passive",
+      "focus_cost": 2,
+      "ap_cost": 0,
+      "description": "You can augur the shortest path to any location you've seen. Choose any Hex you're familiar with, learning the shortest path there. While on this path, you don't need to make Navigation checks."
     }
   ],
   "Protector": [
@@ -187,7 +277,7 @@
   ],
   "Rusher": [
     {
-      "name": "",
+      "name": "Surprise!",
       "category": "Insight",
       "tag": "Passive",
       "focus_cost": 0,
@@ -195,7 +285,7 @@
       "description": "When Rushing, gain Boon(1) on your first Action"
     },
     {
-      "name": "",
+      "name": "Fleet-footed",
       "category": "Insight",
       "tag": "Passive",
       "focus_cost": 0,
@@ -203,20 +293,12 @@
       "description": "When Rushing, gain +2 Speed for your first Move"
     },
     {
-      "name": "",
+      "name": "Keep moving",
       "category": "Insight",
       "tag": "Passive",
       "focus_cost": 0,
       "ap_cost": 0,
-      "description": "After Rushing, you may take one 0 AP Action during the Player Phase."
-    },
-    {
-      "name": "Follow my Lead",
-      "category": "Presence",
-      "tag": "Active",
-      "focus_cost": 0,
-      "ap_cost": 1,
-      "description": "Designate an ally who has chosen to be Methodical, moving them to the Rushed Phase while keeping their original AP."
+      "description": "After Rushing, you may take one 0 AP Action during the Methodical Phase."
     }
   ],
   "Tactician": [
@@ -269,6 +351,16 @@
       "focus_cost": 0,
       "ap_cost": 0,
       "description": "Once per day, you may initiate an extra Tag Team with any adjacent allies."
+    }
+  ],
+  "Unused Stuff": [
+    {
+      "name": "",
+      "category": "Presence",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "At the start of each Round in combat, you may designate 1 ally, moving them to the Rushed Phase without spending AP."
     }
   ]
 }

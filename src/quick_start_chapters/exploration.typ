@@ -12,9 +12,9 @@ The main brunt of interesting locations to explore that haven't already been pic
 At the start of each #term("Shift", key: "Shifts") spent inside of a #term("Mana Zone", key: "Mana Zones"), the GM will make an #term("Encounter Check", key: "Encounter Checks"), which may have both positive and negative effects for the party.
 
 == Shifts
-A day is divided into 6 #term[Shift], with one activity in Exploration mode usually taking one  #term("Shift", key: "Shifts").
+A day is divided into 6 #term[Shifts], with one activity in Exploration mode usually taking one  #term("Shift", key: "Shifts").
 
-Explorers need rest. If a day's worth of #term("Shift", key: "Shifts") has passed since a character last used the Sleep Activity, they will lose 2 #term[Grit] at the end of each #term[Shift].
+Explorers need rest. If a day's worth of #term("Shift", key: "Shifts") has passed since a character last used the Sleep Activity, they will lose 2 #term[Grit] at the end of each #term("Shift", key: "Shifts").
 Similarly, at the end of each day, if a character has not consumed a ration, they lose 2 #term[Grit] for each day gone without food.
 
 
@@ -22,7 +22,7 @@ Similarly, at the end of each day, if a character has not consumed a ration, the
 The players must choose a “Party Caller” that informs the GM what actions the party will take when exploring.
 Each day spent exploring is divided into six #term("Shifts", is_definition: true).
 Usually, one 'exploration activity' takes one #term("Shift", key: "Shifts") to perform.
-The party can as a group decide to push themselves, each losing 2 #term[Grit] to perform an additional #term("Exploration Activity", key: "Exploration Activities").
+The party can as a group decide to push themselves, each losing 2 #term[Grit] to perform an additional #term("Exploration Activity", key: "Exploration Activities", is_definition: true).
 
 The exploration is acted out by charting a path through a hexgrid map.
 Progress is driven by the players deciding what they would like to do
@@ -30,7 +30,7 @@ among these actions:
 
 - #term("Travel", is_definition: true)
   - The party attempts to traverse a hex tile. This will take up two
-    shifts if they are successful, but vehicles may shorten this time. When traversing terrain that is difficult to navigate, the navigator will make a check (Insight + Presence) to determine if the party can stay on course. \
+    shifts if they are successful, but vehicles may shorten this time. When traversing terrain that is difficult to navigate, the navigator will make a check (Insight + Presence) to determine if the party can stay on course. If they roll with 2 or more Successes, they may additionally attempt a Search, Hunt, or Forage for free this Shift. \
 - #term("Search", is_definition: true)
   - The party explores the hex tile they are currently in to look for
     interesting locations. Each member rolls a Search check (Might +
@@ -51,7 +51,7 @@ among these actions:
   - The party settle down to take a rest. Each player receives 2 Rest
     Points they can use to take the following actions:
     - 2 RP - #emph[Sleep] (once per day): Clear 1 #term("Wound", key: "Wounds"), then gain the bonuses of #emph[Relax] and #emph[Refocus] \
-    - 1 RP - #emph[Relax];: Ragain half of your #term[Grit]. \
+    - 1 RP - #emph[Relax];: Restore #term[Grit] equal to half of damage taken. \
     - 1 RP - #emph[Refocus];: Recover half of your expended focus. \
     - 1 RP - #emph[Keep Watch];: Roll a single Insight die. If the
       result is higher than the GMs encounter die, receive advance

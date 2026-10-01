@@ -55,7 +55,7 @@ Potential express by boat from the lake to the hunting grounds \
     align: (right,left,left,),
     table.header([1d8], [Encounter], [Location]),
     table.hline(),
-    [1], [2d6 Steel Wooled Sheep], [Location],
+    [1], [2d6 Steel Wooled Sheep], [Spike of Blue Rock],
     [2], [a], [a],
   )], kind: table
 )
@@ -113,7 +113,7 @@ Quicksand
     table.header([1d8], [Encounter], [Location]),
     table.hline(),
     [1], [1d4 - 1 Mountainback], [Maze],
-    [2], [1 Crystal Python], [a],
+    [2], [1 Crystal Python], [Spike of Black Rock],
   )], kind: table
 )
 
@@ -126,7 +126,7 @@ The creature (TM) is there somewhere
     align: (right,left,left,),
     table.header([1d8], [Encounter], [Location]),
     table.hline(),
-    [1], [Creature or event], [Location],
+    [1], [The Creature], [Spike of Red Rock],
     [2], [a], [a],
   )], kind: table
 )
@@ -156,7 +156,7 @@ If the part wants to cross the direction of the Yardangs, they do so at half mov
     align: (right,left,left,),
     table.header([1d8], [Encounter], [Location]),
     table.hline(),
-    [1], [1d4 Inverted Giraffe], [Location],
+    [1], [1d4 Inverted Giraffe], [Spike of Green Rock],
     [2], [a], [a],
   )], kind: table
 )
@@ -168,7 +168,7 @@ If the part wants to cross the direction of the Yardangs, they do so at half mov
     align: (right,left,left,),
     table.header([1d8], [Encounter], [Location]),
     table.hline(),
-    [1], [1d4-1 Angler Phish], [Location],
+    [1], [1d4-1 Angler Phish], [Corpse deposit at bend of river],
     [2], [1d6 Troutbuchet], [a],
     [3], [1 Trombonautilus], [],
   )], kind: table

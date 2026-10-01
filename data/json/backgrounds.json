@@ -1,55 +1,55 @@
 {
     "[BACKGROUND NAME]": {
         "name": "[BACKGROUND NAME BUT AGAIN]",
-        "ability_attribute": "[THE ATTRIBUTE TIED TO THE ABILITY GRANTED BY THE BACKGROUND]",
+        "ability": "[THE ATTRIBUTE TIED TO THE ABILITY GRANTED BY THE BACKGROUND]",
         "triggers": "[SCENARIOS WHERE TITLE APPLIES]",
         "description": "[Some rough description about the background.]"
     },
     "Scholar": {
         "name": "Scholar",
-        "ability_attribute":"",
+        "ability":"",
         "triggers": "Deciphering old texts, ",
         "description":"You have spent much time absorbing knowledge by reading tomes and consulting wise men."
     },
     "Child of Og": {
         "name": "Child of Og",
-        "ability_attribute":"Degraded Focus",
+        "ability":"Degraded Focus",
         "triggers": "",
         "description":"The Children of Og is a Titan-worshipping cults that believes Mutations perfect beings. A strong political force, and downright weird."
     },
     "Artificer": {
         "name": "Artificer",
-        "ability_attribute": "",
+        "ability": "",
         "triggers": "Tinker with or identify mana tech",
         "description": ""
     },
     "Botanist": {
         "name": "Botanist",
-        "ability_attribute": "",
+        "ability": "",
         "triggers": "Grow and identify plants",
         "description": ""
     },
     "Merchant": {
         "name": "Merchant",
-        "ability_attribute": "",
+        "ability": "",
         "triggers": "",
         "description": ""
     },
     "Cartographer": {
         "name": "Cartographer",
-        "ability_attribute": "",
+        "ability": "",
         "triggers": "Creating and reading maps, navigation",
         "description": ""
     },
     "Sailor": {
         "name": "Sailor",
-        "ability_attribute": "",
+        "ability": "",
         "triggers": "",
         "description": ""
     },
     "Urchin": {
         "name": "Urchin",
-        "ability_attribute": "",
+        "ability": "",
         "triggers": "",
         "description": ""
     }

@@ -1,5 +1,5 @@
 #import "../../scripts/glossary.typ": term, render_glossary, glossary_types
-#import "../../scripts/tables.typ": weaponTagsTable, weaponTable, mutationsTable
+#import "../../scripts/tables.typ": weaponTagsTable, weaponTable, mutationsTable, abilitiesTable, talentsTable, heritagesTable
 
 = Appendices
 <appendices>
@@ -36,5 +36,19 @@
 
 == Appendix C: Abilities
 
-=== Player Abilities
-<player-abilities>
+=== Core Abilities
+<core-abilities>
+#abilitiesTable(json("../../data/json/abilities.json"))
+
+#pagebreak()
+
+=== Tiered Abilities
+<tiered-abilities>
+#talentsTable(json("../../data/json/talents.json"))
+
+#pagebreak()
+
+== Appendix D: Heritages
+<heritages>
+
+#heritagesTable(json("../../data/json/heritages.json"))

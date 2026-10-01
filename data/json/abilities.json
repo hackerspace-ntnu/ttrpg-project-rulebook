@@ -10,17 +10,6 @@
     "valid_weapon_tags": ["Light"],
     "valid_weapon_types": null
   },
-  "Swift Strike": {
-    "name": "Swift Strike",
-    "category": "Agility",
-    "tag": "Enhance",
-    "tier": 2,
-    "focus_cost": 1,
-    "ap_cost": 0,
-    "description": "When you take the Move action, you may make an Attack with a Light weapon.",
-    "valid_weapon_tags": ["Light"],
-    "valid_weapon_types": null
-  },
   "Dirty Fighting": {
     "name": "Dirty Fighting",
     "category": "Agility",
@@ -50,7 +39,7 @@
     "tier": 2,
     "focus_cost": 1,
     "ap_cost": 0,
-    "description": "Lunge: You gain Reach(2) for this Attack. Parry: You gain Guard(1)",
+    "description": "Lunge: You gain Reach(2) for this Attack. \nParry: You gain Guard(1)",
     "valid_weapon_tags": ["Versatile"],
     "valid_weapon_types": null
   },
@@ -87,17 +76,6 @@
     "valid_weapon_tags": ["One-handed"],
     "valid_weapon_types": null
   },
-  "Can Opener": {
-    "name": "Can Opener",
-    "category": "Might",
-    "tag": "Enhance",
-    "tier": 2,
-    "focus_cost": 1,
-    "ap_cost": 0,
-    "description": "You may choose to attack the target's armor directly, without giving the target an opportunity to Retaliate.",
-    "valid_weapon_tags": ["Versatile", "Two-handed", "Heavy", "Crush"],
-    "valid_weapon_types": null
-  },
   "Piercing Thrust": {
     "name": "Piercing Thrust",
     "category": "Might",
@@ -130,17 +108,6 @@
     "description": "If your Attack hits, it bounces to a secondary target of your choice within half of the weapon's range, dealing 1 damage.",
     "valid_weapon_tags": null,
     "valid_weapon_types": ["Ranged"]
-  },
-  "Return": {
-    "name": "Return",
-    "category": "Agility",
-    "tag": "Enhance",
-    "tier": 2,
-    "focus_cost": 1,
-    "ap_cost": 0,
-    "description": "At the end of the current Phase the Weapon returns to your hand, dealing 1 damage to each unit it passes through on its way back.",
-    "valid_weapon_tags": ["Thrown"],
-    "valid_weapon_types": null
   },
   "Curved Shot": {
     "name": "Curved Shot",
@@ -178,6 +145,7 @@
   "Block": {
     "name": "Block",
     "category": "Weapon",
+    "tag": "Active",
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "When hit by an attack roll, raise your Damage Thresholds by an amount equal to the Durable tag of this weapon.",
@@ -210,15 +178,6 @@
     "focus_cost": 1,
     "ap_cost": 0,
     "description": "Roll a contested attack roll when passing an enemy, the highest attack resolves and the winner gets an attack of opportunity."
-  },
-  "Degraded focus": {
-    "name": "Degraded focus",
-    "category": "General",
-    "tag": "Passive",
-    "tier": 2,
-    "focus_cost": 0,
-    "ap_cost": 0,
-    "description": "On spending Focus, you may choose to instead saturate the same amount of Focus."
   },
   "Swift Forager": {
     "name": "Swift Forager",
@@ -269,15 +228,6 @@
     "ap_cost": 0,
     "description": "Before doing first aid, do a damaging attack to get a Boon(2) to the roll."
   },
-  "Mana-resistant": {
-    "name": "Mana-resistant",
-    "category": "Presence",
-    "tag": "Passive",
-    "tier": 2,
-    "focus_cost": 0,
-    "ap_cost": 0,
-    "description": "Get advantage when rolling for mana saturation."
-  },
   "Flat Earther": {
     "name": "Flat Earther",
     "category": "General",
@@ -322,6 +272,87 @@
     "focus_cost": 0,
     "ap_cost": 0,
     "description": "You know a guy who knows a guy… Gain an insider in an organisation of your choosing. You can spend Scrap to get something illegal or difficult to find through the contact."
+  },
+  "Sturdy": {
+    "name": "Sturdy",
+    "category": "Might",
+    "tag": "Passive",
+    "tier": 3,
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": "You may reduce any Knockback you take by 1."
+  },
+  "Momentum": {
+    "name": "Momentum",
+    "category": "Might",
+    "tag": "Passive",
+    "tier": 3,
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": "All damage you deal with Heavy Weapons increase by 1."
+  },
+  "Undefeatable": {
+    "name": "Undefeatable",
+    "category": "Might",
+    "tag": "Passive",
+    "tier": 4,
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": "When rolling your Death Save you may use your Might die for the roll, instead of the standard d8."
+  },
+  "Innate Magic": {
+    "name": "Innate Magic",
+    "category": "Presence",
+    "tag": "Passive",
+    "tier": 3,
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": "(Repeatable) Learn one spell from the spell list of a tier equal to or lower than your Insight Mod - 2."
+  },
+  "Speedster": {
+    "name": "Speedster",
+    "category": "Agility",
+    "tag": "Passive",
+    "tier": 3,
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": "Your Speed is increased by 2."
+  },
+  "Orator": {
+    "name": "Orator",
+    "category": "Presence",
+    "tag": "",
+    "tier": 3,
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": ""
+  },
+  "Soothing Presence": {
+    "name": "Soothing Presence",
+    "category": "Presence",
+    "tag": "Passsive",
+    "tier": 3,
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": "As long as you're present for a Rest, all allies regain 1 bonus Grit from Relax, and 1 bonus Focus from Refocus."
+  },
+  "Mana-resistant": {
+    "name": "Mana-resistant",
+    "category": "Presence",
+    "tag": "Passive",
+    "tier": 3,
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": "Get Boon(1) when rolling for mana saturation."
+  },
+  "Precision": {
+    "name": "Precision",
+    "category": "Passive",
+    "tag": "Insight",
+    "tier": 3,
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": "Whenever you roll a Heavy+ Hit, you may add a roll of your Insight die to the result."
   },
   "": {
     "name": "",

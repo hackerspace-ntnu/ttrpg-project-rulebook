@@ -1,15 +1,18 @@
 #import "../../scripts/glossary.typ": term, render_glossary, glossary_types, boon, roll
+#import "../../scripts/texts.typ": parse_conditions
 
 = Combat
 <combat>
 == Initiative and action economy
 <initiative-and-action-economy>
-Each round of combat happens in two #term("Phases", is_definition: true) following the Tortoise & Hare
-style of initiative. Players use #term("Action Points", is_definition: true) (AP) to perform
-various actions and can choose to start each turn #term("Rushed", is_definition: true) (2 AP,
-acts during first phase) or #term("Methodical", is_definition: true) (3 AP, acts during
-second phase). Action points are regenerated at the start of the chosen
-phase.
+Each #term("Round", key: "Rounds", is_definition: true) of combat is split into four #term("Phases", is_definition: true). 
+- #term("Rushed Phase", is_definition: true)
+- #term("Enemy Phase", is_definition: true)
+- #term("Methodical Phase", is_definition: true)
+- #term("Environment Phase", is_definition: true)
+
+At the start of each #term("Round", key: "Rounds") players gain 3 #term("Action Point", key: "Action Points", is_definition: true) (AP) which they use to perform various #term[Actions].
+Players act in the #term[Methodical Phase] by default, but can spend 1 #term("Action Point", key: "Action Points") (AP) to move before the Enemies, placing them in the #term[Rushed Phase].
 
 == Actions
 <actions>
@@ -19,7 +22,7 @@ If nothing else is specified, an #term("Action", is_definition: true, key: "Acti
 - #term[Move Actions]
 - #term[Utility Actions]
 - #term[Item Actions]
-- #term[Free Actions]
+- #term[Static Actions]
 
 The first 4 #term("Action Categories", is_definition: true) are subject to the #term("Repeated Action Penalty", is_definition: true) (RAP), which means every subsequent use of the same category in your Phase costs 1 additional AP.
 
@@ -37,23 +40,23 @@ Variable AP: #term("Cast", is_definition: true) a #term("Spell", key: "Spells").
 === Utility Actions
 #term("", key: "Utility Actions", is_definition: true)1 AP: #term("Parley", is_definition: true) with a target. \
 1 AP: #term("Brawl", is_definition: true) with a target, making a #roll[Might][Insight] choosing either #term[Grapple] or #term[Shove]. \
-- #term("Grapple", is_definition: true) a target, inflicting #term("Grappled") and granting #boon("Success") to the first Attack against the target. Targets Evasion. \
+- #term("Grapple", is_definition: true) a target, inflicting #term("Grappled") and granting #boon("Success") to the first Attack against the target. Grappled creatures cannot make voluntary movements. Targets Evasion. \
 - #term("Shove", is_definition: true) a target 1 Space + 1 per #term("Success", key: "Successes"). 2 Spaces of Shove can be traded to knock the target Prone. Targets Evasion. 
 
 === Item Actions
 #term("", key: "Item Actions", is_definition: true)0 AP: #term("Stow/Draw", is_definition: true) the Weapons or objects held in your hands to/from your #term[Quick Draw Inventory]. You can both Stow and Draw with a single activation of this Action. +1 AP to Stow to or Draw from #term[Inventory].\
 1 AP: #term("Interact", is_definition: true) with or #term("Use", is_definition: true) an item. \
  
-=== Free Actions
-<free-actions>
-#term("Free Actions", is_definition: true) are #term[Actions] you can take on your turn that are not affected by #term("RAP", key: "Repeated Action Penalty"), but each action can only be taken once.
+=== Static Actions
+<static-actions>
+#term("Static Actions", is_definition: true) are #term[Actions] you can take on your turn that are not affected by #term("RAP", key: "Repeated Action Penalty").
 
-0 AP: #term("Charge", is_definition: true) your next Action, delaying its activation until the end of the next Enemy Phase, but granting you #boon(3) on it. You must pick a target Space for the Action when picking this option. \
+0 AP, once per Round: #term("Charge", is_definition: true) your next Action, delaying its activation until the end of the next Enemy Phase, but granting you #boon(3) on it. You must pick a target Space for the Action when picking this option. \
 // TODO: Worded weirdly
-0 AP: #term("Push", is_definition: true) yourself, spending #term[Grit] in order to perform one of the
-following effects:
+0 AP, once per Round: #term("Push", is_definition: true) yourself, spending #term[Grit] in order to perform one of the following effects:
 - 1 Grit for Boon(1) \
 - 2 Grit to gain 1 AP
+
 
 #figure(
   align(center)[#table(
@@ -68,6 +71,8 @@ following effects:
     Attack], [The attack roll counts for both of you, but the damage taken is halved.], // TODO: Does this mean that the attack roll is applied to the protector's damage thresholds separately, meaning that one character could take more damage than the other?
     [Retaliate], [0 Focus], [You take 0 Damage or Conditions from a roll against your #term[Damage Thresholds]]
   )]
+  , supplement: none
+  , caption: [Universal Reactions]
   , kind: table
 )
 
@@ -125,9 +130,10 @@ Below is a list of standard #term("Retaliations", is_definition: true), but cert
     [Parry], [Targeted by attack within #term[Threat] range while wielding a
     shield], [You parry the attack, leaving the Attacker open. The first
     #term("Action Roll", key: "Action Rolls") against them before the end of the next Phase has
-    #term("Boon(1)", key: "Boons"). \ Perfect Parry: If the shield's Active is what made this
-    Retaliation possible, the effect increases to #term("Boon(3)", key: "Boons").],
+    #term("Boon(1)", key: "Boons"). \ Perfect Parry: If the shield's Active is what made this Retaliation possible, the effect increases to #term("Boon(3)", key: "Boons").],
   )]
+  , supplement: none
+  , caption: [Universal Retaliations]
   , kind: table
   )
 
@@ -145,11 +151,13 @@ the target. If they move before the end of the current phase, they take
 Melee Heavy Weapons: When you Counter you may Push the Attacker MIG
 mod / Size difference Spaces.
 
+// TODO: make this
 Ranged Weapons: 
 
 == Wounds & Dying
-At 0 #term[Grit] you gain a #term("Wound", key: "Wounds", is_definition: true) and roll 1d8. If the result is under the number of #term[Wounds] they have, they die. 
-Otherwise they lose 1 AP next #term("Round", key: "Rounds") for each point of #term[Damage] exceeding 0 #term[Grit], and regain #term[Grit] equal to the result of the roll.
+At 0 #term[Grit] you gain a #term("Wound", key: "Wounds", is_definition: true) and roll 1d8 for your #term("Death Save", key: "Death Saves", is_definition: true). If the result is under the number of #term[Wounds] they have, they die. 
+Otherwise they lose 1 AP next #term("Round", key: "Rounds") for each point of #term[Damage] exceeding 0 #term[Grit], and regain #term[Grit] equal to the result of the roll. 
 
 == Conditions
-// TODO: Parse conditions.json
+// TODO: Improve grapple mechanics, see if more conditions should be added
+#parse_conditions(json("../../data/json/conditions.json"))

@@ -1,7 +1,7 @@
 {
     "Grappled": {
         "name": "Grappled",
-        "description": "",
+        "description": "Grappled creatures cannot make voluntary movements. A Grappled creature may take a Brawl: Grapple action to remove the Grappled condition.",
         "parameter": "N"
     },
     "Prone": {

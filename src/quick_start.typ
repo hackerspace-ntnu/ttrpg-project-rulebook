@@ -110,7 +110,7 @@
 #include "quick_start_chapters/appendices.typ"
 
 #pagebreak()
-= Glossary
+= Index
 <glossary>
 \
 #render_glossary()

@@ -44,12 +44,13 @@ Exposure to high levels of #term[Mana Saturation] can cause your body to #term[M
 
 This process starts with your #term("Focus") degrading after a #term("Mana Surge", key: "Mana Surges") or other exposure to #term[Mana], turning it into #term("Saturated Focus", is_definition: true).
 
-Whenever you use #term("Saturated", key: "Saturated Focus") or #term("Corrupted Focus") to power an #term("Ability", key: "Abilities") you must roll a #term("Saturation Check", key: "Saturation Checks", is_definition: true) to see if you #term[Mutate].
-The DC for this check is equal to $8 + 2*"Saturation Level"$, based on the #term("Saturation Level", key: "Saturation Levels") of the hex you're in.
+Whenever you use #term("Saturated", key: "Saturated Focus") or #term("Corrupted Focus") to power an #term("Ability", key: "Abilities") you must roll a #term("Saturation Check", key: "Saturation Checks", is_definition: true) (#term[Insight] + #term[Presence]) to see if you #term[Mutate].
+The DC for this check is equal to $6 + 2*"Saturation Level"$, based on the #term("Saturation Level", key: "Saturation Levels") of the hex you're in.
 
 If you succeed the check you clear the #term("Saturation", key: "Saturated Focus") from the #term[Focus] and gain #boon("N") for the #term("Action", key: "Actions"), where N is equal to the amount of #term("Saturation", key: "Saturated Focus") cleared this way.
 If you fail the check, you instead #term[Mutate].
 
+=== Mutating
 When you #term("Mutate", is_definition: true), you roll on the #link(<mutation-table>)[Mutation Table] to determine what #term("Mutation", key: "Mutations") you get.
 Unless otherwise specified, you may choose where on your body the #term("Mutation", key: "Mutations") apparates, and what it looks like.
 

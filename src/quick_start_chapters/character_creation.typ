@@ -50,7 +50,7 @@ attributes to be. Then you gain a #term("Core Ability", key: "Core Abilities") f
 #term("Backgrounds", is_definition: true) describe what your character has been doing before venturing into the wilds as a #term("Hunter", key: "Hunters", glossary_type: glossary_types.faction).
 #term("Backgrounds") can be invoked for non-combat rolls to gain #boon(1) on the roll, given it makes sense for it to help in the narrative.
 
-Furthermore, when choosing your #term("Background", key: "Backgrounds") you gain a single tier 1 #term("Ability", key: "Abilities") of the #term("Attribute", key: "Attributes") denoted by your #term("Background", key: "Backgrounds").
+Furthermore, when choosing your #term("Background", key: "Backgrounds") you gain a single tier 1 #term("Tiered Ability", key: "Tiered Abilities") of the #term("Attribute", key: "Attributes") denoted by your #term("Background", key: "Backgrounds").
 
 == Mutations
 // TODO: Looks like this rule applies for all links after this point in the character creation document, including those to tables or terms. How do we feel about that?
