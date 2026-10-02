@@ -305,7 +305,7 @@
 )
 
 
-#v(1.5em)
+#v(1.2em)
 
 #grid(
   columns: 3,
@@ -355,7 +355,7 @@
   align(center)[
     #rect(
       width: 60%,
-      height: 4.56em,
+      height: 4.86em,
     )[
       #align(bottom)[#fadedText("Pocket")]
     ]
@@ -388,7 +388,7 @@
     rows: auto,
     gutter: 2.5em,
     column-gutter: 0.5em,
-    ..range(0,12).map(i => {
+    ..range(0,14).map(i => {
     line(
       length: 100%,
       stroke: if (i < 6) {textColor} else {fadedTextColor}
