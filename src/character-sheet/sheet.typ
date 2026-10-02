@@ -45,6 +45,20 @@
   )
 }
 
+#let splitUnderline(title1, title2, spacing: 0.5em) = {
+  set par(spacing: spacing)
+  grid(
+    columns: (1fr, 1fr),
+    rows: auto,
+    gutter: 0.5em,
+    align(left, title1),
+    align(right, title2),
+  )
+  line(
+    length: 100%,
+  )
+}
+
 #let statGrid() = {
   set par(spacing: 0.5em)
   "Attributes"
@@ -83,7 +97,7 @@
   statGrid(),
 )
 
-#v(0.5em)
+#v(1em)
 
 #let coreMemory(height: 3em) = {
   rect(
@@ -193,117 +207,102 @@
   focusTracks()
 )
 
-
-#v(0.5em)
+#v(1em)
 
 #grid(
   columns: (2fr, 1fr),
   rows: auto,
   gutter: 1em,
   column-gutter: 2em,
-  underlined("Physicality"),
-  underlined("Grit & Guard"),
+  splitUnderline("Physicality", "Armor Durability"),
+  splitUnderline("Guard", "Grit"),
   grid(
-    columns: 5,
+    // stroke: black,
+    columns: (3fr, 1fr),
     rows: auto,
     gutter: 1em,
-    column-gutter: 2em,
-    grid.cell(
-    // rowspan: 2,
-    rect(
-      width: 100%,
-      height: 3.5em,
-    )[
-      #align(center + top, "Speed")
-    ],
-    ),
-    "",
-    rect(
-      width: 100%,
-      height: 3.5em,
-    )[
-      #align(center, "Evasion")
-    ],
-    rect(
-      width: 100%,
-      height: 3.5em,
-      stroke: textColor,
-    )[
-      #align(center, "Heavy Hit")
-    ],
-    rect(
-      width: 100%,
-      height: 3.5em,
-    )[
-      #align(center, "Brutal Hit")
-    ],
-    grid.cell(
-      colspan: 5,
+    column-gutter: 1em,
+    grid(
+      columns: (1fr, 3fr),
+      column-gutter: 0.5em,
       rect(
         width: 100%,
-        height: 2em,
+        height: 3.4em ,
       )[
-        #grid(
-          columns: (13fr, 25fr),
-          rows: auto,
-          gutter: 0.5em,
-          "Armor Durability",
-          grid.cell(
-            grid(
-              columns: 12,
-              rows: auto,
-              gutter: 1em,
-              ..range(0,12).map(i => {
-                if (calc.rem(i+1, 4) == 0) {
-                } else {
-                  rect(
-                    width: 1em,
-                    height: 1em,
-                    stroke: fadedTextColor
-                  )
-                }}),
-            )
-          ),
-        )
-      ]
-    )
-  ),
-  grid(
-    columns: 9,
-    rows: auto,
-    gutter: 0.5em,
-    row-gutter: 0.75em,
-    ..range(0,18).map(i => {
-      if (i == 4 or i == 13) {
-      } else {
+        #align(center + top, "Speed")
+      ],
+      grid(
+        columns: 3,
+        rows: auto,
+        gutter: 0em,
         rect(
           width: 100%,
-          height: 1.33em,
-          stroke: (if (i < 9) {textColor} else {fadedTextColor})
-
-        )
-      }
-    }),
-    grid.cell(
-      colspan: 9,
-      v(-0.5em)
+          height: 3.4em,
+        )[
+          #align(center, "Evasion")
+        ],
+        rect(
+          width: 100%,
+          height: 3.4em,
+          stroke: textColor,
+        )[
+          #align(center, "Heavy Hit")
+        ],
+        rect(
+          width: 100%,
+          height: 3.4em,
+        )[
+          #align(center, "Brutal Hit")
+        ],
+      ),
     ),
-    "",
-    align(fadedText("Guard"), horizon),
-    "",
     grid.cell(
-      align: center,
-      colspan: 3,
-      rect(
-        width: 100%,
-        height: 2em,
-      )
+      stroke: none,
+      grid(
+        columns: 4,
+        rows: auto,
+        gutter: 1em,
+        row-gutter: 0.75em,
+        ..range(0,8).map(i => {
+          rect(
+            width: 1.33em,
+            height: 1.33em,
+            stroke: fadedTextColor
+          )
+        }),
+      ),
     ),
   ),
+  grid(
+    columns: (1fr, 4fr),
+    gutter: 1em,
+    rect(
+      width: 100%,
+      height: 3.4em,
+      stroke: textColor,
+    ),
+    grid(
+      columns: 9,
+      rows: auto,
+      gutter: 0.5em,
+      row-gutter: 0.75em,
+      ..range(0,18).map(i => {
+        if (i == 4 or i == 13) {
+        } else {
+          rect(
+            width: 100%,
+            height: 1.33em,
+            stroke: (if (i < 9) {textColor} else {fadedTextColor})
+
+          )
+        }
+      }),
+    ),
+  )
 )
 
 
-#v(0.5em)
+#v(1.5em)
 
 #grid(
   columns: 3,
@@ -321,7 +320,7 @@
   })
 )
 
-#v(0.5em)
+#v(1.5em)
 
 #let quickDrawInventory() = {
   set par(spacing: 0.5em)
@@ -353,7 +352,7 @@
   align(center)[
     #rect(
       width: 60%,
-      height: 4.4em,
+      height: 4.56em,
     )[
       #align(bottom)[#fadedText("Pocket")]
     ]
