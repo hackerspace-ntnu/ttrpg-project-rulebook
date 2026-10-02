@@ -104,7 +104,7 @@
   }
 }
 
-#let focusTrack(connectToMemory: false, description: false, height: 1em, dy: -0.3em, locked: false) = {
+#let focusTrack(connectToMemory: false, description: false, height: 1em, dy: -0.35em, locked: false) = {
   if (connectToMemory) {
     place(
       dx: -2em,
@@ -112,7 +112,6 @@
       line(
         length: 2em 
       )
-
     )
   }
   grid(
@@ -127,8 +126,8 @@
       #if (description) {
         place(
           dy: dy,
-          dx: 1em,
-          text("used", fill: gray)
+          dx: 0.15em,
+          text("corrupted", fill: gray)
         )
       }
     ],
@@ -140,6 +139,7 @@
       #if (description) {
         place(
           dy: dy,
+          dx: 0.25em,
           text("saturated", fill: gray)
         )
       }
@@ -152,7 +152,8 @@
       #if (description) {
         place(
           dy: dy,
-          text("corrupted", fill: gray)
+          dx: 1em,
+          text("spent", fill: gray)
         )
       }
     ],
@@ -351,7 +352,7 @@
   v(1em)
   align(center)[
     #rect(
-      width: 70%,
+      width: 60%,
       height: 4.4em,
     )[
       #align(bottom)[#fadedText("Pocket")]
@@ -378,10 +379,10 @@
 }
 
 #grid(
-  columns: (1fr, 1fr),
+  columns: (66%, 1fr),
   rows: auto,
   gutter: 2.5em,
-  column-gutter: 1.5em,
+  column-gutter: 1em,
   quickDrawInventory(),
   inventory()
 )
