@@ -2,7 +2,7 @@
 
 = Equipment
 <equipment>
-Each character has a #term("Carrying Capacity", is_definition: true) equal to 4 + Might Mod.
+Each character has a #term("Carrying Capacity", is_definition: true) equal to 5 + Might Mod.
 Items and #term("Equipment", is_definition: true) have an amount of #term("Bulk", is_definition: true) (usually 1).
 If you're carrying more than your #term("Capacity", key: "Carrying Capacity") at the end of a #term("Shift", key: "Shifts"), you lose #term[Grit] equal to the amount of extra #term[Bulk] you're carrying (total #term[Bulk] - #term[Carrying Capacity]).
 
