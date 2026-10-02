@@ -362,7 +362,24 @@
 
 #let inventory() = {
   set par(spacing: 0.5em)
-  underlined("Inventory")
+  grid(
+    columns: (1fr, 1fr),
+    rows: auto,
+    gutter: 0.5em,
+    "Inventory",
+    place(
+      dy: -0.45em,
+      rect(
+        width: 100%,
+        height:1.6em,
+      )[
+          Scrap
+      ],
+    )
+  )
+  line(
+    length: 100%,
+  )
   v(2em)
   grid(
     columns: 2,
