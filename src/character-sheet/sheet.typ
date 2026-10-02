@@ -215,13 +215,13 @@
   gutter: 1em,
   column-gutter: 2em,
   splitUnderline("Physicality", "Armor Durability"),
-  splitUnderline("Guard", "Grit"),
+  splitUnderline("Grit", "Guard"),
   grid(
     // stroke: black,
     columns: (3fr, 1fr),
     rows: auto,
     gutter: 1em,
-    column-gutter: 1em,
+    column-gutter: 2em,
     grid(
       columns: (1fr, 3fr),
       column-gutter: 0.5em,
@@ -258,10 +258,11 @@
     ),
     grid.cell(
       stroke: none,
+      align: center,
       grid(
         columns: 4,
         rows: auto,
-        gutter: 1em,
+        gutter: 0.5em,
         row-gutter: 0.75em,
         ..range(0,8).map(i => {
           rect(
@@ -274,13 +275,9 @@
     ),
   ),
   grid(
-    columns: (1fr, 4fr),
+    columns: (4fr, 1fr),
     gutter: 1em,
-    rect(
-      width: 100%,
-      height: 3.4em,
-      stroke: textColor,
-    ),
+    column-gutter: 2em,
     grid(
       columns: 9,
       rows: auto,
@@ -298,6 +295,12 @@
         }
       }),
     ),
+    align(center + horizon)[
+      #rect(
+        width: 100%,
+        height: 3.4em,
+      )
+    ],
   )
 )
 
