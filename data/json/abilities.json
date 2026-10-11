@@ -10,17 +10,6 @@
     "valid_weapon_tags": ["Light"],
     "valid_weapon_types": null
   },
-  "Dirty Fighting": {
-    "name": "Dirty Fighting",
-    "category": "Agility",
-    "tag": "Enhance",
-    "tier": 2,
-    "focus_cost": 1,
-    "ap_cost": 0,
-    "description": "Your next Attack slices an exposed tendon or muscle on hit, either halving the target's Speed until the end of the round or giving it Bane(1) on its next Attack.",
-    "valid_weapon_tags": ["Light"],
-    "valid_weapon_types": ["Melee"]
-  },
   "Wrangle": {
     "name": "Wrangle",
     "category": "Insight",

@@ -32,7 +32,7 @@
       "tag": "Active",
       "focus_cost": 1,
       "ap_cost": 0,
-      "description": "When you take the Move action, you may make an Attack with a Light weapon from your starting location.",
+      "description": "Take the Move Action, paying its cost as normal. You may make an Attack with a Light weapon from your starting location.",
       "valid_weapon_tags": ["Light"],
       "valid_weapon_types": null
     },
@@ -133,6 +133,38 @@
       "focus_cost": 0,
       "ap_cost": 0,
       "description": "If you're granted the opportunity to Retaliate in response to an Attack with Boon made against you, you may Retaliate twice."
+    }
+  ],
+  "Dirty Fighter": [
+    {
+      "name": "Hobble",
+      "category": "Agility",
+      "tag": "Enhance",
+      "focus_cost": 1,
+      "ap_cost": 0,
+      "description": "Your next Attack slices an exposed tendon or muscle on hit, inflicting either condition until the end of their next Turn:\n- The target's Speed is halved\n- The target has Bane(1) on its next Attack.",
+      "valid_weapon_tags": ["Light"],
+      "valid_weapon_types": ["Melee"]
+    },
+    {
+      "name": "Cripple",
+      "category": "Agility",
+      "tag": "Enhance",
+      "focus_cost": 1,
+      "ap_cost": 0,
+      "description": "Hobble gains these additional options:\n- The Damage of the target's next hit is reduced by 1\n- The target is Blinded",
+      "valid_weapon_tags": ["Light"],
+      "valid_weapon_types": ["Melee"]
+    },
+    {
+      "name": "Pay Day",
+      "category": "Agility",
+      "tag": "Active",
+      "focus_cost": 0,
+      "ap_cost": 1,
+      "description": "You make a precise strike powerful enough to shock all Debuffs currently on the target out of them on hit. For each unique debuff removed, this Attack deals 1 extra Damage.",
+      "valid_weapon_tags": ["Light"],
+      "valid_weapon_types": ["Melee"]
     }
   ],
   "Tank Buster": [
@@ -282,7 +314,7 @@
       "tag": "Passive",
       "focus_cost": 0,
       "ap_cost": 0,
-      "description": "When Rushing, gain Boon(1) on your first Action"
+      "description": "When Rushing, gain Boon(1) on your first Action Roll"
     },
     {
       "name": "Fleet-footed",

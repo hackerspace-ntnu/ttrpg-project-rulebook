@@ -20,7 +20,21 @@ Base #term[Speed]: 3 Spaces
 #term("Speed", is_definition: true) defines how many #term[Spaces] you can move using a single #term[Move], with #term("Spaces", is_definition: true) being an abstract unit of distance used in combat.
 
 == Attributes
-Each character has 4 #term("Attributes", is_definition: true) that are represented by a die of size d4-d12, mapping to an #term("Attribute Modifiers", is_definition: true) of 1-5.
+Each character has 4 #term("Attributes", is_definition: true) that are represented by a die of size d4-d12.
+These die sizes map to #term("Attribute Modifiers", is_definition: true) of 1-5, matching the sizes of #term("Boon Dice", key: "Boons").
+
+#figure(
+  placement: none,
+  scope: "column",
+  align(center)[#table(
+    columns: 7,
+    align: (left,left,left,left,left,left,left,),
+    table.header([Modifier], [1], [2], [3], [4], [5], [6],),
+    table.hline(),
+    [Die], [d4], [d6], [d8], [d10], [d12], [d20],
+  )]
+  , kind: table
+)
 
 #figure(
   align(center)[#table(
@@ -40,11 +54,14 @@ Each character has 4 #term("Attributes", is_definition: true) that are represent
 ) <attribute-table>
 
 On creation, arrange \[d4, d6, d6, d8\] how you want your character's
-attributes to be. Then you gain a #term("Core Ability", key: "Core Abilities") for your highest #term("Attribute", key: "Attributes").
+attributes to be. 
+Then you gain a #term("Core Ability", key: "Core Abilities") that is tagged as the same #term("Attribute", key: "Attributes") as your highest, or as "General".
 
 == Heritages
 #term("Heritage", key: "Heritages", is_definition: true) define the lineage of your character, and comes with #term[Mutations] that your character starts with.
 
+Different #term[Heritages] #term("Corrupt", key: "Corrupted Focus") different amounts of #term[Focus], which is noted in their blocks.
+If you want to make your own #term("Heritage", key: "Heritages"), start with Blank Slate and add #term[Mutations] as described later in this chapter.
 
 == Backgrounds
 #term("Backgrounds", is_definition: true) describe what your character has been doing before venturing into the wilds as a #term("Hunter", key: "Hunters", glossary_type: glossary_types.faction).
@@ -55,7 +72,7 @@ Furthermore, when choosing your #term("Background", key: "Backgrounds") you gain
 == Mutations
 // TODO: Looks like this rule applies for all links after this point in the character creation document, including those to tables or terms. How do we feel about that?
 //#show link: underline
-Choose any #term("Mutations", is_definition: true) you'd like from the #link(<mutation-table>)[Mutation Table] (#link("https://docs.google.com/document/d/1zkKA1ifbYqop71Pm5RrK5ofa_Z9V3Yyyje8CdN3MKn4/edit?tab=t.eulwm9krcgii")[#text(fill: purple)[#underline[document]]]), or make up your own, then notify the GM of your choices. 
+Choose any #term("Mutations", is_definition: true) you'd like from the @mutation-table/*#link(<mutation-table>)[Mutation Table] (#link("https://docs.google.com/document/d/1zkKA1ifbYqop71Pm5RrK5ofa_Z9V3Yyyje8CdN3MKn4/edit?tab=t.eulwm9krcgii")[#text(fill: purple)[#underline[document]]])*/, or make up your own, then notify the GM of your choices. 
 But power comes at a cost.
 One of your #term[Focus] is permanently #term("Corrupted", key: "Corrupted Focus") for each tier of the chosen #term[Mutations].
 

@@ -52,7 +52,7 @@ Stacks of #term[Boons] and #term[Banes] cancel each other out, so Boon(3) and Ba
     [Die], [d4], [d6], [d8], [d10], [d12], [d20],
   )]
   , kind: table
-  )
+)
 
 === Additional Successes
 <additional-successes>

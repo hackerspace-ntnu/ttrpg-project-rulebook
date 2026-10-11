@@ -477,7 +477,8 @@
             {
                 "name": "Crush",
                 "roll": "ma",
-                "tags": ["Crush(1)"]
+                "tags": ["Crush(1)"],
+                "description": "Target must be Enveloped to use this attack"
             },
             {
                 "name": "Bite",

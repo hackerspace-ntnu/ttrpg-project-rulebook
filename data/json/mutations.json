@@ -17,7 +17,7 @@
         "name": "Claws",
         "category": null,
         "abilities": ["Natural Weapon"],
-        "description": "Your nails elongate, harden and sharpen to become claws. When you gain this mutation, choose Agility + Insight or Might + Agility for the claws' Roll, and one of Infiltrate, Swift Strike and Dirty Fighting for their Active. Additionally they get the Light tag. This mutation doesn't stop you from wielding items, but you cannot attack with Claws while holding or otherwise using that hand.",
+        "description": "Your nails elongate, harden and sharpen to become claws. When you gain this mutation, choose Agility + Insight or Might + Agility for the claws' Roll, and one of Infiltrate, Swift Strike and Dirty Fighting for their Active. Additionally they get the Light tag. This mutation doesn't stop you from wielding items, but you cannot attack with Claws while holding anything wih or otherwise using that hand.",
         "tier": 2
     },
     "Coiled-up": {
@@ -229,12 +229,5 @@
         "abilities": ["Rooted"],
         "description": "Your feet grow woody spurts that can root you into the ground.",
         "tier": 2
-    },
-    "Pure": {
-        "name": "Pure",
-        "category": "Heritage",
-        "abilities": ["Clear Mind", "Clear Mind"],
-        "description": "A rare breed in the world, your lineage has somehow avoided mutations over the years.",
-        "tier": 0
     }
 }

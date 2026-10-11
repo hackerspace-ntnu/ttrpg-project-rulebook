@@ -267,7 +267,7 @@
         "tier": 1,
         "focus_cost": null,
         "ap_cost": null,
-        "description": "[Some ability or other related to sight]"
+        "description": "You gain Boon(1) on checks to make out visual details and spot things at a distance."
     },
     "Unsleeping": {
         "name": "Unsleeping",

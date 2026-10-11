@@ -4,8 +4,8 @@
 )
 
 #let textColor = rgb("#282828")
-#let fadedTextColor = rgb("#ff8282")
-#let backgroundColor = rgb("#ffe8d1")
+#let fadedTextColor = rgb("#f3eee1")
+#let backgroundColor = rgb("#ffffff")
 #let shadedBackgroundColor = rgb("#ffe8d1")
 
 #set text(
@@ -91,7 +91,7 @@
       colspan: 2,
       input("Name", height: 3em)
     ),
-    input[Ancestry],
+    input[Background],
     input[Heritage]
   ),
   statGrid(),
