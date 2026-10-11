@@ -1,12 +1,12 @@
-#set page(
-  margin: (x: 1cm, top: 1cm, bottom: 1cm),
-  fill: rgb("#ffe8d1")
-)
-
 #let textColor = rgb("#282828")
 #let fadedTextColor = rgb("#f3eee1")
 #let backgroundColor = rgb("#ffffff")
 #let shadedBackgroundColor = rgb("#ffe8d1")
+
+#set page(
+  margin: (x: 1cm, top: 1cm, bottom: 1cm),
+  fill: backgroundColor
+)
 
 #set text(
   fill: textColor,
@@ -370,7 +370,7 @@
     gutter: 0.5em,
     "Inventory",
     place(
-      dy: -0.45em,
+      dy: -0.445em,
       rect(
         width: 100%,
         height:1.6em,
