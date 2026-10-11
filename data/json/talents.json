@@ -116,7 +116,7 @@
       "tag": "Active",
       "focus_cost": 1,
       "ap_cost": 0,
-      "description": "When you fail a roll you may Double Down, rolling again with a chance of turning failure into success. If this roll fails the consequences are doubled, and you can not Double Down again."
+      "description": "After you make a roll, but before the result is revealed, you may Double Down, rolling again with a chance of turning failure into success. If this roll fails the consequences are doubled, and you can not Double Down again on the same Action."
     },
     {
       "name": "Calculated Risk",
@@ -127,12 +127,12 @@
       "description": "When targeted by an attack, you may leave yourself open, giving the attacker Boon(1) on the attack. In return, the attacker is left open, granting all attacks against it Boon(1) until its next Phase."
     },
     {
-      "name": "Greater Counter",
+      "name": "Critical Point",
       "category": "General",
       "tag": "Passive",
       "focus_cost": 0,
       "ap_cost": 0,
-      "description": "If you're granted the opportunity to Retaliate in response to an Attack with Boon made against you, you may Retaliate twice."
+      "description": "Whenever you land a Heavy Hit or higher, you may choose to roll for Damage instead of using the normal damage system. The die used for this roll is equal to the size of a Boon(Weapon damage + Successes - 1) die."
     }
   ],
   "Dirty Fighter": [
@@ -165,6 +165,38 @@
       "description": "You make a precise strike powerful enough to shock all Debuffs currently on the target out of them on hit. For each unique debuff removed, this Attack deals 1 extra Damage.",
       "valid_weapon_tags": ["Light"],
       "valid_weapon_types": ["Melee"]
+    }
+  ],
+  "Duelist": [
+    {
+      "name": "Fleet Footwork",
+      "category": "Presence",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "While neither you nor the target is adjacent to any other creatures, your movement does not provoke Retaliations from the target.",
+      "valid_weapon_tags": null,
+      "valid_weapon_types": null
+    },
+    {
+      "name": "Fencer",
+      "category": "Presence",
+      "tag": "Enhance",
+      "focus_cost": 1,
+      "ap_cost": 0,
+      "description": "Before or after making your next Attack Roll, you may Step 1 Space. If you move directly towards the target, gain Boon(1) on the Attack Roll. If you move away from the target, prepare to counter, allowing you to Retaliate the next time someone moves into your Threat.",
+      "valid_weapon_tags": ["One-handed"],
+      "valid_weapon_types": null
+    },
+    {
+      "name": "Flexible Counter",
+      "category": "Presence",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "When you take the Counter Retaliation, you may choose to Enhance the Retaliation with any compatible Attack Enhancement, paying its cost as normal.",
+      "valid_weapon_tags": ["One-handed"],
+      "valid_weapon_types": null
     }
   ],
   "Tank Buster": [
@@ -277,6 +309,38 @@
       "description": "Enemies have Bane(1) to attack allies within your Reach."
     }
   ],
+  "Polearm Fisher": [
+    {
+      "name": "Hook",
+      "category": "General",
+      "tag": "Enhance",
+      "focus_cost": 1,
+      "ap_cost": 0,
+      "description": "Your next Melee Attack pulls the target adjacent to you if it's smaller than you, or pull yourself adjacent to it if it's larger than you. If you're the same size, you choose.",
+      "valid_weapon_tags": ["Reach"],
+      "valid_weapon_types": null
+    },
+    {
+      "name": "Line",
+      "category": "General",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "When you Wrangle a target at the tip of your Weapon's Reach, the target is Slowed(Successes).",
+      "valid_weapon_tags": ["Reach"],
+      "valid_weapon_types": null
+    },
+    {
+      "name": "Sinker",
+      "category": "General",
+      "tag": "Passive",
+      "focus_cost": 1,
+      "ap_cost": 0,
+      "description": "...",
+      "valid_weapon_tags": ["Reach"],
+      "valid_weapon_types": null
+    }
+  ],
   "Pusher": [
     {
       "name": "Forceful",
@@ -359,6 +423,38 @@
       "description": "Gain 1 additional AP for this Round, but gain 1 less AP for the next Round. Cannot be used two rounds in a row."
     }
   ],
+  "Tank": [
+    {
+      "name": "Heavy Armor Training",
+      "category": "General",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "Your Heavy and Brutal Hit thresholds are increased by 1 while wearing Heavy Armor.",
+      "valid_weapon_tags": null,
+      "valid_weapon_types": null
+    },
+    {
+      "name": "",
+      "category": "General",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": ".",
+      "valid_weapon_tags": null,
+      "valid_weapon_types": null
+    },
+    {
+      "name": "",
+      "category": "General",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": ".",
+      "valid_weapon_tags": null,
+      "valid_weapon_types": null
+    }
+  ],
   "Team Player": [
     {
       "name": "Back to back",
@@ -383,6 +479,38 @@
       "focus_cost": 0,
       "ap_cost": 0,
       "description": "Once per day, you may initiate an extra Tag Team with any adjacent allies."
+    }
+  ],
+  "Versatile Fighter": [
+    {
+      "name": "Adaptable",
+      "category": "General",
+      "tag": "Active",
+      "focus_cost": 1,
+      "ap_cost": 0,
+      "description": "Until the start of your next turn, you treat a Weapon you're wielding as having one of the following tags, provided the weapon is not already tagged with it: Reach(2), Crush(1), Thrown(5)",
+      "valid_weapon_tags": ["Versatile", "One-handed", "Light"],
+      "valid_weapon_types": ["Melee"]
+    },
+    {
+      "name": "",
+      "category": "General",
+      "tag": "Active",
+      "focus_cost": 1,
+      "ap_cost": 0,
+      "description": "",
+      "valid_weapon_tags": ["Versatile", "One-handed", "Light"],
+      "valid_weapon_types": null
+    },
+    {
+      "name": "Greater Counter",
+      "category": "General",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "If you're granted the opportunity to Retaliate in response to an Attack made against you, you may Retaliate twice.",
+      "valid_weapon_tags": ["Versatile", "One-handed", "Light"],
+      "valid_weapon_types": null
     }
   ],
   "Unused Stuff": [

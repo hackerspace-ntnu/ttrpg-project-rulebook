@@ -46,13 +46,12 @@ These are things like a flint and steel, a pocket knife, a letter, or a sentimen
     align: (left,left,left,left,left,left,),
     table.header([], [#term("Evasion", is_definition: true) \ + Agility Mod\ + Insight Mod], [#term("Heavy Hit", is_definition: true)\ +
       Might Mod\ + Presence Mod], [#term("Brutal Hit", is_definition: true)\*\ + Might Mod\ + Presence
-      Mod], [Durability], [Speed],),
+      Mod], [Damage\ Reduction], [Speed],),
     table.hline(),
-    [No armor], [2], [6], [11], [0], [+1],
-    [Light armor], [3], [7], [12], [2], [],
-    [Medium armor], [2], [8], [13], [4], [],
-    [Heavy armor], [1], [10], [15], [6], [-1],
-    table.cell(colspan: 6, stroke: none)[\*Beyond Brutal: Every 5 above Brutal counts as +1 damage/success]
+    [No armor], [3], [6], [11], [], [+1],
+    [Normal Armor], [2], [8], [13], [], [],
+    [Heavy armor], [1], [6], [11], [1], [-1],
+    table.cell(colspan: 6, stroke: none)[\*Beyond Brutal: Every 5 above Brutal counts as +1 #term[Damage]/#term("Success", key: "Successes")],
   )]
   , caption: [== Armor & Damage Thresholds]
   , kind: table

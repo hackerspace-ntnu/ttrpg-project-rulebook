@@ -11,50 +11,49 @@
     "roll_dc": 5,
     "range": 5,
     "aoe": 0,
-    "aoe_type": ["Cube", "Cone", "Line", "Sphere", "Cylinder", "Emanation", "Swipe" ],
+    "aoe_type": [
+      "Cube",
+      "Cone",
+      "Line",
+      "Sphere",
+      "Cylinder",
+      "Emanation",
+      "Swipe"
+    ],
     "description": "[Spell effect]",
-    "enhancements": [
-        "[Name of spell enhancement]"
-    ]
+    "enhancements": ["[Name of spell enhancement]"]
   },
   "Acid Arrow": {
     "name": "Acid Arrow",
     "tag": ["Damage", "Debuff"],
     "tier": 1,
-    "focus_cost": 1,
+    "focus_cost": 2,
     "ap_cost": 1,
     "duration": "Instantanous",
     "target": "Creature",
     "roll_type": "Attack",
     "range": 5,
-    "description": "You conjure an arrow of acid and hurl it at the target, dealing 1 Damage and 1 Durability Damage. Additional Successes increase both Damage and Durability Damage",
-    "enhancements": [
-        "Splash",
-        "Hurl",
-        "Duplicate"
-    ]
+    "description": "You conjure an arrow of acid and hurl it at the target, dealing 1 Damage and reducing the target's Damage Reduction by 1 until the start of their next Phase. Additional Successes increase the Damage dealt.",
+    "enhancements": ["Splash", "Hurl", "Duplicate"]
   },
   "Shock": {
     "name": "Shock",
     "tag": ["Damage", "Debuff"],
     "tier": 1,
-    "focus_cost": 1,
+    "focus_cost": 2,
     "ap_cost": 1,
     "duration": "Instantanous",
     "target": "Creature",
     "roll_type": "Attack",
     "range": 3,
     "description": "A target within range is struck by electricity, taking 1 Damage and making their next 0 AP Action cost 1 AP.",
-    "enhancements": [
-        "Chain",
-        "Invigorate"
-    ]
+    "enhancements": ["Chain", "Invigorate"]
   },
   "Discharge": {
     "name": "Discharge",
     "tag": ["Damage", "Debuff"],
     "tier": 1,
-    "focus_cost": 1,
+    "focus_cost": 2,
     "ap_cost": 2,
     "duration": "Instantanous",
     "target": "Self",
@@ -63,16 +62,13 @@
     "aoe": 1,
     "aoe_type": "Emanation",
     "description": "All targets within range are struck by electricity, taking 1 Damage, Shocking them until the end of the Phase. While Shocked, any creature's Evasion is halved.",
-    "enhancements": [
-      "Expand",
-      "Empower"
-    ]
+    "enhancements": ["Expand", "Empower"]
   },
   "Scald": {
     "name": "Scald",
     "tag": ["Damage", "Debuff"],
     "tier": 1,
-    "focus_cost": 1,
+    "focus_cost": 2,
     "ap_cost": 1,
     "duration": "Instantanous",
     "target": "Creature",
@@ -81,16 +77,13 @@
     "aoe": 1,
     "aoe_type": "Sphere",
     "description": "Choose a Space within range. All creatures in the affected area take 1 Damage and are Exposed(1)",
-    "enhancements": [
-        "Expand",
-        "Hurl"
-    ]
+    "enhancements": ["Expand", "Hurl"]
   },
   "Flash Freeze": {
     "name": "Flash Freeze",
     "tag": ["Damage", "Debuff"],
     "tier": 1,
-    "focus_cost": 1,
+    "focus_cost": 2,
     "ap_cost": 1,
     "duration": "Instantanous",
     "target": "Point",
@@ -99,10 +92,7 @@
     "aoe": 1,
     "aoe_type": "Sphere",
     "description": "Choose a Space within range. All creatures in the affected area take 1 Damage and are Slowed(2). Water in the area Freezes.",
-    "enhancements": [
-        "Expand",
-        "Hurl"
-    ]
+    "enhancements": ["Expand", "Hurl"]
   },
   "Gust": {
     "name": "Gust",
@@ -115,9 +105,7 @@
     "roll_type": "",
     "range": 5,
     "description": "Summon a sudden gust of wind that immediately despawns. Creatures in the area are Vertical Pushed 2 Spaces. Additional Successes increase the Push distance by 1 Space.",
-    "enhancements": [
-        "Sustain"
-    ]
+    "enhancements": ["Sustain"]
   },
   "Motivate Earth": {
     "name": "Motivate Earth",
@@ -132,12 +120,7 @@
     "aoe_type": "Cube",
     "aoe": 1,
     "description": "You summon a Size 1 rock in a Space on the ground below or within 1 Space of yourself. You may then launch it in a line along the ground to a Space within range, stopping when it collides, dealing 1 Damage on hit and Pushing the target 1 Space. Creatures on top of the boulder move with it.\nIf a suitable Boulder is within Range of this spell, you can hurl it with this spell for 1 less Focus.",
-    "enhancements": [
-        "Hurl",
-        "Expand",
-        "Distant Origin",
-        "Splash"
-    ]
+    "enhancements": ["Hurl", "Expand", "Distant Origin", "Splash"]
   },
   "Mend": {
     "name": "Mend",
@@ -151,17 +134,13 @@
     "roll_dc": 5,
     "range": 0,
     "description": "Reconstruct the previous state of the targets, letting them regain 1 Grit. Every Success grants +1 healing.",
-    "enhancements": [
-        "Hurl",
-        "Splash",
-        "Empower"
-    ]
+    "enhancements": ["Hurl", "Splash", "Empower"]
   },
   "Control Water": {
     "name": "Control Water",
     "tag": ["Utility"],
     "tier": 1,
-    "focus_cost": 1,
+    "focus_cost": 2,
     "ap_cost": 1,
     "duration": "Shift",
     "target": "Space",
@@ -169,11 +148,7 @@
     "aoe": 3,
     "range": 5,
     "description": "Gain full control of all water and water-like substances not inside a living creature (arguing with GM is encouraged) in a 3x3x3 spaces large cube.",
-    "enhancements": [
-        "Expand",
-        "Sustain",
-        "Hurl"
-    ]
+    "enhancements": ["Expand", "Sustain", "Hurl"]
   },
   "Improvised Protection Pod": {
     "name": "Improvised Protection Pod",
@@ -185,11 +160,9 @@
     "target": "Self",
     "range": 0,
     "description": "Encase yourself in a brittle shell made up of random detritus on the ground around you. Ignore the next instance of damage you would take, but while the shell is up you cannot move.",
-    "enhancements": [
-        ""
-    ]
+    "enhancements": [""]
   },
-    "Bestow Mutation": {
+  "Bestow Mutation": {
     "name": "Bestow Mutation",
     "tag": ["Buff"],
     "tier": 2,
@@ -201,12 +174,9 @@
     "roll_dc": 5,
     "range": 5,
     "description": "You temporarily mutate a target to become more like you, roll a spellcasting check, the amount of successes determines the maximum tier of your own mutations you can choose. Choose one mutation, the target is afflicted with that mutation for the duration.",
-    "enhancements": [
-        "Duplicate",
-        "Sustain"
-    ]
+    "enhancements": ["Duplicate", "Sustain"]
   },
-    "Claim Mutation": {
+  "Claim Mutation": {
     "name": "Claim Mutation",
     "tag": ["Debuff"],
     "tier": 2,
@@ -217,10 +187,7 @@
     "roll_type": "Hit",
     "range": 5,
     "description": "You temporarily claim the mutation of another as your own. Determine randomly which mutation you steal, limited amongst mutations of Tier =< Successes",
-    "enhancements": [
-        "Duplicate",
-        "Sustain"
-    ]
+    "enhancements": ["Duplicate", "Sustain"]
   },
   "Dread Obelisk": {
     "name": "Dread Obelisk",
@@ -235,15 +202,15 @@
     "aoe_type": ["Cylinder"],
     "description": "An obelisk of dark stone rises from the ground, to a height of 4 Spaces. creatures in the space rise with it.",
     "enhancements": [
-        "Expand",
-        "[If we add a fear effect, make an enhancement that lets it inflict fear effects]"
+      "Expand",
+      "[If we add a fear effect, make an enhancement that lets it inflict fear effects]"
     ]
   },
   "Increase Gravity": {
     "name": "Increase Gravity",
     "tags": ["Debuff"],
     "tier": 1,
-    "focus_cost": 1,
+    "focus_cost": 2,
     "ap_cost": 1,
     "duration": "1 Round",
     "target": "Space",
@@ -253,10 +220,7 @@
     "aoe": 3,
     "aoe_type": ["Cylinder"],
     "description": "Creatures fully in the area has 1 less Speed, 1 more Stability, and take 1 extra falling damage. Additional Successes increase all effects by 1.",
-    "enhancements": [
-        "Expand",
-        "Invert"
-    ]
+    "enhancements": ["Expand", "Invert"]
   },
   "Inferno": {
     "name": "Inferno",
@@ -270,12 +234,7 @@
     "aoe": 2,
     "aoe_type": "Emanation",
     "description": "A fire ravages a space within range, dealing 1 damage.",
-    "enhancements": [
-        "Distant Origin",
-        "Expand",
-        "Hurl",
-        "Empower"
-    ]
+    "enhancements": ["Distant Origin", "Expand", "Hurl", "Empower"]
   },
   "Psychic Blast": {
     "name": "Psychic Blast",
@@ -288,8 +247,6 @@
     "roll_type": "Hit",
     "range": 5,
     "description": "0 Damage, ignores Armor, Impact(Damage Total)",
-    "enhancements": [
-        "[Name of spell enhancement]"
-    ]
+    "enhancements": ["[Name of spell enhancement]"]
   }
 }

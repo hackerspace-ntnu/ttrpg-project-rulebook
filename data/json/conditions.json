@@ -1,15 +1,24 @@
 {
-    "Grappled": {
-        "name": "Grappled",
-        "description": "Grappled creatures cannot make voluntary movements. A Grappled creature may take a Brawl: Grapple action to remove the Grappled condition.",
-        "parameter": "N"
-    },
-    "Prone": {
-        "name": "Prone",
-        "description": "Prone creatures must spend twice as much Speed to move and Melee attacks against them has Boon(1). A Prone creature can use the Move action to remove the condition if their speed is more than 0."
-    },
-    "Blinded": {
-        "name": "Blinded",
-        "description": "Blind creatures can only see adjacent Spaces."
-    }
+  "Grappled": {
+    "name": "Grappled",
+    "description": "Grappled creatures cannot make voluntary movements. A Grappled creature may take a Brawl: Grapple action to remove the Grappled condition.",
+    "parameter": "N"
+  },
+  "Prone": {
+    "name": "Prone",
+    "description": "Prone creatures must spend twice as much Speed to move and Melee attacks against them has Boon(1). A Prone creature can use the Move action to remove the condition if their speed is more than 0."
+  },
+  "Blinded": {
+    "name": "Blinded",
+    "description": "Blind creatures can only see adjacent Spaces."
+  },
+  "Exposed": {
+    "name": "Exposed",
+    "description": "Attacks against Exposed creatures gain Boon(1)."
+  },
+  "Slowed": {
+    "name": "Slowed",
+    "description": "Slowed creatures have their Speed reduced by N.",
+    "parameter": "N"
+  }
 }

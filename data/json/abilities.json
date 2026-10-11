@@ -10,17 +10,6 @@
     "valid_weapon_tags": ["Light"],
     "valid_weapon_types": null
   },
-  "Wrangle": {
-    "name": "Wrangle",
-    "category": "Insight",
-    "tag": "Enhance",
-    "tier": 1,
-    "focus_cost": 1,
-    "ap_cost": 0,
-    "description": "Your next Melee Attack pulls the target adjacent to you if it's smaller than you, or pull yourself adjacent to it if it's larger than you. If you're the same size, you choose.",
-    "valid_weapon_tags": ["Reach"],
-    "valid_weapon_types": null
-  },
   "Lunge/Parry": {
     "name": "Lunge/Parry",
     "category": "Insight",
@@ -42,28 +31,6 @@
     "description": "When rolling for your next #term[Attack], you add a third unique Attribute Die to the roll, picking two of the three rolled dice to use.",
     "valid_weapon_tags": ["Versatile", "One-handed"],
     "valid_weapon_types": ["Melee"]
-  },
-  "Adaptable": {
-    "name": "Adaptable",
-    "category": "Insight",
-    "tag": "Enhance",
-    "tier": 2,
-    "focus_cost": 1,
-    "ap_cost": 0,
-    "description": "Until the start of your next turn, you treat a Weapon you're wielding as having one of the following tags, provided the weapon is not already tagged with it: Reach(2), Crush(1), Thrown(5)",
-    "valid_weapon_tags": ["Versatile", "One-handed"],
-    "valid_weapon_types": ["Melee"]
-  },
-  "Fencer": {
-    "name": "Fencer",
-    "category": "Presence",
-    "tag": "Enhance",
-    "tier": 3,
-    "focus_cost": 1,
-    "ap_cost": 0,
-    "description": "Step 1 Space without provoking Opportunity Attacks before or after making the Attack Roll. If you move directly towards the target, gain Boon(1) on the Attack Roll. If you move away from the target, prepare to counter, allowing you to Retaliate the next time someone moves into your Threat.",
-    "valid_weapon_tags": ["One-handed"],
-    "valid_weapon_types": null
   },
   "Piercing Thrust": {
     "name": "Piercing Thrust",
