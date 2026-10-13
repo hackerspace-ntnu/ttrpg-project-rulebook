@@ -286,7 +286,7 @@
   "Protector": [
     {
       "name": "Protectlier",
-      "category": "Might",
+      "category": "General",
       "tag": "Passive",
       "focus_cost": 0,
       "ap_cost": 0,
@@ -294,19 +294,19 @@
     },
     {
       "name": "Valiant Aid",
-      "category": "Agility",
-      "tag": "Reaction",
-      "focus_cost": 1,
+      "category": "General",
+      "tag": "Passive",
+      "focus_cost": 0,
       "ap_cost": 0,
       "description": "You may use the Protect Reaction on allies within your Speed, moving to a space adjacent to them."
     },
     {
-      "name": "Protector",
-      "category": "Presence",
+      "name": "Not Even a Scratch",
+      "category": "General",
       "tag": "Passive",
       "focus_cost": 0,
       "ap_cost": 0,
-      "description": "Enemies have Bane(1) to attack allies within your Reach."
+      "description": "When you take the Protect Reaction, you gain 1 Damage Reduction to the triggering Attack."
     }
   ],
   "Polearm Fisher": [
@@ -425,34 +425,32 @@
   ],
   "Tank": [
     {
-      "name": "Heavy Armor Training",
+      "name": "Tough as Nails",
       "category": "General",
       "tag": "Passive",
       "focus_cost": 0,
       "ap_cost": 0,
-      "description": "Your Heavy and Brutal Hit thresholds are increased by 1 while wearing Heavy Armor.",
+      "description": "While wearing Armor your Heavy and Brutal Hit thresholds are increased by 1.",
       "valid_weapon_tags": null,
       "valid_weapon_types": null
     },
     {
-      "name": "",
+      "name": "Steady as a Rock",
       "category": "General",
       "tag": "Passive",
       "focus_cost": 0,
       "ap_cost": 0,
-      "description": ".",
+      "description": "While wearing Armor you gain the following benefits:\n- +1 Stability\n- You may, as a Reaction to an ally taking Knockback that sends them past you, cancel the Knockback at any point within your Reach.",
       "valid_weapon_tags": null,
       "valid_weapon_types": null
     },
     {
-      "name": "",
-      "category": "General",
+      "name": "Protector",
+      "category": "Presence",
       "tag": "Passive",
       "focus_cost": 0,
       "ap_cost": 0,
-      "description": ".",
-      "valid_weapon_tags": null,
-      "valid_weapon_types": null
+      "description": "Enemies have Bane(1) to attack allies within your Reach."
     }
   ],
   "Team Player": [
