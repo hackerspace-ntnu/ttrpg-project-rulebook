@@ -214,7 +214,7 @@
   rows: auto,
   gutter: 1em,
   column-gutter: 2em,
-  splitUnderline("Physicality", "Armor Durability"),
+  splitUnderline("Physicality", "Damage Reduction"),
   splitUnderline("Grit", "Guard"),
   grid(
     // stroke: black,

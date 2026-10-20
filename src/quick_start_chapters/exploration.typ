@@ -56,7 +56,6 @@ among these actions:
     - 1 RP - #emph[Keep Watch];: Roll a single Insight die. If the
       result is higher than the GMs encounter die, receive advance
       warning of threats to the party. \
-    - 1 RP - #emph[Repair Item];: (repeatable, requires a #link(<equipment-list>, "Repair Kit")): Choose an item and roll a repair check (Might + Insight). The item clears 1 + Successes Durability.
 
 == Encounter Checks
 To make an #term("Encounter Check", key: "Encounter Checks", is_definition: true) the GM rolls 2d8, with a 1 on either die meaning the Party will stumble upon the hex's Location, and an 8 on either die meaning an Encounter happens. 

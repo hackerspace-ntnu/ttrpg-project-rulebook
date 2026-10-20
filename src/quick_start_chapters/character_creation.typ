@@ -82,7 +82,7 @@ armor, and equipment, here are some options.
 
 If you want to play a character who can move quickly around the battlefield and attack at range, Agility and Insight are good choices for your highest Attribute scores. Take 2 Kunai/Daggers (your choice), a Longbow, a quiver, and either a bandolier with 3 more Kunai/Daggers or Light Armor.
 
-If you want your character to be able to withstand a lot of attacks, you should focus on Might and Insight. Take a Warhammer, Heavy Shield, Boomerang, and Heavy Armor. You may want an extra Boomerang or two. It's important to have a repair kit since this build is intended to block damage using the durability of your armor and shield.
+If you want your character to be able to withstand a lot of attacks, you should focus on Might and Insight. Take a Warhammer, Heavy Shield, Boomerang, and Heavy Armor. You may want an extra Boomerang or two.
 
 Alternatively, you can focus on dealing damage in melee, in which case Might and Presence are important Attributes. Choose a Greatsword, Sling, and Medium Armor. 
 
@@ -90,4 +90,4 @@ The absolute necessities are a backpack containing a bedroll and 8
 Rations. Feel free to get any other items you want and have space for,
 but consider leaving some room for other items you pick up along the
 way. It's a good idea to make sure at least one person in your party has
-a mess kit, rope, repair kit (the more the better), and torches. See the #link(<equipment>, "Equipment section") section for more details. 
+a mess kit, rope, and torches. See the #link(<equipment>, "Equipment section") section for more details. 

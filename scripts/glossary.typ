@@ -104,13 +104,13 @@
       // Alt render:
       // #entry_name\ #h(0.64cm)
       if (entry.location != none) {
-        [#entry_name: #link(entry.location, [p.#(entry.location.page()-1)])]
+        [#entry_name: #link(entry.location, [p.#counter(page).at(entry.location).first()])]
       } else {
         [! #entry_name: #entry.locations.dedup(
           key: l => l.at(1)
         ).dedup(
           key: l => l.at(0).page()
-        ).map(l => link(l.at(0), [p.#(l.at(0).page()-1)])).join(", ")]
+        ).map(l => link(l.at(0), [p.#(counter(page).at(l.at(0)).first())])).join(", ")]
       }
       linebreak()
     }

@@ -2,70 +2,55 @@
     "armor": [
         {
             "name": "No armor",
-            "evasion": 2,
+            "evasion": 3,
             "heavy hit": 6,
             "brutal hit": 11,
-            "durability": 0,
             "description": "+1 speed",
             "modifiers": {
                 "speed": 1
             } 
         },
         {
-            "name": "Light armor",
-            "evasion": 3,
-            "heavy hit": 7,
-            "brutal hit": 12,
-            "durability": 2,
-            "description": null
-        },
-        {
             "name": "Medium armor",
             "evasion": 2,
             "heavy hit": 8,
             "brutal hit": 13,
-            "durability": 4,
             "description": null
         },
         {
             "name": "Heavy armor",
             "evasion": 1,
-            "heavy hit": 10,
-            "brutal hit": 15,
-            "durability": 6,
-            "description": "-1 speed",
+            "heavy hit": 6,
+            "brutal hit": 11,
+            "description": "-1 speed, +1 Damage Reduction",
             "modifiers": {
-                "speed": -1
+                "speed": -1,
+                "damage reduction": 1
             }
         },
         {
             "name": "Spiked armor",
-            "evasion": 3,
-            "heavy hit": 7,
-            "brutal hit": 12,
-            "durability": 2,
-            "description": "+1 speed. Any entity either grappling or being grappled by the wearer of this armor will take 1 durability at the start of their turn.",
-            "modifiers": {
-                "speed": 1
-            }
+            "evasion": 2,
+            "heavy hit": 8,
+            "brutal hit": 13,
+            "description": "Any entity either grappling or being grappled by the wearer of this armor will take 1 Damage at the start of their turn."
         },
         {
             "name": "Arnomr",
             "evasion": 2,
             "heavy hit": 8,
             "brutal hit": 13,
-            "durability": 4,
-            "description": "Living armor that can't be repaired like normal armor. Will repair itself for 1 durability when the wearer rolls for Saturation. As a living being it dies when broken and can't be revived."
+            "description": "Living armor that feeds on the wearer when invigorated. Whenever the wearer rolls for Mana Saturation Arnomr consumes part of the wearer, dealing 1 unreducible Damage and gaining 1 Damage Reduction for the Shift, up to a maximum of 1."
         },
         {
             "name": "Magnet armor",
             "evasion": 1,
-            "heavy hit": 10,
-            "brutal hit": 15,
-            "durability": 6,
-            "description": "-1 speed. Covered in magnets that nullify the effects of external mana saturation. Wearer has Bane(2) when rolling for spellcasting.",
+            "heavy hit": 6,
+            "brutal hit": 11,
+            "description": "-1 speed, +1 Damage Reduction. Covered in magnets that nullify the effects of external mana saturation. Wearer has Boon(2) on rolls against Mana Saturation, but Bane(2) when rolling for spellcasting.",
             "modifiers": {
-                "speed": -1
+                "speed": -1,
+                "damage reduction": 1
             }
         }
     ]

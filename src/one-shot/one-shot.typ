@@ -33,6 +33,8 @@ Hunt a beast in a region of a few hexes
   - Drops
 Potential express by boat from the lake to the hunting grounds \
 
+Group of mercenaries/hunters/gloryseekers sent to slay a beast that has been spotted in the nearby landscape. The tribe/clan that has hired the players is nomadic, and needs to venture north (where the creature is) to complete their cyclical journey to the burial place of their ancestors. By the lake, there is a travelling party of merchants, on their way west. Accompanying the merchants are emissaries from "the understanding", sent to catalogue the flora and fauna of this relative frontier. They will offer payment of some kind if the players can gather information about the creature, promising relative riches if it can be captured alive. 
+
 = Setting
 == Environment
 === Salt Flats

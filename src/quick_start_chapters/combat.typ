@@ -28,26 +28,26 @@ The first 4 #term("Action Categories", is_definition: true) are subject to the #
 
 If an #term("Ability", key: "Abilities") doesn't specify an #term("Action Category", key: "Action Categories") to use, it doesn't stack RAP.
 
-=== Attack Actions
+*Attack Actions*\
 // TODO: Should all the actions be terms?
 #term("", key: "Attack Actions", is_definition: true)1 AP: #term("Attack", is_definition: true) with a #term("Weapon", key: "Weapons"). \
 Variable AP: #term("Cast", is_definition: true) a #term("Spell", key: "Spells").
 
-=== Move Actions
+*Move Actions*\
 #term("", key: "Move Actions", is_definition: true)0 AP: #term("Move", is_definition: true) up to your Speed. \
 0 AP: #term("Disengage", is_definition: true) from a single enemy, preventing your own movement from triggering Retaliations from them this phase. \
 
-=== Utility Actions
+*Utility Actions*\
 #term("", key: "Utility Actions", is_definition: true)1 AP: #term("Parley", is_definition: true) with a target. \
 1 AP: #term("Brawl", is_definition: true) with a target, making a #roll[Might][Insight] choosing either #term[Grapple] or #term[Shove]. \
 - #term("Grapple", is_definition: true) a target, inflicting #term("Grappled") and granting #boon("Success") to the first Attack against the target. Grappled creatures cannot make voluntary movements. Targets Evasion. \
 - #term("Shove", is_definition: true) a target 1 Space + 1 per #term("Success", key: "Successes"). 2 Spaces of Shove can be traded to knock the target Prone. Targets Evasion. 
 
-=== Item Actions
+*Item Actions*\
 #term("", key: "Item Actions", is_definition: true)0 AP: #term("Stow/Draw", is_definition: true) the Weapons or objects held in your hands to/from your #term[Quick Draw Inventory]. You can both Stow and Draw with a single activation of this Action. +1 AP to Stow to or Draw from #term[Inventory].\
 1 AP: #term("Interact", is_definition: true) with or #term("Use", is_definition: true) an item. \
  
-=== Static Actions
+*Static Actions*\
 <static-actions>
 #term("Static Actions", is_definition: true) are #term[Actions] you can take on your turn that are not affected by #term("RAP", key: "Repeated Action Penalty").
 
@@ -98,11 +98,8 @@ Rolling above the Heavy and Brutal hit thresholds each add +1 #term("Success", k
 Every +5 above Brutal hit counts as a +1 success. Normally each #term("Success", key: "Successes") means +1 #term[Damage], unless replaced with other abilities. 
 Certain actions such as #term[Grapple] ignore #term("Heavy", key: "Heavy Hit") and #term("Brutal", key: "Brutal Hit") thresholds and target Evasion directly, therefore using the standard +5 rule.
 
-You can #term("Block", is_definition: true) #term[Damage] with armor and weapons with the Durable tag.
-This requires no reaction, and when blocking the equipment takes the full #term[Damage] to its #term[Durability], including any excess damage. 
-If the equipment's #term[Durability] reaches 0, it's considered #term[Broken].
-
-If Armor is #term("Broken", is_definition: true) your Evasion and Speed remain the same, but your Heavy and Brutal Hit thresholds are calculated as if you have no armor.
+You can #term("Block", is_definition: true) #term[Damage] with weapons that has the Block tag.
+This is a #term("Reaction", key: "Reactions") costing 1 Focus, and will raise your #term[Damage Thresholds], potentially turning the triggering Attack into a miss or lowering the damage taken.
 
 Certain effects grant #term("Guard", is_definition: true), which grants temporary #term[Grit] that are instead reduced when you take damage.
 Separate effects granting Guard do not stack.

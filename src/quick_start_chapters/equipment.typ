@@ -21,15 +21,13 @@ These are things like a flint and steel, a pocket knife, a letter, or a sentimen
     align: (left,left,left,),
     table.header([Item], [Bulk], [Description],),
     table.hline(),
-    [Armor (worn/not worn)], [1+/2+], [Each tier above Light adds +1 #term[Bulk]],
+    [Armor (worn/not worn)], [1+/2+], [Each tier above Normal adds +1 #term[Bulk]],
     [Weapon], [1], [],
     [Heavy Weapon], [2], [],
-    [Bandolier], [1], [Can hold up to 3 Weapons with both the Light and Thrown tags (which then do not
+    [Bandolier], [1], [Can hold up to 3 Weapons with both the Light tag (which then do not
     count towards total Bulk), counting as #term[Quick Draw Inventory] for the sake of the #term[Stow/Draw] Action.],
     [Quiver], [1], [Comes with 20 Arrows, which it can hold],
     [Ration x4], [1], [Food and water],
-    [Repair Kit], [1], [Needed for Crafting Checks and Tinker Checks to
-    repair items],
     [Backpack], [1], [Can carry 3 Bulk, max one in use],
     [Mess kit], [1], [Needed for cooking],
     [Bedroll], [1], [Sleeping without doesn't recover #term[Wounds]],

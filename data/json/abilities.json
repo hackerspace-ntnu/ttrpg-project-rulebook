@@ -98,25 +98,6 @@
     "valid_weapon_tags": ["Two-handed"],
     "valid_weapon_types": ["Ranged"]
   },
-  "Block": {
-    "name": "Block",
-    "category": "Weapon",
-    "tag": "Active",
-    "focus_cost": 1,
-    "ap_cost": 0,
-    "description": "When hit by an attack roll, raise your Damage Thresholds by an amount equal to the Durable tag of this weapon.",
-    "valid_weapon_tags": ["Durable"],
-    "valid_weapon_types": null
-  },
-  "Kratonian": {
-    "name": "Kratonian",
-    "category": "Might",
-    "tag": "Passive",
-    "tier": 5,
-    "focus_cost": 0,
-    "ap_cost": 0,
-    "description": "You can one-hand two-handed weapons."
-  },
   "Hittable face": {
     "name": "Hittable face",
     "category": "Presence",
@@ -229,6 +210,15 @@
     "ap_cost": 0,
     "description": "You know a guy who knows a guy… Gain an insider in an organisation of your choosing. You can spend Scrap to get something illegal or difficult to find through the contact."
   },
+  "Talented": {
+    "name": "Talented",
+    "category": "General",
+    "tag": "Passive",
+    "tier": 3,
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": "(Repeatable) Gain 1 Tiered Ability of your choice, as long as it's available to you normally."
+  },
   "Sturdy": {
     "name": "Sturdy",
     "category": "Might",
@@ -255,6 +245,15 @@
     "focus_cost": 0,
     "ap_cost": 0,
     "description": "When rolling your Death Save you may use your Might die for the roll, instead of the standard d8."
+  },
+  "Kratonian": {
+    "name": "Kratonian",
+    "category": "Might",
+    "tag": "Passive",
+    "tier": 5,
+    "focus_cost": 0,
+    "ap_cost": 0,
+    "description": "You can one-hand two-handed weapons, and you can off-hand one-handed weapons."
   },
   "Innate Magic": {
     "name": "Innate Magic",

@@ -100,19 +100,19 @@
       "name": "Light Shield",
       "attributes": null,
       "ability": "Block",
-      "tags": ["Arm Attachment", "Durable(2)"]
+      "tags": ["Arm Attachment", "Block(2)"]
     },
     {
       "name": "Medium Shield",
       "attributes": ["Might", "Insight"],
       "ability": "Block",
-      "tags": ["Light", "Durable(3)", "Sharp(-1)"]
+      "tags": ["Light", "Block(3)", "Sharp(-1)"]
     },
     {
       "name": "Heavy Shield",
       "attributes": ["Might", "Insight"],
       "ability": "Block",
-      "tags": ["Light", "Unwieldy(1)", "Durable(4)"]
+      "tags": ["Unwieldy(1)", "Block(4)"]
     }
   ]
 }
