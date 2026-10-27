@@ -33,7 +33,7 @@
     "target": "Creature",
     "roll_type": "Attack",
     "range": 5,
-    "description": "You conjure an arrow of acid and hurl it at the target, dealing 1 Damage and reducing the target's Damage Reduction by 1 until the start of their next Phase. Additional Successes increase the Damage dealt.",
+    "description": "You conjure an arrow of acid and hurl it at the target, dealing 1 Damage and reducing the target's Block by 1 until the start of their next Phase. Additional Successes increase the Damage dealt.",
     "enhancements": ["Splash", "Hurl", "Duplicate"]
   },
   "Shock": {

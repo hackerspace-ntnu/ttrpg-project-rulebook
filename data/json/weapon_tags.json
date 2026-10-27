@@ -4,7 +4,7 @@
     "description": "Cannot be used to make attacks, but leaves your hand open. If in the same hand as another Weapon, you lower the die size of both die for all Attack Rolls made with that weapon by 1. If you can't reduce the die size any further you instead halve the die result."
   },
   {
-    "name": "Block",
+    "name": "Intercept",
     "description": "As a Reaction when hit by an Attack, you may spend 1 Focus to raise your Evasion and Damage Thresholds by N.",
     "parameter": "N"
   },

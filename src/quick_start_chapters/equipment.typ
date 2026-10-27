@@ -21,7 +21,8 @@ These are things like a flint and steel, a pocket knife, a letter, or a sentimen
     align: (left,left,left,),
     table.header([Item], [Bulk], [Description],),
     table.hline(),
-    [Armor (worn/not worn)], [1+/2+], [Each tier above Normal adds +1 #term[Bulk]],
+    [Armor (worn/not worn)], [1/2], [],
+    [Heavy Armor (worn/not worn)], [2/3], [],
     [Weapon], [1], [],
     [Heavy Weapon], [2], [],
     [Bandolier], [1], [Can hold up to 3 Weapons with both the Light tag (which then do not
@@ -44,11 +45,11 @@ These are things like a flint and steel, a pocket knife, a letter, or a sentimen
     align: (left,left,left,left,left,left,),
     table.header([], [#term("Evasion", is_definition: true) \ + Agility Mod\ + Insight Mod], [#term("Heavy Hit", is_definition: true)\ +
       Might Mod\ + Presence Mod], [#term("Brutal Hit", is_definition: true)\*\ + Might Mod\ + Presence
-      Mod], [Damage\ Reduction], [Speed],),
+      Mod], [Block], [Speed],),
     table.hline(),
-    [No armor], [3], [6], [11], [], [+1],
-    [Normal Armor], [2], [8], [13], [], [],
-    [Heavy armor], [1], [6], [11], [1], [-1],
+    [No armor], [3], [5], [10], [], [+1],
+    [Medium Armor], [2], [6], [11], [1], [],
+    [Heavy armor], [1], [7], [12], [2], [-1],
     table.cell(colspan: 6, stroke: none)[\*Beyond Brutal: Every 5 above Brutal counts as +1 #term[Damage]/#term("Success", key: "Successes")],
   )]
   , caption: [== Armor & Damage Thresholds]

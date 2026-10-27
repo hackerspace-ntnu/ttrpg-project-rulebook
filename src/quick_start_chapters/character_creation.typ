@@ -11,13 +11,13 @@ Base #term[Focus]: 7 \
 Base #term[Carrying Capacity]: 5 \
 Base #term[Speed]: 3 Spaces
 
-#term("Grit", is_definition: true) is a measure of the physical and mental strain a character can withstand, acting similar to HP in other games.
+#term("Grit", is_definition: true) is a measure of the physical and mental strain a character can withstand. Whenever you take any amount of #term("Damage", is_definition: true), you lose that much #term[Grit].
 
 #term("Focus", is_definition: true) is a measure of your awareness of your surroundings and the state of yourself, and is spent to use certain #term[Abilities] and #term[Actions]. 
 
 #term[Carrying Capacity] is a measure of how much #term[Bulk] you can carry, and is discussed further in the #link(<equipment>, "Equipment section").
 
-#term("Speed", is_definition: true) defines how many #term[Spaces] you can move using a single #term[Move], with #term("Spaces", is_definition: true) being an abstract unit of distance used in combat.
+#term("Speed", is_definition: true) defines how many #term[Spaces] you can move using a single #term[Move] in combat, with one #term("Space", is_definition: true, key: "Spaces") being approximately 1 meter.
 
 == Attributes
 Each character has 4 #term("Attributes", is_definition: true) that are represented by a die of size d4-d12.
@@ -68,6 +68,17 @@ If you want to make your own #term("Heritage", key: "Heritages"), start with Bla
 #term("Backgrounds") can be invoked for non-combat rolls to gain #boon(1) on the roll, given it makes sense for it to help in the narrative.
 
 Furthermore, when choosing your #term("Background", key: "Backgrounds") you gain a single tier 1 #term("Tiered Ability", key: "Tiered Abilities") of the #term("Attribute", key: "Attributes") denoted by your #term("Background", key: "Backgrounds").
+
+== Core Memories
+Come up with three #term("Core Memories", is_definition: true) that define your character.
+These can be fond memories of a loved one, trauma from your past, a great achievement, or anything else you can think of.
+
+Talking with your fellow players and linking 1-2 of the #term[Core Memories] with them sets a great foundation for the party dynamic.
+They don't need to be the same as the other characters', and ideally shouldn't, but they could be different perspectives of the same event.
+
+#term[Core Memories] are linked to parts of the #term("Focus Track", key: "Focus") on the 
+//#link(<character-sheet>, "Character Sheet").
+When the linked #term[Focus] is #term("Corrupted", key: "Corruption"), you lose the associated #term("Core Memory", key: "Core Memories") forever.
 
 == Mutations
 // TODO: Looks like this rule applies for all links after this point in the character creation document, including those to tables or terms. How do we feel about that?

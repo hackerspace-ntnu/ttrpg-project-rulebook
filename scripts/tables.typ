@@ -1,12 +1,31 @@
-#import "./glossary.typ": term, glossary_types
+#import "./glossary.typ": term, boon, bane, roll
 
-#let parseTerms(text) = {
-  let terms = text.matches(regex("#term\[(.+)\]"))
-  if (terms.len() > 0) {
-    let split_text = text.split(regex("#term\[.+\]"))
-    split_text.zip(terms.map((entry) => {entry.captures.map((x) => {term[#x]})})).flatten().join()
-    split_text.at(-1)
-  } else {
+/* functions_dict is used to parse functions by mapping function names (strings) to the actual functions.
+   Simply add mappings (make sure you import the function if it's not built in) to enable parsing them.
+   parseFunctions currently only passes arguments as strings, but can handle named arguments.
+*/
+#let functions_dict = ("term": term, "boon": boon, "bane": bane, "roll": roll)
+#let parseFunctions(text) = {
+  let functions = text.matches(regex("#(.+?)[\[\(](.+?)[\]\)]")) // Matches strings that start with #<fun> followed by (<args>) or [<arg>], capturing the function name and arguments
+  if (functions.len() > 0) { // If there were any functions, we need to parse them
+    let split_text = text.split(regex("#.+?[\[(].+?[\])]")) // Split the text to obtain all the non-function text
+    // Combine the text fragments with the function calls
+    split_text.zip(functions.map((entry) => {
+        // Since function arguments are captured as one string, we must split the string and flatten the resulting array together with the function name
+        let split_captures = entry.captures.map((e) => e.split(regex(", +"))).flatten()
+        // Get the index of the first named argument
+        let named_params_index = split_captures.position((e) => e.contains(":"))
+        if (named_params_index != none) { // If there are named arguments, parse them into actual arguments
+          // Make a dictionary out of the list of named arguments by splitting each one around the colon and turning the resulting array of pairs into a dictionary with the array method to-dict()
+          let named_params_dict = split_captures.slice(named_params_index).map((e) => e.split(": ")).to-dict()
+          // Get the correct function and call it using the spread of the unnamed argument array and the spread of the named argument dictionary
+          functions_dict.at(split_captures.at(0))(..split_captures.slice(1, named_params_index), ..named_params_dict)
+        } else { // If there are no unnamed arguments, do the same thing without those
+          functions_dict.at(split_captures.at(0))(..split_captures.slice(1))
+        }
+    })).flatten().join() // Zip returns an array of pairs, which are flattened and then joined into a single piece of content
+    split_text.at(-1) // Add on the last piece of the split text, which isn't already included because zip only pairs up elements from the input lists, so the text that comes after the last function is left out
+  } else { // If there aren't functions in text, just return text
     text
   }
 }
@@ -31,7 +50,7 @@ table(
     if (entry.attributes == none) {}
     else {entry.attributes.join(" + ")},
     if (ability == none) {}
-    else {ability.name + ":\n" + ability.description},
+    else {ability.name + ":\n" + parseFunctions(ability.description)},
     if (entry.tags == none) {}
     else {entry.tags.join("\n")},
   )})
@@ -61,7 +80,7 @@ table(
     table.hline(),
     ..data.map((entry) => (
       term(entry.name, is_definition: true),
-      entry.description,
+      parseFunctions(entry.description),
     )).flatten(),
   )
 }
@@ -91,7 +110,7 @@ table(
         entry.category 
         linebreak()
       }
-      entry.description
+      parseFunctions(entry.description)
       linebreak()
       if (entry.abilities != none) {
         for ability in entry.abilities {
@@ -99,7 +118,7 @@ table(
           let a = abilities.at(ability)
           (
             emph(a.tag + ": " + a.name),
-            if (a.tag == "Active") {"AP: " + str(a.ap_cost) + "  Focus: " + str(a.focus_cost) + "\n"} + a.description,
+            if (a.tag == "Active") {"AP: " + str(a.ap_cost) + "  Focus: " + str(a.focus_cost) + "\n"} + parseFunctions(a.description),
           ).join("\n")
           linebreak()
         }
@@ -150,7 +169,7 @@ table(
         "Focus: " + str(entry.focus_cost)
         linebreak()
       }
-      parseTerms(entry.description)
+      parseFunctions(entry.description)
       linebreak()
       if ("valid_weapon_tags" in entry and type(entry.valid_weapon_tags) == array) {
         linebreak()
@@ -188,7 +207,7 @@ table(
           "Focus: " + str(entry.focus_cost)
           linebreak()
         }
-        entry.description
+        parseFunctions(entry.description)
         linebreak()
       }
     })
@@ -210,7 +229,7 @@ table(
           str(heritage.name)
           linebreak()
           linebreak()
-          heritage.description
+          parseFunctions(heritage.description)
           linebreak()
           linebreak()
           "Mutations: " + heritage.mutations.join(", ")
@@ -235,6 +254,32 @@ table(
           }
         )
       }
+    }
+  ))
+}
+
+#let bestiaryTable(bestiary, abilities) = {
+  columns(2,
+  gutter: 3em,
+  block(
+
+  )
+  )
+}
+
+#let spellTable(spells, enhancements) = {
+  columns(2,
+  gutter: 3em,
+  block(
+    for spell in spells.values() {
+      block(
+        breakable: false,
+        fill: color.rgb("#f7fad7"),
+        inset: (x: 1em, y: 1.2em),
+        radius: 1em,
+        {
+
+        })
     }
   ))
 }

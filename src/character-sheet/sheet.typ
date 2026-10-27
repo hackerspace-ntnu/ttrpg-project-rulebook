@@ -1,11 +1,12 @@
 #let textColor = rgb("#282828")
-#let fadedTextColor = rgb("#f3eee1")
+#let fadedTextColor = rgb("#bcb9b0")
 #let backgroundColor = rgb("#ffffff")
 #let shadedBackgroundColor = rgb("#ffe8d1")
 
 #set page(
   margin: (x: 1cm, top: 1cm, bottom: 1cm),
-  fill: backgroundColor
+  fill: backgroundColor,
+  numbering: none
 )
 
 #set text(
@@ -214,17 +215,14 @@
   rows: auto,
   gutter: 1em,
   column-gutter: 2em,
-  splitUnderline("Physicality", "Damage Reduction"),
-  splitUnderline("Grit", "Guard"),
+  underlined("Physicality"),
+  underlined("Grit"),
   grid(
     // stroke: black,
-    columns: (3fr, 1fr),
+    columns: (1fr, 4fr, 2fr),
     rows: auto,
     gutter: 1em,
-    column-gutter: 2em,
-    grid(
-      columns: (1fr, 3fr),
-      column-gutter: 0.5em,
+    column-gutter: 1em,
       rect(
         width: 100%,
         height: 3.4em ,
@@ -255,53 +253,42 @@
           #align(center, "Brutal Hit")
         ],
       ),
-    ),
-    grid.cell(
-      stroke: none,
-      align: center,
       grid(
-        columns: 4,
+        columns: 2,
         rows: auto,
-        gutter: 0.5em,
-        row-gutter: 0.75em,
-        ..range(0,8).map(i => {
-          rect(
-            width: 1.33em,
-            height: 1.33em,
-            stroke: fadedTextColor
-          )
-        }),
-      ),
-    ),
+        gutter: 0em,
+
+      rect(
+        width: 100%,
+        height: 3.4em ,
+      )[
+        #align(center + top, "Block")
+      ],
+        rect(
+          width: 100%,
+          height: 3.4em ,
+        )[
+          #align(center + top, "Guard")
+        ],
+      )
   ),
   grid(
-    columns: (4fr, 1fr),
-    gutter: 1em,
-    column-gutter: 2em,
-    grid(
-      columns: 9,
-      rows: auto,
-      gutter: 0.5em,
-      row-gutter: 0.75em,
-      ..range(0,18).map(i => {
-        if (i == 4 or i == 13) {
-        } else {
-          rect(
-            width: 100%,
-            height: 1.33em,
-            stroke: (if (i < 9) {textColor} else {fadedTextColor})
+    columns: 9,
+    rows: auto,
+    gutter: 0.5em,
+    row-gutter: 0.75em,
+    ..range(0,18).map(i => {
+      if (i == 4 or i == 13) {
+      } else {
+        rect(
+          width: 100%,
+          height: 1.33em,
+          stroke: (if (i < 9) {textColor} else {fadedTextColor})
 
-          )
-        }
-      }),
-    ),
-    align(center + horizon)[
-      #rect(
-        width: 100%,
-        height: 3.4em,
-      )
-    ],
-  )
+        )
+      }
+    }),
+  ),
 )
 
 
@@ -352,10 +339,10 @@
     fadedText[Notes],
   )
   v(1em)
-  align(center)[
+  align(left)[
     #rect(
-      width: 60%,
-      height: 4.86em,
+      width: 32%,
+      height: 1.888cm,
     )[
       #align(bottom)[#fadedText("Pocket")]
     ]

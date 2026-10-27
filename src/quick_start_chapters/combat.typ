@@ -98,17 +98,19 @@ Rolling above the Heavy and Brutal hit thresholds each add +1 #term("Success", k
 Every +5 above Brutal hit counts as a +1 success. Normally each #term("Success", key: "Successes") means +1 #term[Damage], unless replaced with other abilities. 
 Certain actions such as #term[Grapple] ignore #term("Heavy", key: "Heavy Hit") and #term("Brutal", key: "Brutal Hit") thresholds and target Evasion directly, therefore using the standard +5 rule.
 
-You can #term("Block", is_definition: true) #term[Damage] with weapons that has the Block tag.
+You can #term("Intercept", is_definition: true) #term[Damage] with weapons that has the Intercept tag.
 This is a #term("Reaction", key: "Reactions") costing 1 Focus, and will raise your #term[Damage Thresholds], potentially turning the triggering Attack into a miss or lowering the damage taken.
 
 Certain effects grant #term("Guard", is_definition: true), which grants temporary #term[Grit] that are instead reduced when you take damage.
-Separate effects granting Guard do not stack.
+The most common of these is #term("Block", is_definition: true), which grants a creature an amount of #term("Guard") equal to their #term[Block] at the start of each combat #term("Round", key: "Rounds").
+
+#term("Guard") does not stack with itself. If a creature with #term[Guard] would gain any #term[Guard], only the highest value is kept.
 
 == Retaliations
 <retaliations>
-If you take 0 Damage from an Attack, whether by Evading, Blocking, or
-other means, or if you have #term[Guard] remaining after it, you may Retaliate.
-Retaliation effects happen automatically with no roll needed.
+If you take 0 Damage from an Attack, whether by Evading, Intercepting, or
+other means, including if all the damage taken was dealt to #term[Guard], you may #term("Retaliate", key: "Retaliations").
+Retaliation effects happen automatically with no roll needed, and cannot be Retaliated in turn.
 
 Below is a list of standard #term("Retaliations", is_definition: true), but certain Weapons, Mutations, and Feats can unlock more options.
 

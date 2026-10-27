@@ -47,13 +47,13 @@
       "valid_weapon_types": null
     },
     {
-      "name": "Random Bullshit Go!",
+      "name": "Opportunist",
       "category": "Agility",
       "tag": "Passive",
       "focus_cost": 0,
       "ap_cost": 0,
-      "description": "You may treat all Light weapons as if they have Thrown(5). If the weapon already has Thrown, its range increases by 3.",
-      "valid_weapon_tags": ["Light"],
+      "description": "If Return causes a creature to be hit by 3 or more weapons at once, you may immediately make a free Attack against them.",
+      "valid_weapon_tags": ["Thrown"],
       "valid_weapon_types": null
     }
   ],
@@ -132,7 +132,7 @@
       "tag": "Passive",
       "focus_cost": 0,
       "ap_cost": 0,
-      "description": "Whenever you land a Heavy Hit or higher, you may choose to roll for Damage instead of using the normal damage system. The die used for this roll is equal to the size of a Boon(Weapon damage + Successes - 1) die."
+      "description": "Whenever you land a Heavy Hit or higher, you may choose to roll for Damage instead of using the normal damage system. The die used for this roll is equal to the size of a #boon(Weapon damage + Successes - 1) die."
     }
   ],
   "Dirty Fighter": [
@@ -206,17 +206,7 @@
       "tag": "Passive",
       "focus_cost": 0,
       "ap_cost": 0,
-      "description": "Whenever you deal damage to Armor with a compatible Weapon, deal 1 extra Damage",
-      "valid_weapon_tags": ["Two-handed", "Heavy", "Crush"],
-      "valid_weapon_types": null
-    },
-    {
-      "name": "Can Opener",
-      "category": "Might",
-      "tag": "Enhance",
-      "focus_cost": 1,
-      "ap_cost": 0,
-      "description": "You Attack the target's Armor directly, without giving the target an opportunity to Retaliate provided you don't miss.",
+      "description": "Whenever you deal damage to Guard with a compatible Weapon, deal 1 extra Damage",
       "valid_weapon_tags": ["Two-handed", "Heavy", "Crush"],
       "valid_weapon_types": null
     },
@@ -226,7 +216,17 @@
       "tag": "Passive",
       "focus_cost": 0,
       "ap_cost": 0,
-      "description": "When you break a target's Armor, you may immediately make a free Attack against them.",
+      "description": "When you break a target's Guard, you may immediately make a free Attack against them.",
+      "valid_weapon_tags": ["Two-handed", "Heavy", "Crush"],
+      "valid_weapon_types": null
+    },
+    {
+      "name": "Can Opener",
+      "category": "Might",
+      "tag": "Enhance",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "When you land a Brutal Hit on a target, you reduce their #term[Block] by 1. #term[Block] reduced this way can be restored at a rate of 1 Block for 1 #(Rest Point, key: Rest Points)",
       "valid_weapon_tags": ["Two-handed", "Heavy", "Crush"],
       "valid_weapon_types": null
     }
@@ -306,7 +306,7 @@
       "tag": "Passive",
       "focus_cost": 0,
       "ap_cost": 0,
-      "description": "When you take the Protect Reaction, you gain 1 Damage Reduction to the triggering Attack."
+      "description": "When you take the Protect Reaction, you gain 1 Block to the triggering Attack."
     }
   ],
   "Polearm Fisher": [
@@ -326,7 +326,7 @@
       "tag": "Passive",
       "focus_cost": 0,
       "ap_cost": 0,
-      "description": "When you Wrangle a target at the tip of your Weapon's Reach, the target is Slowed(Successes).",
+      "description": "When you Hook a target at the tip of your Weapon's Reach, the target is Slowed(Successes).",
       "valid_weapon_tags": ["Reach"],
       "valid_weapon_types": null
     },
@@ -336,7 +336,7 @@
       "tag": "Passive",
       "focus_cost": 1,
       "ap_cost": 0,
-      "description": "...",
+      "description": "When you hit a target who is #term[Slowed], you may knock them #[Prone]",
       "valid_weapon_tags": ["Reach"],
       "valid_weapon_types": null
     }
@@ -484,29 +484,29 @@
       "name": "Adaptable",
       "category": "General",
       "tag": "Active",
-      "focus_cost": 1,
-      "ap_cost": 0,
-      "description": "Until the start of your next turn, you treat a Weapon you're wielding as having one of the following tags, provided the weapon is not already tagged with it: Reach(2), Crush(1), Thrown(5)",
+      "focus_cost": 0,
+      "ap_cost": 1,
+      "description": "Until the end of the Scene or you use this Ability again, you treat all compatible Weapons you're wielding as having one of the following tags, provided the weapon is not already tagged with it: Reach(2), Crush(1), Thrown(5)",
       "valid_weapon_tags": ["Versatile", "One-handed", "Light"],
       "valid_weapon_types": ["Melee"]
     },
     {
-      "name": "",
+      "name": "Soft Reset",
       "category": "General",
       "tag": "Active",
-      "focus_cost": 1,
+      "focus_cost": 0,
       "ap_cost": 0,
-      "description": "",
+      "description": "When you make an #term(Attack, key: Attacks) you may end the active Adaptable effect early, retaining the bonus for this #term(Attack, key: Attacks) and granting #boon[1] to it. In addition, you gain the following new options for Adaptable: Intercept(2), Impact(1)",
       "valid_weapon_tags": ["Versatile", "One-handed", "Light"],
       "valid_weapon_types": null
     },
     {
-      "name": "Greater Counter",
+      "name": "Two for One",
       "category": "General",
-      "tag": "Passive",
+      "tag": "Active",
       "focus_cost": 0,
       "ap_cost": 0,
-      "description": "If you're granted the opportunity to Retaliate in response to an Attack made against you, you may Retaliate twice.",
+      "description": "You may have two Adaptable effects active at once. In addition, you gain the following new options for Adaptable: Crush(2), Sharp(1)",
       "valid_weapon_tags": ["Versatile", "One-handed", "Light"],
       "valid_weapon_types": null
     }
@@ -519,6 +519,26 @@
       "focus_cost": 0,
       "ap_cost": 0,
       "description": "At the start of each Round in combat, you may designate 1 ally, moving them to the Rushed Phase without spending AP."
+    },
+    {
+      "name": "Random Bullshit Go!",
+      "category": "Agility",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "You may treat all Light weapons as if they have Thrown(5). If the weapon already has Thrown, its range increases by 3.",
+      "valid_weapon_tags": ["Light"],
+      "valid_weapon_types": null
+    },
+    {
+      "name": "Greater Counter",
+      "category": "General",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "If you're granted the opportunity to Retaliate in response to an Attack made against you, you may Retaliate twice, choosing two different options.",
+      "valid_weapon_tags": ["Versatile", "One-handed", "Light"],
+      "valid_weapon_types": null
     }
   ]
 }

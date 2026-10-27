@@ -6,7 +6,7 @@
     "tier": 3,
     "focus_cost": 1,
     "ap_cost": 0,
-    "description": "Your next Attack uses the target's Evasion as baseline when determining the thresholds for Heavy+ Hits, defaulting to the 5+ rule.",
+    "description": "Your next #term[Attack] uses the target's Evasion as baseline when determining the thresholds for Heavy+ Hits, defaulting to the 5+ rule.",
     "valid_weapon_tags": ["Light"],
     "valid_weapon_types": null
   },
@@ -28,7 +28,7 @@
     "tier": 1,
     "focus_cost": 2,
     "ap_cost": 0,
-    "description": "When rolling for your next #term[Attack], you add a third unique Attribute Die to the roll, picking two of the three rolled dice to use.",
+    "description": "When rolling for your next #term[Attack], you add a third unique #term(Attribute Die, key: Attribute Dice) to the roll, picking two of the three rolled dice to use.",
     "valid_weapon_tags": ["Versatile", "One-handed"],
     "valid_weapon_types": ["Melee"]
   },
@@ -163,7 +163,7 @@
     "tag": "Active",
     "focus_cost": 0,
     "ap_cost": 0,
-    "description": "Before doing first aid, do a damaging attack to get a Boon(2) to the roll."
+    "description": "Before doing first aid, do a damaging attack to get a #boon(2) to the roll."
   },
   "Flat Earther": {
     "name": "Flat Earther",

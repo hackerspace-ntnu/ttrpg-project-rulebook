@@ -99,20 +99,20 @@
     {
       "name": "Light Shield",
       "attributes": null,
-      "ability": "Block",
-      "tags": ["Arm Attachment", "Block(2)"]
+      "ability": "Intercept",
+      "tags": ["Arm Attachment", "Intercept(2)"]
     },
     {
       "name": "Medium Shield",
       "attributes": ["Might", "Insight"],
-      "ability": "Block",
-      "tags": ["Light", "Block(3)", "Sharp(-1)"]
+      "ability": "Intercept",
+      "tags": ["Light", "Intercept(3)", "Sharp(-1)"]
     },
     {
       "name": "Heavy Shield",
       "attributes": ["Might", "Insight"],
-      "ability": "Block",
-      "tags": ["Unwieldy(1)", "Block(4)"]
+      "ability": "Intercept",
+      "tags": ["Unwieldy(1)", "Intercept(4)"]
     }
   ]
 }

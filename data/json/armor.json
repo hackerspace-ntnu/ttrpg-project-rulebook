@@ -3,8 +3,8 @@
         {
             "name": "No armor",
             "evasion": 3,
-            "heavy hit": 6,
-            "brutal hit": 11,
+            "heavy hit": 5,
+            "brutal hit": 10,
             "description": "+1 speed",
             "modifiers": {
                 "speed": 1
@@ -13,19 +13,22 @@
         {
             "name": "Medium armor",
             "evasion": 2,
-            "heavy hit": 8,
-            "brutal hit": 13,
-            "description": null
+            "heavy hit": 6,
+            "brutal hit": 11,
+            "description": "+1 Block",
+            "modifiers": {
+                "block": 1
+            }
         },
         {
             "name": "Heavy armor",
             "evasion": 1,
-            "heavy hit": 6,
-            "brutal hit": 11,
-            "description": "-1 speed, +1 Damage Reduction",
+            "heavy hit": 7,
+            "brutal hit": 12,
+            "description": "-1 speed, +2 Block",
             "modifiers": {
                 "speed": -1,
-                "damage reduction": 1
+                "block": 2
             }
         },
         {
@@ -40,17 +43,17 @@
             "evasion": 2,
             "heavy hit": 8,
             "brutal hit": 13,
-            "description": "Living armor that feeds on the wearer when invigorated. Whenever the wearer rolls for Mana Saturation Arnomr consumes part of the wearer, dealing 1 unreducible Damage and gaining 1 Damage Reduction for the Shift, up to a maximum of 1."
+            "description": "Living armor that feeds on the wearer when invigorated. Whenever the wearer rolls for Mana Saturation Arnomr consumes part of the wearer, dealing 1 unreducible Damage and gaining 1 Block, up to a maximum of 4. At the end of each Shift, Arnomr loses 1 Block."
         },
         {
             "name": "Magnet armor",
             "evasion": 1,
-            "heavy hit": 6,
-            "brutal hit": 11,
-            "description": "-1 speed, +1 Damage Reduction. Covered in magnets that nullify the effects of external mana saturation. Wearer has Boon(2) on rolls against Mana Saturation, but Bane(2) when rolling for spellcasting.",
+            "heavy hit": 10,
+            "brutal hit": 15,
+            "description": "-1 speed, +1 Block. Covered in magnets that nullify the effects of external mana saturation. Wearer has Boon(2) on rolls against Mana Saturation, but Bane(2) when rolling for spellcasting.",
             "modifiers": {
                 "speed": -1,
-                "damage reduction": 1
+                "block": 2
             }
         }
     ]

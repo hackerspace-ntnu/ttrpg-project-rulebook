@@ -114,3 +114,8 @@
 <glossary>
 \
 #render_glossary()
+
+#pagebreak()
+<character-sheet>
+
+#include "character-sheet/sheet.typ"
