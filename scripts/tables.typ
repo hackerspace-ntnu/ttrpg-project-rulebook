@@ -267,19 +267,84 @@ table(
   )
 }
 
-#let spellTable(spells, enhancements) = {
+#let spellTable(spells) = {
   columns(2,
   gutter: 3em,
   block(
     for spell in spells.values() {
+      if (spell.name == "") {
+        continue
+      }
       block(
         breakable: false,
-        fill: color.rgb("#f7fad7"),
+        fill: color.rgb("#faf1d7"),
         inset: (x: 1em, y: 1.2em),
         radius: 1em,
         {
-
+          strong(spell.name)
+          h(1fr) + "Tier: " + str(spell.tier)
+          linebreak()
+          spell.tags.join(", ")
+          linebreak()
+          "Target: " + spell.target
+          if ("range" in spell) {
+            ", Range: " + str(spell.range)
+          }
+          if ("aoe" in spell) {
+            ", " + spell.aoe_type + "(" + str(spell.aoe) + ")"
+          }
+          linebreak()
+          "Duration: " + spell.duration
+          linebreak()
+          linebreak()
+          emph(
+            spell.roll_type + 
+            if ("roll_dc" in spell) {
+              " " + str(spell.roll_dc)
+            } +
+            ": "
+          )
+          linebreak()
+          "AP: " + str(spell.ap_cost)
+          " Focus: " + str(spell.focus_cost)
+          linebreak()
+          parseFunctions(spell.description)
+          linebreak()
+          linebreak()
+          "Valid Spell Enhancements: " + spell.enhancements.join(", ")
         })
+    }
+  ))
+}
+
+#let spellEnhancementsTable(enhancements) = {
+  columns(2,
+  gutter: 3em,
+  block(
+    for enhancement in enhancements.values() {
+      if (enhancement.name == "name" or enhancement.name == "") {
+        continue
+      }
+      block(
+        breakable: false,
+        fill: color.rgb("#fae0d7"),
+        inset: (x: 1em, y: 1.2em),
+        width: 100%,
+        radius: 1em,
+        {
+          strong(enhancement.name)
+          linebreak()
+          enhancement.tag
+          linebreak()
+          linebreak()
+          if (enhancement.ap_cost != 0 or enhancement.focus_cost != 0) {
+            "AP: " + str(enhancement.ap_cost) + "  "
+            "Focus: " + str(enhancement.focus_cost)
+            linebreak()
+          }
+          parseFunctions(enhancement.description)
+        }
+      )
     }
   ))
 }

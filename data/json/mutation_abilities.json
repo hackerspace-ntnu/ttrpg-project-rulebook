@@ -304,5 +304,36 @@
     "focus_cost": 0,
     "ap_cost": 0,
     "description": "Once per Hunt you may mark this ability in place of using a Focus. If you would Corrupt a point of Focus, you may lose this Ability instead."
+  },
+  "Keen Senses": {
+    "name": "Keen Senses",
+    "tags": "Passive",
+    "tier": 1,
+    "description": "The creature can track by scent anything within its hex unless countermeasures are taken."
+  },
+  "Canopy Camouflage": {
+    "name": "Canopy Camouflage",
+    "tag": "Passive",
+    "tier": 1,
+    "description": "While in the canopy, the creature has Cover (1)"
+  }, 
+  "Leaper": {
+    "name": "Leaper",
+    "tag": "Active",
+    "tier": 1,
+    "description": "The creature can spend 1 AP to Jump twice its Speed, without provoking Retaliations"
+  },
+  "Burrow": {
+    "name": "Burrow",
+    "tag": "Active",
+    "tier": 1,
+    "description": "The creature has a Burrowing Speed equal to their Walking Speed"
+  },
+  "Envelop": {
+    "name": "Envelop",
+    "tag": "Passive",
+    "tier": 1,
+    "ap_cost": 0,
+    "description": "The creature's size is unwrapped linked segments, which moves following the head of the creature. Each segment has 1/3rd the Grit of the creature. Bringing a segment to 0 Grit will reduce the creature's Speed by 1, and destroying a segment by bringing it to negative its maximum Grit will split the creature, rendering the back part inert. If the creature ever fully envelops a target, the creature can instantly make an Attack against the target with Boon(2)."
   }
 }

@@ -7,7 +7,19 @@
 == History
 // Just the biggest events that most people in the modern day would know about
 
+=== The Golden Age
+What records remain suggest that the old world of #term[Makkeo] was similar to ours, but had made great leaps in technology.
+Research into #term[Mana Gates] led the Old World to discover a seemingly infinite energy source, which propelled the world into a golden age.
+
+However, cracks began to form near the end of this time period.
+Protests broke out about the etchical problems with the technology behind #term[Mana Gates], with "Quietus Cells" being mentioned in multiple records.
+// Quietus Cells being the capsules used to trap escaping souls
+
+The real tipping point came some decades later it seems, when spontaneous #term[Mutations] became known to the world at large.
+The brakes on development were pushed due to public outcry, but the damage was already done, and there was no way back.
+
 === The Collapse
+
 
 === Sanctuary's Founding
 

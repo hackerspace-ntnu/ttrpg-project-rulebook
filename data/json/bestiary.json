@@ -13,22 +13,17 @@
         "heavy hit": 6,
         "brutal hit": 7,
         "speed": 8,
-        "attacks": [
-            {
-                "name": "attack name",
-                "roll": "ma [this is a shorthand that would map to Might + Agility (1d6+1d8) in a visual representation]",
-                "tags": ["tag1", "tag2"],
-                "aoe_type": "",
-                "aoe_size": 1,
-                "description": ""
-            }
-        ],
-        "abilities": [],
-        "spells": [{
+        "abilities": [{
             "name": "",
-            "overrides": {
-                "enhancements": []
-            }
+            "inherits_from": "mutation_abilities | abilities | spells",
+            "ability_type": "Attack | Spell | Active | Passive",
+            "roll": "ma [this is a shorthand that would map to Might + Agility (1d6+1d8) in a visual representation]",
+            "weapon_tags": ["tag1", "tag2"],
+            "spell_tags": ["tag1", "tag2"],
+            "aoe_type": "[Cube | Cone | Line | Sphere | Cylinder | Emanation | Swipe]",
+            "aoe_size": 1,
+            "enhancements": ["enhancement1", "enhancement2"],
+            "description": ""
         }]
     },
     "Steel-wooled Dragonsheep": {
@@ -45,15 +40,14 @@
         "heavy hit": 10,
         "brutal hit": 15,
         "speed": 4,
-        "attacks": [
+        "abilities": [
             {
                 "name": "Ram",
+                "ability_type": "Attack",
                 "roll": "mm",
-                "tags": ["Unwieldy (1)", "Crush (1)", "Impact (1)"]
+                "weapon_tags": ["Unwieldy(1)", "Crush(1)", "Impact(1)"]
             }
-        ],
-        "abilities": [],
-        "spells": []
+        ]
     },
     "Tyrannosaurus Avis": {
         "name": "Tyrannosaurus Avis",
@@ -69,20 +63,23 @@
         "heavy hit": 12,
         "brutal hit": 17,
         "speed": 6,
-        "attacks": [
+        "abilities": [
             {
                 "name": "Beak Crush",
+                "ability_type": "Attack",
                 "roll": "ma",
-                "tags": ["Crush (2)"]
+                "weapon_tags": ["Crush(2)"]
             },
             {
                 "name": "Slam",
-                "roll": "mm",
-                "tags": null
+                "ability_type": "Attack",
+                "roll": "mm"
+            },
+            {
+                "name": "Keen Senses",
+                "inherits_from": "mutation_abilites"
             }
-        ],
-        "abilities": ["Keen Senses"],
-        "spells": []
+        ]
     },
     "Inverted Giraffe": {
         "name": "Inverted Giraffe",
@@ -98,15 +95,21 @@
         "heavy hit": 8,
         "brutal hit": 13,
         "speed": 5,
-        "attacks": [
+        "abilities": [
             {
                 "name": "Headbutt",
-                "roll": "ma",
-                "tags": null
+                "ability_type": "Attack",
+                "roll": "ma"
+            },
+            {
+                "name": "Canopy Camouflage",
+                "inherits_from": "mutation_abilites"
+            },
+            {
+                "name": "Strong Fingers",
+                "inherits_from": "abilities"
             }
-        ],
-        "abilities": ["Canopy Camouflage", "Climber"],
-        "spells": []
+        ]
     },
     "Myrmex": {
         "name": "Myrmex",
@@ -122,23 +125,23 @@
         "heavy hit": 8,
         "brutal hit": 13,
         "speed": 1,
-        "attacks": [
+        "abilities": [
             {
                 "name": "Sand spit",
+                "ability_type": "Attack",
                 "roll": "mi",
-                "tags": ["Loading (1)", "Crush (1)", "Ranged (10)"]
+                "weapon_tags": ["Loading(1)", "Crush(1)", "Ranged(10)"]
             },
             {
                 "name": "Bite",
-                "roll": "ma",
-                "tags": null
+                "ability_type": "Attack",
+                "roll": "ma"
+            },
+            {
+                "name": "Burrow",
+                "inherits_from": "mutation_abilites"
             }
-        ],
-        "abilities":
-        [
-            "Burrow"
-        ],
-        "spells": []
+        ]
     },
     "Xolotl": {
         "name": "Xolotl",
@@ -154,26 +157,24 @@
         "heavy hit": 15,
         "brutal hit": 20,
         "speed": 8,
-        "attacks": [
-            
-        ],
-        "abilities": [""],
-        "spells": [
+        "abilities": [
             {
                 "name": "Shock",
-                "overrides": {
-                    "enhancements": ["Chain"]
-                }
+                "inherits_from": "spells",
+                "ability_type": "Spell",
+                "enhancements": ["Chain"]
             },
             {
                 "name": "Scald",
-                "overrides": {
-                    "enhancements": [],
-                    "aoe": 3
-                }
+                "inherits_from": "spells",
+                "ability_type": "Spell",
+                "enhancements": [],
+                "aoe_size": 3
             },
             {
-                "name": "Inferno"
+                "name": "Inferno",
+                "inherits_from": "spells",
+                "ability_type": "Spell"
             }
         ]
     },
@@ -191,20 +192,19 @@
         "heavy hit": 16,
         "brutal hit": 21,
         "speed": 4,
-        "attacks": [
+        "abilities": [
             {
                 "name": "Bite",
-                "roll": "ma",
-                "tags": null
+                "ability_type": "Attack",
+                "roll": "ma"
             },
             {
                 "name": "Ram",
+                "ability_type": "Attack",
                 "roll": "mm",
-                "tags": ["Unwieldy (1)", "Crush (1)", "Impact (1)"]
+                "weapon_tags": ["Unwieldy(1)", "Crush(1)", "Impact(1)"]
             }
-        ],
-        "abilities": null,
-        "spells": []
+        ]
     },
     "Olento": {
         "name": "Olento",
@@ -220,27 +220,36 @@
         "heavy hit": 11,
         "brutal hit": 16,
         "speed": 8,
-        "attacks": [
+        "abilities": [
             {
                 "name": "Dropkick",
+                "ability_type": "Attack",
                 "roll": "ma",
                 "tags": ["Melee", "Knockback(2)"]
             },
             {
                 "name": "Slice",
+                "ability_type": "Attack",
                 "roll": "ai",
                 "tags": ["Melee", "Crush(1)", "Light"]
+            },
+            {
+                "name": "Leaper",
+                "inherits_from": "mutation_abilites"
+            },
+            {
+                "name": "Infiltrate",
+                "inherits_from": "abilities"
+            },
+            {
+                "name": "Swift Strike",
+                "inherits_from": "abilities"
+            },
+            {
+                "name": "Dirty Fighting",
+                "inherits_from": "abilities"
             }
-        ],
-        "abilities":
-        [
-            "Grapple",
-            "Leaper",
-            "Infiltrate",
-            "Swift Strike",
-            "Dirty Fighting"
-        ],
-        "spells": []
+        ]
     },
     "Blemmye": {
         "name": "Blemmye",
@@ -256,20 +265,22 @@
         "heavy hit": 10,
         "brutal hit": 15,
         "speed": 8,
-        "attacks": [
+        "abilities": [
             {
                 "name": "Headbutt",
-                "roll": "ma",
-                "tags": ["tag2"]
+                "ability_type": "Attack",
+                "roll": "ma"
+            },
+            {
+                "name": "Steal Mutation",
+                "inherits_from": "spells"
+            },
+            {
+                "name": "Psychic Blast",
+                "inherits_from": "spells",
+                "weapon_tags": ["Loading(2)"]
             }
-        ],
-        "abilities": [],
-        "spells": [{
-            "name": "Steal Mutation"
-        },{
-            "name": "Psychic Blast",
-            "tags": "Loading(2)"
-        }]
+        ]
     },
         "BARTENDER": {
         "name": "BARTENDER",
@@ -285,15 +296,13 @@
         "heavy hit": 10,
         "brutal hit": 15,
         "speed": 8,
-        "attacks": [
+        "abilities": [
             {
                 "name": "End Bart",
-                "roll": "pp [this is a shorthand that would map to Might + Agility (1d6+1d8) in a visual representation]",
-                "tags": ["tag1", "tag2"]
+                "ability_type": "Attack",
+                "roll": "pp"
             }
-        ],
-        "abilities": ["a"],
-        "spells": []
+        ]
     },
     "Trombonautilus": {
         "name": "Trombonautilus",
@@ -309,16 +318,14 @@
         "heavy hit": 11,
         "brutal hit": 16,
         "speed": 8,
-        "attacks": [
+        "abilities": [
             {
                 "name": "Doot",
-                "roll": " [this is a shorthand that would map to Might + Agility (1d6+1d8) in a visual representation]",
-                "tags": ["Cone(40)", "Infiltrator"],
-                "description": ""
+                "ability_type": "Attack",
+                "roll": "mp",
+                "weapon_tags": ["Cone(40)", "Infiltrator"]
             }
-        ],
-        "abilities": ["a"],
-        "spells": []
+        ]
     },
     "Redoxic Salt Tortoise": {
         "name": "Redoxic Salt Tortoise",
@@ -334,29 +341,27 @@
         "heavy hit": 14,
         "brutal hit": 19,
         "speed": 3,
-        "attacks": [
+        "abilities": [
             {
                 "name": "Bite",
+                "ability_type": "Attack",
                 "roll": "ma",
-                "tags": ["Melee", "Sharp(1)", "Reach(2)"]
+                "weapon_tags": ["Melee", "Sharp(1)", "Reach(2)"]
             },
             {
                 "name": "Tail Swipe",
+                "ability_type": "Attack",
                 "roll": "mi",
-                "tags": ["Melee"],
+                "weapon_tags": ["Melee"],
                 "aoe_type": "Swipe",
                 "aoe_size": 3
+            },
+            {
+                "name": "Discharge",
+                "inherits_from": "spells",
+                "enhancements": ["Expand"]
             }
-        ],
-        "abilities": [""],
-        "spells": [{
-            "name": "Discharge",
-            "overrides": {
-                "enhancements": [
-                    "Expand"
-                ]
-            }
-        }]
+        ]
     },
     "Rustacean": {
         "name": "Rustacean",
@@ -372,15 +377,19 @@
         "heavy hit": 9,
         "brutal hit": 14,
         "speed": 4,
-        "attacks": [
+        "abilities": [
             {
                 "name": "Pincer crush",
+                "ability_type": "Attack",
                 "roll": "mi",
-                "tags": ["Melee", "Crush(1)"]
+                "weapon_tags": ["Melee", "Crush(1)"]
+            },
+            {
+                "name": "Rust",
+                "ability_type": "Passive",
+                "description": "Can rust any equipment or object made out of iron that it touches, giving weapons -1 to Damage and armor -1 to Damage Thresholds."
             }
-        ],
-        "abilities": ["Can rust any equipment or object made out of iron that it touches, giving weapons -1 to Damage and armor -1 to Damage Thresholds."],
-        "spells": []
+        ]
     },
     "Angler Phish": {
         "name": "Angler Phish",
@@ -396,20 +405,24 @@
         "heavy hit": 10,
         "brutal hit": 15,
         "speed": 4,
-        "attacks": [
+        "abilites": [
             {
                 "name": "Reverse Fishing",
+                "ability_type": "Attack",
                 "roll": "ip",
-                "tags": ["Ranged (10)"]
+                "weapon_tags": ["Ranged(10)"]
             },
             {
                 "name": "Crunch",
+                "ability_type": "Attack",
                 "roll": "mp",
-                "tags": ["Sharp (2)"]
+                "weapon_tags": ["Sharp(2)"]
+            },
+            {
+                "name": "Hook",
+                "inherits_from": "abilites"
             }
-        ],
-        "abilities": ["Wrangle", "Social Distancing"],
-        "spells": []
+        ]
     },
     "Troutbuchet": {
         "name": "Troutbuchet",
@@ -425,15 +438,14 @@
         "heavy hit": 8,
         "brutal hit": 13,
         "speed": 4,
-        "attacks": [
+        "abilites": [
             {
                 "name": "Water fling",
+                "ability_type": "Attack",
                 "roll": "ai",
-                "tags": ["Loading (1), Ranged (10)"]
+                "weapon_tags": ["Loading(1), Ranged(10)"]
             }
-        ],
-        "abilities": [""],
-        "spells": []
+        ]
     },
     "Antlion Eater": {
         "name": "Antlion Eater",
@@ -449,15 +461,13 @@
         "heavy hit": 13,
         "brutal hit": 18,
         "speed": 3,
-        "attacks": [
+        "abilites": [
             {
                 "name": "",
                 "roll": "",
-                "tags": [""]
+                "weapon_tags": [""]
             }
-        ],
-        "abilities": [""],
-        "spells": []
+        ]
     },
     "Crystal Python": {
         "name": "Crystal Python",
@@ -473,20 +483,23 @@
         "heavy hit": 11,
         "brutal hit": 16,
         "speed": 5,
-        "attacks": [
+        "abilites": [
             {
                 "name": "Crush",
+                "ability_type": "Attack",
                 "roll": "ma",
-                "tags": ["Crush(1)"],
+                "weapon_tags": ["Crush(1)"],
                 "description": "Target must be Enveloped to use this attack"
             },
             {
                 "name": "Bite",
-                "roll": "ai",
-                "tags": [""]
+                "ability_type": "Attack",
+                "roll": "ai"
+            },
+            {
+                "name": "Envelop",
+                "inherits_from": "mutation_abilites"
             }
-        ],
-        "abilities": ["Envelop"],
-        "spells": []
+        ]
     }
 }

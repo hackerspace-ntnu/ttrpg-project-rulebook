@@ -11,21 +11,13 @@
     "roll_dc": 5,
     "range": 5,
     "aoe": 0,
-    "aoe_type": [
-      "Cube",
-      "Cone",
-      "Line",
-      "Sphere",
-      "Cylinder",
-      "Emanation",
-      "Swipe"
-    ],
+    "aoe_type":"[Cube | Cone | Line | Sphere | Cylinder | Emanation | Swipe]",
     "description": "[Spell effect]",
     "enhancements": ["[Name of spell enhancement]"]
   },
   "Acid Arrow": {
     "name": "Acid Arrow",
-    "tag": ["Damage", "Debuff"],
+    "tags": ["Damage", "Debuff"],
     "tier": 1,
     "focus_cost": 2,
     "ap_cost": 1,
@@ -38,7 +30,7 @@
   },
   "Shock": {
     "name": "Shock",
-    "tag": ["Damage", "Debuff"],
+    "tags": ["Damage", "Debuff"],
     "tier": 1,
     "focus_cost": 2,
     "ap_cost": 1,
@@ -51,7 +43,7 @@
   },
   "Discharge": {
     "name": "Discharge",
-    "tag": ["Damage", "Debuff"],
+    "tags": ["Damage", "Debuff"],
     "tier": 1,
     "focus_cost": 2,
     "ap_cost": 2,
@@ -66,7 +58,7 @@
   },
   "Scald": {
     "name": "Scald",
-    "tag": ["Damage", "Debuff"],
+    "tags": ["Damage", "Debuff"],
     "tier": 1,
     "focus_cost": 2,
     "ap_cost": 1,
@@ -81,7 +73,7 @@
   },
   "Flash Freeze": {
     "name": "Flash Freeze",
-    "tag": ["Damage", "Debuff"],
+    "tags": ["Damage", "Debuff"],
     "tier": 1,
     "focus_cost": 2,
     "ap_cost": 1,
@@ -96,7 +88,7 @@
   },
   "Gust": {
     "name": "Gust",
-    "tag": ["Utility", "Summon"],
+    "tags": ["Utility", "Summon"],
     "tier": 1,
     "focus_cost": 1,
     "ap_cost": 1,
@@ -109,7 +101,7 @@
   },
   "Motivate Earth": {
     "name": "Motivate Earth",
-    "tag": ["Damage", "Summon", "Utility"],
+    "tags": ["Damage", "Summon", "Utility"],
     "tier": 1,
     "focus_cost": 1,
     "ap_cost": 1,
@@ -124,7 +116,7 @@
   },
   "Mend": {
     "name": "Mend",
-    "tag": ["Healing"],
+    "tags": ["Healing"],
     "tier": 1,
     "focus_cost": 2,
     "ap_cost": 1,
@@ -138,12 +130,13 @@
   },
   "Control Water": {
     "name": "Control Water",
-    "tag": ["Utility"],
+    "tags": ["Utility"],
     "tier": 1,
     "focus_cost": 2,
     "ap_cost": 1,
     "duration": "Shift",
     "target": "Space",
+    "roll_type": "",
     "aoe_type": "Cube",
     "aoe": 3,
     "range": 5,
@@ -152,19 +145,20 @@
   },
   "Improvised Protection Pod": {
     "name": "Improvised Protection Pod",
-    "tag": ["Utility"],
+    "tags": ["Utility"],
     "tier": 1,
     "focus_cost": 2,
     "ap_cost": 1,
     "duration": "Until next hit or one Scene",
     "target": "Self",
+    "roll_type": "",
     "range": 0,
     "description": "Encase yourself in a brittle shell made up of random detritus on the ground around you. Ignore the next instance of damage you would take, but while the shell is up you cannot move.",
     "enhancements": [""]
   },
   "Bestow Mutation": {
     "name": "Bestow Mutation",
-    "tag": ["Buff"],
+    "tags": ["Buff"],
     "tier": 2,
     "focus_cost": 3,
     "ap_cost": 2,
@@ -178,7 +172,7 @@
   },
   "Claim Mutation": {
     "name": "Claim Mutation",
-    "tag": ["Debuff"],
+    "tags": ["Debuff"],
     "tier": 2,
     "focus_cost": 3,
     "ap_cost": 2,
@@ -197,9 +191,10 @@
     "ap_cost": 1,
     "duration": "Shift",
     "target": "Space",
+    "roll_type": "",
     "range": 10,
     "aoe": 1,
-    "aoe_type": ["Cylinder"],
+    "aoe_type": "Cylinder",
     "description": "An obelisk of dark stone rises from the ground, to a height of 4 Spaces. creatures in the space rise with it.",
     "enhancements": [
       "Expand",
@@ -218,7 +213,7 @@
     "roll_dc": 5,
     "range": 5,
     "aoe": 3,
-    "aoe_type": ["Cylinder"],
+    "aoe_type": "Cylinder",
     "description": "Creatures fully in the area has 1 less Speed, 1 more Stability, and take 1 extra falling damage. Additional Successes increase all effects by 1.",
     "enhancements": ["Expand", "Invert"]
   },

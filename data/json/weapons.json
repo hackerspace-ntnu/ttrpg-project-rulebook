@@ -63,7 +63,7 @@
     {
       "name": "Whip",
       "attributes": ["Agility", "Insight"],
-      "ability": "Wrangle",
+      "ability": "Hook",
       "tags": ["Light", "Reach(3)"]
     },
     {

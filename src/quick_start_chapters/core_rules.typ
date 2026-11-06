@@ -85,3 +85,13 @@ If multiple characters would trigger the same effect, only one resolves.
 The GM can at any point initiate a #term[Tag Team Roll] for the party, at no cost for the characters involved.
 
 During combat, all participants of a #term("Tag Team Roll", key: "Tag Team Roll") must act during the same #term("Phase", key: "Phases").
+
+== Spellcasting
+<spellcasting>
+Chracters can gain access to spells through a number of different ways.
+- #term[Abilities]
+- #term[Mutations]
+- #term[Items]
+
+Regardless of the source of the spell, the core rules for spellcasting follow the rules for #term[Abilities] in general.
+The caster must spend the resources noted by it, usually #term[Action Points] and #term[Focus], and the spell happens instantly, lasting for the duration noted in the spell description.

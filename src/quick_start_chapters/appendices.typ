@@ -1,5 +1,5 @@
 #import "../../scripts/glossary.typ": term, render_glossary, glossary_types
-#import "../../scripts/tables.typ": weaponTagsTable, weaponTable, mutationsTable, abilitiesTable, talentsTable, heritagesTable
+#import "../../scripts/tables.typ": weaponTagsTable, weaponTable, mutationsTable, abilitiesTable, talentsTable, heritagesTable, spellTable, spellEnhancementsTable
 
 = Appendices
 <appendices>
@@ -29,9 +29,6 @@
 <mutation-table>
 #mutationsTable(json("../../data/json/mutations.json"), json("../../data/json/mutation_abilities.json"))
 
-=== Mutation Abilities
-<mutation-abilities>
-
 #pagebreak()
 
 == Appendix C: Abilities
@@ -52,3 +49,17 @@
 <heritages>
 
 #heritagesTable(json("../../data/json/heritages.json"))
+
+#pagebreak()
+
+== Appendix E: Spells & Enhancements
+
+=== Spells
+<spells>
+
+#spellTable(json("../../data/json/spells.json"))
+#pagebreak()
+
+=== Spell Enhancements
+<spell-enhancements>
+#spellEnhancementsTable(json("../../data/json/spell_enhancements.json"))

@@ -54,50 +54,6 @@
     "valid_weapon_tags": ["Reach"],
     "valid_weapon_types": null
   },
-  "Ricochet": {
-    "name": "Ricochet",
-    "category": "Agility",
-    "tag": "Enhance",
-    "tier": 2,
-    "focus_cost": 1,
-    "ap_cost": 0,
-    "description": "If your Attack hits, it bounces to a secondary target of your choice within half of the weapon's range, dealing 1 damage.",
-    "valid_weapon_tags": null,
-    "valid_weapon_types": ["Ranged"]
-  },
-  "Curved Shot": {
-    "name": "Curved Shot",
-    "category": "Agility",
-    "tag": "Enhance",
-    "tier": 2,
-    "focus_cost": 1,
-    "ap_cost": 0,
-    "description": "Your next Attack ignores the Cover of a target.",
-    "valid_weapon_tags": null,
-    "valid_weapon_types": ["Ranged"]
-  },
-  "Twin Arrows": {
-    "name": "Twin Arrows",
-    "category": "Agility",
-    "tag": "Enhance",
-    "tier": 3,
-    "focus_cost": 1,
-    "ap_cost": 0,
-    "description": "Your next Attack is made against two targets within the weapon's Range, using the same Attack Roll.",
-    "valid_weapon_tags": null,
-    "valid_weapon_types": ["Ranged"]
-  },
-  "Piercing Shot": {
-    "name": "Piercing Shot",
-    "category": "Agility",
-    "tag": "Enhance",
-    "tier": 3,
-    "focus_cost": 1,
-    "ap_cost": 0,
-    "description": "Your attack pierces all enemies in a line, using the same Attack Roll for each target.",
-    "valid_weapon_tags": ["Two-handed"],
-    "valid_weapon_types": ["Ranged"]
-  },
   "Hittable face": {
     "name": "Hittable face",
     "category": "Presence",
