@@ -10,8 +10,8 @@
         "insight": 3,
         "presence": 4,
         "evasion": 5,
-        "heavy hit": 6,
-        "brutal hit": 7,
+        "heavy_hit": 6,
+        "brutal_hit": 7,
         "speed": 8,
         "abilities": [{
             "name": "",
@@ -37,8 +37,8 @@
         "insight": 1,
         "presence": 2,
         "evasion": 4,
-        "heavy hit": 10,
-        "brutal hit": 15,
+        "heavy_hit": 10,
+        "brutal_hit": 15,
         "speed": 4,
         "abilities": [
             {
@@ -60,8 +60,8 @@
         "insight": 3,
         "presence": 2,
         "evasion": 11,
-        "heavy hit": 12,
-        "brutal hit": 17,
+        "heavy_hit": 12,
+        "brutal_hit": 17,
         "speed": 6,
         "abilities": [
             {
@@ -77,7 +77,7 @@
             },
             {
                 "name": "Keen Senses",
-                "inherits_from": "mutation_abilites"
+                "inherits_from": "mutation_abilities"
             }
         ]
     },
@@ -92,8 +92,8 @@
         "insight": 3,
         "presence": 1,
         "evasion": 9,
-        "heavy hit": 8,
-        "brutal hit": 13,
+        "heavy_hit": 8,
+        "brutal_hit": 13,
         "speed": 5,
         "abilities": [
             {
@@ -103,7 +103,7 @@
             },
             {
                 "name": "Canopy Camouflage",
-                "inherits_from": "mutation_abilites"
+                "inherits_from": "mutation_abilities"
             },
             {
                 "name": "Strong Fingers",
@@ -122,8 +122,8 @@
         "insight": 3,
         "presence": 1,
         "evasion": 7,
-        "heavy hit": 8,
-        "brutal hit": 13,
+        "heavy_hit": 8,
+        "brutal_hit": 13,
         "speed": 1,
         "abilities": [
             {
@@ -139,7 +139,7 @@
             },
             {
                 "name": "Burrow",
-                "inherits_from": "mutation_abilites"
+                "inherits_from": "mutation_abilities"
             }
         ]
     },
@@ -154,8 +154,8 @@
         "insight": 5,
         "presence": 6,
         "evasion": 11,
-        "heavy hit": 15,
-        "brutal hit": 20,
+        "heavy_hit": 15,
+        "brutal_hit": 20,
         "speed": 8,
         "abilities": [
             {
@@ -189,8 +189,8 @@
         "insight": 1,
         "presence": 3,
         "evasion": 3,
-        "heavy hit": 16,
-        "brutal hit": 21,
+        "heavy_hit": 16,
+        "brutal_hit": 21,
         "speed": 4,
         "abilities": [
             {
@@ -217,25 +217,25 @@
         "insight": 3,
         "presence": 4,
         "evasion": 8,
-        "heavy hit": 11,
-        "brutal hit": 16,
+        "heavy_hit": 11,
+        "brutal_hit": 16,
         "speed": 8,
         "abilities": [
             {
                 "name": "Dropkick",
                 "ability_type": "Attack",
                 "roll": "ma",
-                "tags": ["Melee", "Knockback(2)"]
+                "weapon_tags": ["Melee", "Impact(2)"]
             },
             {
                 "name": "Slice",
                 "ability_type": "Attack",
                 "roll": "ai",
-                "tags": ["Melee", "Crush(1)", "Light"]
+                "weapon_tags": ["Melee", "Crush(1)", "Light"]
             },
             {
                 "name": "Leaper",
-                "inherits_from": "mutation_abilites"
+                "inherits_from": "mutation_abilities"
             },
             {
                 "name": "Infiltrate",
@@ -246,7 +246,7 @@
                 "inherits_from": "abilities"
             },
             {
-                "name": "Dirty Fighting",
+                "name": "Hobble",
                 "inherits_from": "abilities"
             }
         ]
@@ -262,8 +262,8 @@
         "insight": 3,
         "presence": 4,
         "evasion": 8,
-        "heavy hit": 10,
-        "brutal hit": 15,
+        "heavy_hit": 10,
+        "brutal_hit": 15,
         "speed": 8,
         "abilities": [
             {
@@ -272,11 +272,13 @@
                 "roll": "ma"
             },
             {
-                "name": "Steal Mutation",
+                "name": "Claim Mutation",
+                "ability_type": "Spell",
                 "inherits_from": "spells"
             },
             {
                 "name": "Psychic Blast",
+                "ability_type": "Spell",
                 "inherits_from": "spells",
                 "weapon_tags": ["Loading(2)"]
             }
@@ -293,8 +295,8 @@
         "insight": 3,
         "presence": 4,
         "evasion": 8,
-        "heavy hit": 10,
-        "brutal hit": 15,
+        "heavy_hit": 10,
+        "brutal_hit": 15,
         "speed": 8,
         "abilities": [
             {
@@ -315,15 +317,17 @@
         "insight": 3,
         "presence": 4,
         "evasion": 7,
-        "heavy hit": 11,
-        "brutal hit": 16,
+        "heavy_hit": 11,
+        "brutal_hit": 16,
         "speed": 8,
         "abilities": [
             {
                 "name": "Doot",
                 "ability_type": "Attack",
                 "roll": "mp",
-                "weapon_tags": ["Cone(40)", "Infiltrator"]
+                "aoe_type": "Cone",
+                "aoe": 40,
+                "weapon_tags": ["Infiltrator"]
             }
         ]
     },
@@ -338,8 +342,8 @@
         "insight": 2,
         "presence": 3,
         "evasion": 4,
-        "heavy hit": 14,
-        "brutal hit": 19,
+        "heavy_hit": 14,
+        "brutal_hit": 19,
         "speed": 3,
         "abilities": [
             {
@@ -358,6 +362,7 @@
             },
             {
                 "name": "Discharge",
+                "ability_type": "Spell",
                 "inherits_from": "spells",
                 "enhancements": ["Expand"]
             }
@@ -374,8 +379,8 @@
         "insight": 4,
         "presence": 1,
         "evasion": 8,
-        "heavy hit": 9,
-        "brutal hit": 14,
+        "heavy_hit": 9,
+        "brutal_hit": 14,
         "speed": 4,
         "abilities": [
             {
@@ -402,10 +407,10 @@
         "insight": 3,
         "presence": 4,
         "evasion": 7,
-        "heavy hit": 10,
-        "brutal hit": 15,
+        "heavy_hit": 10,
+        "brutal_hit": 15,
         "speed": 4,
-        "abilites": [
+        "abilities": [
             {
                 "name": "Reverse Fishing",
                 "ability_type": "Attack",
@@ -420,7 +425,7 @@
             },
             {
                 "name": "Hook",
-                "inherits_from": "abilites"
+                "inherits_from": "abilities"
             }
         ]
     },
@@ -435,10 +440,10 @@
         "insight": 2,
         "presence": 2,
         "evasion": 7,
-        "heavy hit": 8,
-        "brutal hit": 13,
+        "heavy_hit": 8,
+        "brutal_hit": 13,
         "speed": 4,
-        "abilites": [
+        "abilities": [
             {
                 "name": "Water fling",
                 "ability_type": "Attack",
@@ -458,10 +463,10 @@
         "insight": 2,
         "presence": 2,
         "evasion": 4,
-        "heavy hit": 13,
-        "brutal hit": 18,
+        "heavy_hit": 13,
+        "brutal_hit": 18,
         "speed": 3,
-        "abilites": [
+        "abilities": [
             {
                 "name": "",
                 "roll": "",
@@ -480,10 +485,10 @@
         "insight": 1,
         "presence": 2,
         "evasion": 6,
-        "heavy hit": 11,
-        "brutal hit": 16,
+        "heavy_hit": 11,
+        "brutal_hit": 16,
         "speed": 5,
-        "abilites": [
+        "abilities": [
             {
                 "name": "Crush",
                 "ability_type": "Attack",
@@ -498,7 +503,7 @@
             },
             {
                 "name": "Envelop",
-                "inherits_from": "mutation_abilites"
+                "inherits_from": "mutation_abilities"
             }
         ]
     }

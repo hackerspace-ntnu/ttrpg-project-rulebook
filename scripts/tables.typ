@@ -44,15 +44,14 @@ table(
 
 #let weaponTable(data, abilities) = {
   let weapons = data.weapons.map((entry) => {
-  let ability = abilities.at(entry.ability, default: none)
   (
     entry.name,
     if (entry.attributes == none) {}
     else {entry.attributes.join(" + ")},
-    if (ability == none) {}
-    else {ability.name + ":\n" + parseFunctions(ability.description)},
     if (entry.tags == none) {}
-    else {entry.tags.join("\n")},
+    else {entry.tags.map(e => {
+      term(e)
+    }).join("\n")},
   )})
   let ranged = data.weapons.position((weapon) => {
     return weapon.tags.any(tag => tag.contains("Ranged"))
@@ -60,17 +59,18 @@ table(
   let shields = data.weapons.position((weapon) => {
     return weapon.name.contains("Shield")
   })
+  columns(2,
   table(
-    columns: (20%, 11%, 49%, 20%),
+    columns: (35%, 25%, 40%),
     align: (left, left, left, left),
-    table.header([Name], [Roll], [Active\* (1 #term[Focus])], [Tags]),
+    table.header([Name], [Roll], [Tags]),
     table.hline(),
     ..weapons.slice(0, ranged).flatten(),
-    [], [], [], [],
+    [], [], [],
     ..weapons.slice(ranged, shields).flatten(),
-    [], [], [], [],
+    [], [], [],
     ..weapons.slice(shields).flatten()
-  )
+  ))
 }
 
 #let weaponTagsTable(data) = {
@@ -346,5 +346,177 @@ table(
         }
       )
     }
+  ))
+}
+
+#let letterToAttribute(letter) = {
+  if (letter == "m") {
+    "Might"
+  } else if (letter == "a") {
+    "Agility"
+  } else if (letter == "i") {
+    "Insight"
+  } else if (letter == "p") {
+    "Presence"
+  }
+}
+
+#let getSpellHeader(ability) = {
+  let arr = ()
+  if ("target" in ability) {
+    arr.push("Target: " + ability.target)
+  }
+  if ("range" in ability) {
+    if (arr.len() > 0) {
+      arr.push(", ")
+    }
+    arr.push("Range: " + str(ability.range))
+  }
+  if ("aoe_type" in ability) {
+    if (arr.len() > 0) {
+      arr.push(", ")
+    }
+    arr.push(ability.aoe_type)
+  }
+  if ("aoe" in ability) {
+    arr.push("(" + str(ability.aoe) + ")")
+  }
+  arr.push(linebreak())
+  if ("duration" in ability) {
+    arr.push("Duration: " + ability.duration)
+  }
+  arr.push(parbreak())
+  if (arr.len() > 2) {
+    arr.join("")
+  }
+}
+
+#let bestiaryTable(bestiary, abilities, talents, spells, mutation_abilities) = {
+  columns(2,
+  gutter: 3em,
+  block(
+    for beast in bestiary.values().sorted(key: e =>(e.name)) {
+      if (beast.name == "creature name") {
+        continue
+      }
+      block(
+        fill: color.rgb("#fbf7e8"),
+        inset: (x: 1em, y: 1.2em),
+        width: 100%,
+        radius: 1em,
+        {
+          block(
+            breakable: false,
+            {
+              align(center)[#strong(text(1.25em)[#beast.name]) \ #emph(beast.description)]
+              parbreak()
+              h(0.15fr) + "Grit: " + str(beast.grit) + h(1fr) + "Speed: " + str(beast.speed) + h(0.15fr)
+              linebreak()
+              h(0.15fr) + "Block: " + str(beast.block) + h(1fr) + "Size: " + str(beast.size) + h(0.15fr)
+              parbreak()
+              grid(
+                columns: (1fr, 1fr),
+                rows: auto,
+                gutter: 0.75em,
+                row-gutter: 0.65em,
+                align: center,
+                underline("Might", offset: 0.35em),
+                underline("Agility", offset: 0.35em),
+                str(beast.might), str(beast.agility),
+                underline("Insight", offset: 0.35em),
+                underline("Presence", offset: 0.35em),
+                str(beast.insight), str(beast.presence)
+              )
+              parbreak()
+              "Evasion: " + str(beast.evasion) + h(1fr) + "Heavy Hit: " + str(beast.heavy_hit) + h(1fr) + "Brutal Hit: " + str(beast.brutal_hit)
+            }
+          )
+
+          for a in beast.abilities {
+            if (a.name == "") {
+              continue
+            }
+            block(
+              breakable: false,
+              {
+                let ability = if ("inherits_from" in a) {
+                  if (a.inherits_from == "spells") {
+                    spells.at(a.name) + a
+                  } else if (a.inherits_from == "mutation_abilities") {
+                    mutation_abilities.at(a.name) + a
+                  } else if (a.inherits_from == "abilities") {
+                    (talents.values().flatten() + abilities.values()).find(entry => entry.name == a.name) + a
+                  }
+                } else {a}
+                strong(ability.name)
+                if ("ability_type" in ability) {
+                  " (" + ability.ability_type + ")"
+                } else {
+                  " (" + ability.tag + ")"
+                }
+                if ("tier" in ability) {
+                  h(1fr) + "Tier: " + str(ability.tier)
+                }
+                linebreak()
+                if ("roll" in ability) {
+                  letterToAttribute(ability.roll.at(0)) + " + " + letterToAttribute(ability.roll.at(1))
+                  linebreak()
+                }
+                if ("tags" in ability) {
+                  ability.tags.join(", ")
+                  linebreak()
+                }
+                getSpellHeader(ability)
+                if ("roll_type" in ability) {
+                  emph(
+                    ability.roll_type + 
+                    if ("roll_dc" in ability) {
+                      " " + str(ability.roll_dc)
+                    } +
+                    ": "
+                  )
+                  linebreak()
+                }
+                if ("ap_cost" in ability and ability.ap_cost != none and ability.ap_cost > 0) {
+                  "AP: " + str(ability.ap_cost) + " "
+                  if ("focus_cost" in ability and ability.focus_cost != none and ability.focus_cost > 0) {
+                    "Focus: " + str(ability.focus_cost)
+                  }
+                  linebreak()
+                } else if ("focus_cost" in ability and ability.focus_cost != none and ability.focus_cost > 0) {
+                  "Focus: " + str(ability.focus_cost)
+                  linebreak()
+                }
+                if ("description" in ability) {
+                  parseFunctions(ability.description)
+                  linebreak()
+                }
+                if ("weapon_tags" in ability and type(ability.weapon_tags) == array) {
+                  "Weapon Tags: " + ability.weapon_tags.map((tag) => term(tag)).join(", ")
+                  linebreak()
+                }
+                if ("enhancements" in ability) {
+                  "Valid Spell Enhancements: "
+                  if (ability.enhancements.len() == 0) {
+                    "None"
+                  } else {
+                    ability.enhancements.join(", ")
+                  }
+                  linebreak()
+                }
+                if ("valid_weapon_tags" in ability and type(ability.valid_weapon_tags) == array) {
+                  "Valid Weapon Tags: " + ability.valid_weapon_tags.map((tag) => term(tag)).join(", ")
+                  linebreak()
+                }
+                if ("valid_weapon_types" in ability and type(ability.valid_weapon_types) == array) {
+                  "Valid Weapon Types: " + ability.valid_weapon_types.map((tag) => term(tag)).join(", ")
+                  linebreak()
+                }
+              }
+            )
+          }
+        })
+    }
+
   ))
 }

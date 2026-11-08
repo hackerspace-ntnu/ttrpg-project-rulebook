@@ -98,7 +98,7 @@ Rolling above the Heavy and Brutal hit thresholds each add +1 #term("Success", k
 Every +5 above Brutal hit counts as a +1 success. Normally each #term("Success", key: "Successes") means +1 #term[Damage], unless replaced with other abilities. 
 Certain actions such as #term[Grapple] ignore #term("Heavy", key: "Heavy Hit") and #term("Brutal", key: "Brutal Hit") thresholds and target Evasion directly, therefore using the standard +5 rule.
 
-You can #term("Intercept", is_definition: true) #term[Damage] with weapons that has the Intercept tag.
+You can #term[Intercept] #term[Damage] with weapons that has the Intercept tag.
 This is a #term("Reaction", key: "Reactions") costing 1 Focus, and will raise your #term[Damage Thresholds], potentially turning the triggering Attack into a miss or lowering the damage taken.
 
 Certain effects grant #term("Guard", is_definition: true), which grants temporary #term[Grit] that are instead reduced when you take damage.

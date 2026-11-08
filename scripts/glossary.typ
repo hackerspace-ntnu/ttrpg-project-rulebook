@@ -22,7 +22,9 @@
 /// - key (string): An optional key to use for the term instead of the name, useful for disambiguation.
 #let term(name, description: "", glossary_type: glossary_types.mechanic, separator: "", is_definition: false, print: true, key: none) = {
   // Add to glossary
-  let entry_name = if key != none { key } else { name }
+  let entry_name = if key != none { key } 
+  else if type(name) == str { name.trim(regex("\(.*\)")) }
+  else {name.text.trim(regex("\(.*\)"))}
   if type(entry_name) == content {
     entry_name = entry_name.text
   }

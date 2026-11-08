@@ -307,7 +307,7 @@
   },
   "Keen Senses": {
     "name": "Keen Senses",
-    "tags": "Passive",
+    "tag": "Passive",
     "tier": 1,
     "description": "The creature can track by scent anything within its hex unless countermeasures are taken."
   },

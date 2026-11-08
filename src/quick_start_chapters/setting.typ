@@ -19,7 +19,7 @@ The real tipping point came some decades later it seems, when spontaneous #term[
 The brakes on development were pushed due to public outcry, but the damage was already done, and there was no way back.
 
 === The Collapse
-
+Mana saturation in the atmoshphere was at this point so high that #term[Mana Gates] started manifesting at random. Additionally, creatures started emerging from them; most dangerously, the first #term[Titans]
 
 === Sanctuary's Founding
 

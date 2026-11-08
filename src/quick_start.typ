@@ -119,3 +119,8 @@
 <character-sheet>
 
 #include "character-sheet/sheet.typ"
+
+#pagebreak()
+= Bestiary
+<bestiary>
+#include "bestiary/bestiary.typ"
