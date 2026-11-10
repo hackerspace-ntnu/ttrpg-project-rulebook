@@ -1,6 +1,12 @@
 {
   "weapons": [
     {
+      "name": "Fist",
+      "attributes": ["Might", "Agility"],
+      "ability": "",
+      "tags": ["Light", "Sharp(-1)"]
+    },
+    {
       "name": "Dagger",
       "attributes": ["Agility", "Insight"],
       "ability": "Dirty Fighting",
@@ -81,7 +87,7 @@
     {
       "name": "Longbow",
       "attributes": ["Agility", "Insight"],
-      "ability": "Twin Arrows",
+      "ability": "Twin Shot",
       "tags": ["Two-handed", "Ranged(12)", "Social Distancing"]
     },
     {

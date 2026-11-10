@@ -157,6 +157,14 @@ Ranged Weapons:
 At 0 #term[Grit] you gain a #term("Wound", key: "Wounds", is_definition: true) and roll 1d8 for your #term("Death Save", key: "Death Saves", is_definition: true). If the result is under the number of #term[Wounds] they have, they die. 
 Otherwise they lose 1 AP next #term("Round", key: "Rounds") for each point of #term[Damage] exceeding 0 #term[Grit], and regain #term[Grit] equal to the result of the roll. 
 
+== Knockback
+<knockback>
+When a creature takes #term("Knockback", is_definition: true), they are pushed back a number of #term[Spaces] equal to the #term[Knockback] value.
+#term[Knockback] is reduced by a creature's #term("Stability", is_definition: true), which unless otherwise specified is equal to their #term[Size] - 1.
+
+When a creature is knocked into a wall or other solid object they stop and take #term[Damage] equal to the #term[Knockback] remaining.
+When a creature is knocked into another creature they stop and both creatures take #term[Damage] equal to half of the #term[Knockback] remaining, rounded up.
+
 == Conditions
 // TODO: Improve grapple mechanics, see if more conditions should be added
 #parse_conditions(json("../../data/json/conditions.json"))

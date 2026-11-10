@@ -257,6 +257,32 @@
       "description": "When you fail a Saturation Roll, you only Corrupt half the amount of Focus you normally would. This does not affect the tier of the gained Mutation."
     }
   ],
+  "Monk": [
+    {
+      "name": "Handy",
+      "category": "Presence",
+      "tag": "Active",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "When Attacking or taking the Brawl Action with your fists, you may replace any one die with your Presence Die before rolling. Additionally, your fists lose the Sharp(-1) tag and gain the Crush(1) tag."
+    },
+    {
+      "name": "Float Like a Butterfly",
+      "category": "Presence",
+      "tag": "Active",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "Your fists gain the Intercept(Presence Mod) tag."
+    },
+    {
+      "name": "Sting Like a Bee",
+      "category": "Presence",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "When you take the Parry Retaliation, you may additionally redirect the triggering Attack to a different target within the triggering Attack's range, dealing 1 Damage."
+    }
+  ],
   "Oracle": [
     {
       "name": "Prescient Planner",
@@ -353,22 +379,20 @@
       "valid_weapon_types": null
     },
     {
-      "name": "Cleave",
-      "category": "Might",
-      "tag": "Enhance",
-      "focus_cost": 1,
-      "ap_cost": 0,
-      "description": "Your next Attack hits three connecting spaces within the weapon's range, using the same Attack Roll for each target.",
-      "valid_weapon_tags": ["Heavy", "Two-handed"],
-      "valid_weapon_types": null
-    },
-    {
       "name": "Batter",
       "category": "Might",
       "tag": "Active",
       "focus_cost": 1,
       "ap_cost": 0,
-      "description": "Units taking Knockback within your Threat trigger your Attack of Opportunity. When you Retaliate with this feature, you may add +1 Knockback to the target and redirect the remaining Knockback on the target."
+      "description": "When a target takes Knockback within your Threat, you may spend 1 Focus to trigger your Attack of Opportunity. When you Retaliate with this feature, you may redirect the remaining Knockback on the target and add +1 Knockback , ignoring Stability."
+    },
+    {
+      "name": "Impact",
+      "category": "Might",
+      "tag": "Passive",
+      "focus_cost": 0,
+      "ap_cost": 0,
+      "description": "Any Knockback you inflict on a target is increased by 1."
     }
   ],
   "Rusher": [
@@ -399,47 +423,17 @@
   ],
   "Sharpshooter": [
     {
-      "name": "Snipe",
-      "category": "Agility",
-      "tag": "Enhance",
-      "focus_cost": 0,
-      "ap_cost": 0,
-      "description": "TODO: If target hasn't moved...",
-      "valid_weapon_tags": null,
-      "valid_weapon_types": ["Ranged"]
-    },
-    {
       "name": "Overwatch",
       "category": "Agility",
-      "tag": "Enhance",
+      "tag": "Active",
       "focus_cost": 0,
-      "ap_cost": 0,
-      "description": "TODO: Mark a target at the end of the turn, if they ... get a free Attack.",
+      "ap_cost": 1,
+      "description": "Mark a target. Until the end of their next Turn they have Bane(1) on all Rolls. If the target Moves, they automatically clear this status and you may make an Attack of Opportunity against them with a valid Weapon.",
       "valid_weapon_tags": null,
       "valid_weapon_types": ["Ranged"]
     },
     {
-      "name": "Ricochet",
-      "category": "Agility",
-      "tag": "Enhance",
-      "focus_cost": 1,
-      "ap_cost": 0,
-      "description": "If your Attack hits, it bounces to a secondary target of your choice within half of the weapon's range, dealing 1 damage.",
-      "valid_weapon_tags": null,
-      "valid_weapon_types": ["Ranged"]
-    },
-    {
-      "name": "Curved Shot",
-      "category": "Agility",
-      "tag": "Enhance",
-      "focus_cost": 1,
-      "ap_cost": 0,
-      "description": "Your next Attack ignores the Cover of a target.",
-      "valid_weapon_tags": null,
-      "valid_weapon_types": ["Ranged"]
-    },
-    {
-      "name": "Twin Arrows",
+      "name": "Twin Shot",
       "category": "Agility",
       "tag": "Enhance",
       "focus_cost": 1,
@@ -593,6 +587,16 @@
       "valid_weapon_types": null
     },
     {
+      "name": "Ricochet",
+      "category": "Agility",
+      "tag": "Enhance",
+      "focus_cost": 1,
+      "ap_cost": 0,
+      "description": "If your Attack hits, it bounces to a secondary target of your choice within half of the weapon's range, dealing 1 damage.",
+      "valid_weapon_tags": null,
+      "valid_weapon_types": ["Ranged"]
+    },
+    {
       "name": "Greater Counter",
       "category": "General",
       "tag": "Passive",
@@ -600,6 +604,16 @@
       "ap_cost": 0,
       "description": "If you're granted the opportunity to Retaliate in response to an Attack made against you, you may Retaliate twice, choosing two different options.",
       "valid_weapon_tags": ["Versatile", "One-handed", "Light"],
+      "valid_weapon_types": null
+    },
+    {
+      "name": "Cleave",
+      "category": "Might",
+      "tag": "Enhance",
+      "focus_cost": 1,
+      "ap_cost": 0,
+      "description": "Your next Attack hits three connecting spaces within the weapon's range, using the same Attack Roll for each target.",
+      "valid_weapon_tags": ["Heavy", "Two-handed"],
       "valid_weapon_types": null
     }
   ]
