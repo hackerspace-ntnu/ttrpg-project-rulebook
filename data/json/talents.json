@@ -597,16 +597,6 @@
       "valid_weapon_types": ["Ranged"]
     },
     {
-      "name": "Greater Counter",
-      "category": "General",
-      "tag": "Passive",
-      "focus_cost": 0,
-      "ap_cost": 0,
-      "description": "If you're granted the opportunity to Retaliate in response to an Attack made against you, you may Retaliate twice, choosing two different options.",
-      "valid_weapon_tags": ["Versatile", "One-handed", "Light"],
-      "valid_weapon_types": null
-    },
-    {
       "name": "Cleave",
       "category": "Might",
       "tag": "Enhance",
