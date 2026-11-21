@@ -1,15 +1,15 @@
 #import "../scripts/glossary.typ": term, render_glossary, glossary_types
+
+// Title page
+#page(margin: 0pt, image(width: 100%, height: 100%, "../data/art/poster_1_bg.png"))
+#pagebreak()
+
+#context counter(page).update(1)
 #set page(
   numbering: "I",
 )
 
 // Laying out the first page(s)
-#align(center)[
-  #text(size: 24pt, weight: "bold")[Titanslayer Quick Start Guide]
-]
-
-#v(6em)
-
 #outline(
   title: "Table of Contents",
   indent: auto

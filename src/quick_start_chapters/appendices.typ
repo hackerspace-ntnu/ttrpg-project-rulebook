@@ -4,6 +4,7 @@
 = Appendices
 <appendices>
 
+#page(margin: 0pt, image("../../data/art/appendix_weapons_bg.png", width: 100%, height: 100%))
 == Appendix A: Weapons
 <appendix-a>
 
@@ -23,14 +24,15 @@
 
 #pagebreak()
 
-== Appendix B: Mutations
 
-=== Mutations
+#page(margin: 0pt, image("../../data/art/appendix_mutations_bg.png", width: 100%, height: 100%))
+== Appendix B: Mutations
 <mutation-table>
 #mutationsTable(json("../../data/json/mutations.json"), json("../../data/json/mutation_abilities.json"))
 
 #pagebreak()
 
+// #page(margin: 0pt, image("../../data/art/", width: 100%, height: 100%))
 == Appendix C: Abilities
 
 === Core Abilities
@@ -45,6 +47,8 @@
 
 #pagebreak()
 
+
+#page(margin: 0pt, image("../../data/art/appendix_heritage_bg.png", width: 100%, height: 100%))
 == Appendix D: Heritages
 <heritages>
 
@@ -52,6 +56,8 @@
 
 #pagebreak()
 
+
+#page(margin: 0pt, image("../../data/art/spell_2_bg.png", width: 100%, height: 100%))
 == Appendix E: Spells & Enhancements
 
 === Spells
