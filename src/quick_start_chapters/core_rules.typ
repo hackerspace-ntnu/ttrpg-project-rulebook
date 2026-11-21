@@ -57,8 +57,7 @@ Stacks of #term[Boons] and #term[Banes] cancel each other out, so Boon(3) and Ba
 === Additional Successes
 <additional-successes>
 You succeed by meeting or beating the DC of an #term("Action Roll", key: "Action Rolls");,
-and you gain an additional #term("Success", is_definition: true, key: "Successes") for each 5 you roll above
-the DC.
+and you gain an additional #term("Success", is_definition: true, key: "Successes") for each 5 you roll above the DC.
 
 The benefit of a #term("Success", key: "Successes") varies depending on the Action you
 were doing. Maybe you find more of the herbs you were searching for? Or
@@ -95,3 +94,15 @@ Chracters can gain access to spells through a number of different ways.
 
 Regardless of the source of the spell, the core rules for spellcasting follow the rules for #term[Abilities] in general.
 The caster must spend the resources noted by it, usually #term[Action Points] and #term[Focus], and the spell happens instantly, lasting for the duration noted in the spell description.
+
+== AOEs
+<aoes>
+Some #term[Spells] and #term[Abilities] specifiy an AOE type for the effect.
+These are calculated as follows:
+- #term("Swipe(N)", key: "Swipe", is_definition: true) hits N connected #term[Spaces] within the effect's #term[Reach] or #term[Range].
+- #term("Sphere(N)", key:" Sphere", is_definition: true) hits all #term[Spaces] within a radius of N from the center of the effect.
+- #term("Emanation(N)", key: "Emanation", is_definition: true) like #term[Spaces], but blocked by walls.
+- #term("Cylinder(N,M)", key: "Cylinder", is_definition: true) hits all #term[Spaces] up to a height of N within a radius of M from the center of the effect.
+- #term("Line(N,M)", key: "Line", is_definition: true) Hits all #term[Spaces] along a line that is N long and M wide. 
+
+For a #term("Space", key: "Spaces") to count as within an AOE, the center of the #term("Space", key: "Spaces") must be within the effect.

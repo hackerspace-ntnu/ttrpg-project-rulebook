@@ -26,7 +26,7 @@ If nothing else is specified, an #term("Action", is_definition: true, key: "Acti
 
 The first 4 #term("Action Categories", is_definition: true) are subject to the #term("Repeated Action Penalty", is_definition: true) (RAP), which means every subsequent use of the same category in your Phase costs 1 additional AP.
 
-If an #term("Ability", key: "Abilities") doesn't specify an #term("Action Category", key: "Action Categories") to use, it doesn't stack RAP.
+If an #term("Ability", key: "Abilities") says you do an #term("Action", key: "Actions") as part of the effect it counts towards the same #term("RAP", key: "Repeated Action Penalty"), unless it's specified as a #term("Free Action", key: "Free Actions", is_definition: true).
 
 *Attack Actions*\
 // TODO: Should all the actions be terms?
@@ -40,7 +40,7 @@ Variable AP: #term("Cast", is_definition: true) a #term("Spell", key: "Spells").
 *Utility Actions*\
 #term("", key: "Utility Actions", is_definition: true)1 AP: #term("Parley", is_definition: true) with a target. \
 1 AP: #term("Brawl", is_definition: true) with a target, making a #roll[Might][Insight] choosing either #term[Grapple] or #term[Shove]. \
-- #term("Grapple", is_definition: true) a target, inflicting #term("Grappled") and granting #boon("Success") to the first Attack against the target. Grappled creatures cannot make voluntary movements. Targets Evasion. \
+- #term("Grapple", is_definition: true) a target, inflicting #term("Grappled") and granting #boon("Success") to the first Attack against the target. Targets Evasion. \
 - #term("Shove", is_definition: true) a target 1 Space + 1 per #term("Success", key: "Successes"). 2 Spaces of Shove can be traded to knock the target Prone. Targets Evasion. 
 
 *Item Actions*\

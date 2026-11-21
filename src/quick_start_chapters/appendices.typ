@@ -63,3 +63,8 @@
 === Spell Enhancements
 <spell-enhancements>
 #spellEnhancementsTable(json("../../data/json/spell_enhancements.json"))
+
+#pagebreak()
+= Bestiary
+<bestiary>
+#include "../bestiary/bestiary.typ"

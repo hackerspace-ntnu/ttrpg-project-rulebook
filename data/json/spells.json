@@ -78,7 +78,7 @@
     "focus_cost": 2,
     "ap_cost": 1,
     "duration": "Instantanous",
-    "target": "Point",
+  "target": "Point",
     "roll_type": "Hit",
     "range": 5,
     "aoe": 1,
@@ -94,10 +94,13 @@
     "ap_cost": 1,
     "duration": "Instantanous",
     "target": "Space",
-    "roll_type": "",
+    "roll_type": "DC",
+    "roll_dc": 5,
     "range": 5,
-    "description": "Summon a sudden gust of wind that immediately despawns. Creatures in the area are Vertical Pushed 2 Spaces. Additional Successes increase the Push distance by 1 Space.",
-    "enhancements": ["Sustain"]
+    "aoe": 1,
+    "aoe_type": "Sphere",
+    "description": "Summon a sudden gust of wind that pushes targets. Creatures in the area are Pushed 2 + Successes Spaces in any direction, including vertically.",
+    "enhancements": ["Sustain", "Expand"]
   },
   "Motivate Earth": {
     "name": "Motivate Earth",
@@ -186,19 +189,20 @@
   "Dread Obelisk": {
     "name": "Dread Obelisk",
     "tags": ["Utility"],
-    "tier": 1,
+    "tier": 2,
     "focus_cost": 1,
     "ap_cost": 1,
-    "duration": "Shift",
+    "duration": "Scene",
     "target": "Space",
-    "roll_type": "",
+    "roll_type": "DC",
+    "roll_dc": 10,
     "range": 10,
-    "aoe": 1,
+    "aoe": 3,
     "aoe_type": "Cylinder",
-    "description": "An obelisk of dark stone rises from the ground, to a height of 4 Spaces. creatures in the space rise with it.",
+    "description": "An obelisk of dark stone taking up 1 Space rises from the ground to a height of 4 Spaces. Creatures that start their Turn within 2 + Success Spaces of the obelisk are Slowed(1), and have their Evasion and Damage Thresholds cut in half. These effects last until they leave the area.",
     "enhancements": [
       "Expand",
-      "[If we add a fear effect, make an enhancement that lets it inflict fear effects]"
+      "Invigorate"
     ]
   },
   "Increase Gravity": {
@@ -242,6 +246,6 @@
     "roll_type": "Hit",
     "range": 5,
     "description": "0 Damage, ignores Armor, Impact(Damage Total)",
-    "enhancements": ["[Name of spell enhancement]"]
+    "enhancements": ["Empower"]
   }
 }

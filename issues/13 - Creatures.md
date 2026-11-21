@@ -7,9 +7,6 @@ Alternative = (Might + Size - 1) * 3 + [sum of rest of stats] - 5
 
 # ideas
 
-Steel-wooled Dragonsheep - (I originally called it dragon-tailed sheep, but it’s fine). Mostly normal sheep with slightly larger horns, a fat scaly tail and rough reflective wool akin to steel wool. Maybe their colloquial name is Dragonsheep, but their official name in the Understanding is Dragon-tailed Sheep?
-Mountainback - Huge carnivorous deer with calcified growth on their back that acts as a shell and looks like a boulder
-Tyrannosaurus Avis - A bird that convergently mutated into a similar body plan as the apex theropods, with a large crushing beak and tiny vestigial flightless wings.
 Big Bugs
 Bug with a big ass
 Owloth - Owlbear, but owl + mammoth
@@ -24,18 +21,12 @@ Reverse mosquitoes - Large creatures that pump you full of a fluid to make you g
 Literally flying fish
 Sarlach or giant antlions
 Something like those elden ring snails where they live in skulls/bones
+Root-based creatures like treants and such
 
 Something like that one animal that can mimic crying      -  This but sci-fi:
 
 More developed creatures:
-Drov’kith
-Exoskeleton
-6 limbs with talons at the end, can walk with the back 4
-Queen reproduces asexually
-Drones have wings and live where the Queen used to have wings, drones have potential to become queens
-When a drone first hatches it will eat the Queen’s wings to make room for itself underneath the exoskeleton 
-Queen can let its drones out by opening the part of the shell where its wings used to be
-Holes in the face of the Queen can be used to issue orders to the drones, which sounds like a flute. When running at full speed a discordant sound is made by the holes, agitating the drones to attack whatever prey the Queen is running towards.
+
 
 Syllix
 Blind monster that senses mana in the area.
@@ -112,3 +103,19 @@ Dehydrate: Reduces Focus by the same amount as damage dealt?
 Hydrochloric Spout: A spray of hydrochloric acid in a cone. Deals +1 damage to armor.
 
 Electrolytic Shock: Emanation of electricity, bypasses armor.
+
+
+# Added creatures
+Drov’kith
+Exoskeleton
+6 limbs with talons at the end, can walk with the back 4
+Queen reproduces asexually
+Drones have wings and live where the Queen used to have wings, drones have potential to become queens
+When a drone first hatches it will eat the Queen’s wings to make room for itself underneath the exoskeleton 
+Queen can let its drones out by opening the part of the shell where its wings used to be
+Holes in the face of the Queen can be used to issue orders to the drones, which sounds like a flute. When running at full speed a discordant sound is made by the holes, agitating the drones to attack whatever prey the Queen is running towards.
+
+
+Steel-wooled Dragonsheep - (I originally called it dragon-tailed sheep, but it’s fine). Mostly normal sheep with slightly larger horns, a fat scaly tail and rough reflective wool akin to steel wool. Maybe their colloquial name is Dragonsheep, but their official name in the Understanding is Dragon-tailed Sheep?
+Mountainback - Huge carnivorous deer with calcified growth on their back that acts as a shell and looks like a boulder
+Tyrannosaurus Avis - A bird that convergently mutated into a similar body plan as the apex theropods, with a large crushing beak and tiny vestigial flightless wings.

@@ -1,6 +1,7 @@
 {
     "creature name": {
         "name": "creature name",
+        "creature_type": "Abberant",
         "description": "small and cute",
         "grit": 8,
         "block": 0,
@@ -21,13 +22,14 @@
             "weapon_tags": ["tag1", "tag2"],
             "spell_tags": ["tag1", "tag2"],
             "aoe_type": "[Cube | Cone | Line | Sphere | Cylinder | Emanation | Swipe]",
-            "aoe_size": 1,
+            "aoe": 1,
             "enhancements": ["enhancement1", "enhancement2"],
             "description": ""
         }]
     },
     "Steel-wooled Dragonsheep": {
         "name": "Steel-wooled Dragonsheep",
+        "creature_type": "Abberant",
         "description": "Sheep with a strong, silvery wool reminiscent of steel wool and a large lizardlike tail. They are quite docile, if more heavily armored than their ancient ancestors.",
         "grit": 5,
         "block": 1,
@@ -51,6 +53,7 @@
     },
     "Tyrannosaurus Avis": {
         "name": "Tyrannosaurus Avis",
+        "creature_type": "Abberant",
         "description": "Massive flightless birds with powerful crushing beaks. Convergently evolved to be similar in build to the Tyrannosaurus Rex of old.",
         "grit": 24,
         "block": 0,
@@ -83,6 +86,7 @@
     },
     "Inverted Giraffe": {
         "name": "Inverted Giraffe",
+        "creature_type": "Abberant",
         "description": "Extremely skilled climbers that roam the canopies of trees, stretching their long necks down to the undergrowth to forage, but retracting them up into the canopy to be safe from terrestrial predators.",
         "grit": 10,
         "block": 0,
@@ -94,7 +98,7 @@
         "evasion": 9,
         "heavy_hit": 8,
         "brutal_hit": 13,
-        "speed": 5,
+        "speed": "5 (climbing)",
         "abilities": [
             {
                 "name": "Headbutt",
@@ -113,7 +117,8 @@
     },
     "Myrmex": {
         "name": "Myrmex",
-        "description": "Giant antlion. Has to be partially in the ground and stationary to use the sand spit attack.",
+        "creature_type": "Abberant",
+        "description": "Giant antlion that marks its prey with special pheromones that attract more of its kin.",
         "grit": 8,
         "block": 0,
         "size": 1,
@@ -124,18 +129,20 @@
         "evasion": 7,
         "heavy_hit": 8,
         "brutal_hit": 13,
-        "speed": 1,
+        "speed": 2,
         "abilities": [
             {
                 "name": "Sand spit",
+                "description": "Only useable while grounded or burrowed. Creatures hit by this #term(Attack) are marked by the Myrmex's spit, giving all Myrmice #boon(1) on #term(Attacks, key: Attack) against them.",
                 "ability_type": "Attack",
                 "roll": "mi",
-                "weapon_tags": ["Loading(1)", "Crush(1)", "Ranged(10)"]
+                "weapon_tags": ["Loading(1)", "Ranged(10)"]
             },
             {
                 "name": "Bite",
                 "ability_type": "Attack",
-                "roll": "ma"
+                "roll": "ma",
+                "weapon_tags": ["Crush(1)"]
             },
             {
                 "name": "Burrow",
@@ -144,8 +151,9 @@
         ]
     },
     "Xolotl": {
-        "name": "Xolotl",
-        "description": "Titan - Giant Quetzalcoatl",
+        "name": "Xolotl - The Winged Serpent",
+        "creature_type": "Titan",
+        "description": "Titan of The Blooming Desert",
         "grit": 44,
         "block": 0,
         "size": 4,
@@ -156,7 +164,7 @@
         "evasion": 11,
         "heavy_hit": 15,
         "brutal_hit": 20,
-        "speed": 8,
+        "speed": "6 (flying)",
         "abilities": [
             {
                 "name": "Shock",
@@ -169,7 +177,7 @@
                 "inherits_from": "spells",
                 "ability_type": "Spell",
                 "enhancements": [],
-                "aoe_size": 3
+                "aoe": 3
             },
             {
                 "name": "Inferno",
@@ -180,6 +188,7 @@
     },
     "Mountainback": {
         "name": "Mountainback",
+        "creature_type": "Abberant",
         "description": "Large deer with massive calcified growths that resemble large boulders on their backs",
         "grit": 10,
         "block": 1,
@@ -208,7 +217,8 @@
     },
     "Olento": {
         "name": "Olento",
-        "description": "Finnish for 'the creature'. Large scaled jerboa-like creature with jagged carnivorous teeth and long lanky forearms ending in mantis claws",
+        "creature_type": "Titanspawn",
+        "description": "Large scaled jerboa-like creature with jagged carnivorous teeth and long lanky forearms ending in mantis claws",
         "grit": 22,
         "block": 0,
         "size": 1,
@@ -253,6 +263,7 @@
     },
     "Blemmye": {
         "name": "Blemmye",
+        "creature_type": "Titanspawn",
         "description": "This entity resembles a human sans a head and sports its facial features on its chest.",
         "grit": 14,
         "block": 0,
@@ -284,33 +295,12 @@
             }
         ]
     },
-        "BARTENDER": {
-        "name": "BARTENDER",
-        "description": "BARTENDER",
-        "grit": 0,
-        "block": 0,
-        "size": 1,
-        "might": 1,
-        "agility": 2,
-        "insight": 3,
-        "presence": 4,
-        "evasion": 8,
-        "heavy_hit": 10,
-        "brutal_hit": 15,
-        "speed": 8,
-        "abilities": [
-            {
-                "name": "End Bart",
-                "ability_type": "Attack",
-                "roll": "pp"
-            }
-        ]
-    },
     "Trombonautilus": {
         "name": "Trombonautilus",
+        "creature_type": "Abberant",
         "description": "Looks like a weirdly shaped Nautilus. Releases soundwaves when startled or threathened, not too dissimilar to a trombone.",
-        "grit": 0,
-        "block": 1,
+        "grit": 8,
+        "block": 2,
         "size": 1,
         "might": 1,
         "agility": 2,
@@ -319,7 +309,7 @@
         "evasion": 7,
         "heavy_hit": 11,
         "brutal_hit": 16,
-        "speed": 8,
+        "speed": "5 (swimming)",
         "abilities": [
             {
                 "name": "Doot",
@@ -333,6 +323,7 @@
     },
     "Redoxic Salt Tortoise": {
         "name": "Redoxic Salt Tortoise",
+        "creature_type": "Abberant",
         "description": "A giant pale tortoise with salt crystals on its back. Lives in areas of high salt concentration, which it uses to fuel a number of its abilities.",
         "grit": 16,
         "block": 2,
@@ -358,18 +349,24 @@
                 "roll": "mi",
                 "weapon_tags": ["Melee"],
                 "aoe_type": "Swipe",
-                "aoe_size": 3
+                "aoe": 3
+            },
+            {
+                "name": "Shock",
+                "ability_type": "Spell",
+                "inherits_from": "spells",
+                "enhancements": ["Chain"]
             },
             {
                 "name": "Discharge",
-                "ability_type": "Spell",
-                "inherits_from": "spells",
-                "enhancements": ["Expand"]
+                "ability_type": "Retaliation",
+                "description": "The Redoxic Salt Tortoise releases a burst of electricity, dealing 1 damage to all adjacent creatures."
             }
         ]
     },
     "Rustacean": {
         "name": "Rustacean",
+        "creature_type": "Abberant",
         "description": "Crab like creature whose shell is made out of heavily oxidized iron. The orangy color kind of makes it reminiscent of its ancestors of old. Has excellent memory retention and never forgets!",
         "grit": 12,
         "block": 1,
@@ -392,13 +389,14 @@
             {
                 "name": "Rust",
                 "ability_type": "Passive",
-                "description": "Can rust any equipment or object made out of iron that it touches, giving weapons -1 to Damage and armor -1 to Damage Thresholds."
+                "description": "Can rust any equipment or object made out of iron that it touches, giving weapons -1 to Damage and armor -1 to Damage Thresholds. One piece of equipment can be repaired during Rest using 1 RP."
             }
         ]
     },
     "Angler Phish": {
         "name": "Angler Phish",
-        "description": "Fish that lies near water edges and will attempt to hook in nearby land creatures. Reverse fishing.",
+        "creature_type": "Abberant",
+        "description": "Fish that lies near water edges and will attempt to hook in nearby land creatures.",
         "grit": 12,
         "block": 0,
         "size": 1,
@@ -409,10 +407,11 @@
         "evasion": 7,
         "heavy_hit": 10,
         "brutal_hit": 15,
-        "speed": 4,
+        "speed": "4 (swimming)",
         "abilities": [
             {
                 "name": "Reverse Fishing",
+                "description": "Pulls a hit creature 3+Success Spaces.",
                 "ability_type": "Attack",
                 "roll": "ip",
                 "weapon_tags": ["Ranged(10)"]
@@ -422,16 +421,13 @@
                 "ability_type": "Attack",
                 "roll": "mp",
                 "weapon_tags": ["Sharp(2)"]
-            },
-            {
-                "name": "Hook",
-                "inherits_from": "abilities"
             }
         ]
     },
     "Troutbuchet": {
         "name": "Troutbuchet",
-        "description": "Fish that will float up to the water surface and use its trebuchet-like tail to fling water at bystanders",
+        "creature_type": "Abberant",
+        "description": "Fish that will float up to the water surface and use its trebuchet-like tail to fling water at bystanders.",
         "grit": 8,
         "block": 0,
         "size": 1,
@@ -442,19 +438,25 @@
         "evasion": 7,
         "heavy_hit": 8,
         "brutal_hit": 13,
-        "speed": 4,
+        "speed": "4 (swimming)",
         "abilities": [
             {
                 "name": "Water fling",
                 "ability_type": "Attack",
                 "roll": "ai",
                 "weapon_tags": ["Loading(1), Ranged(10)"]
+            },
+            {
+                "name": "Scurry",
+                "ability_type": "Retaliation",
+                "description": "The Troutbuchet Steps up to its Speed, flinging water at an adjacent target, dealing 1 damage."
             }
         ]
     },
     "Antlion Eater": {
         "name": "Antlion Eater",
-        "description": "Huge ant eater looking beaaaast. Likes to snack on myrmices, and is mostly non-hostile to people unless provoked.",
+        "creature_type": "Abberant",
+        "description": "Huge ant eater beast covered in hard scales resembling armor. Likes to snack on myrmices, and is mostly non-hostile to people unless provoked.",
         "grit": 16,
         "block": 2,
         "size": 3,
@@ -468,14 +470,29 @@
         "speed": 3,
         "abilities": [
             {
-                "name": "",
-                "roll": "",
-                "weapon_tags": [""]
+                "name": "Tongue Pull",
+                "description": "Pulls a hit creature adjacent to the attacker.",
+                "roll": "mi",
+                "weapon_tags": ["Reach(3)"]
+            },
+            {
+                "name": "Crunch",
+                "roll": "mm",
+                "weapon_tags": ["Sharp(2)"]
+            },
+            {
+                "name": "Tail Swipe",
+                "ability_type": "Attack",
+                "roll": "mi",
+                "weapon_tags": ["Melee"],
+                "aoe_type": "Swipe",
+                "aoe": 3
             }
         ]
     },
     "Crystal Python": {
         "name": "Crystal Python",
+        "creature_type": "Abberant",
         "description": "Huge Python with crystal protrusions instead of normal scales.",
         "grit": 16,
         "block": 1,
@@ -506,5 +523,126 @@
                 "inherits_from": "mutation_abilities"
             }
         ]
-    }
+    },
+    "Grimbough": {
+        "name": "Grimbough - The Abundant",
+        "creature_type": "Titan",
+        "description": "Titan of The Verdant Maw\n\nA mighty amalgamation of dead roots and flowers held together in a deer-like form by otherwordly funghi. It is said Grimbough has the power to bring the dead back to life.",
+        "grit": 44,
+        "block": 0,
+        "size": 4,
+        "might": 5,
+        "agility": 3,
+        "insight": 4,
+        "presence": 6,
+        "evasion": 11,
+        "heavy_hit": 15,
+        "brutal_hit": 20,
+        "speed": 8,
+        "abilities": [
+            {
+                "name": "Grasping Mycelium",
+                "ability_type": "Retaliation",
+                "description": "Mycelium sprouts from the forest ground within 2 Spaces of the attacker, pulling all targets within 2 Spaces towards its center and dealing 1 Damage."
+            },
+            {
+                "name": "Forest's Might",
+                "description": "A violent burst of Mycelium erupts from the forest ground, dealing 2 Damage to all creatures inside. Any dead creatures inside the affected area rise under Grimbough's control with Grit equal to the damage dealt by this Attack. Can be recharged using Environment Tokens equal to the Loading value.",
+                "roll": "mp",
+                "range": 0,
+                "aoe": 3,
+                "aoe_type": "Sphere",
+                "weapon_tags": ["Loading(3)", "Charged"]
+            },
+            {
+                "name": "Gust",
+                "inherits_from": "spells",
+                "ability_type": "Spell",
+                "range": 10,
+                "aoe": 3,
+                "aoe_type": "Sphere"
+            },
+            {
+                "name": "Scald",
+                "inherits_from": "spells",
+                "ability_type": "Spell",
+                "enhancements": [],
+                "aoe": 3
+            },
+            {
+                "name": "Dread Obelisk",
+                "inherits_from": "spells",
+                "ability_type": "Spell"
+            }
+        ]
+    },
+    "Drov'kith Queen": {
+    "name": "Drov'kith Queen",
+    "creature_type": "Abberant",
+    "description": "Large beetle-like creature with a hard exoskeleton. It can open its back to reveal a cavity where its wings once were, replaced by Drov'kith drones. Holes in the face of the Queen can be used to issue orders to the drones, which sounds like a flute. When running at full speed a discordant sound is made by the holes, agitating the drones to attack whatever prey the Queen is running towards.",
+    "grit": 14,
+    "block": 1,
+    "size": 2,
+    "might": 3,
+    "agility": 2,
+    "insight": 1,
+    "presence": 3,
+    "evasion": 5,
+    "heavy_hit": 12,
+    "brutal_hit": 17,
+    "speed": 4,
+    "abilities": [
+      {
+        "name": "Reactive Summon",
+        "ability_type": "Retaliation",
+        "description": "Once per round. Summon a Drov'kith Drone to the battlefield."
+      },
+      {
+        "name": "Summon Drones",
+        "weapon_tags": ["Loading(3)"],
+        "description": "Summon 2 Drov'kith Drones to the battlefield. Can be recharged using Environment Tokens equal to the Loading cost."
+      },
+      {
+        "name": "Crush",
+        "ability_type": "Attack",
+        "roll": "ma",
+        "weapon_tags": ["Crush(1)"]
+      },
+      {
+        "name": "Charge",
+        "ability_type": "Attack",
+        "roll": "ma",
+        "description": "Charge in a straight line up to its Speed, dealing damage to everything in its path. Drov'kith Drones are granted a free Move towards any targets of the Attack, or a free Attack if they're already adjacent."
+      }
+    ]
+  },
+  "Drov'kith Drone": {
+    "name": "Drov'kith Drone",
+    "creature_type": "Abberant",
+    "description": "Offspring from a Drov'Kith Queen. Upon maturing their soft exterior hardens, rendering them unable to fly. Their offspring will eat their wings for sustenance and hide protected under the hardened exoskeleton.",
+    "grit": 3,
+    "block": 0,
+    "size": "1/2",
+    "might": 2,
+    "agility": 3,
+    "insight": 1,
+    "presence": 2,
+    "evasion": 10,
+    "heavy_hit": 9,
+    "brutal_hit": 14,
+    "speed": "7 (flying)",
+    "abilities": [
+      {
+        "name": "Bite",
+        "ability_type": "Attack",
+        "roll": "ma",
+        "weapon_tags": []
+      },
+      {
+        "name": "Dazed",
+        "ability_type": "Passive",
+        "description": "This creature has 2 AP per round instead of 3."
+      }
+    ]
+  }
 }

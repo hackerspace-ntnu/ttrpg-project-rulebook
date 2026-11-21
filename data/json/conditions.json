@@ -1,7 +1,7 @@
 {
   "Grappled": {
     "name": "Grappled",
-    "description": "Grappled creatures cannot make voluntary movements. A Grapple ends when either party is moved by Knockback.",
+    "description": "If a Grappled creature is smaller to or equal in size to the grappler, they cannot make voluntary movements. If a Grappled creature is at most one size larger than the grappler, they are Slowed(1) and the grappler moves with the Grappled creature. A Grapple ends when either party is moved by Knockback.",
     "parameter": "N"
   },
   "Prone": {

@@ -6,7 +6,7 @@ A millenia ago a group of scientists on the planet #term("Makkeo", is_definition
 Though incompatible with existing technology due to its disruption of magnetic fields, the seemingly infinite energy source propelled the people of #term[Makkeo] into a new techological revolution.
 That is, until the #term[Mana Gates] brought something else with them.
 
-The first #term("Titan", key: "Titans", is_definition: true) emerged decades after #term[Mana Gates] had been widely adopted, but within a year a dozen more came, each bringing a city or more down with them.
+The first #term("Titan", key: "Titans") emerged decades after #term[Mana Gates] had been widely adopted, but within a year a dozen more came, each bringing a city or more down with them.
 Mana concentration spiked to levels where #term[Mana Gates] manifested on their own, marking the beginning of #term("The Collapse", is_definition: true).
 The mana in the air caused creatures to mutate uncontrollably and neutralized #term[Makkeo]'s magnetic fields, rendering the planet defenseless against the sun's radiation.
 

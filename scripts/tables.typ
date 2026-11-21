@@ -349,16 +349,36 @@ table(
   ))
 }
 
-#let letterToAttribute(letter) = {
-  if (letter == "m") {
-    "Might"
-  } else if (letter == "a") {
-    "Agility"
-  } else if (letter == "i") {
-    "Insight"
-  } else if (letter == "p") {
-    "Presence"
+#let modifierToDie(mod, unwieldy) = {
+  let adjustedMod = mod - int(unwieldy)
+  if (adjustedMod == 6) {
+    "d20"
+  } else if (adjustedMod < 0) {
+    "1"
+  } else {
+    "d" + str((adjustedMod+1)*2)
   }
+}
+
+#let rollToString(roll, mods, hasUnwieldy) = {
+  let dice = ()
+  let attributes = ()
+  for letter in roll {
+    if (letter == "m") {
+      dice.push(modifierToDie(mods.might, hasUnwieldy))
+      attributes.push("Might")
+    } else if (letter == "a") {
+      dice.push(modifierToDie(mods.agility, hasUnwieldy))
+      attributes.push("Agility")
+    } else if (letter == "i") {
+      dice.push(modifierToDie(mods.insight, hasUnwieldy))
+      attributes.push("Insight")
+    } else if (letter == "p") {
+      dice.push(modifierToDie(mods.presence, hasUnwieldy))
+      attributes.push("Presence")
+    }
+  }
+  dice.join(" + ") + emph(" (" + attributes.join(" + ") + ")")
 }
 
 #let getSpellHeader(ability) = {
@@ -391,44 +411,69 @@ table(
   }
 }
 
-#let bestiaryTable(bestiary, abilities, talents, spells, mutation_abilities) = {
-  columns(2,
+#let bestiaryTable(bestiary, abilities, talents, spells, mutation_abilities, columnCount, filterBy) = {
+  let beasts = bestiary.values().filter(b => {
+    if filterBy == none {
+      true
+    } else if filterBy.split(", ").contains(b.creature_type) {
+      true
+    } else {
+      false
+    }
+  })
+  columns(columnCount,
   gutter: 3em,
   block(
-    for beast in bestiary.values().sorted(key: e =>(e.name)) {
+    for beast in beasts.sorted(key: e =>(e.name)) {
       if (beast.name == "creature name") {
         continue
       }
+      // let doBreak = if (beast.creature_type == "Titan") { true } else { false }
       block(
         fill: color.rgb("#fbf7e8"),
         inset: (x: 1em, y: 1.2em),
         width: 100%,
         radius: 1em,
+        breakable: false,
         {
           block(
             breakable: false,
             {
               align(center)[#strong(text(1.25em)[#beast.name]) \ #emph(beast.description)]
               parbreak()
-              h(0.15fr) + "Grit: " + str(beast.grit) + h(1fr) + "Speed: " + str(beast.speed) + h(0.15fr)
-              linebreak()
-              h(0.15fr) + "Block: " + str(beast.block) + h(1fr) + "Size: " + str(beast.size) + h(0.15fr)
-              parbreak()
+              let cols = (2, 1)
               grid(
-                columns: (1fr, 1fr),
-                rows: auto,
+                columns: (1fr,)*cols.at(columnCount - 1),
+                align: center + horizon,
                 gutter: 0.75em,
-                row-gutter: 0.65em,
-                align: center,
-                underline("Might", offset: 0.35em),
-                underline("Agility", offset: 0.35em),
-                str(beast.might), str(beast.agility),
-                underline("Insight", offset: 0.35em),
-                underline("Presence", offset: 0.35em),
-                str(beast.insight), str(beast.presence)
+                row-gutter: 1em,
+                grid(
+                  columns: (1fr, 1fr),
+                  rows: auto,
+                  gutter: 0.75em,
+                  row-gutter: 0.65em,
+                  align: center,
+                  "Grit: " + str(beast.grit),
+                  "Speed: " + str(beast.speed),
+                  "Block: " + str(beast.block),
+                  "Size: " + str(beast.size)
+                ),
+                grid(
+                  columns: (1fr, 1fr),
+                  rows: auto,
+                  gutter: 0.75em,
+                  row-gutter: 0.65em,
+                  align: center,
+                  underline("Might", offset: 0.35em),
+                  underline("Agility", offset: 0.35em),
+                  str(beast.might), str(beast.agility),
+                  underline("Insight", offset: 0.35em),
+                  underline("Presence", offset: 0.35em),
+                  str(beast.insight), str(beast.presence)
+                )
               )
               parbreak()
-              "Evasion: " + str(beast.evasion) + h(1fr) + "Heavy Hit: " + str(beast.heavy_hit) + h(1fr) + "Brutal Hit: " + str(beast.brutal_hit)
+              h(0.5fr) + "Evasion: " + str(beast.evasion) + h(1fr) + "Heavy Hit: " + str(beast.heavy_hit) + h(1fr) + "Brutal Hit: " + str(beast.brutal_hit) + h(0.5fr)
             }
           )
 
@@ -450,8 +495,12 @@ table(
                 } else {a}
                 strong(ability.name)
                 if ("ability_type" in ability) {
-                  " (" + ability.ability_type + ")"
-                } else {
+                  " (" + ability.ability_type
+                  if ("tags" in ability) {
+                    ": " + ability.tags.join(", ")
+                  }
+                  ")"
+                } else if ("tag" in ability) {
                   " (" + ability.tag + ")"
                 }
                 if ("tier" in ability) {
@@ -459,11 +508,15 @@ table(
                 }
                 linebreak()
                 if ("roll" in ability) {
-                  letterToAttribute(ability.roll.at(0)) + " + " + letterToAttribute(ability.roll.at(1))
-                  linebreak()
-                }
-                if ("tags" in ability) {
-                  ability.tags.join(", ")
+                  let hasUnwieldy = if ("weapon_tags" in ability and type(ability.weapon_tags) == array) {
+                    let unwieldy = ability.weapon_tags.find(e => e.contains(regex("Unwieldy.*")))
+                    if (unwieldy != none) {
+                      unwieldy.match(regex("Unwieldy\(([0-9]+)\)")).captures.first()
+                    } else {
+                      0
+                    }
+                  } else { 0 }
+                  rollToString(ability.roll, ("might": beast.might, "agility": beast.agility, "insight": beast.insight, "presence": beast.presence), hasUnwieldy)
                   linebreak()
                 }
                 getSpellHeader(ability)
@@ -495,21 +548,17 @@ table(
                   "Weapon Tags: " + ability.weapon_tags.map((tag) => term(tag)).join(", ")
                   linebreak()
                 }
-                if ("enhancements" in ability) {
-                  "Valid Spell Enhancements: "
-                  if (ability.enhancements.len() == 0) {
-                    "None"
-                  } else {
-                    ability.enhancements.join(", ")
-                  }
+                if ("enhancements" in ability and ability.enhancements.len() > 0) {
+                  "Spell Enhancements: "
+                  ability.enhancements.join(", ")
                   linebreak()
                 }
                 if ("valid_weapon_tags" in ability and type(ability.valid_weapon_tags) == array) {
-                  "Valid Weapon Tags: " + ability.valid_weapon_tags.map((tag) => term(tag)).join(", ")
+                  "Weapon Tags: " + ability.valid_weapon_tags.map((tag) => term(tag)).join(", ")
                   linebreak()
                 }
                 if ("valid_weapon_types" in ability and type(ability.valid_weapon_types) == array) {
-                  "Valid Weapon Types: " + ability.valid_weapon_types.map((tag) => term(tag)).join(", ")
+                  "Weapon Types: " + ability.valid_weapon_types.map((tag) => term(tag)).join(", ")
                   linebreak()
                 }
               }

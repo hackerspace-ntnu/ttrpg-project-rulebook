@@ -85,5 +85,9 @@
   {
     "name": "Infiltrator",
     "description": "This weapon ignores Armor"
+  },
+  {
+    "name": "Charged",
+    "description": "You can only use this weapon with a Charge Action"
   }
 ]
