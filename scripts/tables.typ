@@ -95,7 +95,7 @@ table(
     }
   }).sorted(key: it => (it.tier))
   columns(2,
-  gutter: 3em,
+  gutter: 2em,
   block(
   for entry in entries {
     block(
@@ -151,7 +151,7 @@ table(
   }
   )
   columns(2,
-  gutter: 3em,
+  gutter: 2em,
   block(
   for entry in entries {
     block(
@@ -187,7 +187,7 @@ table(
 
 #let talentsTable(talents) = {
   columns(2,
-  gutter: 3em,
+  gutter: 2em,
   block(
   for (name, talent) in talents.pairs() {
     block(
@@ -217,7 +217,7 @@ table(
 
 #let heritagesTable(heritages) = {
   columns(2,
-  gutter: 3em,
+  gutter: 2em,
   block(
     for heritage in heritages.values() {
       block(
@@ -240,7 +240,7 @@ table(
 
 #let backgroundsTable(backgrounds) = {
   columns(2,
-  gutter: 3em,
+  gutter: 2em,
   block(
     for background in backgrounds.values() {
       if (background.name != "[BACKGROUND NAME BUT AGAIN]") {
@@ -260,7 +260,7 @@ table(
 
 #let bestiaryTable(bestiary, abilities) = {
   columns(2,
-  gutter: 3em,
+  gutter: 2em,
   block(
 
   )
@@ -269,7 +269,7 @@ table(
 
 #let spellTable(spells) = {
   columns(2,
-  gutter: 3em,
+  gutter: 2em,
   block(
     for spell in spells.values() {
       if (spell.name == "") {
@@ -319,7 +319,7 @@ table(
 
 #let spellEnhancementsTable(enhancements) = {
   columns(2,
-  gutter: 3em,
+  gutter: 2em,
   block(
     for enhancement in enhancements.values() {
       if (enhancement.name == "name" or enhancement.name == "") {
@@ -422,7 +422,7 @@ table(
     }
   })
   columns(columnCount,
-  gutter: 3em,
+  gutter: 2em,
   block(
     for beast in beasts.sorted(key: e =>(e.name)) {
       if (beast.name == "creature name") {
@@ -495,17 +495,16 @@ table(
                 } else {a}
                 strong(ability.name)
                 if ("ability_type" in ability) {
-                  " (" + ability.ability_type
+                  h(1fr) + ability.ability_type
                   if ("tags" in ability) {
-                    ": " + ability.tags.join(", ")
+                    " (" + ability.tags.join(", ") + ")"
                   }
-                  ")"
                 } else if ("tag" in ability) {
                   " (" + ability.tag + ")"
                 }
-                if ("tier" in ability) {
-                  h(1fr) + "Tier: " + str(ability.tier)
-                }
+                // if ("tier" in ability) {
+                //   h(1fr) + "Tier: " + str(ability.tier)
+                // }
                 linebreak()
                 if ("roll" in ability) {
                   let hasUnwieldy = if ("weapon_tags" in ability and type(ability.weapon_tags) == array) {
@@ -526,12 +525,12 @@ table(
                     if ("roll_dc" in ability) {
                       " " + str(ability.roll_dc)
                     } +
-                    ": "
+                    " | "
                   )
-                  linebreak()
+                  // linebreak()
                 }
                 if ("ap_cost" in ability and ability.ap_cost != none and ability.ap_cost > 0) {
-                  "AP: " + str(ability.ap_cost) + " "
+                  "AP: " + str(ability.ap_cost) + " | "
                   if ("focus_cost" in ability and ability.focus_cost != none and ability.focus_cost > 0) {
                     "Focus: " + str(ability.focus_cost)
                   }

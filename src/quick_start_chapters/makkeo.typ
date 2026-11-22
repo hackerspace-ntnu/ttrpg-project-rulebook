@@ -12,7 +12,7 @@ The mana in the air caused creatures to mutate uncontrollably and neutralized #t
 
 The destabilization wrought by #term[The Collapse] to the world dried up the seas and turned the land arid.
 #term("Mana Zones"), with #term[Mana Gates] and #term[Titans] at their center plague the lands, but also act as oases of water and corrupted plant life.
-In addition to the hostile vegetation, creatures twisted by Mana known as #term("Abberations", is_definition: true) also roam these zones.
+In addition to the hostile vegetation, creatures twisted by Mana known as #term("Aberrants") also roam these zones.
 
 Due to the danger inherent in living in these areas of dense Mana, most of civilization is found in the dry wastes away from the Gates.
 None of these were greater than #term("Sanctuary", is_definition: true, glossary_type: glossary_types.location), a frontier in mana research and the last major bastion of humanity.

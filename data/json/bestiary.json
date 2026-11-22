@@ -1,7 +1,7 @@
 {
     "creature name": {
         "name": "creature name",
-        "creature_type": "Abberant",
+        "creature_type": "Aberrant",
         "description": "small and cute",
         "grit": 8,
         "block": 0,
@@ -29,7 +29,7 @@
     },
     "Steel-wooled Dragonsheep": {
         "name": "Steel-wooled Dragonsheep",
-        "creature_type": "Abberant",
+        "creature_type": "Aberrant",
         "description": "Sheep with a strong, silvery wool reminiscent of steel wool and a large lizardlike tail. They are quite docile, if more heavily armored than their ancient ancestors.",
         "grit": 5,
         "block": 1,
@@ -53,7 +53,7 @@
     },
     "Tyrannosaurus Avis": {
         "name": "Tyrannosaurus Avis",
-        "creature_type": "Abberant",
+        "creature_type": "Aberrant",
         "description": "Massive flightless birds with powerful crushing beaks. Convergently evolved to be similar in build to the Tyrannosaurus Rex of old.",
         "grit": 24,
         "block": 0,
@@ -86,7 +86,7 @@
     },
     "Inverted Giraffe": {
         "name": "Inverted Giraffe",
-        "creature_type": "Abberant",
+        "creature_type": "Aberrant",
         "description": "Extremely skilled climbers that roam the canopies of trees, stretching their long necks down to the undergrowth to forage, but retracting them up into the canopy to be safe from terrestrial predators.",
         "grit": 10,
         "block": 0,
@@ -117,7 +117,7 @@
     },
     "Myrmex": {
         "name": "Myrmex",
-        "creature_type": "Abberant",
+        "creature_type": "Aberrant",
         "description": "Giant antlion that marks its prey with special pheromones that attract more of its kin.",
         "grit": 8,
         "block": 0,
@@ -188,7 +188,7 @@
     },
     "Mountainback": {
         "name": "Mountainback",
-        "creature_type": "Abberant",
+        "creature_type": "Aberrant",
         "description": "Large deer with massive calcified growths that resemble large boulders on their backs",
         "grit": 10,
         "block": 1,
@@ -297,7 +297,7 @@
     },
     "Trombonautilus": {
         "name": "Trombonautilus",
-        "creature_type": "Abberant",
+        "creature_type": "Aberrant",
         "description": "Looks like a weirdly shaped Nautilus. Releases soundwaves when startled or threathened, not too dissimilar to a trombone.",
         "grit": 8,
         "block": 2,
@@ -323,7 +323,7 @@
     },
     "Redoxic Salt Tortoise": {
         "name": "Redoxic Salt Tortoise",
-        "creature_type": "Abberant",
+        "creature_type": "Aberrant",
         "description": "A giant pale tortoise with salt crystals on its back. Lives in areas of high salt concentration, which it uses to fuel a number of its abilities.",
         "grit": 16,
         "block": 2,
@@ -366,7 +366,7 @@
     },
     "Rustacean": {
         "name": "Rustacean",
-        "creature_type": "Abberant",
+        "creature_type": "Aberrant",
         "description": "Crab like creature whose shell is made out of heavily oxidized iron. The orangy color kind of makes it reminiscent of its ancestors of old. Has excellent memory retention and never forgets!",
         "grit": 12,
         "block": 1,
@@ -395,7 +395,7 @@
     },
     "Angler Phish": {
         "name": "Angler Phish",
-        "creature_type": "Abberant",
+        "creature_type": "Aberrant",
         "description": "Fish that lies near water edges and will attempt to hook in nearby land creatures.",
         "grit": 12,
         "block": 0,
@@ -426,7 +426,7 @@
     },
     "Troutbuchet": {
         "name": "Troutbuchet",
-        "creature_type": "Abberant",
+        "creature_type": "Aberrant",
         "description": "Fish that will float up to the water surface and use its trebuchet-like tail to fling water at bystanders.",
         "grit": 8,
         "block": 0,
@@ -455,7 +455,7 @@
     },
     "Antlion Eater": {
         "name": "Antlion Eater",
-        "creature_type": "Abberant",
+        "creature_type": "Aberrant",
         "description": "Huge ant eater beast covered in hard scales resembling armor. Likes to snack on myrmices, and is mostly non-hostile to people unless provoked.",
         "grit": 16,
         "block": 2,
@@ -492,7 +492,7 @@
     },
     "Crystal Python": {
         "name": "Crystal Python",
-        "creature_type": "Abberant",
+        "creature_type": "Aberrant",
         "description": "Huge Python with crystal protrusions instead of normal scales.",
         "grit": 16,
         "block": 1,
@@ -538,7 +538,7 @@
         "evasion": 11,
         "heavy_hit": 15,
         "brutal_hit": 20,
-        "speed": 8,
+        "speed": 6,
         "abilities": [
             {
                 "name": "Grasping Mycelium",
@@ -547,7 +547,7 @@
             },
             {
                 "name": "Forest's Might",
-                "description": "A violent burst of Mycelium erupts from the forest ground, dealing 2 Damage to all creatures inside. Any dead creatures inside the affected area rise under Grimbough's control with Grit equal to the damage dealt by this Attack. Can be recharged using Environment Tokens equal to the Loading value.",
+                "description": "A violent burst of Mycelium erupts from the forest ground, dealing 2 Damage to all creatures inside. Any dead creatures inside the affected area rise under Grimbough's control with Grit equal to the highest Damage dealt by this Attack. Can be recharged using Environment Tokens equal to the Loading value.",
                 "roll": "mp",
                 "range": 0,
                 "aoe": 3,
@@ -578,7 +578,7 @@
     },
     "Drov'kith Queen": {
     "name": "Drov'kith Queen",
-    "creature_type": "Abberant",
+    "creature_type": "Aberrant",
     "description": "Large beetle-like creature with a hard exoskeleton. It can open its back to reveal a cavity where its wings once were, replaced by Drov'kith drones. Holes in the face of the Queen can be used to issue orders to the drones, which sounds like a flute. When running at full speed a discordant sound is made by the holes, agitating the drones to attack whatever prey the Queen is running towards.",
     "grit": 14,
     "block": 1,
@@ -618,7 +618,7 @@
   },
   "Drov'kith Drone": {
     "name": "Drov'kith Drone",
-    "creature_type": "Abberant",
+    "creature_type": "Aberrant",
     "description": "Offspring from a Drov'Kith Queen. Upon maturing their soft exterior hardens, rendering them unable to fly. Their offspring will eat their wings for sustenance and hide protected under the hardened exoskeleton.",
     "grit": 3,
     "block": 0,

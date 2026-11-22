@@ -62,4 +62,4 @@ A character has one main-hand and one off-hand. You can only hold as many items 
 
 Shields count as weapons and can be used to attack, but doing so is less effective than using a regular weapon. Their main purpose is to help you take less damage and absorb blows.
 
-You can see a full list of weapons and their tags in /*#link(<appendix-a>, "Appendix A")*/ @appendix-a[Appendix A].
+You can see a full list of weapons and their tags in /*#link(<appendix-a>, "Appendix A")*/ @appendix-a[Weapons & Tags].

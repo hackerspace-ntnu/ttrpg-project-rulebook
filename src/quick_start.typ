@@ -1,7 +1,7 @@
 #import "../scripts/glossary.typ": term, render_glossary, glossary_types
 
 // Title page
-#page(margin: 0pt, image(width: 100%, height: 100%, "../data/art/poster_1_bg.png"))
+#page(margin: 0cm, image(width: 100%, height: 100%, fit: "contain", "../data/art/poster_1_bg.png"))
 #pagebreak()
 
 #context counter(page).update(1)
@@ -22,7 +22,7 @@
 #set page(
   numbering: "1",
   columns: 2,
-  margin: (x: 1.75cm, top: 1.75cm, bottom: 1.75cm),
+  margin: (x: 1.75cm, top: 1.5cm, bottom: 1.75cm),
 )
 
 #set columns(gutter: 1.5cm)

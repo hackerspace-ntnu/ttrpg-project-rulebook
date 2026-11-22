@@ -100,7 +100,7 @@ The caster must spend the resources noted by it, usually #term[Action Points] an
 Some #term[Spells] and #term[Abilities] specifiy an AOE type for the effect.
 These are calculated as follows:
 - #term("Swipe(N)", key: "Swipe", is_definition: true) hits N connected #term[Spaces] within the effect's #term[Reach] or #term[Range].
-- #term("Sphere(N)", key:" Sphere", is_definition: true) hits all #term[Spaces] within a radius of N from the center of the effect.
+- #term("Sphere(N)", key:"Sphere", is_definition: true) hits all #term[Spaces] within a radius of N from the center of the effect.
 - #term("Emanation(N)", key: "Emanation", is_definition: true) like #term[Spaces], but blocked by walls.
 - #term("Cylinder(N,M)", key: "Cylinder", is_definition: true) hits all #term[Spaces] up to a height of N within a radius of M from the center of the effect.
 - #term("Line(N,M)", key: "Line", is_definition: true) Hits all #term[Spaces] along a line that is N long and M wide. 
