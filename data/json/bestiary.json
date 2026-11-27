@@ -88,13 +88,13 @@
         "name": "Inverted Giraffe",
         "creature_type": "Aberrant",
         "description": "Extremely skilled climbers that roam the canopies of trees, stretching their long necks down to the undergrowth to forage, but retracting them up into the canopy to be safe from terrestrial predators.",
-        "grit": 10,
+        "grit": 12,
         "block": 0,
-        "size": 2,
+        "size": 1,
         "might": 2,
         "agility": 3,
-        "insight": 3,
-        "presence": 1,
+        "insight": 2,
+        "presence": 2,
         "evasion": 9,
         "heavy_hit": 8,
         "brutal_hit": 13,
@@ -190,9 +190,9 @@
         "name": "Mountainback",
         "creature_type": "Aberrant",
         "description": "Large deer with massive calcified growths that resemble large boulders on their backs",
-        "grit": 10,
+        "grit": 12,
         "block": 1,
-        "size": 1,
+        "size": 2,
         "might": 3,
         "agility": 1,
         "insight": 1,
@@ -577,44 +577,44 @@
         ]
     },
     "Drov'kith Queen": {
-    "name": "Drov'kith Queen",
-    "creature_type": "Aberrant",
-    "description": "Large beetle-like creature with a hard exoskeleton. It can open its back to reveal a cavity where its wings once were, replaced by Drov'kith drones. Holes in the face of the Queen can be used to issue orders to the drones, which sounds like a flute. When running at full speed a discordant sound is made by the holes, agitating the drones to attack whatever prey the Queen is running towards.",
-    "grit": 14,
-    "block": 1,
-    "size": 2,
-    "might": 3,
-    "agility": 2,
-    "insight": 1,
-    "presence": 3,
-    "evasion": 5,
-    "heavy_hit": 12,
-    "brutal_hit": 17,
-    "speed": 4,
-    "abilities": [
-      {
-        "name": "Reactive Summon",
-        "ability_type": "Retaliation",
-        "description": "Once per round. Summon a Drov'kith Drone to the battlefield."
-      },
-      {
-        "name": "Summon Drones",
-        "weapon_tags": ["Loading(3)"],
-        "description": "Summon 2 Drov'kith Drones to the battlefield. Can be recharged using Environment Tokens equal to the Loading cost."
-      },
-      {
-        "name": "Crush",
-        "ability_type": "Attack",
-        "roll": "ma",
-        "weapon_tags": ["Crush(1)"]
-      },
-      {
-        "name": "Charge",
-        "ability_type": "Attack",
-        "roll": "ma",
-        "description": "Charge in a straight line up to its Speed, dealing damage to everything in its path. Drov'kith Drones are granted a free Move towards any targets of the Attack, or a free Attack if they're already adjacent."
-      }
-    ]
+        "name": "Drov'kith Queen",
+        "creature_type": "Aberrant",
+        "description": "Large beetle-like creature with a hard exoskeleton. It can open its back to reveal a cavity where its wings once were, replaced by Drov'kith drones. Holes in the face of the Queen can be used to issue orders to the drones, which sounds like a flute. When running at full speed a discordant sound is made by the holes, agitating the drones to attack whatever prey the Queen is running towards.",
+        "grit": 14,
+        "block": 1,
+        "size": 2,
+        "might": 3,
+        "agility": 2,
+        "insight": 1,
+        "presence": 3,
+        "evasion": 5,
+        "heavy_hit": 12,
+        "brutal_hit": 17,
+        "speed": 4,
+        "abilities": [
+            {
+                "name": "Reactive Summon",
+                "ability_type": "Retaliation",
+                "description": "Once per round. Summon a Drov'kith Drone to the battlefield."
+            },
+            {
+                "name": "Summon Drones",
+                "weapon_tags": ["Loading(3)"],
+                "description": "Summon 2 Drov'kith Drones to the battlefield. Can be recharged using Environment Tokens equal to the Loading cost."
+            },
+            {
+                "name": "Crush",
+                "ability_type": "Attack",
+                "roll": "ma",
+                "weapon_tags": ["Crush(1)"]
+            },
+            {
+                "name": "Charge",
+                "ability_type": "Attack",
+                "roll": "ma",
+                "description": "Charge in a straight line up to its Speed, dealing damage to everything in its path. Drov'kith Drones are granted a free Move towards any targets of the Attack, or a free Attack if they're already adjacent."
+            }
+        ]
   },
   "Drov'kith Drone": {
     "name": "Drov'kith Drone",

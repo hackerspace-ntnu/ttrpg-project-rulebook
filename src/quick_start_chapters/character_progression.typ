@@ -2,6 +2,10 @@
 
 = Character Progression
 <character-progression>
+#figure(
+  scope: "parent",
+  image("../../data/art/spell_1_bg.png", height: 94%, fit: "contain")
+)
 
 Characters in Titanslayer can grow in a multitude of ways.
 #term[Abilities] can be gained both during and outside exploration, while #term("Attribute", key: "Attributes") increases and #term[Mutations] are primarily gained out in the field. 
@@ -83,3 +87,4 @@ To qualify for a #term("Core Ability", key: "Core Abilities"), your #term("Attri
 #term("Mutation Abilities", is_definition: true) are #term[Abilities] that are granted by #term[Mutations] you gain through #term("Mutating", key: "Mutate") after failing a #term("Saturation Check", key: "Saturation Checks").
 These are usually quite powerful, but come with the cost of permanently #term("Corrupting", key: "Corrupted Focus") your #term[Focus] and the gradual loss of your humanity.
 
+#place(bottom, float: true, scope: "parent", v(66%))

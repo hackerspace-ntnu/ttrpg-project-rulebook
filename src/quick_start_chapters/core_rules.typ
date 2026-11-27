@@ -106,3 +106,5 @@ These are calculated as follows:
 - #term("Line(N,M)", key: "Line", is_definition: true) Hits all #term[Spaces] along a line that is N long and M wide. 
 
 For a #term("Space", key: "Spaces") to count as within an AOE, the center of the #term("Space", key: "Spaces") must be within the effect.
+
+#place(bottom, float: true, scope: "parent", v(68%))

@@ -6,7 +6,7 @@
     "tier": 3,
     "focus_cost": 1,
     "ap_cost": 0,
-    "description": "Your next #term[Attack] uses the target's Evasion as baseline when determining the thresholds for Heavy+ Hits, defaulting to the 5+ rule.",
+    "description": "Your next #term[Attack] uses the target's #term[Evasion] as baseline when determining the thresholds for #term(Heavy+ Hits, key: Heavy Hit), defaulting to the 5+ rule.",
     "valid_weapon_tags": ["Light"],
     "valid_weapon_types": null
   },
@@ -17,7 +17,7 @@
     "tier": 2,
     "focus_cost": 1,
     "ap_cost": 0,
-    "description": "Lunge: You gain Reach(2) for this Attack. \nParry: You gain Guard(1)",
+    "description": "Lunge: You gain #term[Reach(2)] for this Attack. \nParry: You gain Guard(1)",
     "valid_weapon_tags": ["Versatile"],
     "valid_weapon_types": null
   },
@@ -182,7 +182,7 @@
     "tier": 3,
     "focus_cost": 0,
     "ap_cost": 0,
-    "description": "You may reduce any Knockback you take by 1."
+    "description": "You may reduce any #term[Knockback] you take by 1."
   },
   "Momentum": {
     "name": "Momentum",

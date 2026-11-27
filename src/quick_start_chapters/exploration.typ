@@ -2,6 +2,10 @@
 
 = Exploration
 <exploration>
+#figure(
+  scope: "parent",
+  image("../../data/art/wilderness_bg.png", height: 94%, fit: "contain"),
+)
 == Mana Zones
 Most of your time in this game will be spent adventuring in the mana-filled wild wastes of #term[Makkeo].
 
@@ -72,3 +76,5 @@ These are mostly caused by #term[Encounter Checks], but can also occur from even
 When a #term("Mana Surge", key: "Mana Surges", is_definition: true) occurs, the following happens:
 - All players must make a Saturation Roll (#term[Might] + #term[Presence]) against a DC of 7 + the Intensity of the surge, or #term("Saturate", key: "Saturated Focus") 1 + 1 per 5 they failed by #term[Focus].
 - The GM gains an number of #term[Environment Tokens] equal to the Intensity of the surge.
+
+// #place(bottom, float: true, scope: "parent", v(88%))

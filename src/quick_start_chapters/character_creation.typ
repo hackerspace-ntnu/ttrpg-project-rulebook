@@ -102,3 +102,5 @@ Rations. Feel free to get any other items you want and have space for,
 but consider leaving some room for other items you pick up along the
 way. It's a good idea to make sure at least one person in your party has
 a mess kit, rope, and torches. See the #link(<equipment>, "Equipment section") section for more details. 
+
+#place(bottom, float: true, scope: "parent", v(61%))

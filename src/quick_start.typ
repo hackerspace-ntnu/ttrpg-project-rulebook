@@ -9,11 +9,31 @@
   numbering: "I",
 )
 
+// Chapter headings should be centered and larger than the default
+#show heading.where(level: 1): it => place(
+  top + center,
+  it,
+  float: true,
+  scope: "parent"
+)
+#show heading.where(level: 1): set text(20pt)
+
 // Laying out the first page(s)
 #outline(
   title: "Table of Contents",
   indent: auto
 )
+
+#pagebreak()
+#heading(
+  [Index],
+  outlined: false
+)
+<glossary>
+\
+#render_glossary()
+
+// #place(bottom, float: true, v(70%))
 
 #pagebreak()
 
@@ -31,14 +51,6 @@
   justify: true,
 )
 
-// Chapter headings should be centered and larger than the default
-#show heading.where(level: 1): it => place(
-  top + center,
-  it,
-  float: true,
-  scope: "parent"
-)
-#show heading.where(level: 1): set text(20pt)
 
 /* Figures should be centered on the page, not in the columns.
    The captions for tables should be displayed above the table,
@@ -108,12 +120,6 @@
   placement: none
 )
 #include "quick_start_chapters/appendices.typ"
-
-#pagebreak()
-= Index
-<glossary>
-\
-#render_glossary()
 
 #pagebreak()
 <character-sheet>

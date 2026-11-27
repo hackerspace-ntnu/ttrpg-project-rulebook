@@ -59,18 +59,39 @@ table(
   let shields = data.weapons.position((weapon) => {
     return weapon.name.contains("Shield")
   })
-  columns(2,
-  table(
-    columns: (35%, 25%, 40%),
-    align: (left, left, left, left),
-    table.header([Name], [Roll], [Tags]),
-    table.hline(),
-    ..weapons.slice(0, ranged).flatten(),
-    [], [], [],
-    ..weapons.slice(ranged, shields).flatten(),
-    [], [], [],
-    ..weapons.slice(shields).flatten()
-  ))
+  let leftAlignedHeading(title) = {
+    align(
+      left,
+      heading(title, level: 3)
+    )
+  }
+  [
+    #leftAlignedHeading("Melee Weapons")
+    <weapons-appendix>
+    #table(
+      columns: (35%, 25%, 40%),
+      align: (left, left, left, left),
+      table.header([Name], [Roll], [Tags]),
+      table.hline(),
+      ..weapons.slice(0, ranged).flatten()
+    )
+    #leftAlignedHeading("Ranged Weapons")
+    #table(
+      columns: (35%, 25%, 40%),
+      align: (left, left, left, left),
+      table.header([Name], [Roll], [Tags]),
+      table.hline(),
+      ..weapons.slice(ranged, shields).flatten(),
+    )
+    #leftAlignedHeading("Shields")
+    #table(
+      columns: (35%, 25%, 40%),
+      align: (left, left, left, left),
+      table.header([Name], [Roll], [Tags]),
+      table.hline(),
+      ..weapons.slice(shields).flatten()
+    )
+  ]
 }
 
 #let weaponTagsTable(data) = {
@@ -225,6 +246,7 @@ table(
         fill: color.rgb("#f7fad7"),
         inset: (x: 1em, y: 1.2em),
         radius: 1em,
+        width: 100%,
         {
           str(heritage.name)
           linebreak()

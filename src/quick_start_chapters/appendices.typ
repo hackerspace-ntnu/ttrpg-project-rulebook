@@ -1,26 +1,6 @@
 #import "../../scripts/glossary.typ": term, render_glossary, glossary_types
-#import "../../scripts/tables.typ": weaponTagsTable, weaponTable, mutationsTable, abilitiesTable, talentsTable, heritagesTable, spellTable, spellEnhancementsTable, bestiaryTable
+#import "../../scripts/tables.typ": mutationsTable, abilitiesTable, talentsTable, heritagesTable, spellTable, spellEnhancementsTable, bestiaryTable
 
-
-= Weapons & Tags
-<appendix-a>
-#image("../../data/art/appendix_weapons_bg.png", height: 94%, fit: "contain")
-
-== Weapon List
-<weapons-appendix>
-#show figure: set block(breakable: true)
-#set table.cell(breakable: false)
-#figure(align(center)[
-  #weaponTable(json("../../data/json/weapons.json"), json("../../data/json/abilities.json"))
-])
-\*Active effects modifying an attack must be used before making the Attack Roll.
-
-
-== Weapon Tags
-<weapon-tags>
-#weaponTagsTable(json("../../data/json/weapon_tags.json"))
-
-#pagebreak()
 
 = Mutations
 <mutation-table>
@@ -30,7 +10,7 @@
 #pagebreak()
 
 = Abilities
-#page(margin: 1cm, image("../../data/art/spell_1_bg.png", width: 100%, height: 100%, fit: "contain"))
+#image("../../data/art/spell_1_bg.png", height: 94%, fit: "contain")
 
 == Core Abilities
 <core-abilities>
@@ -69,6 +49,9 @@
 
 = Bestiary
 <bestiary>
+#figure(
+  image("../../data/art/SNAKE_bg.png", height: 94%, fit: "contain")
+)
 == Monsters
 #bestiaryTable(json("../../data/json/bestiary.json"), json("../../data/json/abilities.json"), json("../../data/json/talents.json"), json("../../data/json/spells.json"), json("../../data/json/mutation_abilities.json"), 2, "Aberrant, Titanspawn")
 

@@ -3,6 +3,10 @@
 // Should probably limit the "known world" to a single continent or less, and also limit the factions to certain regions within said continent
 
 = History
+#figure(
+  scope: "parent",
+  image("../../data/art/misc_moondarkening_bg.png", height: 94%, fit: "contain"),
+)
 // Just the biggest events that most people in the modern day would know about
 
 == The Golden Age
@@ -44,6 +48,8 @@ A turf war between Hunter guilds at Prey's End spiraled out into a grand bet. Th
 
 == Hunters
 // Not really a faction, but fits well here?
+While not a single individual faction, the various Hunter Guilds and independent mercenaries that embark upon expeditions to the Mana Zones and other high-danger areas to collect treasures, relics and resources impose a certain political pressure on society that makes them akin to one.
+Hunters generally do work for the other factions and are believed to be the most likely source for the next Titanslayer.
 
 == The Council of Kaleina
 #term("The Council of Kaleina", is_definition: true, glossary_type: glossary_types.faction) is a group of scholars and scientists dedicated to understanding the nature of the world through research and experimentation.
@@ -72,8 +78,8 @@ Although they celebrated #term("Sorin Fajiri", glossary_type: glossary_types.cha
 == [The moon religion(s)?]
 // Split into two variants (Engelbrecht's militaristic one and a more peaceful one)
 
-== [Latchkey Island Pirates]
-
+== [Latchkey Pirates]
+Striking out from their seacliff fortresses in the Latchkey Isles, these pirates claim any resources they come across. They generally carry mutations that make them excellent swimmers who can take the loss of any ship well enough, simply swimming home or to an unsuspecting merchant vessel and claiming it for themselves. Any carrying the heritage of a Latchkey Islander is seen with distrust by most.
 
 == Independents
 === Sorin Fajiri - The Titanslayer
@@ -107,13 +113,21 @@ Some maintain a semblance of their former selves, in either personality or visag
 #pagebreak()
 = Locations
 == Sanctuary
-Humanity's first major settlemnts after the Collapse, Sanctuary became a haven of Mana-Tech, which eventually caused its downfall. Now it's a crumbled ruin filled with Aberrants, Titanspawn and old Mana-Tech, the latter of which makes it a tempting site to explore for any searching for personal wealth or power.
+Humanity's first major settlemnts after the Collapse, Sanctuary became a haven of Mana-Tech, which eventually caused its downfall. Now it's a crumbled ruin filled with Aberrants, Titanspawn and old Mana-Tech, the latter of which makes it a tempting site to explore for any searching for personal wealth or power. However, none have seen the Titan and lived to tell of it, even its appearance is unknown.
 
 == Sudden Mountain
 Before the First Titan was slain, the modest village of Trite on the Taebhne Steppes vanished overnight. In its place: a massive mountain that no one had seen before. Sudden Mountain remains a strange mystery. Where did the village go? Why did it appear? Why isn't there a major Mana Density there to explain this strange occurence?
 
 [TODO: Add a bit about the prophecy circulating Trite about some sort of ascension. Is it somehow related to the mountain appearing?]
 
-== Latchkey Islands
+== Latchkey Isles
+A craggy archipelago, the Lathckey Isles are known for the extensive pirate activity that preys upon the seaborn trade routes on the Pallid Ocean. Several pirate fortresses are built into the cliffs at the edges of the archipelago. On the largest, central island of Skerry where stony crags jut up like teeth, a grand naval base for whoever happens to currently be the leader of the pirates is built.
+
 == Prey's End
-== [TODO area where two titans fought and shit]
+Given its central location, Prey's End is in the middle of nowhere, yet on the way to everywhere else. This city is a haven for adventurers, explorers and mercenaries. All major guilds and a black market operate here, making Prey's End the most common site to prepare for and set out on an expedition, and fence the loot afterwards.
+
+== The Weeping Woods
+A vast forest whose trees bleed sap. Its mountains and hills are cut by vast gouges and craters. At its center lies the gargantuan skeleton of a lizardlike Titan. A tremendous avian Titan occasionally hunts the woods.
+
+== The Whistling Sands
+A vast desert in a Mana Zone, the sand here is occasionally arranged into strange organic shapes, like great caverns that resonate the wind, towering spires, figures in the sand. Stray Mana Surges see these structures fall apart, appear or change in a few instants. Once, these lands were the territory of the Anomalocaris-Titan Aspirena, until the First Titanslayer slew it. The Ahadi have since turned its exoskeleton into a holy city called Carapace

@@ -1,7 +1,12 @@
 #import "../../scripts/glossary.typ": term, render_glossary, glossary_types
+#import "../../scripts/tables.typ": weaponTagsTable, weaponTable,
 
 = Equipment
 <equipment>
+#figure(
+  scope: "parent",
+  image("../../data/art/equipment_1_bg.png", height: 94%, fit: "contain")
+)
 Each character has a #term("Carrying Capacity", is_definition: true) equal to 5 + Might Mod.
 Items and #term("Equipment", is_definition: true) have an amount of #term("Bulk", is_definition: true) (usually 1).
 If you're carrying more than your #term("Capacity", key: "Carrying Capacity") at the end of a #term("Shift", key: "Shifts"), you lose #term[Grit] equal to the amount of extra #term[Bulk] you're carrying (total #term[Bulk] - #term[Carrying Capacity]).
@@ -62,4 +67,27 @@ A character has one main-hand and one off-hand. You can only hold as many items 
 
 Shields count as weapons and can be used to attack, but doing so is less effective than using a regular weapon. Their main purpose is to help you take less damage and absorb blows.
 
-You can see a full list of weapons and their tags in /*#link(<appendix-a>, "Appendix A")*/ @appendix-a[Weapons & Tags].
+#pagebreak()
+#show figure: set block(breakable: true)
+#set table.cell(breakable: false)
+#place(top, float: true, scope: "parent", box(height: 69%,
+columns(2,
+figure(
+  placement: none,
+  scope: "column",
+  align(center + top)[
+  #weaponTable(json("../../data/json/weapons.json"), json("../../data/json/abilities.json"))
+])
+)))
+
+#set page(
+  columns: 1,
+)
+
+=== Weapon Tags
+<weapon-tags>
+#weaponTagsTable(json("../../data/json/weapon_tags.json"))
+
+#set page(
+  columns: 2,
+)

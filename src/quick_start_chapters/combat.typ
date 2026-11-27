@@ -3,6 +3,10 @@
 
 = Combat
 <combat>
+#figure(
+  scope: "parent",
+  image("../../data/art/appendix_weapons_bg.png", height: 94%, fit: "contain")
+)
 == Initiative and action economy
 <initiative-and-action-economy>
 Each #term("Round", key: "Rounds", is_definition: true) of combat is split into four #term("Phases", is_definition: true). 
@@ -41,7 +45,7 @@ Variable AP: #term("Cast", is_definition: true) a #term("Spell", key: "Spells").
 #term("", key: "Utility Actions", is_definition: true)1 AP: #term("Parley", is_definition: true) with a target. \
 1 AP: #term("Brawl", is_definition: true) with a target, making a #roll[Might][Insight] choosing either #term[Grapple] or #term[Shove]. \
 - #term("Grapple", is_definition: true) a target, inflicting #term("Grappled") and granting #boon("Success") to the first Attack against the target. Targets Evasion. \
-- #term("Shove", is_definition: true) a target 1 Space + 1 per #term("Success", key: "Successes"). 2 Spaces of Shove can be traded to knock the target Prone. Targets Evasion. 
+- #term("Shove", is_definition: true) a target MIG Spaces + 1 per #term("Success", key: "Successes"). 2 Spaces of Shove can be traded to knock the target Prone. Targets Evasion. 
 
 *Item Actions*\
 #term("", key: "Item Actions", is_definition: true)0 AP: #term("Stow/Draw", is_definition: true) the Weapons or objects held in your hands to/from your #term[Quick Draw Inventory]. You can both Stow and Draw with a single activation of this Action. +1 AP to Stow to or Draw from #term[Inventory].\
@@ -53,7 +57,7 @@ Variable AP: #term("Cast", is_definition: true) a #term("Spell", key: "Spells").
 
 0 AP, once per Round: #term("Charge", is_definition: true) your next Action, delaying its activation until the end of the next Enemy Phase, but granting you #boon(3) on it. You must pick a target Space for the Action when picking this option. \
 // TODO: Worded weirdly
-0 AP, once per Round: #term("Push", is_definition: true) yourself, spending #term[Grit] in order to perform one of the following effects:
+0 AP, once per Round: #term("Strain", is_definition: true) yourself, spending #term[Grit] in order to perform one of the following effects:
 - 1 Grit for Boon(1) \
 - 2 Grit to gain 1 AP
 
@@ -120,14 +124,14 @@ Below is a list of standard #term("Retaliations", is_definition: true), but cert
     align: (left,left,left,),
     table.header([], [Prerequisite], [Effect],),
     table.hline(),
-    [Step], [], [Step 1 + AGI mod Spaces without provoking opportunity
+    [Step], [], [Step 1 + AGI Spaces without provoking opportunity
     attacks],
     // [Guard], [], [Gain 1 #term[Guard] until the start of your next acting
     // #term("Phase", key: "Phases")],
-    [Counter], [Targeted by attack within #term[Threat] range], [Deal 1 damage
+    [Counter], [Targeted by an Attack within #term[Threat] range], [Deal 1 damage
     to the Attacker],
-    [Parry], [Targeted by attack within #term[Threat] range while wielding a
-    shield], [You parry the attack, leaving the Attacker open. The first
+    [Parry], [Targeted by an Attack within #term[Threat] range while wielding a
+    shield], [You parry the Attack, leaving the Attacker open. The first
     #term("Action Roll", key: "Action Rolls") against them before the end of the next Phase has
     #term("Boon(1)", key: "Boons"). \ Perfect Parry: If the shield's Active is what made this Retaliation possible, the effect increases to #term("Boon(3)", key: "Boons").],
   )]
@@ -141,17 +145,16 @@ Below is a list of standard #term("Retaliations", is_definition: true), but cert
 When Retaliating your options are enhanced based on what Weapons you currently wield.
 Only one enhancement can be used at a time.
 
-Melee Light Weapons: When you Counter you may Step at half range
+Melee Light Weapons: When you #term[Counter] you may #term[Step] at half range
 
-Melee Medium Weapons: When you Counter you leave an open wound on
-the target. If they move before the end of the current phase, they take
-1 damage.
+Melee Medium Weapons: When you #term[Counter] you leave an open wound on the target.
+If they move before the end of the current phase, they take 1 damage.
 
-Melee Heavy Weapons: When you Counter you may Push the Attacker MIG
-mod / Size difference Spaces.
+Melee Heavy Weapons: When you #term[Counter] you may #term[Push] the Attacker MIG Spaces.
 
 // TODO: make this
-Ranged Weapons: 
+Ranged Weapons: When you #term[Step] you train your #term("Weapon", key: "Weapons") on the target.
+If they don't #term[Move] before the end of the current phase, they take 1 damage.
 
 == Wounds & Dying
 At 0 #term[Grit] you gain a #term("Wound", key: "Wounds", is_definition: true) and roll 1d8 for your #term("Death Save", key: "Death Saves", is_definition: true). If the result is under the number of #term[Wounds] they have, they die. 
@@ -159,7 +162,7 @@ Otherwise they lose 1 AP next #term("Round", key: "Rounds") for each point of #t
 
 == Knockback
 <knockback>
-When a creature takes #term("Knockback", is_definition: true), they are pushed back a number of #term[Spaces] equal to the #term[Knockback] value.
+When a creature takes #term("Knockback", is_definition: true), usually through #term("Push", is_definition: true) or #term("Pull", is_definition: true) effects, they are moved a number of #term[Spaces] equal to the #term[Knockback] value.
 #term[Knockback] is reduced by a creature's #term("Stability", is_definition: true), which unless otherwise specified is equal to their #term[Size] - 1.
 
 When a creature is knocked into a wall or other solid object they stop and take #term[Damage] equal to the #term[Knockback] remaining.
@@ -168,3 +171,5 @@ When a creature is knocked into another creature they stop and both creatures ta
 == Conditions
 // TODO: Improve grapple mechanics, see if more conditions should be added
 #parse_conditions(json("../../data/json/conditions.json"))
+
+#place(bottom, float: true, scope: "parent", v(60%))
